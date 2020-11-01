@@ -1,0 +1,40 @@
+.list-social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+
+	li {
+		display: inline-block;
+		margin-bottom: 4px;
+		margin-right: 4px;
+		margin-top: 4px;
+		line-height: 1;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.link {
+		border: medium none;
+		font-size: 2.6em;
+		transition: opacity 0.18s ease-in-out;
+
+		&:hover,
+		&:focus {
+			opacity: 0.8;
+			outline: none;
+			text-decoration: none;
+		}
+	}
+
+	i {
+		display: block;
+		position: relative;
+
+		&:before {
+			display: block;
+		}
+	}
+}

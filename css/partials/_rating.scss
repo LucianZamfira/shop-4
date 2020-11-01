@@ -1,0 +1,57 @@
+.rating {
+	direction: rtl;
+	display: inline-flex;
+	font-size: 1em;
+	font-weight: normal;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	unicode-bidi: bidi-override;
+
+	&:hover {
+		label.rating__label {
+			color: $black15;
+
+			// &:before {
+			// 	content: "\f006";
+			// 	font-family: "icomoon";
+			// }
+		}
+	}
+
+	input {
+		display: none;
+
+		&:checked ~ label {
+			color: $primary-color;
+
+			// &:before {
+			// 	content: "\f005";
+			// }
+		}
+	}
+
+	label {
+		color: $black15;
+		display: inline-block;
+		margin: 0;
+		min-width: 18px;
+		text-align: center;
+
+		&:before {
+			content: "\f005";
+			display: block;
+			font-family: "icomoon";
+			line-height: 1;
+		}
+
+		&:hover,
+		&:hover ~ label {
+			color: $primary-color !important;
+
+			// &:before {
+			// 	content: "\f005" !important;
+			// }
+		}
+	}
+}

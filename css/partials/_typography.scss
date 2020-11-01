@@ -1,0 +1,120 @@
+body {
+	color: $primary-text-color;
+	font: 400 14px/1.4 $site-font, Arial, sans-serif;
+}
+
+/* Remove top margins from headings
+  By default, <h1>-<h6> all receive top and bottom margins. We nuke the top
+  margin for easier control within type scales as it avoids margin collapsing.
+  stylelint-disable-next-line selector-list-comma-newline-after */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+	margin-bottom: $headings-margin-bottom;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 2.4em;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: 700;
+
+	&.headline--design {
+		font-size: 1.857em;
+	}
+}
+
+h3 {
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+h4,
+h5 {
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+/* Reset margins on paragraphs
+
+  Similarly, the top margin on <p>s get reset. However, we also reset the
+  bottom margin to use rem units instead of em. */
+p {
+	margin-top: 0;
+	margin-bottom: $paragraphs-margin-bottom;
+}
+
+hr {
+	border: medium none;
+	height: 1px;
+	margin: 20px 0;
+}
+
+p,
+ul,
+ol {
+	font-size: 1.12em;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+}
+
+code {
+	font-size: 87.5%;
+	color: #559bd1;
+	word-break: break-word;
+}
+
+code,
+kbd,
+pre,
+samp {
+	// font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+	font-family: $site-font;
+}
+
+.has-byline {
+	margin-bottom: 5px;
+}
+
+.slogan {
+	color: $secondary-color;
+	font-size: 2.286em;
+	font-weight: normal;
+	line-height: 1.2;
+	padding-left: 38px;
+	padding-top: 20px;
+	position: relative;
+
+	&:before {
+		color: $primary-color;
+		content: "\e919";
+		font-family: "icomoon";
+		font-size: 20px;
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+}
+
+.disclaimer {
+	align-items: center;
+	display: flex;
+	line-height: 1;
+
+	i {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+}
+
+.description {
+	font-size: 1.3em;
+}

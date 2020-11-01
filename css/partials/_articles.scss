@@ -1,0 +1,47 @@
+// .aside {
+// 	position: relative;
+
+// 	&-actions {
+// 		display: flex;
+// 		font-size: 20px;
+// 		left: 100%;
+// 		padding-left: 10px;
+// 		position: absolute;
+// 		text-align: right;
+// 		top: 0;
+
+// 		&.fixed {
+// 			position: fixed;
+// 			top: 40px;
+// 		}
+// 	}
+// }
+
+// // Desktops
+// @media (max-width: 1240px) {
+// 	.aside {
+// 		&-actions {
+// 			flex-direction: column;
+
+// 			li {
+// 				margin-right: 0;
+// 			}
+// 		}
+// 	}
+// }
+
+// @media (max-width: 1120px) {
+// 	.aside {
+// 		&-actions {
+// 			flex-direction: row;
+// 			justify-content: flex-end;
+// 			left: auto;
+// 			position: relative;
+// 			padding-bottom: 15px;
+
+// 			li {
+// 				margin-right: 20px;
+// 			}
+// 		}
+// 	}
+// }

@@ -1,0 +1,37 @@
+.breadcrumbs {
+	display: block;
+	font-size: 12px;
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+
+	a {
+		color: $black80;
+		text-decoration: none;
+
+		&:hover {
+			color: darken($black80, 5%);
+		}
+	}
+
+	span {
+		color: $black34;
+		font-weight: 500;
+	}
+
+	&__item {
+		display: inline-block;
+
+		&:after {
+			content: "-";
+			font-size: 0.9em;
+			margin: 0 2px 0 4px;
+		}
+
+		&:last-child {
+			&:after {
+				content: " ";
+			}
+		}
+	}
+}

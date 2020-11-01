@@ -1,0 +1,110 @@
+.button {
+	-webkit-font-smoothing: antialiased;
+	background-color: $primary-color;
+	border: medium none;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font: 400 1.143em/1 $site-font, Arial, sans-serif;
+	justify-content: center;
+	padding: 12px 24px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.18s ease-in-out;
+
+	&:focus {
+		outline: medium none;
+	}
+
+	&:hover {
+		background-color: $secondary-color;
+		text-decoration: none;
+	}
+
+	&.small {
+		font-size: 14px;
+		line-height: 10px;
+		padding: 6px;
+	}
+
+	&.medium {
+		font-size: 14px;
+		line-height: 12px;
+		padding: 8px;
+	}
+
+	&--full {
+		width: 100%;
+	}
+
+	&--gray {
+		background-color: $cream;
+		color: $primary-text-color;
+
+		&:hover {
+			background-color: darken($cream, 8%);
+			color: $black80;
+		}
+	}
+
+	&--white {
+		background-color: $white;
+		color: $primary-text-color;
+
+		&:hover {
+			background-color: darken($white, 8%);
+			color: $black80;
+		}
+	}
+
+	&--transparent {
+		background-color: transparent;
+	}
+
+	&--facebook {
+		background-color: $facebook-color;
+		border-color: $facebook-color;
+		color: $white;
+		width: 100%;
+
+		&:hover {
+			background-color: darken($facebook-color, 10%);
+			border-color: darken($facebook-color, 10%);
+			color: $white;
+		}
+	}
+
+	&--twitter {
+		background-color: $twitter-color;
+		border-color: $twitter-color;
+		color: $white;
+		width: 100%;
+
+		&:hover {
+			background-color: darken($twitter-color, 10%);
+			border-color: darken($twitter-color, 10%);
+			color: $white;
+		}
+	}
+
+	&--linkedin {
+		background-color: $linkedin-color;
+		border-color: $linkedin-color;
+		color: $white;
+		width: 100%;
+
+		&:hover {
+			background-color: darken($linkedin-color, 10%);
+			border-color: darken($linkedin-color, 10%);
+			color: $white;
+		}
+	}
+
+	&-group {
+		.button {
+			margin: 22px 11px;
+		}
+	}
+}

@@ -1,0 +1,366 @@
+/*----------------------------------------------------------------------------
+    HELPERS SITE
+-----------------------------------------------------------------------------*/
+.d {
+	&-none {
+		display: none;
+	}
+
+	&-inline {
+		display: inline;
+	}
+
+	&-inline-block {
+		display: inline-block;
+	}
+
+	&-block {
+		display: block;
+	}
+
+	&-table {
+		display: table;
+	}
+
+	&-table-row {
+		display: table-row;
+	}
+
+	&-table-cell {
+		display: table-cell;
+	}
+
+	&-flex {
+		display: flex;
+	}
+
+	&-inline-flex {
+		display: inline-flex;
+	}
+
+	&-flex-wrap {
+		display: flex;
+		flex-flow: row wrap;
+		height: 100%;
+	}
+
+	&-flex-column {
+		display: flex;
+		flex-flow: column;
+		height: 100%;
+	}
+}
+
+.flex {
+	&-row {
+		display: flex;
+		// flex-direction: row;
+		flex-flow: row wrap;
+		margin-right: -8px;
+		margin-left: -8px;
+
+		.col {
+			padding-right: 8px;
+			padding-left: 8px;
+		}
+	}
+
+	&-column {
+		flex-direction: column;
+	}
+
+	&-row-reverse {
+		flex-direction: row-reverse;
+	}
+
+	&-column-reverse {
+		flex-direction: column-reverse;
+	}
+
+	&-wrap {
+		flex-wrap: wrap;
+	}
+
+	&-nowrap {
+		flex-wrap: nowrap;
+	}
+
+	&-wrap-reverse {
+		flex-wrap: wrap-reverse;
+	}
+
+	&-fill {
+		flex: 1 1 auto;
+	}
+
+	&-grow-0 {
+		flex-grow: 0;
+	}
+
+	&-grow-1 {
+		flex-grow: 1;
+	}
+
+	&-shrink-0 {
+		flex-shrink: 0;
+	}
+
+	&-shrink-1 {
+		flex-shrink: 1;
+	}
+}
+
+.justify {
+	&-content-start {
+		justify-content: flex-start;
+	}
+
+	&-content-end {
+		justify-content: flex-end;
+	}
+
+	&-content-center {
+		justify-content: center;
+	}
+
+	&-content-between {
+		justify-content: space-between;
+	}
+
+	&-content-around {
+		justify-content: space-around;
+	}
+
+	&-content-evenly {
+		justify-content: space-evenly;
+	}
+}
+
+.align {
+	&-items-start {
+		align-items: flex-start;
+	}
+
+	&-items-end {
+		align-items: flex-end;
+	}
+
+	&-items-center {
+		align-items: center;
+	}
+
+	&-items-baseline {
+		align-items: baseline;
+	}
+
+	&-items-stretch {
+		align-items: stretch;
+	}
+
+	&-content-start {
+		align-content: flex-start;
+	}
+
+	&-content-end {
+		align-content: flex-end;
+	}
+
+	&-content-center {
+		align-content: center;
+	}
+
+	&-content-between {
+		align-content: space-between;
+	}
+
+	&-content-around {
+		align-content: space-around;
+	}
+
+	&-content-stretch {
+		align-content: stretch;
+	}
+
+	&-self-auto {
+		align-self: auto;
+	}
+
+	&-self-start {
+		align-self: flex-start;
+	}
+
+	&-self-end {
+		align-self: flex-end;
+	}
+
+	&-self-center {
+		align-self: center;
+	}
+
+	&-self-baseline {
+		align-self: baseline;
+	}
+
+	&-self-stretch {
+		align-self: stretch;
+	}
+}
+
+.text {
+	&-left {
+		text-align: left;
+	}
+
+	&-center {
+		text-align: center;
+	}
+
+	&-right {
+		text-align: right;
+	}
+
+	&-underline {
+		text-decoration: underline;
+	}
+
+	&-uppercase {
+		text-transform: uppercase;
+	}
+
+	&-italic {
+		font-style: italic;
+	}
+}
+
+.float {
+	&-right {
+		float: right;
+	}
+
+	&-left {
+		float: left;
+	}
+
+	&-none {
+		float: none;
+	}
+}
+
+.font {
+	&-light {
+		font-weight: 300;
+	}
+	&-regular {
+		font-weight: 400;
+	}
+	&-bold {
+		font-weight: 600;
+	}
+}
+
+.hide,
+.display-none,
+.hidden {
+	display: none;
+}
+
+.op {
+	&-0 {
+		opacity: 0;
+	}
+
+	&-05 {
+		opacity: 0.5;
+	}
+
+	&-08 {
+		opacity: 0.8;
+	}
+
+	&-1 {
+		opacity: 1;
+	}
+}
+
+.clearfix {
+	&:after {
+		clear: both;
+		content: " ";
+		display: block;
+	}
+}
+
+.text {
+	&--primary {
+		color: $primary-color;
+	}
+
+	&--secondary {
+		color: $secondary-color;
+	}
+
+	&--gray {
+		color: $black34;
+	}
+
+	&--sky {
+		color: $sky;
+	}
+
+	&--twitter {
+		color: $twitter-color;
+	}
+
+	&--facebook {
+		color: $facebook-color;
+	}
+
+	&--linkedin {
+		color: $linkedin-color;
+	}
+
+	&--green {
+		color: $leaf;
+	}
+
+	&--black80 {
+		color: $black80;
+	}
+
+	&--black34 {
+		color: $black34;
+	}
+
+	&--alert {
+		color: $alert-color;
+	}
+
+	&--inform {
+		color: $inform-color;
+	}
+
+	&--success {
+		color: $success-color;
+	}
+
+	&--error {
+		color: $error-color;
+	}
+
+	&--strong {
+		font-weight: 600;
+	}
+
+	&--thin {
+		font-weight: 400;
+	}
+
+	&--emphasis {
+		font-size: 1.457em;
+		font-weight: 500;
+	}
+
+	&-group {
+		margin: 25px 0;
+	}
+}

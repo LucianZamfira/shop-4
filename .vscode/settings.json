@@ -1,0 +1,27 @@
+{
+	"editor.fontSize": 13,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.snippetSuggestions": "top",
+	"editor.wordWrap": "on",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"files.autoSave": "onFocusChange",
+	"git.autofetch": true,
+	"workbench.commandPalette.history": 5000,
+	"workbench.iconTheme": "material-icon-theme",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"liveSassCompile.settings.generateMap": true,
+	"liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+	"liveSassCompile.settings.autoprefix": ["> 5%", "last 6 versions"],
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "~/../css/"
+		}
+	],
+	"liveServer.settings.port": 5501
+}

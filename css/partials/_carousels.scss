@@ -1,0 +1,30 @@
+.carousel {
+	&-hero {
+		.item {
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 520px;
+		}
+
+		.content--short {
+			align-items: flex-start;
+			display: flex;
+			flex-direction: column;
+			padding-bottom: 4rem;
+			padding-top: 4rem;
+		}
+
+		* {
+			order: 2;
+		}
+
+		.category {
+			color: $secondary-color;
+			font-weight: normal;
+			order: 1;
+			text-transform: uppercase;
+			word-spacing: 100vw;
+		}
+	}
+}
