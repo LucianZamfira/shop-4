@@ -1,14 +1,43 @@
-footer {
-	padding-top: 2rem;
+// footer {
+// 	padding-top: 4rem;
 
-	.copyright {
-		text-align: center;
-	}
-}
+// 	.copyright {
+// 		text-align: center;
+// 	}
+// }
 
 .footer {
-	&-bottom {
-		margin-top: 4rem;
+	&-top {
+		margin-top: $footer-paddings;
+		margin-bottom: $footer-paddings;
+	}
+
+	&-quick {
+		// text-align: center;
+	}
+
+	&-logo {
+		text-align: center;
+	}
+
+	&-social {
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+
+		.title {
+			font-size: 1em;
+			font-weight: 500;
+			margin-bottom: 1rem;
+			margin-right: 1rem;
+			margin-top: 1rem;
+		}
+	}
+
+	&-copyright {
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		text-align: center;
 	}
 }
 
@@ -60,58 +89,65 @@ footer {
 // 	}
 // }
 
-// // Tablets
-// @media (max-width: 767px) {
-// 	.footer {
-// 		.container {
-// 			text-align: center;
-// 			// &-top,
-// 			// &-middle {
-// 			// 	padding: 30px 0;
-// 			// }
+// Tablets
+@media (max-width: 767px) {
+	.footer {
+		// &-top {
+		// 	margin-left: auto;
+		// 	margin-right: auto;
+		// 	max-width: 360px;
+		// }
 
-// 			// &-middle {
-// 			// 	.col-sm-12 {
-// 			// 		margin-bottom: 0;
-// 			// 	}
-// 			// }
+		&-quick {
+			text-align: center;
+		}
 
-// 			.col-12 {
-// 				margin-bottom: 22px;
-// 			}
-// 		}
+		&-social {
+			justify-content: center;
+		}
+	}
 
-// 		.sitemap-block {
-// 			order: 3;
-// 		}
-// 	}
-// }
+	/* .footer {
+		.container {
+			text-align: center;
+			// &-top,
+			// &-middle {
+			// 	padding: 30px 0;
+			// }
 
-// // Mobiles
-// @media (max-width: 575px) {
-// 	.footer {
-// 		&-top {
-// 			padding: 20px 0;
+			// &-middle {
+			// 	.col-sm-12 {
+			// 		margin-bottom: 0;
+			// 	}
+			// }
 
-// 			.image {
-// 				margin-right: 20px;
-// 				width: 60px;
-// 			}
+			.col-12 {
+				margin-bottom: 22px;
+			}
+		}
 
-// 			.subheadline {
-// 				font-size: 1.2em;
-// 			}
-// 		}
+		.sitemap-block {
+			order: 3;
+		}
+	} */
+}
 
-// 		&-middle {
-// 			padding: 20px 0;
-// 			text-align: center;
-// 		}
+// Mobiles
+@media (max-width: 566px) {
+	/* .footer {
+		&-top {
+			border-bottom: 1px solid #000;
+		}
 
-// 		.list {
-// 			li {
-// 				padding: 6px 0;
-// 			}
-// 		}
-// 	}
-// }
+		// &-middle {
+		// 	padding: 20px 0;
+		// 	text-align: center;
+		// }
+
+		// .list {
+		// 	li {
+		// 		padding: 6px 0;
+		// 	}
+		// }
+	} */
+}

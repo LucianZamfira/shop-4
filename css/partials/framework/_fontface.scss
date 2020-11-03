@@ -12,19 +12,18 @@
 [class*=" icon-"],
 [class*="_icon"],
 [class*="-icon"] {
-	// display: inline-flex;
+	display: inline-block;
+	vertical-align: middle;
 
 	&:before,
 	&:after {
-		display: inline-block;
+		display: block;
 		font-family: "Linearicons";
 		font-style: normal;
 		font-size: 1.2em;
 		font-variant: normal;
 		font-weight: normal;
-		line-height: 1;
 		text-transform: none;
-		vertical-align: middle;
 
 		/* Better Font Rendering =========== */
 		-webkit-font-smoothing: antialiased;

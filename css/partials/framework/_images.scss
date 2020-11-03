@@ -1,15 +1,15 @@
-.responsive-image {
-	height: auto;
-	max-width: 100%;
-	outline: medium none;
-	width: 100%;
+// .responsive-image {
+// 	height: auto;
+// 	max-width: 100%;
+// 	outline: medium none;
+// 	width: 100%;
 
-	img {
-		display: block;
-		height: auto;
-		width: 100%;
-	}
-}
+// 	img {
+// 		display: block;
+// 		height: auto;
+// 		width: 100%;
+// 	}
+// }
 
 .image {
 	display: block;
@@ -17,6 +17,20 @@
 
 	&--inline {
 		display: inline-block;
+	}
+
+	&-responsive {
+		display: block;
+		height: auto;
+		max-width: 100%;
+		outline: medium none;
+		width: 100%;
+
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
 	}
 }
 

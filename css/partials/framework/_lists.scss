@@ -16,11 +16,11 @@ ol {
 		width: 5px;
 
 		&-track {
-			// background-color: $black8;
+			background-color: $black8;
 		}
 
 		&-thumb {
-			background-color: $primary-color;
+			background-color: $secondary-color;
 			border-radius: 8px;
 			padding-right: 3px;
 		}
@@ -38,6 +38,12 @@ ol {
 
 	&--unstyled {
 		list-style: none;
+	}
+
+	li {
+		> a {
+			text-decoration: none;
+		}
 	}
 
 	// &--icons {
@@ -80,25 +86,30 @@ ol {
 	// 	}
 	// }
 
-	// &--social {
-	// 	a {
-	// 		display: inline-block;
-	// 		height: 20px;
-	// 		line-height: 20px;
-	// 		min-width: 32px;
-	// 		text-align: center;
-	// 		text-decoration: none;
-	// 		vertical-align: middle;
+	&--social {
+		display: flex;
+		line-height: 1;
 
-	// 		&:hover {
-	// 			text-decoration: none;
-	// 		}
-	// 	}
+		a {
+			display: inline-block;
+			text-decoration: none;
+			vertical-align: middle;
+			width: 25px;
+			transition: opacity 0.2s ease-in-out;
 
-	// 	i {
-	// 		font-size: 0.857em;
-	// 	}
-	// }
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		li {
+			margin-right: 0.5rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 
 	// &--flags {
 	// 	.link {

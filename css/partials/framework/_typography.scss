@@ -19,6 +19,7 @@ h6 {
 	line-height: 1.2;
 	margin-bottom: $headings-margin-bottom;
 	margin-top: 0;
+	font-weight: 500;
 }
 
 h1 {
@@ -34,7 +35,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.4em;
+	font-size: 1.16em;
 }
 
 h4,
@@ -66,6 +67,8 @@ button {
 }
 
 a {
+	text-decoration: underline;
+
 	&:hover {
 		color: $secondary-color;
 	}

@@ -1,17 +1,18 @@
 .button {
 	-webkit-font-smoothing: antialiased;
+	align-items: center;
 	background-color: $primary-color;
 	border: medium none;
 	color: $white;
 	cursor: pointer;
-	display: inline-block;
-	font: 400 1.143em/1 $site-font-family, Arial, sans-serif;
+	display: inline-flex;
+	// font: 400 1.143em/1 $site-font-family, Arial, sans-serif;
 	justify-content: center;
-	padding: 12px 24px;
+	padding: $button-padding;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
-	text-transform: uppercase;
+	// text-transform: uppercase;
 	transition: all 0.18s ease-in-out;
 
 	&:focus {
@@ -20,6 +21,7 @@
 
 	&:hover {
 		background-color: $secondary-color;
+		color: $primary-color;
 		text-decoration: none;
 	}
 
