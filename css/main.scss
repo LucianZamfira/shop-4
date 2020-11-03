@@ -1,25 +1,29 @@
-@import "partials/variables";
-@import "partials/fontface";
-@import "partials/structure";
-@import "partials/header";
-@import "partials/footer";
-@import "partials/links";
-@import "partials/lists";
+@import "partials/theme/variables";
 
-@import "partials/articles";
-@import "partials/newsletter";
-@import "partials/banners";
-@import "partials/carousels";
-@import "partials/breadcrumbs";
-@import "partials/forms";
-@import "partials/buttons";
-@import "partials/socialmedia";
-@import "partials/cards";
-@import "partials/cookiebar";
-@import "partials/rating";
-@import "partials/images";
-@import "partials/spacing";
-@import "partials/typography";
+// Import framework partials
+@import "partials/framework/fontface";
+@import "partials/framework/structure";
+@import "partials/framework/links";
+@import "partials/framework/forms";
+@import "partials/framework/buttons";
+@import "partials/framework/images";
+@import "partials/framework/spacing";
+@import "partials/framework/typography";
+@import "partials/framework/grid";
+@import "partials/framework/helpers";
+@import "partials/framework/lists";
+@import "partials/framework/breadcrumbs";
+@import "partials/framework/cookiebar";
+@import "partials/framework/rating";
+@import "partials/framework/pagination";
 
-@import "partials/grid";
-@import "partials/helpers";
+// Import theme partials
+@import "partials/theme/structure";
+@import "partials/theme/articles";
+@import "partials/theme/header";
+@import "partials/theme/footer";
+@import "partials/theme/newsletter";
+@import "partials/theme/banners";
+@import "partials/theme/carousels";
+@import "partials/theme/socialmedia";
+@import "partials/theme/cards";

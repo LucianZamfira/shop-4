@@ -19,9 +19,17 @@
 			order: 2;
 		}
 
+		.headline {
+			font-size: 4em;
+			line-height: 1.1;
+			font-weight: 500;
+		}
+
 		.category {
 			color: $secondary-color;
+			font-size: 1.3em;
 			font-weight: normal;
+			margin-bottom: 0.8rem;
 			order: 1;
 			text-transform: uppercase;
 			word-spacing: 100vw;

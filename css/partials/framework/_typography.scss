@@ -1,6 +1,9 @@
 body {
 	color: $primary-text-color;
-	font: 400 14px/1.4 $site-font, Arial, sans-serif;
+	font-family: $site-font-family;
+	font-size: $site-font-size;
+	font-weight: $site-font-weight;
+	line-height: $site-line-height;
 }
 
 /* Remove top margins from headings
@@ -20,12 +23,10 @@ h6 {
 
 h1 {
 	font-size: 2.4em;
-	font-weight: 900;
 }
 
 h2 {
 	font-size: 2em;
-	font-weight: 700;
 
 	&.headline--design {
 		font-size: 1.857em;
@@ -34,13 +35,15 @@ h2 {
 
 h3 {
 	font-size: 1.4em;
-	font-weight: 600;
 }
 
 h4,
 h5 {
 	font-size: 1.2em;
-	font-weight: 400;
+}
+
+h6 {
+	font-size: 1em;
 }
 
 /* Reset margins on paragraphs
@@ -52,16 +55,30 @@ p {
 	margin-bottom: $paragraphs-margin-bottom;
 }
 
+a,
+button {
+	color: inherit;
+	cursor: pointer;
+	display: inline-block;
+	line-height: inherit;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+a {
+	&:hover {
+		color: $secondary-color;
+	}
+}
+
 hr {
 	border: medium none;
 	height: 1px;
 	margin: 20px 0;
 }
 
-p,
 ul,
 ol {
-	font-size: 1.12em;
 	line-height: 1.5;
 	margin-bottom: 1rem;
 }
@@ -76,8 +93,7 @@ code,
 kbd,
 pre,
 samp {
-	// font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-	font-family: $site-font;
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
 }
 
 .has-byline {

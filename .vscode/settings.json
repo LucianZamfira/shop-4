@@ -1,5 +1,4 @@
 {
-	"editor.fontSize": 13,
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
 	"editor.formatOnType": false,
@@ -23,5 +22,6 @@
 			"savePath": "~/../css/"
 		}
 	],
-	"liveServer.settings.port": 5501
+	"liveServer.settings.port": 5501,
+	"editor.fontSize": 13.3
 }

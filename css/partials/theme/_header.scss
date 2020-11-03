@@ -10,23 +10,24 @@ header {
 	top: 0;
 	z-index: 10;
 
-	.container {
-		height: 100%;
-	}
+	// .container {
+	// 	height: 100%;
+	// }
 
-	nav {
-		align-items: center;
-		display: flex;
-		height: 100%;
-		justify-content: flex-start;
-		position: relative;
-	}
+	// nav {
+	// 	align-items: center;
+	// 	display: flex;
+	// 	height: 100%;
+	// 	justify-content: flex-start;
+	// 	position: relative;
+	// }
 
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
+	// ul {
+	// 	// display: flex;
+	// 	list-style: none;
+	// 	margin: 0;
+	// 	padding: 0;
+	// }
 }
 
 .menu-group {
@@ -37,18 +38,34 @@ header {
 
 .header {
 	&-top {
+		align-items: center;
 		display: flex;
 		justify-content: space-between;
 		padding: 1rem 0;
+
+		i {
+			font-size: 1.3em;
+		}
+	}
+
+	&-list {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		a {
+			margin-bottom: 1rem;
+			margin-left: 1rem;
+			margin-top: 1rem;
+		}
 	}
 }
 
 .main-nav {
-	font-size: 1em;
-	text-transform: uppercase;
-
 	&__item {
 		display: inline-block;
+		font-size: 1rem;
 		position: relative;
 
 		&:last-child {
@@ -71,6 +88,8 @@ header {
 
 		> .link {
 			padding: 15px;
+			font-size: 1em;
+			text-transform: uppercase;
 		}
 	}
 

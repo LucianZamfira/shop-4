@@ -4,20 +4,40 @@ $secondary-color: #dcb14a;
 $tertiary-color: #767676;
 $selection-color: #e9c162;
 
-$site-font: "Roboto";
-
 // Text colors
 $primary-text-color: #282828;
-$secondary-text-color: #484848;
-$tertiary-text-color: #1b1b1b;
+$secondary-text-color: #dcb14a;
+
+// Structure colors
+$border-color: #ededed;
 
 // Typography margins
 $headings-margin-bottom: 1rem;
 $paragraphs-margin-bottom: 1rem;
+$lists-margin-bottom: 1.2rem;
+$site-font-family: "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$site-font-size: 16px;
+$site-font-weight: 400;
+$site-line-height: 1.4;
+
+// Structure
+$container-max-width: 1180px;
+$container-paddings: 15px;
+$container-small: 420px;
+$container-short: 620px;
+$container-medium: 880px;
+$container-larger: 1220px;
+
+$section-paddings: 40px;
+
+$content-small: 420px;
+$content-short: 520px;
+$content-medium: 880px;
+$content-margin-bottom: 1.6rem;
 
 // Background colors
 $primary-site-background: #ffffff;
-$secondary-site-background: #f9f9f9;
+$secondary-site-background: #f4f5f7;
 $tertiary-site-background: #ececec;
 
 // Social colors
@@ -30,6 +50,9 @@ $alert-color: #ff6200;
 $error-color: #c51c1c;
 $success-color: #269c36;
 $inform-color: #7680cc;
+
+// Form colors
+$input-border-color: #e8e8e8;
 
 // General colors
 $transparent: transparent;

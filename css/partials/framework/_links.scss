@@ -1,15 +1,16 @@
 .link {
-	align-items: center;
-	align-self: center;
+	// align-items: center;
+	// align-self: center;
 	border-bottom: 1px solid transparent;
 	color: inherit;
-	// display: inline-flex;
+	display: inline-flex;
 	line-height: 1.3;
 	text-decoration: none;
 
 	&:hover,
 	&.active {
-		border-bottom-color: $primary-text-color;
+		// border-bottom-color: $primary-text-color;
+		color: $secondary-color;
 		text-decoration: none;
 	}
 
@@ -86,7 +87,7 @@
 		position: relative;
 
 		&:after {
-			// background-color: $black80;
+			background-color: $black80;
 			bottom: 0;
 			content: " ";
 			height: 1px;
@@ -97,7 +98,7 @@
 		}
 
 		&:hover {
-			// border-color: $black80;
+			border-color: $black80;
 			text-decoration: none;
 
 			&:after {
@@ -117,7 +118,7 @@
 		}
 	}
 
-	&--tag {
+	/* &--tag {
 		// border: 1px solid $black8;
 		// color: $black54;
 		display: inline-block;
@@ -151,5 +152,5 @@
 		&.active {
 			text-decoration: none;
 		}
-	}
+	} */
 }

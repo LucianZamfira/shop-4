@@ -1,0 +1,154 @@
+html {
+	height: 100%;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $primary-site-background;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow-x: hidden;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+
+		&-track {
+			background-color: $border-color;
+		}
+
+		&-thumb {
+			background-color: $secondary-color;
+			border-radius: 8px;
+			padding-right: 3px;
+		}
+	}
+
+	* {
+		&::selection {
+			background-color: $selection-color;
+			color: $black00;
+		}
+	}
+
+	&:after {
+		background-color: rgba(0, 0, 0, 0.6);
+		bottom: 0;
+		content: " ";
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
+		position: fixed;
+		right: 0;
+		top: 0;
+		transition: opacity 0.2s ease-in-out;
+	}
+}
+
+main {
+	flex: 1;
+}
+
+section {
+	display: block;
+	padding: $section-paddings 0;
+	position: relative;
+
+	& + section:not([class]) {
+		padding-top: 0;
+	}
+
+	&.section {
+		&--hero {
+			& + section {
+				padding-top: $section-paddings;
+			}
+		}
+	}
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $container-max-width;
+	padding-left: $container-paddings;
+	padding-right: $container-paddings;
+	width: 100%;
+
+	&--small {
+		max-width: $container-small;
+	}
+
+	&--short {
+		max-width: $container-short;
+	}
+
+	&--medium {
+		max-width: $container-medium;
+	}
+
+	&--larger {
+		max-width: $container-larger;
+	}
+}
+
+.content {
+	&-group {
+		margin-bottom: $content-margin-bottom;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&--small {
+		max-width: $content-small;
+	}
+
+	&--short {
+		max-width: $content-short;
+	}
+
+	&--medium {
+		max-width: $content-medium;
+	}
+}
+
+// Large screens
+@media (min-width: 1600px) {
+}
+
+// Desktops
+@media (max-width: 1000px) {
+}
+
+// Desktops
+@media (max-width: 1200px) {
+}
+
+// Laptops
+@media (max-width: 991px) {
+}
+
+// Tablets
+@media (max-width: 767px) {
+}
+
+// Mobiles
+@media (max-width: 659px) {
+}
+
+// Mobiles
+@media (max-width: 575px) {
+}
