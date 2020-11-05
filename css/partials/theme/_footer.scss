@@ -12,6 +12,12 @@
 		margin-bottom: $footer-paddings;
 	}
 
+	&-bottom {
+		.row {
+			align-items: center;
+		}
+	}
+
 	/* &-quick {
 		text-align: center;
 	} */
