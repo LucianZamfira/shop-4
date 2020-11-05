@@ -33,6 +33,10 @@
 }
 
 .input {
+	&--fluid {
+		width: 100%;
+	}
+
 	&-row {
 		margin-bottom: 22px;
 

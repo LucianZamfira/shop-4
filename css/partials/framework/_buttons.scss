@@ -25,17 +25,25 @@
 		text-decoration: none;
 	}
 
-	&.small {
-		font-size: 14px;
-		line-height: 10px;
-		padding: 6px;
+	i {
+		font-size: 0.8em;
+
+		&.icon-arrow-right {
+			margin-left: 8px;
+		}
 	}
 
-	&.medium {
-		font-size: 14px;
-		line-height: 12px;
-		padding: 8px;
-	}
+	// &.small {
+	// 	font-size: 14px;
+	// 	line-height: 10px;
+	// 	padding: 6px;
+	// }
+
+	// &.medium {
+	// 	font-size: 14px;
+	// 	line-height: 12px;
+	// 	padding: 8px;
+	// }
 
 	&--full {
 		width: 100%;

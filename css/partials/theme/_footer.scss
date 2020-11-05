@@ -12,9 +12,9 @@
 		margin-bottom: $footer-paddings;
 	}
 
-	&-quick {
-		// text-align: center;
-	}
+	/* &-quick {
+		text-align: center;
+	} */
 
 	&-logo {
 		text-align: center;
@@ -134,20 +134,10 @@
 
 // Mobiles
 @media (max-width: 566px) {
-	/* .footer {
+	.footer {
 		&-top {
-			border-bottom: 1px solid #000;
+			margin-top: 3rem;
+			margin-bottom: 2.2rem;
 		}
-
-		// &-middle {
-		// 	padding: 20px 0;
-		// 	text-align: center;
-		// }
-
-		// .list {
-		// 	li {
-		// 		padding: 6px 0;
-		// 	}
-		// }
-	} */
+	}
 }

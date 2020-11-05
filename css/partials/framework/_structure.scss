@@ -65,7 +65,8 @@ section {
 	padding: $section-paddings 0;
 	position: relative;
 
-	& + section:not([class]) {
+	// & + section:not([class]) {
+	& + section:not([class="section--gray"]) {
 		padding-top: 0;
 	}
 

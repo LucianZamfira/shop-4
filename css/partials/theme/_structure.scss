@@ -31,6 +31,17 @@
 		}
 	}
 
+	&--blog {
+		.section-title {
+			text-align: center;
+		}
+	}
+
+	&-title {
+		font-size: $section-title-size;
+		margin-bottom: $section-title-margin;
+	}
+
 	// &--overflow {
 	// 	overflow: hidden;
 	// }

@@ -9,7 +9,8 @@ $primary-text-color: #282828;
 $secondary-text-color: #dcb14a;
 
 // Structure colors
-$border-color: #ededed;
+// $border-color: #ededed;
+$border-color: #cecece;
 
 // Typography margins
 $headings-margin-bottom: 1.1rem;
@@ -29,6 +30,8 @@ $container-medium: 880px;
 $container-larger: 1220px;
 
 $section-paddings: 6rem;
+$section-title-size: 2.5em;
+$section-title-margin: 2.8rem;
 $footer-paddings: 4.2rem;
 
 $content-small: 420px;
@@ -37,7 +40,7 @@ $content-medium: 880px;
 $content-margin-bottom: 1.6rem;
 
 // Buttons
-$button-padding: 8px 24px;
+$button-padding: 8px 20px;
 
 // Background colors
 $primary-site-background: #ffffff;
