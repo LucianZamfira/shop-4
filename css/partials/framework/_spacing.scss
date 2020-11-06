@@ -257,3 +257,47 @@
 		padding-right: 3rem;
 	}
 }
+
+@media (max-width: 767px) {
+	.m {
+		&b-sm-0 {
+			margin-bottom: 0px;
+		}
+
+		&-sm-0 {
+			margin: 0px;
+		}
+	}
+
+	.p {
+		&b-sm-0 {
+			padding-bottom: 0px;
+		}
+
+		&-sm-0 {
+			padding: 0px;
+		}
+	}
+}
+
+@media (max-width: 567px) {
+	.m {
+		&b-xs-0 {
+			margin-bottom: 0px;
+		}
+
+		&-xs-0 {
+			margin: 0px;
+		}
+	}
+
+	.p {
+		&b-xs-0 {
+			padding-bottom: 0px;
+		}
+
+		&-xs-0 {
+			padding: 0px;
+		}
+	}
+}

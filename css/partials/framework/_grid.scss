@@ -446,8 +446,8 @@ aside {
 		}
 	}
 
-	.col-xs,
-	.col-sm,
+	// .col-xs,
+	// .col-sm,
 	.col {
 		&-12 {
 			margin-bottom: 22px;
@@ -643,6 +643,16 @@ aside {
 			margin-left: 91.666667%;
 		}
 	}
+
+	.col-sm {
+		&-12 {
+			margin-bottom: 22px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 567px) {
@@ -827,6 +837,16 @@ aside {
 
 		&-11 {
 			margin-left: 91.666667%;
+		}
+	}
+
+	.col-xs {
+		&-12 {
+			margin-bottom: 22px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }

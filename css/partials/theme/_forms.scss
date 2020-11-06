@@ -1,0 +1,40 @@
+.form {
+	&-search {
+		margin: 10px 0;
+		max-width: 275px;
+		min-width: 180px;
+		position: relative;
+		width: 100%;
+
+		.input {
+			border-left: none;
+			border-right: none;
+			border-top: none;
+			padding-left: 0;
+			padding-right: 2.5rem;
+		}
+
+		button {
+			background-color: transparent;
+			border: medium none;
+			cursor: pointer;
+			font-size: 0.9em;
+			line-height: 1;
+			position: absolute;
+			right: 0px;
+			top: 10px;
+		}
+	}
+
+	&-newsletter {
+		display: flex;
+
+		input {
+			width: 100%;
+		}
+
+		button {
+			font-size: 1em;
+		}
+	}
+}

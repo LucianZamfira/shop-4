@@ -1,19 +1,24 @@
-.input,
-.textarea,
-.select {
+input,
+textarea,
+select {
 	background-color: transparent;
-	border: 1px solid $black34;
+	border: 1px solid $input-border-color;
 	color: $primary-text-color;
 	display: block;
 	font-family: $site-font-family;
 	font-size: 1em;
 	line-height: normal;
 	outline: none;
-	padding: 8px;
+	padding: $input-paddings;
 
 	&::placeholder {
 		color: $black34;
 		font-style: normal;
+	}
+
+	&:focus {
+		border-color: $input-focus-border-color;
+		// color: $primary-text-color;
 	}
 }
 
@@ -169,8 +174,8 @@ label {
 // 	}
 // }
 
-.search {
-	&-form {
+/* .form {
+	&-search {
 		margin: 10px 0;
 		max-width: 275px;
 		min-width: 180px;
@@ -181,27 +186,34 @@ label {
 			border-left: none;
 			border-right: none;
 			border-top: none;
+			padding-left: 0;
+			padding-right: 2.5rem;
+		}
 
-			&:focus {
-				border-color: $secondary-color;
-				color: $secondary-color;
-			}
+		button {
+			background-color: transparent;
+			border: medium none;
+			cursor: pointer;
+			font-size: 0.9em;
+			line-height: 1;
+			position: absolute;
+			right: 0px;
+			top: 10px;
 		}
 	}
 
-	&-button {
-		background-color: transparent;
-		border: medium none;
-		cursor: pointer;
-		// color: $blue54;
-		font-size: 1em;
-		line-height: 1;
-		padding: 5px;
-		position: absolute;
-		right: 0px;
-		top: 0px;
+	&-newsletter {
+		display: flex;
+
+		input {
+			width: 100%;
+		}
+
+		button {
+			font-size: 1em;
+		}
 	}
-}
+} */
 
 // .gdpr {
 // 	&-row {

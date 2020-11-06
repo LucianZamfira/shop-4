@@ -25,7 +25,7 @@
 		<header>
 			<div class="container">
 				<div class="header-top">
-					<form action="POST" class="search-form">
+					<form action="POST" class="form-search">
 						<div class="input-wrapper">
 							<input type="text" placeholder="Search..." class="input input--small" aria-label="Search site input" />
 							<button type="submit" class="search-button" aria-label="Search site"><i class="icon-magnifier"></i></button>
@@ -229,6 +229,25 @@
 				</div>
 			</section>
 			<!-- Site content end -->
+
+			<!-- Newsletter section start -->
+			<section class="pb-5 pb-sm-0">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-5 col-md-4 col-sm-12">
+							<h2 class="m-0">Our Newsletter</h2>
+						</div>
+
+						<div class="col-7 col-md-8 col-sm-12">
+							<form action="#" class="form-newsletter">
+								<input type="email" placeholder="Your email address" required />
+								<button class="button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Newsletter section end -->
 		</main>
 		<!-- Main end -->
 
@@ -271,7 +290,10 @@
 						<div class="col-3 col-md-4 col-sm-6 col-xs-12">
 							<h3>Newsletter</h3>
 
-							<input type="text" class="input input--fluid" />
+							<form action="#" class="newsletter">
+								<input class="input--fluid" type="email" placeholder="Your email address" required />
+								<button class="button button--inverted"><i class="icon-arrow-right"></i></button>
+							</form>
 
 							<!-- <ul class="list list--inline">
 								<li><a href="#" title="Term & Condition">Term &amp; Condition</a></li>

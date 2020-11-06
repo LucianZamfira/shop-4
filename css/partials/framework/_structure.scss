@@ -22,7 +22,7 @@ body {
 	overflow-x: hidden;
 
 	&::-webkit-scrollbar {
-		width: 5px;
+		width: 6px;
 
 		&-track {
 			background-color: $border-color;
@@ -31,7 +31,6 @@ body {
 		&-thumb {
 			background-color: $secondary-color;
 			border-radius: 8px;
-			padding-right: 3px;
 		}
 	}
 
@@ -71,13 +70,22 @@ section {
 	}
 
 	&.section {
-		&--hero {
+		&--hero,
+		&--gray {
 			& + section {
 				padding-top: $section-paddings;
 			}
 		}
 	}
 }
+
+// .section {
+// 	&--gray {
+// 		& + section {
+// 			padding-top: $section-paddings;
+// 		}
+// 	}
+// }
 
 .container {
 	margin-left: auto;
@@ -148,6 +156,19 @@ section {
 
 // Mobiles
 @media (max-width: 659px) {
+	section {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+
+		&.section {
+			&--hero,
+			&--gray {
+				& + section {
+					padding-top: 3rem;
+				}
+			}
+		}
+	}
 }
 
 // Mobiles

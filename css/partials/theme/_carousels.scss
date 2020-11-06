@@ -36,3 +36,18 @@
 		}
 	}
 }
+
+// Mobiles
+@media (max-width: 659px) {
+	.carousel {
+		&-hero {
+			.headline {
+				font-size: 2.5em;
+			}
+		}
+
+		.category {
+			font-size: 1.1em;
+		}
+	}
+}

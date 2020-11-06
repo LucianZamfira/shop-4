@@ -29,9 +29,9 @@ h1 {
 h2 {
 	font-size: 2em;
 
-	&.headline--design {
-		font-size: 1.857em;
-	}
+	// &.headline--design {
+	// 	font-size: 1.857em;
+	// }
 }
 
 h3 {
@@ -136,4 +136,24 @@ samp {
 
 .description {
 	font-size: 1.3em;
+}
+
+// Mobiles
+@media (max-width: 659px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	h4,
+	h5 {
+		font-size: 1em;
+	}
 }

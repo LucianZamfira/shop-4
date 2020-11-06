@@ -1,11 +1,11 @@
 // VARIALBLES
 $primary-color: #000000;
 $secondary-color: #dcb14a;
-$tertiary-color: #767676;
+// $tertiary-color: #767676;
 $selection-color: #e9c162;
 
 // Text colors
-$primary-text-color: #282828;
+$primary-text-color: #1d1d1d;
 $secondary-text-color: #dcb14a;
 
 // Structure colors
@@ -29,7 +29,7 @@ $container-short: 620px;
 $container-medium: 880px;
 $container-larger: 1220px;
 
-$section-paddings: 6rem;
+$section-paddings: 5rem;
 $section-title-size: 2.5em;
 $section-title-margin: 2.8rem;
 $footer-paddings: 4.2rem;
@@ -58,8 +58,11 @@ $error-color: #c51c1c;
 $success-color: #269c36;
 $inform-color: #7680cc;
 
-// Form colors
+// Forms
+$input-paddings: 0.8rem;
 $input-border-color: #e8e8e8;
+// $input-focus-border-color: #79bdf1;
+$input-focus-border-color: #dcb14a;
 
 // General colors
 $transparent: transparent;
@@ -75,7 +78,7 @@ $orange: #ff6200;
 // Shades of black
 $black8: #f0f0f0;
 $black15: #e6e6e6;
-$black34: #b8b8b8;
-$black54: #282828;
+$black34: #9c9c9c;
+$black54: #686868;
 $black80: #1b1b1b;
 $black00: #000000;
