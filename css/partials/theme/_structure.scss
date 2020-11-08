@@ -60,6 +60,17 @@
 			}
 		}
 
+		.category {
+			color: $black34;
+			display: inline-block;
+			margin-bottom: 0.6em;
+			text-transform: uppercase;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
 		.button {
 			margin-top: 2rem;
 		}
@@ -115,6 +126,14 @@
 
 // Tablets
 @media (max-width: 767px) {
+	.section {
+		&--featuted-product {
+			.row {
+				display: block;
+				text-align: center;
+			}
+		}
+	}
 }
 
 // Mobiles
