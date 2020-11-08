@@ -5,6 +5,7 @@
 
 		> a {
 			display: block;
+			outline: none;
 		}
 
 		&:hover {
@@ -63,6 +64,34 @@
 			line-height: 43px;
 			text-align: center;
 			width: 45px;
+		}
+	}
+}
+
+// Mobiles/Tablets
+@media (max-width: 800px) {
+	.product {
+		&-item {
+			a {
+				outline: none;
+			}
+		}
+
+		&-actions {
+			left: auto;
+			position: relative;
+			right: auto;
+			top: auto;
+
+			li {
+				transform: none;
+				opacity: 1;
+			}
+
+			a {
+				background-color: $primary-color;
+				color: $white;
+			}
 		}
 	}
 }

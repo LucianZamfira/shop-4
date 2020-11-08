@@ -346,6 +346,13 @@ header {
 	// }
 }
 
+// Mobiles/Tablets
+@media (max-width: 700px) {
+	nav {
+		display: none;
+	}
+}
+
 // Mobiles
 @media (max-width: 575px) {
 }
