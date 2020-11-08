@@ -42,6 +42,29 @@
 		margin-bottom: $section-title-margin;
 	}
 
+	&--featuted-product {
+		.row {
+			align-items: center;
+			margin-bottom: 2rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:nth-child(even) {
+				.col-6 {
+					&:first-child {
+						order: 1;
+					}
+				}
+			}
+		}
+
+		.button {
+			margin-top: 2rem;
+		}
+	}
+
 	// &--overflow {
 	// 	overflow: hidden;
 	// }
