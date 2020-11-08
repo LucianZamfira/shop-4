@@ -1,6 +1,12 @@
 ul,
 ol {
-	padding-left: 18px;
+	// padding-left: 18px;
+	line-height: normal;
+	margin-bottom: 1rem;
+}
+
+li {
+	line-height: 1.5;
 }
 
 .list {
@@ -149,10 +155,9 @@ ol {
 	// }
 
 	&--inline {
-		display: inline-block;
+		display: block;
 		padding-left: 0;
 
-		.list__item,
 		li {
 			display: inline-block;
 			line-height: normal;

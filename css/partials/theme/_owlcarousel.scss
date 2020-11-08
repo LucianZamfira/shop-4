@@ -74,16 +74,16 @@
 
 	.owl-nav button.owl-prev,
 	.owl-nav button.owl-next {
-		background-color: $primary-color;
+		// background-color: $primary-color;
 		border: medium none;
-		color: $white;
+		color: $primary-color;
 		font-size: 24px;
-		height: 40px;
-		line-height: 44px;
+		// height: 40px;
+		// line-height: 44px;
 		outline: none;
 		text-align: center;
-		transition: background-color 0.18s ease-in-out;
-		width: 40px;
+		// transition: background-color 0.18s ease-in-out;
+		// width: 40px;
 
 		&:hover {
 			background-color: $secondary-color;

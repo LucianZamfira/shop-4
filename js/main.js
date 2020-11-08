@@ -83,7 +83,7 @@ $(document).ready(function () {
 		dots: false,
 		loop: false,
 		nav: true,
-		navText: ["<i class='icon-chevron-thin-left'></i>", "<i class='icon-chevron-thin-right'></i>"],
+		navText: ["<i class='icon-arrow-left'></i>", "<i class='icon-arrow-right'></i>"],
 		lazyLoad: true,
 		items: 1,
 	};

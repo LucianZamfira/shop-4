@@ -45,7 +45,13 @@
 	&--featuted-product {
 		.row {
 			align-items: center;
-			margin-bottom: 2rem;
+			margin-bottom: 5rem;
+
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
 
 			&:last-child {
 				margin-bottom: 0;
@@ -67,8 +73,16 @@
 			text-transform: uppercase;
 		}
 
+		.featured-image {
+			display: block;
+		}
+
 		a {
 			text-decoration: none;
+		}
+
+		img {
+			transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 		}
 
 		.button {
@@ -130,6 +144,7 @@
 		&--featuted-product {
 			.row {
 				display: block;
+				margin-bottom: 3rem;
 				text-align: center;
 			}
 		}

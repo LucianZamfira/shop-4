@@ -1,0 +1,68 @@
+.product {
+	&-image {
+		margin-bottom: 1.5rem;
+		position: relative;
+
+		> a {
+			display: block;
+		}
+
+		&:hover {
+			li {
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+	}
+
+	&-content {
+		a {
+			text-decoration: none;
+		}
+	}
+
+	&-price {
+		color: $black34;
+		font-size: 1.2em;
+	}
+
+	&-title {
+		margin-bottom: 0.5rem;
+	}
+
+	&-actions {
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 40%;
+
+		li {
+			transform: translateY(20px);
+			transition: all 0.26s cubic-bezier(0.645, 0.045, 0.355, 1);
+			opacity: 0;
+
+			&:nth-child(1) {
+				transition-delay: 0s;
+			}
+
+			&:nth-child(2) {
+				transition-delay: 0.1s;
+			}
+
+			&:nth-child(3) {
+				transition-delay: 0.2s;
+			}
+		}
+
+		a {
+			background-color: $white;
+			border-radius: 50%;
+			display: inline-block;
+			font-size: 1.1em;
+			height: 45px;
+			line-height: 43px;
+			text-align: center;
+			width: 45px;
+		}
+	}
+}

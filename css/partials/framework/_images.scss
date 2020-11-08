@@ -11,6 +11,10 @@
 // 	}
 // }
 
+img {
+	outline: medium none;
+}
+
 .image {
 	display: block;
 	outline: medium none;
@@ -19,25 +23,10 @@
 		display: inline-block;
 	}
 
-	// &-responsive {
-	// 	display: block;
-	// 	height: auto;
-	// 	max-width: 100%;
-	// 	outline: medium none;
-	// 	width: 100%;
-
-	// 	img {
-	// 		display: block;
-	// 		height: auto;
-	// 		width: 100%;
-	// 	}
-	// }
-
-	&--fluid {
+	&--responsive {
 		display: block;
 		height: auto;
 		max-width: 100%;
-		outline: medium none;
 		width: 100%;
 
 		img {
@@ -45,6 +34,12 @@
 			height: auto;
 			width: 100%;
 		}
+	}
+
+	&--fluid {
+		display: block;
+		height: auto;
+		max-width: 100%;
 	}
 }
 
