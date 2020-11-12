@@ -78,6 +78,10 @@ hr {
 	border: medium none;
 	height: 1px;
 	margin: 20px 0;
+
+	&.separator {
+		background-color: $separator-color;
+	}
 }
 
 code {
