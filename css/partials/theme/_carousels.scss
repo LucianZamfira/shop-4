@@ -50,8 +50,20 @@
 			}
 
 			.container > div {
-				padding-bottom: 2rem;
+				padding-bottom: 3.6rem;
 				padding-top: 2rem;
+			}
+
+			.owl-dots {
+				bottom: 10px !important;
+			}
+		}
+
+		&-products {
+			.owl-nav {
+				right: -5px !important;
+				left: -5px !important;
+				top: 28% !important;
 			}
 		}
 
