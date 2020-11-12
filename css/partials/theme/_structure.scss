@@ -193,6 +193,28 @@
 			font-size: 1.8em;
 			margin-bottom: 2rem;
 		}
+
+		&--breadcrumbs {
+			padding-bottom: 2.5rem;
+			padding-top: 2.5rem;
+
+			h1 {
+				font-size: 1.8em;
+				margin-top: 1rem;
+				order: 2;
+			}
+
+			.container {
+				align-items: start;
+				flex-direction: column;
+			}
+		}
+
+		&--map {
+			#googleMap {
+				min-height: 450px;
+			}
+		}
 	}
 }
 

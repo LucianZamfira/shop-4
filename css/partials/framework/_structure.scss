@@ -163,6 +163,7 @@ section {
 
 		&.section {
 			&--hero,
+			&--breadcrumbs,
 			&--gray {
 				& + section {
 					padding-top: 2.5rem;
