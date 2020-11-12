@@ -97,25 +97,35 @@ samp {
 	margin-bottom: 5px;
 }
 
-.slogan {
-	color: $secondary-color;
-	font-size: 2.286em;
-	font-weight: normal;
-	line-height: 1.2;
-	padding-left: 38px;
-	padding-top: 20px;
-	position: relative;
+.paragraph {
+	&--content {
+		font-size: 1em;
+	}
 
-	&:before {
-		color: $primary-color;
-		content: "\e919";
-		font-family: "icomoon";
-		font-size: 20px;
-		left: 0;
-		position: absolute;
-		top: 0;
+	&--description {
+		font-size: 1.1em;
 	}
 }
+
+// .slogan {
+// 	color: $secondary-color;
+// 	font-size: 2.286em;
+// 	font-weight: normal;
+// 	line-height: 1.2;
+// 	padding-left: 38px;
+// 	padding-top: 20px;
+// 	position: relative;
+
+// 	&:before {
+// 		color: $primary-color;
+// 		content: "\e919";
+// 		font-family: "icomoon";
+// 		font-size: 20px;
+// 		left: 0;
+// 		position: absolute;
+// 		top: 0;
+// 	}
+// }
 
 .disclaimer {
 	align-items: center;
@@ -131,6 +141,16 @@ samp {
 .description {
 	font-size: 1.3em;
 }
+
+// .text {
+// 	&--primary {
+// 		color: $primary-text-color;
+// 	}
+
+// 	&--secondary {
+// 		color: $secondary-text-color;
+// 	}
+// }
 
 // Mobiles
 @media (max-width: 659px) {

@@ -89,7 +89,7 @@ select {
 }
 
 .textarea {
-	resize: none;
+	// resize: none;
 	min-height: 120px;
 
 	&::-webkit-scrollbar {
@@ -157,11 +157,11 @@ label {
 // 		}
 // 	}
 
-// 	hr {
-// 		border: medium none;
-// 		border-top: 1px solid #d9dfee;
-// 		margin: 10px 0;
-// 	}
+// hr {
+// 	border: medium none;
+// 	border-top: 1px solid #d9dfee;
+// 	margin: 10px 0;
+// }
 
 // 	.button {
 // 		min-width: 120px;

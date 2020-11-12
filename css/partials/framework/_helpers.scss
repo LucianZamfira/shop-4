@@ -356,8 +356,20 @@
 	}
 
 	&--emphasis {
-		font-size: 1.457em;
+		font-size: 3em;
 		font-weight: 500;
+	}
+
+	&--11em {
+		font-size: 1.1em;
+	}
+
+	&--12em {
+		font-size: 1.2em;
+	}
+
+	&--2em {
+		font-size: 2em;
 	}
 
 	&-group {

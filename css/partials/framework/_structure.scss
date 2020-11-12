@@ -71,6 +71,7 @@ section {
 
 	&.section {
 		&--hero,
+		&--breadcrumbs,
 		&--gray {
 			& + section {
 				padding-top: $section-paddings;

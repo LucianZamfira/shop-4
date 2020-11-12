@@ -1,3 +1,4 @@
+// Import variables first
 @import "partials/theme/variables";
 
 // Import framework partials
@@ -10,7 +11,6 @@
 @import "partials/framework/spacing";
 @import "partials/framework/typography";
 @import "partials/framework/grid";
-@import "partials/framework/helpers";
 @import "partials/framework/lists";
 @import "partials/framework/breadcrumbs";
 @import "partials/framework/cookiebar";
@@ -19,6 +19,7 @@
 
 // Import theme partials
 @import "partials/theme/structure";
+@import "partials/theme/countdown";
 @import "partials/theme/forms";
 @import "partials/theme/blog";
 @import "partials/theme/header";
@@ -29,3 +30,6 @@
 @import "partials/theme/socialmedia";
 @import "partials/theme/cards";
 @import "partials/theme/products";
+
+// Import helpers last
+@import "partials/framework/helpers";

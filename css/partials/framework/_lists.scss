@@ -92,30 +92,30 @@ li {
 	// 	}
 	// }
 
-	&--social {
-		display: flex;
-		line-height: 1;
+	// &--social {
+	// 	display: flex;
+	// 	line-height: 1;
 
-		a {
-			display: inline-block;
-			text-decoration: none;
-			vertical-align: middle;
-			width: 25px;
-			transition: opacity 0.2s ease-in-out;
+	// 	a {
+	// 		display: inline-block;
+	// 		text-decoration: none;
+	// 		vertical-align: middle;
+	// 		width: 25px;
+	// 		transition: opacity 0.2s ease-in-out;
 
-			&:hover {
-				opacity: 0.8;
-			}
-		}
+	// 		&:hover {
+	// 			opacity: 0.8;
+	// 		}
+	// 	}
 
-		li {
-			margin-right: 0.5rem;
+	// 	li {
+	// 		margin-right: 0.5rem;
 
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
+	// 		&:last-child {
+	// 			margin-right: 0;
+	// 		}
+	// 	}
+	// }
 
 	// &--flags {
 	// 	.link {
