@@ -450,7 +450,7 @@ aside {
 	// .col-sm,
 	.col {
 		&-12 {
-			margin-bottom: 22px;
+			margin-bottom: $column-margin-bottom;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -646,7 +646,7 @@ aside {
 
 	.col-sm {
 		&-12 {
-			margin-bottom: 22px;
+			margin-bottom: $column-margin-bottom;
 
 			&:last-child {
 				margin-bottom: 0;
@@ -842,7 +842,7 @@ aside {
 
 	.col-xs {
 		&-12 {
-			margin-bottom: 22px;
+			margin-bottom: $column-margin-bottom;
 
 			&:last-child {
 				margin-bottom: 0;

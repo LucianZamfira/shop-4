@@ -42,8 +42,21 @@ select {
 		width: 100%;
 	}
 
+	&-flex {
+		display: flex;
+		margin-bottom: $column-margin-bottom;
+		margin-left: -10px;
+		margin-right: -10px;
+		flex-flow: row wrap;
+
+		[class*="col-"] {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
 	&-row {
-		margin-bottom: 22px;
+		margin-bottom: $column-margin-bottom;
 
 		// .input,
 		// .textarea,
@@ -78,7 +91,7 @@ select {
 	}
 }
 
-.flex-row {
+/* .flex-row {
 	// display: flex;
 
 	.input,
@@ -86,7 +99,7 @@ select {
 	.select {
 		width: 100%;
 	}
-}
+} */
 
 .textarea {
 	// resize: none;
