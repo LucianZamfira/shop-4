@@ -157,14 +157,14 @@ section {
 // Mobiles
 @media (max-width: 659px) {
 	section {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
 
 		&.section {
 			&--hero,
 			&--gray {
 				& + section {
-					padding-top: 3rem;
+					padding-top: 2.5rem;
 				}
 			}
 		}

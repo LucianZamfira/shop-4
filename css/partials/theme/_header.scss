@@ -348,7 +348,8 @@ header {
 
 // Mobiles/Tablets
 @media (max-width: 700px) {
-	nav {
+	nav,
+	.form-search {
 		display: none;
 	}
 }

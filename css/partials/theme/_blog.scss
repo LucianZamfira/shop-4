@@ -49,6 +49,7 @@
 .blog {
 	&-thumbnail {
 		text-decoration: none;
+		overflow: hidden;
 
 		img {
 			margin-bottom: 1.4rem;
@@ -59,9 +60,30 @@
 		}
 
 		.button {
+			border: none;
 			bottom: 0;
+			opacity: 0;
+			padding: 8px 14px;
 			position: absolute;
 			right: 0;
+			transform: translateX(100%);
+			transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+			i {
+				transform: translateX(15px);
+				transition: transform 0.6s ease-in-out;
+			}
+		}
+
+		&:hover {
+			.button {
+				opacity: 1;
+				transform: translateX(0);
+
+				i {
+					transform: translateX(0);
+				}
+			}
 		}
 	}
 

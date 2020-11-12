@@ -1,15 +1,13 @@
 // VARIALBLES
 $primary-color: #000000;
 $secondary-color: #dcb14a;
-// $tertiary-color: #767676;
-$selection-color: #e9c162;
 
 // Text colors
 $primary-text-color: #1d1d1d;
 $secondary-text-color: #dcb14a;
 
 // Structure colors
-// $border-color: #ededed;
+$selection-color: #e9c162;
 $border-color: #cecece;
 
 // Typography margins
@@ -30,8 +28,9 @@ $container-medium: 880px;
 $container-larger: 1220px;
 
 $section-paddings: 5rem;
-$section-title-size: 2.5em;
-$section-title-margin: 2.8rem;
+$section-title-size: 2.25em;
+$section-title-margin: 4rem;
+$section-title-lineheight: 1.6;
 $footer-paddings: 4.2rem;
 
 $content-small: 420px;
@@ -40,7 +39,7 @@ $content-medium: 880px;
 $content-margin-bottom: 1.6rem;
 
 // Buttons
-$button-padding: 8px 20px;
+$button-padding: 8px 26px;
 
 // Background colors
 $primary-site-background: #ffffff;
@@ -61,6 +60,7 @@ $inform-color: #7680cc;
 // Forms
 $input-paddings: 0.8rem;
 $input-border-color: #e8e8e8;
+$label-color: #666666;
 // $input-focus-border-color: #79bdf1;
 $input-focus-border-color: #dcb14a;
 

@@ -39,7 +39,20 @@
 
 	&-title {
 		font-size: $section-title-size;
+		line-height: $section-title-lineheight;
 		margin-bottom: $section-title-margin;
+		position: relative;
+
+		&:after {
+			background-color: $secondary-color;
+			bottom: -12px;
+			content: " ";
+			height: 4px;
+			left: 50%;
+			position: absolute;
+			transform: translateX(-50%);
+			width: 70px;
+		}
 	}
 
 	&--featuted-product {
@@ -155,7 +168,7 @@
 @media (max-width: 659px) {
 	.section {
 		&-title {
-			font-size: 2.1em;
+			font-size: 1.8em;
 			margin-bottom: 2rem;
 		}
 	}

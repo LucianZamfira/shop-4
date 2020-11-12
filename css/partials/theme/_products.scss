@@ -23,11 +23,12 @@
 	}
 
 	&-price {
-		color: $black34;
-		font-size: 1.2em;
+		color: $label-color;
+		font-size: 1.16em;
 	}
 
 	&-title {
+		font-size: 1.05em;
 		margin-bottom: 0.5rem;
 	}
 
@@ -62,6 +63,7 @@
 			font-size: 1.1em;
 			height: 45px;
 			line-height: 43px;
+			outline: none;
 			text-align: center;
 			width: 45px;
 		}
@@ -73,8 +75,15 @@
 	.product {
 		&-item {
 			a {
+				// font-size: 0.9em;
+				// width: 35px;
+				// height: 35px;
 				outline: none;
 			}
+		}
+
+		&-title {
+			font-size: 1em;
 		}
 
 		&-actions {
@@ -91,6 +100,10 @@
 			a {
 				background-color: $primary-color;
 				color: $white;
+				width: 35px;
+				height: 35px;
+				line-height: 31px;
+				font-size: 0.9em;
 			}
 		}
 	}
