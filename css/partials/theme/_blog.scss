@@ -147,14 +147,20 @@
 			padding-bottom: 0.8rem;
 		}
 
-		ul {
-			li {
-				margin-bottom: 0.3rem;
-			}
+		// ul {
+		// 	&.list--airy {
+		// 		li {
+		// 			margin-bottom: 1rem;
+		// 		}
+		// 	}
 
-			a {
-				text-decoration: underline;
-			}
-		}
+		// 	li {
+		// 		margin-bottom: 0.3rem;
+		// 	}
+
+		// 	a {
+		// 		text-decoration: underline;
+		// 	}
+		// }
 	}
 }

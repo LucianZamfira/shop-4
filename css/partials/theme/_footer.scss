@@ -1,4 +1,6 @@
 footer {
+	border-top: 1px solid $border-color;
+
 	input {
 		border-left: none;
 		border-right: none;
@@ -35,6 +37,10 @@ footer {
 	&-top {
 		margin-top: $footer-paddings;
 		margin-bottom: $footer-paddings;
+
+		li {
+			margin-bottom: 0.4rem;
+		}
 	}
 
 	&-bottom {

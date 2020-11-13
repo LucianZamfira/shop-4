@@ -10,7 +10,6 @@
 @import "partials/framework/images";
 @import "partials/framework/typography";
 @import "partials/framework/grid";
-@import "partials/framework/lists";
 @import "partials/framework/breadcrumbs";
 @import "partials/framework/cookiebar";
 @import "partials/framework/rating";
@@ -32,5 +31,6 @@
 @import "partials/theme/products";
 
 // Import helpers last
+@import "partials/framework/lists";
 @import "partials/framework/helpers";
 @import "partials/framework/spacing";

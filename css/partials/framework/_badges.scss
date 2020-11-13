@@ -3,7 +3,8 @@
 	color: $white;
 	font-weight: 400;
 	line-height: 1.4;
-	padding: 2px 15px;
+	padding: 4px 15px;
+	text-decoration: none;
 
 	&-primary {
 		background-color: $badge-primary-color;
@@ -28,5 +29,9 @@
 	}
 	&-dark {
 		background-color: $badge-dark-color;
+	}
+	&-gray {
+		background-color: $badge-gray-color;
+		color: $primary-color;
 	}
 }
