@@ -24,6 +24,20 @@
 		}
 	}
 
+	&-filters {
+		display: flex;
+		flex-flow: row wrap;
+		grid-gap: 1rem;
+
+		> input {
+			flex: 1;
+		}
+
+		select {
+			min-width: 140px;
+		}
+	}
+
 	&-newsletter {
 		display: flex;
 
@@ -33,6 +47,25 @@
 
 		button {
 			font-size: 1em;
+		}
+	}
+}
+
+.search {
+	&-button {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		font-size: 1.3em;
+		line-height: 1;
+	}
+}
+
+// Mobiles/Tablets
+@media (max-width: 700px) {
+	.form {
+		&-filters {
+			flex-direction: column;
 		}
 	}
 }

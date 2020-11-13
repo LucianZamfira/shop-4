@@ -48,6 +48,7 @@
 
 .blog {
 	&-thumbnail {
+		display: block;
 		text-decoration: none;
 		overflow: hidden;
 
@@ -87,6 +88,28 @@
 		}
 	}
 
+	&-card {
+		margin-bottom: 4rem;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		.blog {
+			&-title {
+				font-size: 1.9em;
+			}
+
+			&-meta {
+				margin-bottom: 1rem;
+			}
+		}
+
+		p {
+			margin-bottom: 2rem;
+		}
+	}
+
 	&-title {
 		font-size: 1.25em;
 		line-height: 1.4;
@@ -110,6 +133,27 @@
 				&:after {
 					content: " ";
 				}
+			}
+		}
+	}
+
+	&-widget {
+		margin-bottom: 1.5rem;
+
+		.title {
+			border-bottom: 1px solid $border-color;
+			line-height: 1.2;
+			margin-bottom: 0.8rem;
+			padding-bottom: 0.8rem;
+		}
+
+		ul {
+			li {
+				margin-bottom: 0.3rem;
+			}
+
+			a {
+				text-decoration: underline;
 			}
 		}
 	}

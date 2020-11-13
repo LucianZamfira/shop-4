@@ -40,6 +40,9 @@ $content-margin-bottom: 1.6rem;
 
 $column-margin-bottom: 22px;
 
+// Grid gaps
+$grid-gaps: 15px;
+
 // Buttons
 $button-padding: 8px 26px;
 
@@ -58,6 +61,16 @@ $alert-color: #ff6200;
 $error-color: #c51c1c;
 $success-color: #269c36;
 $inform-color: #7680cc;
+
+// Badges colors
+$badge-primary-color: #dcb14a;
+$badge-secondary-color: #000;
+$badge-danger-color: #c51c1c;
+$badge-success-color: #269c36;
+$badge-warning-color: #000;
+$badge-info-color: #0d7dc0;
+$badge-light-color: #ececec;
+$badge-dark-color: #1b1b1b;
 
 // Forms
 $input-paddings: 0.8rem;

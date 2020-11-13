@@ -1,0 +1,32 @@
+.badge {
+	-webkit-font-smoothing: antialiased;
+	color: $white;
+	font-weight: 400;
+	line-height: 1.4;
+	padding: 2px 15px;
+
+	&-primary {
+		background-color: $badge-primary-color;
+	}
+	&-secondary {
+		background-color: $badge-secondary-color;
+	}
+	&-danger {
+		background-color: $badge-danger-color;
+	}
+	&-success {
+		background-color: $badge-success-color;
+	}
+	&-warning {
+		background-color: $badge-warning-color;
+	}
+	&-info {
+		background-color: $badge-info-color;
+	}
+	&-light {
+		background-color: $badge-light-color;
+	}
+	&-dark {
+		background-color: $badge-dark-color;
+	}
+}

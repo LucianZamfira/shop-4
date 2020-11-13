@@ -7,8 +7,10 @@
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: -12px;
-	margin-left: -12px;
+	// margin-right: -12px;
+	// margin-left: -12px;
+	margin-right: -$grid-gaps;
+	margin-left: -$grid-gaps;
 
 	&--cards {
 		[class^="col-"] {
@@ -77,8 +79,10 @@ aside {
 [class*="col-"] {
 	position: relative;
 	width: 100%;
-	padding-right: 12px;
-	padding-left: 12px;
+	// padding-right: 12px;
+	// padding-left: 12px;
+	padding-right: $grid-gaps;
+	padding-left: $grid-gaps;
 }
 
 .col {
