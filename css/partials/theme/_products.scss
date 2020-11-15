@@ -55,8 +55,23 @@
 
 	&-price {
 		-webkit-font-smoothing: antialiased;
-		color: $label-color;
+		color: $primary-color;
 		font-size: 1.16em;
+
+		* {
+			margin-bottom: 0;
+		}
+
+		span {
+			color: $label-color;
+		}
+
+		.old {
+			display: inline-block;
+			font-size: 0.8em;
+			margin-top: 0.2rem;
+			text-decoration: line-through;
+		}
 	}
 
 	&-title {

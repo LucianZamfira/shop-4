@@ -34,11 +34,11 @@
 		}
 	}
 
-	// &.small {
-	// 	font-size: 14px;
-	// 	line-height: 10px;
-	// 	padding: 6px;
-	// }
+	&--small {
+		font-size: 0.9em;
+		line-height: normal;
+		padding: 0.5rem 1rem;
+	}
 
 	// &.medium {
 	// 	font-size: 14px;
