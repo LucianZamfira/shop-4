@@ -41,6 +41,51 @@ img {
 		height: auto;
 		max-width: 100%;
 	}
+
+	&s-mosaic {
+		display: flex;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		margin-left: -8px;
+		margin-right: -8px;
+
+		[class*="col-"] {
+			padding-right: 8px;
+			padding-left: 8px;
+		}
+
+		.group {
+			height: 100%;
+			display: grid;
+			grid-gap: 16px;
+
+			.col-12 {
+				margin: 0;
+			}
+
+			figure {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+		}
+
+		figure {
+			overflow: hidden;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
 }
 
 figure {
