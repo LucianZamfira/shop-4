@@ -110,28 +110,28 @@
 	}
 }
 
-.justify {
-	&-content-start {
+.justify-content {
+	&-start {
 		justify-content: flex-start;
 	}
 
-	&-content-end {
+	&-end {
 		justify-content: flex-end;
 	}
 
-	&-content-center {
+	&-center {
 		justify-content: center;
 	}
 
-	&-content-between {
+	&-between {
 		justify-content: space-between;
 	}
 
-	&-content-around {
+	&-around {
 		justify-content: space-around;
 	}
 
-	&-content-evenly {
+	&-evenly {
 		justify-content: space-evenly;
 	}
 }
@@ -360,19 +360,36 @@
 		font-weight: 500;
 	}
 
-	&--11em {
-		font-size: 1.1em;
-	}
-
-	&--12em {
-		font-size: 1.2em;
-	}
-
-	&--2em {
-		font-size: 2em;
-	}
-
 	&-group {
 		margin: 25px 0;
+	}
+}
+
+// Mobiles/Tablets
+@media (max-width: 767px) {
+	.justify-content {
+		&-sm-start {
+			justify-content: flex-start;
+		}
+
+		&-sm-end {
+			justify-content: flex-end;
+		}
+
+		&-sm-center {
+			justify-content: center;
+		}
+
+		&-sm-between {
+			justify-content: space-between;
+		}
+
+		&-sm-around {
+			justify-content: space-around;
+		}
+
+		&-sm-evenly {
+			justify-content: space-evenly;
+		}
 	}
 }

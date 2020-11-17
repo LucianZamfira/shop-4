@@ -48,6 +48,7 @@ img {
 		margin-bottom: 3rem;
 		margin-left: -8px;
 		margin-right: -8px;
+		flex-flow: row wrap;
 
 		[class*="col-"] {
 			padding-right: 8px;
@@ -96,4 +97,29 @@ picture {
 	display: inline-block;
 	line-height: 0;
 	outline: medium none;
+}
+
+@media (max-width: 767px) {
+	.image {
+		&s-mosaic {
+			display: block;
+
+			.group {
+				height: auto;
+				grid-gap: 22px;
+
+				.col-12 {
+					padding: 0;
+				}
+
+				figure {
+					position: relative;
+					left: auto;
+					right: auto;
+					top: auto;
+					bottom: auto;
+				}
+			}
+		}
+	}
 }

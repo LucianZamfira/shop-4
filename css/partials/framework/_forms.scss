@@ -42,6 +42,10 @@ select {
 		width: 100%;
 	}
 
+	&--small {
+		padding: 0.5rem;
+	}
+
 	&-flex {
 		display: flex;
 		margin-bottom: $column-margin-bottom;
@@ -267,7 +271,8 @@ label {
 // }
 
 .custom-type {
-	display: inline-block;
+	align-items: flex-start;
+	display: inline-flex;
 	margin-bottom: 0;
 	position: relative;
 	text-align: left;
@@ -277,14 +282,14 @@ label {
 	}
 
 	.checkmark {
-		border: 1px solid $black15;
-		display: inline-block;
-		height: 13px;
-		margin-right: 4px;
+		border: 2px solid $input-border-color;
+		display: block;
+		flex-shrink: 0;
+		height: 18px;
+		margin-right: 0.5rem;
 		position: relative;
-		transform: translateY(-1px);
-		vertical-align: middle;
-		width: 13px;
+		transform: translateY(4px);
+		width: 18px;
 
 		&:after {
 			color: transparent;
@@ -292,9 +297,8 @@ label {
 			font-family: "icomoon";
 			font-size: 10px;
 			font-weight: initial;
-			left: 1px;
-			right: 0;
-			line-height: 13px;
+			left: 0;
+			line-height: normal;
 			position: absolute;
 			text-align: center;
 			top: 0;
@@ -304,8 +308,9 @@ label {
 
 	.checkmark,
 	&__label {
+		color: $primary-color;
 		cursor: pointer;
-		font-weight: 500;
+		// transform: translateY(-1px);
 	}
 
 	[type="radio"] {
@@ -314,18 +319,16 @@ label {
 
 			&:after {
 				border-radius: 50%;
-				height: 9px;
-				margin-left: 0px;
-				margin-top: 1px;
-				width: 9px;
+				height: 10px;
+				margin-left: 2px;
+				margin-top: 2px;
+				width: 10px;
 			}
 		}
 
 		&:checked + .checkmark {
-			// border-color: $blue54;
-
 			&:after {
-				// background-color: $blue54;
+				background-color: $secondary-color;
 			}
 		}
 	}
@@ -333,16 +336,16 @@ label {
 	[type="checkbox"] {
 		& + .checkmark {
 			&:after {
-				content: "\e935";
+				height: 10px;
+				margin-left: 2px;
+				margin-top: 2px;
+				width: 10px;
 			}
 		}
 
 		&:checked + .checkmark {
-			// background-color: $blue54;
-			// border-color: $blue54;
-
 			&:after {
-				color: $white;
+				background-color: $secondary-color;
 			}
 		}
 	}
@@ -370,19 +373,26 @@ label {
 // 	}
 // }
 
-// .inputs-group {
-// 	display: flex;
+.inputs-group {
+	align-items: center;
+	column-gap: 10px;
+	display: flex;
 
-// 	.input {
-// 		border-radius: 8px 0 0 8px;
-// 		margin-right: 2px;
-// 	}
+	input {
+		// border-radius: 8px 0 0 8px;
+		// margin-right: 0.5rem;
+		width: 100%;
+	}
 
-// 	.select {
-// 		flex: 0;
-// 		border-radius: 0 8px 8px 0;
-// 	}
-// }
+	.button {
+		padding: 0.5rem 1rem;
+	}
+
+	// .select {
+	// 	flex: 0;
+	// 	border-radius: 0 8px 8px 0;
+	// }
+}
 
 // // Custom fields
 // .form {
