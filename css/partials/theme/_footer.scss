@@ -49,9 +49,15 @@ footer {
 		}
 	}
 
-	/* &-quick {
-		text-align: center;
-	} */
+	&-quick {
+		li {
+			margin-right: 0.5rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 
 	&-logo {
 		text-align: center;
