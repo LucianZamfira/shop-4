@@ -25,3 +25,45 @@
 		}
 	}
 }
+
+.social {
+	&-widget {
+		align-items: center;
+		display: flex;
+		justify-content: flex-end;
+
+		.title {
+			font-size: 1em;
+			font-weight: 500;
+			margin-bottom: 1rem;
+			margin-right: 1rem;
+			margin-top: 1rem;
+		}
+	}
+
+	&-list {
+		display: flex;
+		line-height: 1;
+
+		a {
+			display: inline-block;
+			text-decoration: none;
+			vertical-align: middle;
+			width: 25px;
+			transition: opacity 0.2s ease-in-out;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		li {
+			display: inline-block;
+			margin-right: 1rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

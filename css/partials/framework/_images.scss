@@ -77,8 +77,12 @@ img {
 			overflow: hidden;
 		}
 
+		a,
 		img {
 			display: block;
+		}
+
+		img {
 			width: 100%;
 			transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 
