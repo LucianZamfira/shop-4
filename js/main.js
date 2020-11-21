@@ -394,6 +394,9 @@ $(document).ready(function () {
 		});
 	}
 
+	// Init Bootstrap tooltips
+	$('[data-toggle="tooltip"]').tooltip();
+
 	// Init custom-select
 	/* if ($('.custom-select').length > 0) {
 		$('.custom-select').select2();

@@ -1,21 +1,4 @@
 .product {
-	// &-image {
-	// 	margin-bottom: 1.5rem;
-	// 	position: relative;
-
-	// 	> a {
-	// 		display: block;
-	// 		outline: none;
-	// 	}
-
-	// 	&:hover {
-	// 		li {
-	// 			transform: translateY(0);
-	// 			opacity: 1;
-	// 		}
-	// 	}
-	// }
-
 	&-thumbnail {
 		margin-bottom: 1.5rem;
 		position: relative;
@@ -26,6 +9,10 @@
 		}
 
 		&:hover {
+			.product-actions {
+				z-index: 10;
+			}
+
 			li {
 				transform: translateY(0);
 				opacity: 1;
@@ -91,6 +78,8 @@
 		position: absolute;
 		right: 0;
 		top: 40%;
+		z-index: -1;
+		transition: all 0.4s ease-in-out;
 
 		li {
 			transform: translateY(20px);
@@ -129,9 +118,6 @@
 	.product {
 		&-item {
 			a {
-				// font-size: 0.9em;
-				// width: 35px;
-				// height: 35px;
 				outline: none;
 			}
 		}
