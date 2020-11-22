@@ -234,3 +234,11 @@
 		max-width: 1140px;
 	}
 }
+
+@media (max-width: 567px) {
+	.modal {
+		&-open {
+			padding-right: 0 !important;
+		}
+	}
+}
