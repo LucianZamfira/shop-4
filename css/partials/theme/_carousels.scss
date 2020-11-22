@@ -35,6 +35,25 @@
 			word-spacing: 100vw;
 		}
 	}
+
+	&-product {
+		a {
+			display: block;
+			outline: none;
+		}
+	}
+}
+
+// Tablets
+
+@media (max-width: 767px) {
+	.carousel {
+		&-product {
+			.owl-nav {
+				top: 45% !important;
+			}
+		}
+	}
 }
 
 // Mobiles/Tablets
@@ -64,6 +83,19 @@
 				right: -5px !important;
 				left: -5px !important;
 				top: 28% !important;
+			}
+		}
+
+		&-product {
+			.owl-nav {
+				right: -15px !important;
+				left: -15px !important;
+				top: 45% !important;
+
+				button {
+					background-color: $white !important;
+					line-height: 1.6 !important;
+				}
 			}
 		}
 

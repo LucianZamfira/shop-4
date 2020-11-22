@@ -349,7 +349,7 @@ $(document).ready(function () {
 	$('.quantity-widget').on('click', 'button', function () {
 		var quantityElement = $(this).siblings('input');
 		var currentQuantity = parseInt(quantityElement.val());
-		var maxQuantity = parseInt($(quantityElement).data('max'));
+		var maxQuantity = parseInt($(quantityElement).data('max')) || 9999;
 
 		if (isNaN(currentQuantity)) currentQuantity = 0;
 

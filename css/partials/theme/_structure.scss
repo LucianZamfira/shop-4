@@ -1,17 +1,3 @@
-// body {
-// 	padding-top: 152px;
-// }
-
-// section {
-// 	display: block;
-// 	padding: 40px 0;
-// 	position: relative;
-
-// 	& + section:not([class]) {
-// 		padding-top: 0;
-// 	}
-// }
-
 .section {
 	&--dark {
 		background-color: $black8;
@@ -125,16 +111,6 @@
 			margin-top: 2rem;
 		}
 	}
-
-	// &--overflow {
-	// 	overflow: hidden;
-	// }
-
-	// &--video {
-	// 	padding-bottom: 18vh;
-	// 	padding-top: 18vh;
-	// 	text-align: center;
-	// }
 }
 
 .icons-wrapper {
@@ -148,6 +124,30 @@
 			display: block;
 			font-size: 25px;
 			margin-bottom: 8px;
+		}
+	}
+}
+
+.table {
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 100%;
+
+	&-responsive {
+		min-height: 0.01%;
+		overflow-x: auto;
+	}
+
+	&-striped {
+		tr {
+			&:nth-of-type(odd) {
+				background-color: rgba($black8, 0.5);
+			}
+		}
+
+		td {
+			padding: 6px;
 		}
 	}
 }
