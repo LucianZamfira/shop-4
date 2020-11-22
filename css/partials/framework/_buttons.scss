@@ -9,6 +9,7 @@
 	font-size: 1em;
 	font-weight: 400;
 	justify-content: center;
+	line-height: normal;
 	padding: $button-padding;
 	position: relative;
 	text-align: center;
@@ -80,6 +81,13 @@
 		border: none;
 		outline: none;
 		font-size: 1.2em;
+	}
+
+	&--close {
+		position: absolute;
+		right: 0.6rem;
+		top: 0.6rem;
+		z-index: 10;
 	}
 
 	// &--facebook {

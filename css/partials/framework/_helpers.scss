@@ -32,6 +32,7 @@
 
 	&-flex {
 		display: flex;
+		flex-wrap: wrap;
 	}
 
 	&-inline-flex {
@@ -147,6 +148,11 @@
 
 	&-items-center {
 		align-items: center;
+
+		.title {
+			margin-bottom: 0;
+			margin-right: 0.8rem;
+		}
 	}
 
 	&-items-baseline {

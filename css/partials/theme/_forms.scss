@@ -61,6 +61,26 @@
 	}
 }
 
+.quantity {
+	&-widget {
+		align-items: stretch;
+		background-color: $white;
+		border: 1px solid $border-color;
+
+		input {
+			border: medium none;
+		}
+
+		button {
+			align-items: center;
+			background-color: transparent;
+			border: none;
+			display: flex;
+			padding: 0 0.6rem;
+		}
+	}
+}
+
 // Mobiles/Tablets
 @media (max-width: 700px) {
 	.form {

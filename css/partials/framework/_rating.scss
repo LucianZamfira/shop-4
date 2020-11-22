@@ -1,21 +1,27 @@
 .rating {
 	direction: rtl;
 	display: inline-flex;
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: normal;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	unicode-bidi: bidi-override;
 
+	&-widget {
+		align-items: center;
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 1rem;
+	}
+
+	&.not-editable {
+		pointer-events: none;
+	}
+
 	&:hover {
 		label.rating__label {
 			color: $black15;
-
-			// &:before {
-			// 	content: "\f006";
-			// 	font-family: "icomoon";
-			// }
 		}
 	}
 
@@ -23,35 +29,30 @@
 		display: none;
 
 		&:checked ~ label {
-			color: $primary-color;
-
-			// &:before {
-			// 	content: "\f005";
-			// }
+			color: $secondary-color;
 		}
 	}
 
 	label {
 		color: $black15;
 		display: inline-block;
-		margin: 0;
-		min-width: 18px;
+		margin: 0 0.2rem 0 0;
 		text-align: center;
 
+		&:first-child {
+			margin-right: 0;
+		}
+
 		&:before {
-			content: "\f005";
+			content: "\e68d";
 			display: block;
-			font-family: "icomoon";
+			font-family: "Linearicons";
 			line-height: 1;
 		}
 
 		&:hover,
 		&:hover ~ label {
-			color: $primary-color !important;
-
-			// &:before {
-			// 	content: "\f005" !important;
-			// }
+			color: $secondary-color !important;
 		}
 	}
 }

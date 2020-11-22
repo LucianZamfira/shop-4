@@ -397,6 +397,25 @@ $(document).ready(function () {
 	// Init Bootstrap tooltips
 	$('[data-toggle="tooltip"]').tooltip();
 
+	// Quantity functionality
+	// TODO: block the input to accept only numbers
+	$('.quantity-widget').on('click', 'button', function () {
+		var quantityElement = $(this).siblings('input');
+		var currentQuantity = parseInt(quantityElement.val());
+
+		console.log(currentQuantity, 'currentQuantity');
+
+		if (isNaN(currentQuantity)) currentQuantity = 0;
+
+		if ($(this).hasClass('quantity-decrease') && currentQuantity > 1) {
+			currentQuantity -= 1;
+			$(quantityElement).val(currentQuantity);
+		} else if ($(this).hasClass('quantity-increase')) {
+			currentQuantity += 1;
+			$(quantityElement).val(currentQuantity);
+		}
+	});
+
 	// Init custom-select
 	/* if ($('.custom-select').length > 0) {
 		$('.custom-select').select2();

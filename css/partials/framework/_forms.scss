@@ -62,11 +62,6 @@ select {
 	&-row {
 		margin-bottom: $column-margin-bottom;
 
-		// .input,
-		// .textarea,
-		// .select {
-		// 	width: 100%;
-		// }
 		.custom-type {
 			.checkmark {
 				border-color: $black34;
@@ -95,18 +90,7 @@ select {
 	}
 }
 
-/* .flex-row {
-	// display: flex;
-
-	.input,
-	.textarea,
-	.select {
-		width: 100%;
-	}
-} */
-
 .textarea {
-	// resize: none;
 	min-height: 120px;
 
 	&::-webkit-scrollbar {
@@ -139,136 +123,6 @@ label {
 		}
 	}
 }
-
-// fieldset {
-// 	background-color: transparent;
-// 	border: medium none;
-// 	color: $black80;
-// 	margin: 0;
-// 	padding: 0;
-// 	width: 100%;
-
-// 	.input,
-// 	.textarea,
-// 	.select {
-// 		border: 1px solid transparent;
-// 		border-bottom-color: $black15;
-// 		padding: 4px 0 8px 0;
-// 		width: 100%;
-// 	}
-
-// 	.subheadline {
-// 		font-size: 1.2em;
-// 		font-weight: 600;
-// 		margin-bottom: 20px;
-// 	}
-
-// 	.list {
-// 		font-size: 1em;
-// 	}
-
-// 	.row--airy {
-// 		.custom-type {
-// 			min-width: 40px;
-// 			margin-right: 40px;
-// 		}
-// 	}
-
-// hr {
-// 	border: medium none;
-// 	border-top: 1px solid #d9dfee;
-// 	margin: 10px 0;
-// }
-
-// 	.button {
-// 		min-width: 120px;
-// 		text-align: center;
-// 	}
-
-// 	.disabled {
-// 		opacity: 0.5;
-// 		pointer-events: none;
-// 	}
-// }
-
-/* .form {
-	&-search {
-		margin: 10px 0;
-		max-width: 275px;
-		min-width: 180px;
-		position: relative;
-		width: 100%;
-
-		.input {
-			border-left: none;
-			border-right: none;
-			border-top: none;
-			padding-left: 0;
-			padding-right: 2.5rem;
-		}
-
-		button {
-			background-color: transparent;
-			border: medium none;
-			cursor: pointer;
-			font-size: 0.9em;
-			line-height: 1;
-			position: absolute;
-			right: 0px;
-			top: 10px;
-		}
-	}
-
-	&-newsletter {
-		display: flex;
-
-		input {
-			width: 100%;
-		}
-
-		button {
-			font-size: 1em;
-		}
-	}
-} */
-
-// .gdpr {
-// 	&-row {
-// 		font-size: 11px;
-// 		margin-bottom: 0.8rem;
-// 	}
-// }
-
-// 	&-filtered {
-// 		border-bottom: 1px solid $black80;
-// 		margin-bottom: 20px;
-
-// 		span {
-// 			display: inline-block;
-// 			line-height: 1.4;
-// 			padding: 8px;
-
-// 			&:after {
-// 				content: "\e959";
-// 				cursor: pointer;
-// 				display: inline-block;
-// 				font-family: "icomoon";
-// 				font-size: 16px;
-// 				line-height: 20px;
-// 				margin-left: 3px;
-// 				transition: color 0.1s ease-in-out;
-// 				vertical-align: text-top;
-// 			}
-
-// 			&:hover {
-// 				&:after {
-// 					// transform: scale(1.12);
-// 					color: $primary-color;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
 
 .custom-type {
 	align-items: flex-start;
@@ -362,144 +216,33 @@ label {
 	}
 }
 
-// .error,
-// .success,
-// .alert,
-// .inform {
-// 	margin: 5px 0 10px 0;
-
-// 	.link {
-// 		color: initial;
-// 	}
-// }
-
 .inputs-group {
 	align-items: center;
 	column-gap: 10px;
 	display: flex;
 
 	input {
-		// border-radius: 8px 0 0 8px;
-		// margin-right: 0.5rem;
 		width: 100%;
 	}
 
 	.button {
-		padding: 0.5rem 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
-
-	// .select {
-	// 	flex: 0;
-	// 	border-radius: 0 8px 8px 0;
-	// }
 }
 
-// // Custom fields
-// .form {
-// 	&--white {
-// 		.input,
-// 		.textarea,
-// 		.select {
-// 			background-color: $white;
-// 			border-color: $white;
-// 		}
+.quantity {
+	&-widget {
+		align-items: center;
+		display: flex;
+		flex: 0;
 
-// 		label,
-// 		fieldset {
-// 			color: $white;
-// 		}
-// 	}
-
-// 	&-newsletter {
-// 		font-size: 12px;
-// 		margin: 0 auto;
-// 		max-width: 420px;
-// 		text-align: initial;
-
-// 		.input {
-// 			border-color: transparent;
-// 			border-bottom-color: $white;
-// 			color: $white;
-// 			padding-left: 0;
-// 			padding-right: 36px;
-
-// 			&::placeholder {
-// 				color: $white;
-// 				font-style: normal;
-// 			}
-
-// 			&-wrapper {
-// 				margin-bottom: 15px;
-
-// 				.button {
-// 					background-color: transparent;
-// 					padding: 0;
-// 					position: absolute;
-// 					right: 7px;
-// 					top: 7px;
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	&--actions {
-// 		border-top: 3px solid #d9dfee;
-// 		margin-top: 20px;
-// 		padding-top: 20px;
-// 	}
-// }
-
-// .fakeupload {
-// 	opacity: 0;
-// 	pointer-events: none;
-// 	position: fixed;
-
-// 	&-label {
-// 		border: 2px dashed $black34;
-// 		cursor: pointer;
-// 		display: block;
-// 		margin: 0;
-// 		padding: 7px;
-// 		text-align: center;
-// 	}
-// }
-
-// // Tablets
-// @media (max-width: 767px) {
-// 	fieldset {
-// 		.row--airy {
-// 			.custom-type {
-// 				margin-bottom: 12px;
-// 			}
-// 		}
-// 	}
-// }
-
-// // Mobiles
-// @media (max-width: 567px) {
-// 	.actualites-form {
-// 		.select {
-// 			// min-width: 140px;
-// 			width: 100%;
-// 		}
-
-// 		.custom-dropdown {
-// 			min-width: auto;
-// 		}
-// 	}
-
-// 	.select {
-// 		width: 100%;
-// 	}
-
-// 	.form {
-// 		&-newsleter {
-// 			.button {
-// 				min-width: auto;
-// 			}
-// 		}
-// 	}
-// }
+		input {
+			min-width: 80px;
+			text-align: center;
+		}
+	}
+}
 
 // Custom dropdown start
 .custom-dropdown {
