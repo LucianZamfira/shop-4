@@ -1,36 +1,3 @@
-/* function CustomDropDown() {
-	$('body').on('click', function () {
-		$('.custom-dropdown').removeClass('active');
-	});
-
-	$('.custom-dropdown').on('click', function (event) {
-		event.stopPropagation();
-
-		var elementTop = $(this).offset().top + 40;
-		var windowHeight = $(window).height();
-		var windowsScroll = $(window).scrollTop();
-		var elementHeight = $(this).find('.dropdown-content').outerHeight();
-		var forceTop = windowHeight - (elementTop - windowsScroll + elementHeight);
-
-		if ($(this).hasClass('active')) {
-			$(this).removeClass('active');
-			return;
-		} else {
-			$('.custom-dropdown').removeClass('active');
-			$(this).addClass('active');
-			if (forceTop < 0) $(this).addClass('force-top');
-		}
-	});
-
-	$('.dropdown-option').on('click', function (event) {
-		event.stopPropagation();
-	});
-} */
-
-// function simulateClick(element) {
-// 	element.querySelector('.link').click();
-// }
-
 /**
  * Check the presence of DOM element
  *
@@ -43,12 +10,7 @@ function nodeExists(element) {
 }
 
 $(document).ready(function () {
-	/* var selectOpen = false;
-
-	// INIT DROPDOWN
-	if ($('.custom-dropdown').length > 0) {
-		CustomDropDown();
-	}
+	var selectOpen = false;
 
 	// Trick for deselecting the select tag
 	$('select').on('click', function (event) {
@@ -63,21 +25,6 @@ $(document).ready(function () {
 	$('select').on('blur', function (event) {
 		selectOpen = false;
 	});
-
-	// Toggle menu
-	$('.burger-menu').on('click', function (event) {
-		$('body').toggleClass('show-menu');
-	});
-
-	// Article click start
-	$('.card--clickable .link').on('click', function (event) {
-		event.stopPropagation();
-	});
-
-	$('.card--clickable').on('click', function (event) {
-		simulateClick(this);
-	});
-	// Article click end */
 
 	/**
 	 * Defaults for Owl carousel
@@ -99,7 +46,7 @@ $(document).ready(function () {
 		items: 1,
 	};
 
-	if ($('.owl--carousel').length > 0) {
+	if (nodeExists('.owl--carousel')) {
 		$('.owl--carousel').each(function () {
 			if ($(this).attr('data-options') !== undefined) {
 				$(this).owlCarousel($.extend(carouselDefaultConfiguration, $(this).data('options')));
@@ -371,8 +318,8 @@ $(document).ready(function () {
 	}
 
 	// Magnific Popup Image
-	if (nodeExists('.popup-img')) {
-		$('.popup-img').magnificPopup({
+	if (nodeExists('.popup-image')) {
+		$('.popup-image').magnificPopup({
 			type: 'image',
 			gallery: {
 				enabled: true,
@@ -381,8 +328,8 @@ $(document).ready(function () {
 	}
 
 	// Magnific Popup Image Gallery
-	if (nodeExists('.gallery')) {
-		$('.gallery').each(function () {
+	if (nodeExists('.gallery-image')) {
+		$('.gallery-image').each(function () {
 			// the containers for all your galleries
 			$(this).magnificPopup({
 				delegate: 'a', // the selector for gallery item
@@ -402,18 +349,23 @@ $(document).ready(function () {
 	$('.quantity-widget').on('click', 'button', function () {
 		var quantityElement = $(this).siblings('input');
 		var currentQuantity = parseInt(quantityElement.val());
-
-		console.log(currentQuantity, 'currentQuantity');
+		var maxQuantity = parseInt($(quantityElement).data('max'));
 
 		if (isNaN(currentQuantity)) currentQuantity = 0;
 
 		if ($(this).hasClass('quantity-decrease') && currentQuantity > 1) {
 			currentQuantity -= 1;
 			$(quantityElement).val(currentQuantity);
-		} else if ($(this).hasClass('quantity-increase')) {
+		} else if ($(this).hasClass('quantity-increase') && currentQuantity < maxQuantity) {
 			currentQuantity += 1;
 			$(quantityElement).val(currentQuantity);
 		}
+	});
+
+	// Init suggestion
+	$('.review-suggestions .badge').on('click', function (event) {
+		var textarea = $(this).parents('.input-row').find('textarea');
+		$(textarea).val($(this).text());
 	});
 
 	// Init custom-select

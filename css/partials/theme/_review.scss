@@ -1,46 +1,23 @@
-// .review {
-// 	padding-top: 30px;
+.review {
+	padding-top: 30px;
 
-// 	&__row {
-// 		display: block;
-// 		margin-bottom: 25px;
-// 		max-width: 880px;
-// 	}
+	&-suggestions {
+		display: block;
+		list-style: none;
+		margin: 0.5rem 0 0 0;
+		padding: 0;
 
-// 	&__title {
-// 		display: inline-block;
-// 		font-size: 1.4em;
-// 		margin: 0 20px 0 0;
-// 		vertical-align: middle;
-// 	}
+		li {
+			display: inline-block;
+			margin-right: 0.5rem;
+		}
 
-// 	&__content {
-// 		margin-bottom: 0;
-// 	}
+		.badge {
+			cursor: pointer;
 
-// 	&__date {
-// 		color: $black34;
-// 		display: block;
-// 		font-size: 0.9em;
-// 		line-height: 1;
-// 		margin-bottom: 20px;
-// 	}
-
-// 	.rating-block {
-// 		display: inline-block;
-// 	}
-
-// 	.rating {
-// 		margin: 0;
-// 	}
-// }
-
-// .new-review {
-// 	border-top: 1px solid $black8;
-// 	margin-top: 15px;
-// 	padding-top: 20px;
-
-// 	.form-actions {
-// 		text-align: right;
-// 	}
-// }
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+	}
+}

@@ -34,6 +34,23 @@
 		}
 	}
 
+	&-preview {
+		margin-bottom: 1rem;
+		position: relative;
+
+		> a {
+			display: block;
+			outline: none;
+		}
+	}
+
+	&-carousel {
+		a {
+			display: block;
+			outline: none;
+		}
+	}
+
 	&-content {
 		a {
 			text-decoration: none;

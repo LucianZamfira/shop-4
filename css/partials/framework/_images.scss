@@ -23,11 +23,20 @@ img {
 		display: inline-block;
 	}
 
+	&--full,
+	&--fluid,
 	&--responsive {
 		display: block;
 		height: auto;
-		max-width: 100%;
+	}
+
+	&--full,
+	&--responsive {
 		width: 100%;
+	}
+
+	&--responsive {
+		max-width: 100%;
 
 		img {
 			display: block;
@@ -37,8 +46,6 @@ img {
 	}
 
 	&--fluid {
-		display: block;
-		height: auto;
 		max-width: 100%;
 	}
 

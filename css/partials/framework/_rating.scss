@@ -36,7 +36,8 @@
 	label {
 		color: $black15;
 		display: inline-block;
-		margin: 0 0.2rem 0 0;
+		margin: 0;
+		padding: 0 0.2rem 0 0;
 		text-align: center;
 
 		&:first-child {
