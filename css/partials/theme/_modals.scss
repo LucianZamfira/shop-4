@@ -177,8 +177,6 @@
 }
 
 .product-modal {
-	// padding: 1rem;
-
 	.modal {
 		&-header {
 			border: none;
@@ -192,6 +190,45 @@
 	}
 }
 
+.button {
+	&--close {
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+		z-index: 10;
+	}
+}
+
+// Tablets
+@media (max-width: 767px) {
+	.modal {
+		&-open {
+			padding-right: 0 !important;
+		}
+	}
+
+	.button {
+		&--close {
+			background-color: $white;
+			font-size: 1.8em;
+			line-height: 1.6;
+			padding: 0 0.4rem;
+			right: 0;
+			top: 0;
+		}
+	}
+}
+
+// Mobiles
+@media (max-width: 567px) {
+	// .modal {
+	// 	&-open {
+	// 		padding-right: 0 !important;
+	// 	}
+	// }
+}
+
+// Tablets
 @media (min-width: 576px) {
 	.modal {
 		&-dialog {
@@ -222,6 +259,7 @@
 	}
 }
 
+// Desktops
 @media (min-width: 992px) {
 	.modal-lg,
 	.modal-xl {
@@ -232,13 +270,5 @@
 @media (min-width: 1200px) {
 	.modal-xl {
 		max-width: 1140px;
-	}
-}
-
-@media (max-width: 567px) {
-	.modal {
-		&-open {
-			padding-right: 0 !important;
-		}
 	}
 }

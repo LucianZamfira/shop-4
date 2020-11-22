@@ -41,12 +41,6 @@
 		padding: 0.5rem 1rem;
 	}
 
-	// &.medium {
-	// 	font-size: 14px;
-	// 	line-height: 12px;
-	// 	padding: 8px;
-	// }
-
 	&--full {
 		width: 100%;
 	}
@@ -82,52 +76,6 @@
 		outline: none;
 		font-size: 1.2em;
 	}
-
-	&--close {
-		position: absolute;
-		right: 1rem;
-		top: 1rem;
-		z-index: 10;
-	}
-
-	// &--facebook {
-	// 	background-color: $facebook-color;
-	// 	border-color: $facebook-color;
-	// 	color: $white;
-	// 	width: 100%;
-
-	// 	&:hover {
-	// 		background-color: darken($facebook-color, 10%);
-	// 		border-color: darken($facebook-color, 10%);
-	// 		color: $white;
-	// 	}
-	// }
-
-	// &--twitter {
-	// 	background-color: $twitter-color;
-	// 	border-color: $twitter-color;
-	// 	color: $white;
-	// 	width: 100%;
-
-	// 	&:hover {
-	// 		background-color: darken($twitter-color, 10%);
-	// 		border-color: darken($twitter-color, 10%);
-	// 		color: $white;
-	// 	}
-	// }
-
-	// &--linkedin {
-	// 	background-color: $linkedin-color;
-	// 	border-color: $linkedin-color;
-	// 	color: $white;
-	// 	width: 100%;
-
-	// 	&:hover {
-	// 		background-color: darken($linkedin-color, 10%);
-	// 		border-color: darken($linkedin-color, 10%);
-	// 		color: $white;
-	// 	}
-	// }
 
 	&-group {
 		.button {
