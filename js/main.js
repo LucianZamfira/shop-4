@@ -342,7 +342,9 @@ $(document).ready(function () {
 	}
 
 	// Init Bootstrap tooltips
-	$('[data-toggle="tooltip"]').tooltip();
+	if (window.innerWidth > 767) {
+		$('[data-toggle="tooltip"]').tooltip();
+	}
 
 	// Quantity functionality
 	// TODO: block the input to accept only numbers
