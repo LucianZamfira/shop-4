@@ -76,9 +76,10 @@
 
 	.owl-nav {
 		justify-content: space-between;
-		left: -25px;
-		right: -25px;
-		top: 36%;
+		left: -15px;
+		right: -15px;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
 	.owl-nav.disabled,
@@ -111,7 +112,7 @@
 		}
 
 		&.disabled {
-			opacity: 0.5;
+			opacity: 0.2;
 		}
 	}
 

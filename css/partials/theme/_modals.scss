@@ -52,7 +52,7 @@
 		border-top-right-radius: calc(0.3rem - 1px);
 		display: flex;
 		justify-content: space-between;
-		padding: 1rem 1rem;
+		padding: 1rem 1.5rem;
 
 		&.close {
 			padding: 1rem 1rem;
@@ -67,7 +67,7 @@
 
 	&-body {
 		flex: 1 1 auto;
-		padding: 1rem;
+		padding: 1.5rem;
 		position: relative;
 	}
 

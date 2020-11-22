@@ -36,11 +36,22 @@
 		}
 	}
 
+	&-products {
+		.owl-nav {
+			top: 38% !important;
+		}
+	}
+
 	&-product {
 		a {
 			display: block;
 			outline: none;
 		}
+	}
+
+	&-preview {
+		background-color: rgba($black15, 0.2);
+		height: 100%;
 	}
 }
 
@@ -88,9 +99,9 @@
 
 		&-product {
 			.owl-nav {
-				right: -15px !important;
-				left: -15px !important;
-				top: 45% !important;
+				// right: -15px !important;
+				// left: -15px !important;
+				// top: 45% !important;
 
 				button {
 					background-color: $white !important;
