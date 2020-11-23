@@ -40,11 +40,83 @@
 						</li>
 
 						<li>
-							<a href="#" class="link" title="Wish list"><i class="icon-heart"></i></a>
+							<button id="wishDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" type="button">
+								<i class="icon-heart"></i>
+								<span class="badge badge-primary">0</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="wishDropdown">
+								<div class="dropdown-wrapper">
+									<p class="text-center p-2 m-0 text-success small">Your wish-list is empty</p>
+								</div>
+							</div>
 						</li>
 
-						<li>
-							<a href="#" class="link" title="Cart"><i class="icon-bag2"></i></a>
+						<li class="dropdown">
+							<button id="cartDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" type="button">
+								<i class="icon-bag2"></i>
+								<span class="badge badge-primary">3</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="cartDropdown">
+								<div class="dropdown-wrapper">
+									<ul class="product-list">
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+									</ul>
+
+									<div class="dropdown-text">
+										<div class="d-flex justify-content-between">
+											<span>TOTAL:</span>
+											<strong class="price">140 LEI</strong>
+										</div>
+
+										<div class="button-group">
+											<a href="https://bioco.shop-factory.eu/cart/ro_RO/view" class="button button--secondary button--fluid" title="View cart"><i class="fa fa-shopping-cart"></i> View cart</a>
+											<a href="https://bioco.shop-factory.eu/" class="button button--fluid" title="Checkout"><i class="fa fa-sign-in"></i> Checkout</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -149,9 +221,15 @@
 									<p class="my-2">Custom price range:</p>
 
 									<div class="inputs-group">
-										<input type="text" name="price[from]" value="" class="input--small" placeholder="From" />
+										<div class="input-wrapper">
+											<input type="text" name="price[from]" value="" class="input--small" placeholder="From" />
+										</div>
+
 										<span>...</span>
-										<input type="text" name="price[to]" value="" class="input--small" placeholder="To" />
+
+										<div class="input-wrapper">
+											<input type="text" name="price[to]" value="" class="input--small" placeholder="To" />
+										</div>
 
 										<a href="#" class="button" title="Apply price range"><i class="icon-chevron-right"></i></a>
 									</div>

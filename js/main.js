@@ -370,6 +370,11 @@ $(document).ready(function () {
 		$(textarea).val($(this).text());
 	});
 
+	// Fix the autohide dropdown
+	$('.header-list .dropdown-menu').on('click', function (event) {
+		event.stopPropagation();
+	});
+
 	// Init custom-select
 	/* if ($('.custom-select').length > 0) {
 		$('.custom-select').select2();

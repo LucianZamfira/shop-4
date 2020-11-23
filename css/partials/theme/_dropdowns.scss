@@ -1,0 +1,244 @@
+.dropup,
+.dropright,
+.dropdown,
+.dropleft {
+	position: relative;
+}
+
+.dropdown {
+	&-toggle {
+		white-space: nowrap;
+
+		&:after {
+			border-bottom: 0;
+			border-left: 0.3em solid transparent;
+			border-right: 0.3em solid transparent;
+			border-top: 0.3em solid;
+			content: " ";
+			display: inline-block;
+			margin-left: 0.255em;
+			vertical-align: 0.255em;
+		}
+
+		&:empty {
+			&:after {
+				margin-left: 0;
+			}
+		}
+	}
+
+	&-header {
+		display: block;
+		font-size: 0.875rem;
+		margin-bottom: 0;
+		padding: 0.5rem 1.5rem;
+		white-space: nowrap;
+	}
+
+	&-menu {
+		background-clip: padding-box;
+		background-color: $white;
+		border: 1px solid $input-border-color;
+		display: none;
+		float: left;
+		font-size: 1rem;
+		left: 0;
+		list-style: none;
+		min-width: 10rem;
+		position: absolute;
+		text-align: left;
+		top: 100%;
+		z-index: 1000;
+
+		&-left {
+			right: auto;
+			left: 0;
+		}
+
+		&-right {
+			right: 0;
+			left: auto;
+		}
+
+		&.show {
+			display: block;
+		}
+	}
+
+	&-wrapper {
+		background-color: $white;
+		position: relative;
+	}
+
+	&-item {
+		background-color: transparent;
+		border: 0;
+		clear: both;
+		display: block;
+		padding: 0.8rem 1rem;
+		text-align: inherit;
+		white-space: nowrap;
+		width: 100%;
+
+		&:hover,
+		&:focus {
+			background-color: rgba($black15, 0.2);
+			color: $primary-color;
+			text-decoration: none;
+		}
+
+		&.active,
+		&:active {
+			background-color: $secondary-color;
+			color: $white;
+			text-decoration: none;
+		}
+
+		&.disabled,
+		&:disabled {
+			background-color: transparent;
+			color: $black34;
+			pointer-events: none;
+		}
+	}
+
+	&-text {
+		padding: 0.8rem 1rem;
+	}
+
+	&-divider {
+		border-top: 1px solid $input-border-color;
+		height: 0;
+		margin: 0 0 0.6rem 0;
+		overflow: hidden;
+	}
+}
+
+.dropdown-menu[x-placement^="top"],
+.dropdown-menu[x-placement^="right"],
+.dropdown-menu[x-placement^="bottom"],
+.dropdown-menu[x-placement^="left"] {
+	right: auto;
+	bottom: auto;
+}
+
+// Responsive if needed
+
+// @media (min-width: 768px) {
+// 	.dropdown-menu-md-left {
+// 		right: auto;
+// 		left: 0;
+// 	}
+// 	.dropdown-menu-md-right {
+// 		right: 0;
+// 		left: auto;
+// 	}
+// }
+
+// @media (min-width: 992px) {
+// 	.dropdown-menu-lg-left {
+// 		right: auto;
+// 		left: 0;
+// 	}
+// 	.dropdown-menu-lg-right {
+// 		right: 0;
+// 		left: auto;
+// 	}
+// }
+
+// @media (min-width: 1200px) {
+// 	.dropdown-menu-xl-left {
+// 		right: auto;
+// 		left: 0;
+// 	}
+// 	.dropdown-menu-xl-right {
+// 		right: 0;
+// 		left: auto;
+// 	}
+// }
+
+// .dropup .dropdown-menu {
+// 	top: auto;
+// 	bottom: 100%;
+// 	margin-top: 0;
+// 	margin-bottom: 0.125rem;
+// }
+
+// .dropup .dropdown-toggle::after {
+// 	display: inline-block;
+// 	margin-left: 0.255em;
+// 	vertical-align: 0.255em;
+// 	content: "";
+// 	border-top: 0;
+// 	border-right: 0.3em solid transparent;
+// 	border-bottom: 0.3em solid;
+// 	border-left: 0.3em solid transparent;
+// }
+
+// .dropup .dropdown-toggle:empty::after {
+// 	margin-left: 0;
+// }
+
+// .dropright .dropdown-menu {
+// 	top: 0;
+// 	right: auto;
+// 	left: 100%;
+// 	margin-top: 0;
+// 	margin-left: 0.125rem;
+// }
+
+// .dropright .dropdown-toggle::after {
+// 	display: inline-block;
+// 	margin-left: 0.255em;
+// 	vertical-align: 0.255em;
+// 	content: "";
+// 	border-top: 0.3em solid transparent;
+// 	border-right: 0;
+// 	border-bottom: 0.3em solid transparent;
+// 	border-left: 0.3em solid;
+// }
+
+// .dropright .dropdown-toggle:empty::after {
+// 	margin-left: 0;
+// }
+
+// .dropright .dropdown-toggle::after {
+// 	vertical-align: 0;
+// }
+
+// .dropleft .dropdown-menu {
+// 	top: 0;
+// 	right: 100%;
+// 	left: auto;
+// 	margin-top: 0;
+// 	margin-right: 0.125rem;
+// }
+
+// .dropleft .dropdown-toggle::after {
+// 	display: inline-block;
+// 	margin-left: 0.255em;
+// 	vertical-align: 0.255em;
+// 	content: "";
+// }
+
+// .dropleft .dropdown-toggle::after {
+// 	display: none;
+// }
+
+// .dropleft .dropdown-toggle::before {
+// 	display: inline-block;
+// 	margin-right: 0.255em;
+// 	vertical-align: 0.255em;
+// 	content: "";
+// 	border-top: 0.3em solid transparent;
+// 	border-right: 0.3em solid;
+// 	border-bottom: 0.3em solid transparent;
+// }
+
+// .dropleft .dropdown-toggle:empty::after {
+// 	margin-left: 0;
+// }
+
+// .dropleft .dropdown-toggle::before {
+// 	vertical-align: 0;
+// }
