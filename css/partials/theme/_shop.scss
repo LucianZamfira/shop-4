@@ -1,98 +1,4 @@
 .shop {
-	/* &-thumbnail {
-		display: block;
-		text-decoration: none;
-		overflow: hidden;
-
-		img {
-			margin-bottom: 1.4rem;
-		}
-
-		figure {
-			position: relative;
-		}
-
-		.button {
-			border: none;
-			bottom: 0;
-			opacity: 0;
-			padding: 8px 14px;
-			position: absolute;
-			right: 0;
-			transform: translateX(100%);
-			transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-			i {
-				transform: translateX(15px);
-				transition: transform 0.6s ease-in-out;
-			}
-		}
-
-		&:hover {
-			.button {
-				opacity: 1;
-				transform: translateX(0);
-
-				i {
-					transform: translateX(0);
-				}
-			}
-		}
-	}
-
-	&-card {
-		margin-bottom: 4rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-
-		.blog {
-			&-title {
-				font-size: 1.9em;
-			}
-
-			&-meta {
-				margin-bottom: 1rem;
-			}
-		}
-
-		p {
-			margin-bottom: 2rem;
-		}
-	}
-
-	&-title {
-		font-size: 1.25em;
-		line-height: 1.4;
-	}
-
-	&-date {
-		color: $black34;
-	}
-
-	&-meta {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-
-		li {
-			display: inline-block;
-
-			&:after {
-				color: $black34;
-				padding: 0 0.3rem;
-				content: "/";
-			}
-
-			&:last-child {
-				&:after {
-					content: " ";
-				}
-			}
-		}
-	} */
-
 	&-widget {
 		margin-bottom: 1.5rem;
 
@@ -117,6 +23,45 @@
 		.title {
 			margin-top: 0;
 			margin-bottom: 0;
+		}
+	}
+
+	&-filters {
+		align-items: flex-start;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.filters-widget {
+	margin-top: -1.2rem;
+
+	.title {
+		margin-bottom: 0.4rem;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	i {
+		cursor: pointer;
+		line-height: 1;
+		margin-left: 0.2rem;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+
+	.badge {
+		align-items: center;
+		cursor: auto;
+		display: flex;
+		padding: 4px 6px 4px 12px;
+
+		&:hover {
+			color: initial;
 		}
 	}
 }

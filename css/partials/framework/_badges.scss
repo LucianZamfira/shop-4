@@ -1,5 +1,6 @@
 .badge {
 	-webkit-font-smoothing: antialiased;
+	background-color: $badge-primary-color;
 	color: $white;
 	font-weight: 400;
 	line-height: 1.4;
@@ -26,6 +27,7 @@
 	}
 	&-light {
 		background-color: $badge-light-color;
+		color: $primary-color;
 	}
 	&-dark {
 		background-color: $badge-dark-color;
