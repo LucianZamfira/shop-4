@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Helendo shop powered by ShopFactory" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta property="og:image" content="/images/facebooklogo.png" />
+		<meta property="og:description" content="Helendo shop powered by ShopFactory" />
+		<meta property="og:locale" content="en_EN" />
+		<meta property="og:type" content="page" />
+		<meta property="og:title" content="Helendo" />
+		<meta property="og:url" content="www.shop-factory.ro" />
+		<meta property="og:site_name" content="Helendo" />
+
+		<title>Helendo - Homepage</title>
+
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+		<link rel="stylesheet" href="css/main.min.css" />
+		<link rel="stylesheet" href="css/plugins.min.css" />
+	</head>
+
+	<body>
+		<!-- Header start -->
+		<header>
+			<div class="container">
+				<div class="header-top">
+					<form action="POST" class="form-search">
+						<div class="input-wrapper">
+							<input type="text" placeholder="Search..." class="input input--small" aria-label="Search site input" />
+							<button type="submit" class="search-button" aria-label="Search site"><i class="icon-magnifier"></i></button>
+						</div>
+					</form>
+
+					<a href="index.html" title="Home"><img src="images/logo.svg" alt="Helendo Logo" class="image" /></a>
+
+					<ul class="header-list">
+						<li>
+							<button id="userDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0,0" type="button">
+								<i class="icon-user"></i>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+								<div class="dropdown-wrapper">
+									<form action="#" class="dropdown-text">
+										<h5>Quick Login</h5>
+
+										<div class="input-row">
+											<input type="text" placeholder="Username" autocomplete="off" />
+										</div>
+
+										<div class="input-row">
+											<input type="password" placeholder="Password" autocomplete="off" />
+										</div>
+
+										<div class="input-row">
+											<label class="custom-type">
+												<input name="rememberme" type="checkbox" value="forever" id="rememberme" />
+												<span class="checkmark"></span>
+												<span class="custom-type__label">Remember me</span>
+											</label>
+										</div>
+
+										<button type="submit" class="button button--fluid">Log in</button>
+										<a href="login.html" title="More login options" class="button button--secondary button--fluid mt-2">More login options</a>
+									</form>
+
+									<div class="dropdown-divider"></div>
+
+									<div class="dropdown-text">
+										<a href="#" title="Lost your password?">Lost your password?</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<button id="wishDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" type="button">
+								<i class="icon-heart"></i>
+								<span class="badge badge-primary">0</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="wishDropdown">
+								<div class="dropdown-wrapper">
+									<p class="text-center p-2 m-0 text-success small">Your <a href="wish-list.html" title="wish-list">wish-list</a> is empty</p>
+								</div>
+							</div>
+						</li>
+
+						<li class="dropdown">
+							<button id="cartDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" type="button">
+								<i class="icon-bag2"></i>
+								<span class="badge badge-primary">3</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="cartDropdown">
+								<div class="dropdown-wrapper">
+									<ul class="product-list">
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+									</ul>
+
+									<div class="dropdown-text">
+										<div class="d-flex justify-content-between">
+											<span>TOTAL:</span>
+											<strong class="price">140 LEI</strong>
+										</div>
+
+										<div class="button-group">
+											<a href="https://bioco.shop-factory.eu/cart/ro_RO/view" class="button button--secondary button--fluid" title="View cart"><i class="fa fa-shopping-cart"></i> View cart</a>
+											<a href="https://bioco.shop-factory.eu/" class="button button--fluid" title="Checkout"><i class="fa fa-sign-in"></i> Checkout</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<nav>
+					<ul class="main-nav">
+						<li class="main-nav__item">
+							<button title="Categories" class="link">
+								<i class="icon-menu mr-1"></i>
+								<span class="link-text">Categories</span>
+							</button>
+
+							<ul class="submenu">
+								<li class="submenu__item"><a href="#" title="Category 1" class="link">Category 1</a></li>
+								<li class="submenu__item"><a href="#" title="Category 2" class="link">Category 2</a></li>
+								<li class="submenu__item"><a href="#" title="Category 3" class="link">Category 3</a></li>
+								<li class="submenu__item"><a href="#" title="Category 4" class="link">Category 4</a></li>
+							</ul>
+						</li>
+
+						<li class="main-nav__item">
+							<a href="about-us.html" title="About us" class="link">
+								<span class="link-text">About us</span>
+							</a>
+						</li>
+
+						<li class="main-nav__item">
+							<a href="shop.html" title="Shop" class="link">
+								<span class="link-text">Shop</span>
+							</a>
+						</li>
+
+						<li class="main-nav__item">
+							<a href="blog.html" title="Blog" class="link">
+								<span class="link-text">Blog</span>
+							</a>
+						</li>
+
+						<li class="main-nav__item">
+							<a href="contact.html" title="Contact" class="link">
+								<span class="link-text">Contact</span>
+							</a>
+						</li>
+					</ul>
+
+					<span class="burger-menu"></span>
+				</nav>
+			</div>
+		</header>
+		<!-- Header end -->
+
+		<!-- Main start -->
+		<main>
+			<!-- Site content start -->
+			<section class="section--breadcrumbs">
+				<div class="container">
+					<h1>Wish List</h1>
+
+					<ul class="breadcrumbs">
+						<li><a href="index.html" title="Home">Home</a></li>
+						<li><span>Wish list</span></li>
+					</ul>
+				</div>
+			</section>
+			<!-- Site content end -->
+
+			<!-- Site content start -->
+			<section class="pt-3">
+				<div class="container">
+					<ul class="shopping-list">
+						<li>
+							<div class="shopping-actions">
+								<button class="button--icon remove-product icon-trash2" title="Remove item from wish-list" data-toggle="tooltip" data-placement="right"></button>
+							</div>
+
+							<a href="#" title="Product name" class="shopping-image">
+								<img class="image" src="images/products/1_1-300x300.jpg" alt="Product name" />
+							</a>
+
+							<div class="shopping-product">
+								<h2 class="product-name">
+									<a href="#" title="Product name">Product name</a>
+								</h2>
+
+								<span class="badge badge-success">In stock</span>
+
+								<p class="product-description">Day skill triangle ready father create discussion breakfast was afraid either definition run slept cave floating toward canal below spirit truth those field mostly</p>
+
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
+
+									<h6 class="old">
+										<span class="amount">295 <sup>12</sup></span>
+										<span class="currency">Lei</span>
+										<span class="discount">(-81%)</span>
+									</h6>
+								</div>
+							</div>
+
+							<div class="quantity-widget">
+								<button class="quantity-decrease"><i class="icon-minus"></i></button>
+								<input type="text" name="quantity-input" value="1" />
+								<button class="quantity-increase"><i class="icon-plus"></i></button>
+							</div>
+
+							<div class="shopping-actions">
+								<a href="#" class="button" title="Add to cart">
+									<i class="icon-before icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</a>
+							</div>
+						</li>
+
+						<li>
+							<div class="shopping-actions">
+								<button class="button--icon remove-product icon-trash2" title="Remove item from wish-list" data-toggle="tooltip" data-placement="right"></button>
+							</div>
+
+							<a href="#" title="Product name" class="shopping-image">
+								<img class="image" src="images/products/1_1-300x300.jpg" alt="Product name" />
+							</a>
+
+							<div class="shopping-product">
+								<h2 class="product-name">
+									<a href="#" title="Product name">Product name</a>
+								</h2>
+
+								<span class="badge">Discount 81%</span>
+
+								<p class="product-description">Day skill triangle ready father create discussion breakfast was afraid either definition run slept cave floating toward canal below spirit truth those field mostly</p>
+
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
+
+									<h6 class="old">
+										<span class="amount">295 <sup>12</sup></span>
+										<span class="currency">Lei</span>
+										<span class="discount">(-81%)</span>
+									</h6>
+								</div>
+							</div>
+
+							<div class="quantity-widget">
+								<button class="quantity-decrease"><i class="icon-minus"></i></button>
+								<input type="text" name="quantity-input" value="1" />
+								<button class="quantity-increase"><i class="icon-plus"></i></button>
+							</div>
+
+							<div class="shopping-actions">
+								<a href="#" class="button" title="Add to cart">
+									<i class="icon-before icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</a>
+							</div>
+						</li>
+
+						<li>
+							<div class="shopping-actions">
+								<button class="button--icon remove-product icon-trash2" title="Remove item from wish-list" data-toggle="tooltip" data-placement="right"></button>
+							</div>
+
+							<a href="#" title="Product name" class="shopping-image">
+								<img class="image" src="images/products/1_1-300x300.jpg" alt="Product name" />
+							</a>
+
+							<div class="shopping-product">
+								<h2 class="product-name">
+									<a href="#" title="Product name">Product name</a>
+								</h2>
+
+								<span class="badge badge-danger">Out of stock</span>
+
+								<p class="product-description">Day skill triangle ready father create discussion breakfast was afraid either definition run slept cave floating toward canal below spirit truth those field mostly</p>
+
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
+
+									<h6 class="old">
+										<span class="amount">295 <sup>12</sup></span>
+										<span class="currency">Lei</span>
+										<span class="discount">(-81%)</span>
+									</h6>
+								</div>
+							</div>
+
+							<div class="quantity-widget">
+								<button class="quantity-decrease"><i class="icon-minus"></i></button>
+								<input type="text" name="quantity-input" value="1" />
+								<button class="quantity-increase"><i class="icon-plus"></i></button>
+							</div>
+
+							<div class="shopping-actions">
+								<a href="#" class="button button--disabled" title="Add to cart">
+									<i class="icon-before icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</a>
+							</div>
+						</li>
+
+						<li>
+							<div class="shopping-actions">
+								<button class="button--icon remove-product icon-trash2" title="Remove item from wish-list" data-toggle="tooltip" data-placement="right"></button>
+							</div>
+
+							<a href="#" title="Product name" class="shopping-image">
+								<img class="image" src="images/products/1_1-300x300.jpg" alt="Product name" />
+							</a>
+
+							<div class="shopping-product">
+								<h2 class="product-name">
+									<a href="#" title="Product name">Product name</a>
+								</h2>
+
+								<span class="badge badge-danger">Out of stock</span>
+
+								<p class="product-description">Day skill triangle ready father create discussion breakfast was afraid either definition run slept cave floating toward canal below spirit truth those field mostly</p>
+
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
+
+									<h6 class="old">
+										<span class="amount">295 <sup>12</sup></span>
+										<span class="currency">Lei</span>
+										<span class="discount">(-81%)</span>
+									</h6>
+								</div>
+							</div>
+
+							<div class="quantity-widget">
+								<button class="quantity-decrease"><i class="icon-minus"></i></button>
+								<input type="text" name="quantity-input" value="1" />
+								<button class="quantity-increase"><i class="icon-plus"></i></button>
+							</div>
+
+							<div class="shopping-actions">
+								<a href="#" class="button button--disabled" title="Add to cart">
+									<i class="icon-before icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- Site content end -->
+		</main>
+		<!-- Main end -->
+
+		<!-- Footer start -->
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-4 col-md-5 col-sm-6 col-xs-12">
+							<h3>Address</h3>
+
+							<p>Mouse giant law division cut child engineer energy stand shinning step evening planning lips major thrown somehow next wall chart however met aloud difficulty.</p>
+
+							<ul class="list">
+								<li><i class="icon-map-marker mr-2"></i> Helendo, Chicago, USA 2018</li>
+								<li><i class="icon-telephone mr-2"></i><a href="tel:846677028028" class="hover-style-link">+846677028028</a></li>
+							</ul>
+						</div>
+
+						<div class="col-3 col-md-4 col-sm-6 col-xs-12">
+							<h3>Help & Information</h3>
+
+							<ul class="list">
+								<li><a href="contact.html" class="hover-style-link" title="Help & Contact Us">Help & Contact Us</a></li>
+								<li><a href="#" class="hover-style-link" title="Returns & Refunds">Returns & Refunds</a></li>
+								<li><a href="shop.html" class="hover-style-link" title="Online Stores">Online Stores</a></li>
+								<li><a href="#" class="hover-style-link" title="Terms & Conditions">Terms & Conditions</a></li>
+							</ul>
+						</div>
+
+						<div class="col-2 col-md-3 col-sm-6 col-xs-12">
+							<h3>About Us</h3>
+
+							<ul class="list">
+								<li><a href="about-us.html" title="About Us">About Us</a></li>
+								<li><a href="#" title="What We Do">What We Do</a></li>
+								<li><a href="#" title="FAQ Page">FAQ Page</a></li>
+								<li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div class="col-3 col-md-5 col-sm-6 col-xs-12">
+							<h3>Newsletter</h3>
+
+							<form action="#" class="newsletter">
+								<input class="input--fluid" type="email" placeholder="Your email address" required />
+								<button class="button button--inverted"><i class="icon-arrow-right"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="row">
+						<div class="col-4 col-md-5 col-sm-12 footer-quick">
+							<ul class="list list--inline">
+								<li><a href="#" title="Term & Condition">Term &amp; Condition</a></li>
+								<li><a href="#" title="Policy">Policy</a></li>
+								<li><a href="#" title="Map">Map</a></li>
+							</ul>
+						</div>
+
+						<div class="col-4 col-md-2 col-sm-12 footer-logo">
+							<a href="#"><img src="images/logo.svg" alt="Logo images" /></a>
+						</div>
+
+						<div class="col-4 col-md-5 col-sm-12 social-widget">
+							<h4 class="title">Follow Us On Social</h4>
+
+							<ul class="list social-list">
+								<li>
+									<a href="https://twitter.com" target="_blank" title="Twitter" data-toggle="tooltip" data-placement="top"><img src="images/social/twitter.svg" class="image--fluid" /></a>
+								</li>
+
+								<li>
+									<a href="https://facebook.com" target="_blank" title="Facebook" data-toggle="tooltip" data-placement="top"><img src="images/social/facebook.svg" class="image--fluid" /></a>
+								</li>
+
+								<li>
+									<a href="https://instagram.com" target="_blank" title="Instagram" data-toggle="tooltip" data-placement="top"><img src="images/social/instagram.svg" class="image--fluid" /></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<p class="footer-copyright">
+						<i class="icon-copyright"></i> 2020 Helendo. All Rights Reserved.<br />
+						powered by <a href="#" title="ShopFactory" class="link link--underline">ShopFactory</a>
+					</p>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer end -->
+
+		<!-- Modal Vertically centered scrollable start -->
+		<div class="product-modal modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="button--icon button--close" data-dismiss="modal" aria-label="Close"><i class="icon-cross"></i></button>
+
+					<div class="modal-body container">
+						<div class="row">
+							<div class="col-6 col-sm-12">
+								<div class="carousel-preview owl--carousel carousel" data-options='{"dots": false, "loop": false, "autoHeight": true, "nav": true, "autoplay": false, "margin": 0, "responsive": {"0": {"items": 1}}}'>
+									<img src="images/products/1_1-300x300.jpg" alt="1_1-300x300" class="image--full" />
+									<img src="images/products/1_2-300x300.jpg" alt="1_2-300x300" class="image--full" />
+									<img src="images/products/1_3-300x300.jpg" alt="1_3-300x300" class="image--full" />
+								</div>
+							</div>
+
+							<div class="col-6 col-sm-12">
+								<h2>Teapot with black tea</h2>
+
+								<div class="rating-widget">
+									<div class="rating not-editable">
+										<input type="radio" name="rating-review-total" id="rating-05" class="rating__radio" />
+										<label for="rating-05" class="rating__label"></label>
+
+										<input type="radio" name="rating-review-total" id="rating-04" class="rating__radio" checked />
+										<label for="rating-04" class="rating__label"></label>
+
+										<input type="radio" name="rating-review-total" id="rating-03" class="rating__radio" />
+										<label for="rating-03" class="rating__label"></label>
+
+										<input type="radio" name="rating-review-total" id="rating-02" class="rating__radio" />
+										<label for="rating-02" class="rating__label"></label>
+
+										<input type="radio" name="rating-review-total" id="rating-01" class="rating__radio" />
+										<label for="rating-01" class="rating__label"></label>
+									</div>
+
+									<span class="ml-1">(4.67 - 172 reviews)</span>
+								</div>
+
+								<div class="product-price">
+									<h5>54<sup>87</sup>Lei</h5>
+									<span class="old">295 <sup>12</sup> Lei</span> <span>(-81%)</span>
+								</div>
+
+								<p class="stock-widget my-2">Available: <span class="badge badge-success">In stock</span></p>
+
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, provident perferendis. Ipsum eum architecto amet, quisquam illum laborum nulla voluptatum vero cupiditate mollitia, animi repellendus impedit. Corrupti expedita dolorum qui.</p>
+
+								<div class="input-wrapper inputs-group">
+									<div class="quantity-widget">
+										<button class="quantity-decrease"><i class="icon-minus"></i></button>
+										<input type="text" name="quantity-input" value="1" data-max="12" />
+										<button class="quantity-increase"><i class="icon-plus"></i></button>
+									</div>
+
+									<a href="product-details.html" class="button" title="Add to cart">Add to cart</a>
+									<a href="#" class="button--icon" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="icon-heart"></i></a>
+								</div>
+
+								<ul class="list mt-2">
+									<li class="d-flex align-items-center">
+										<h6 class="title">SKU:</h6>
+										<span class="sku"> 502 </span>
+									</li>
+
+									<li class="d-flex align-items-center">
+										<h6 class="title">Categories:</h6>
+										<a href="#" title="Furniture">Furniture</a>, <a href="#" title="Table">Table</a>
+									</li>
+
+									<li class="d-flex align-items-center">
+										<h6 class="title">Tag:</h6>
+										<a href="#" title="Pottery">Pottery</a>
+									</li>
+								</ul>
+
+								<div class="social-widget justify-content-start mt-2">
+									<h4 class="title">Share this product on:</h4>
+
+									<ul class="list social-list">
+										<li>
+											<a href="https://twitter.com" target="_blank" title="Twitter" data-toggle="tooltip" data-placement="top"><img src="images/social/twitter.svg" class="image--fluid" /></a>
+										</li>
+
+										<li>
+											<a href="https://facebook.com" target="_blank" title="Facebook" data-toggle="tooltip" data-placement="top"><img src="images/social/facebook.svg" class="image--fluid" /></a>
+										</li>
+
+										<li>
+											<a href="https://instagram.com" target="_blank" title="Instagram" data-toggle="tooltip" data-placement="top"><img src="images/social/instagram.svg" class="image--fluid" /></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal end -->
+
+		<!-- External js -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+		<!-- Main js -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

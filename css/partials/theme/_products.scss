@@ -83,26 +83,27 @@
 		}
 	}
 
-	&-price {
-		-webkit-font-smoothing: antialiased;
-		color: $primary-color;
-		font-size: 1.16em;
+	// TODO: remove this
+	// &-price {
+	// 	-webkit-font-smoothing: antialiased;
+	// 	color: $primary-color;
+	// 	font-size: 1.16em;
 
-		* {
-			margin-bottom: 0;
-		}
+	// 	* {
+	// 		margin-bottom: 0;
+	// 	}
 
-		span {
-			color: $label-color;
-		}
+	// 	span {
+	// 		color: $label-color;
+	// 	}
 
-		.old {
-			display: inline-block;
-			font-size: 0.8em;
-			margin-top: 0.2rem;
-			text-decoration: line-through;
-		}
-	}
+	// 	.old {
+	// 		display: inline-block;
+	// 		font-size: 0.8em;
+	// 		margin-top: 0.2rem;
+	// 		text-decoration: line-through;
+	// 	}
+	// }
 
 	&-title {
 		font-size: 1.05em;
@@ -153,6 +154,33 @@
 			outline: none;
 			text-align: center;
 			width: 45px;
+		}
+	}
+}
+
+.price {
+	&-widget {
+		-webkit-font-smoothing: antialiased;
+		color: $primary-color;
+		font-size: 1.16em;
+
+		* {
+			margin-bottom: 0;
+		}
+
+		.price {
+			color: $primary-color;
+		}
+
+		.old {
+			color: $label-color;
+			display: inline-block;
+			font-size: 0.8em;
+			margin-top: 0.2rem;
+
+			.amount {
+				text-decoration: line-through;
+			}
 		}
 	}
 }

@@ -77,6 +77,12 @@
 		background-color: transparent;
 	}
 
+	&--disabled {
+		opacity: 0.4;
+		pointer-events: none;
+		user-select: none;
+	}
+
 	&--icon {
 		background-color: transparent;
 		border: none;
