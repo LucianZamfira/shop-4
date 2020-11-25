@@ -62,6 +62,11 @@ select {
 	&-row {
 		margin-bottom: $column-margin-bottom;
 
+		input,
+		textarea {
+			width: 100%;
+		}
+
 		.custom-type {
 			.checkmark {
 				border-color: $black34;
@@ -125,7 +130,7 @@ label {
 }
 
 .custom-type {
-	align-items: flex-start;
+	align-items: center;
 	display: inline-flex;
 	margin-bottom: 0;
 	position: relative;
@@ -142,7 +147,7 @@ label {
 		height: 18px;
 		margin-right: 0.5rem;
 		position: relative;
-		transform: translateY(4px);
+		// transform: translateY(4px);
 		width: 18px;
 
 		&:after {

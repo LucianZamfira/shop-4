@@ -60,6 +60,12 @@
 			left: auto;
 		}
 
+		&-center {
+			right: 0;
+			left: auto;
+			transform: translateX(-50%);
+		}
+
 		&.show {
 			display: block;
 		}
@@ -109,7 +115,7 @@
 	&-divider {
 		border-top: 1px solid $input-border-color;
 		height: 0;
-		margin: 0 0 0.6rem 0;
+		margin: 0;
 		overflow: hidden;
 	}
 }

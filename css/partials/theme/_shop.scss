@@ -65,3 +65,13 @@
 		}
 	}
 }
+
+// Mobiles/Tablets
+@media (max-width: 767px) {
+	.shop {
+		&-filters {
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+}

@@ -7,15 +7,19 @@
 	margin: 2rem auto 1rem;
 	padding: 0;
 
-	a {
+	a,
+	span {
 		display: inline-flex;
 		align-items: center;
 		font-size: 0.9em;
 		line-height: 2.4;
 		min-width: 35px;
 		text-align: center;
-		text-decoration: none;
 		padding: 0 0.8rem;
+	}
+
+	a {
+		text-decoration: none;
 
 		&:hover {
 			color: inherit;
@@ -31,7 +35,7 @@
 	li {
 		background-color: $black8;
 		position: relative;
-		margin: 0 0.5rem;
+		margin: 0 0.4rem;
 
 		&:first-child {
 			margin-left: 0;
@@ -44,20 +48,9 @@
 		&:hover {
 			color: $secondary-color;
 		}
-
-		// &:after {
-		// 	background-color: transparent;
-		// 	bottom: 0;
-		// 	content: " ";
-		// 	height: 3px;
-		// 	left: 0;
-		// 	position: absolute;
-		// 	right: 0;
-		// }
 	}
 
 	.active {
-		// color: $blue54;
 		background-color: $secondary-color;
 
 		&:hover {

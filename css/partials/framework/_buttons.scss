@@ -35,6 +35,12 @@
 		}
 	}
 
+	img {
+		display: inline-block;
+		height: 1.2em;
+		width: auto;
+	}
+
 	&--small {
 		font-size: 0.9em;
 		line-height: normal;
@@ -76,6 +82,14 @@
 		border: none;
 		outline: none;
 		font-size: 1.2em;
+	}
+
+	&--facebook {
+		background-color: $facebook-color;
+	}
+
+	&--google {
+		background-color: $google-color;
 	}
 
 	&-group {
