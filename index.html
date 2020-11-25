@@ -36,7 +36,42 @@
 
 					<ul class="header-list">
 						<li>
-							<a href="#" class="link" title="Account"><i class="icon-user"></i></a>
+							<button id="userDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0,0" type="button">
+								<i class="icon-user"></i>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+								<div class="dropdown-wrapper">
+									<form action="#" class="dropdown-text">
+										<h5>Quick Login</h5>
+
+										<div class="input-row">
+											<input type="text" placeholder="Username" autocomplete="off" />
+										</div>
+
+										<div class="input-row">
+											<input type="password" placeholder="Password" autocomplete="off" />
+										</div>
+
+										<div class="input-row">
+											<label class="custom-type">
+												<input name="rememberme" type="checkbox" value="forever" id="rememberme" />
+												<span class="checkmark"></span>
+												<span class="custom-type__label">Remember me</span>
+											</label>
+										</div>
+
+										<button type="submit" class="button button--fluid">Log in</button>
+										<a href="login.html" title="More login options" class="button button--secondary button--fluid mt-2">More login options</a>
+									</form>
+
+									<div class="dropdown-divider"></div>
+
+									<div class="dropdown-text">
+										<a href="#" title="Lost your password?">Lost your password?</a>
+									</div>
+								</div>
+							</div>
 						</li>
 
 						<li>
@@ -47,7 +82,7 @@
 
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="wishDropdown">
 								<div class="dropdown-wrapper">
-									<p class="text-center p-2 m-0 text-success small">Your wish-list is empty</p>
+									<p class="text-center p-2 m-0 text-success small">Your <a href="wish-list.html" title="wish-list">wish-list</a> is empty</p>
 								</div>
 							</div>
 						</li>
@@ -207,18 +242,6 @@
 					</div>
 				</div>
 			</section>
-			<!-- Site content end -->
-
-			<!-- Site content start -->
-			<!-- <section>
-				<div class="container">
-					<h2>Deco Collection</h2>
-					<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced for those. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum</p>
-					<p>Please use this <a href="https://codeseven.github.io/toastr/demo.html" target="_blank">plugin</a> for alerts/info</p>
-
-					<a href="shop-4-column.html" title="Shop now" class="button">Shop now <i class="icon-arrow-right"></i></a>
-				</div>
-			</section> -->
 			<!-- Site content end -->
 
 			<!-- Site content start -->
