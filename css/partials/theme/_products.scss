@@ -45,12 +45,38 @@
 	}
 
 	&-list {
+		margin-left: -1rem;
+		margin-right: -1rem;
+		max-height: 380px;
+		overflow-y: auto;
+
+		&::-webkit-scrollbar {
+			width: 6px;
+
+			&-track {
+				background-color: $border-color;
+			}
+
+			&-thumb {
+				background-color: $secondary-color;
+				border-radius: 8px;
+			}
+		}
+
 		> li {
 			align-items: flex-start;
 			border-bottom: 1px solid $input-border-color;
 			display: flex;
 			grid-gap: 1rem;
 			padding: 1rem;
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				border: none;
+			}
 		}
 
 		> a {

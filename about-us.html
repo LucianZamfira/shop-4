@@ -36,15 +36,166 @@
 
 					<ul class="header-list">
 						<li>
-							<a href="#" class="link" title="Account"><i class="icon-user"></i></a>
+							<button id="userDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 8" type="button">
+								<i class="icon-user"></i>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+								<div class="dropdown-wrapper">
+									<form action="#" class="dropdown-text">
+										<h5>Quick Login</h5>
+
+										<div class="input-row">
+											<input type="text" placeholder="Username" autocomplete="off" />
+										</div>
+
+										<div class="input-row">
+											<input type="password" placeholder="Password" autocomplete="off" />
+										</div>
+
+										<div class="input-row">
+											<label class="custom-type">
+												<input name="rememberme" type="checkbox" value="forever" id="rememberme" />
+												<span class="checkmark"></span>
+												<span class="custom-type__label">Remember me</span>
+											</label>
+										</div>
+
+										<button type="submit" class="button button--fluid">Log in</button>
+										<a href="login.html" title="More login options" class="button button--secondary button--fluid mt-2">More login options</a>
+									</form>
+
+									<div class="dropdown-divider mt-1"></div>
+
+									<div class="dropdown-text">
+										<a href="#" title="Lost your password?">Lost your password?</a>
+									</div>
+								</div>
+							</div>
 						</li>
 
 						<li>
-							<a href="#" class="link" title="Wish list"><i class="icon-heart"></i></a>
+							<button id="wishDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 8" type="button">
+								<i class="icon-heart"></i>
+								<span class="badge badge-primary">0</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="wishDropdown">
+								<div class="dropdown-wrapper">
+									<p class="text-center m-0 text--error small">Your <a href="wish-list.html" title="wish-list">wish-list</a> is empty</p>
+								</div>
+							</div>
 						</li>
 
-						<li>
-							<a href="#" class="link" title="Cart"><i class="icon-bag2"></i></a>
+						<li class="dropdown">
+							<button id="cartDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 8" type="button">
+								<i class="icon-bag2"></i>
+								<span class="badge badge-primary">6</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="cartDropdown">
+								<div class="dropdown-wrapper">
+									<ul class="product-list">
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Plant pots">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Plant pots">Plant pots</a>
+												<label>Qty : <strong>1</strong></label>
+												<label class="product-quantity">Price: <strong>$20.00</strong></label>
+											</div>
+
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+										</li>
+									</ul>
+
+									<div class="dropdown-divider"></div>
+
+									<div class="dropdown-text">
+										<div class="d-flex justify-content-between">
+											<span>TOTAL:</span>
+											<strong class="price">140 LEI</strong>
+										</div>
+
+										<div class="button-group mt-2">
+											<a href="cart.html" class="button button--secondary button--fluid" title="View cart"><i class="fa fa-shopping-cart"></i> View cart</a>
+											<a href="checkout.html" class="button button--fluid" title="Checkout"><i class="fa fa-sign-in"></i> Checkout</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -237,7 +388,7 @@
 			<div class="container">
 				<div class="footer-top">
 					<div class="row">
-						<div class="col-4 col-md-5 col-sm-6 col-xs-12">
+						<div class="col-5 col-md-6 col-sm-6 col-xs-12">
 							<h3>Address</h3>
 
 							<p>Mouse giant law division cut child engineer energy stand shinning step evening planning lips major thrown somehow next wall chart however met aloud difficulty.</p>
@@ -246,78 +397,63 @@
 								<li><i class="icon-map-marker mr-2"></i> Helendo, Chicago, USA 2018</li>
 								<li><i class="icon-telephone mr-2"></i><a href="tel:846677028028" class="hover-style-link">+846677028028</a></li>
 							</ul>
-						</div>
 
-						<div class="col-3 col-md-4 col-sm-6 col-xs-12">
-							<h3>Help & Information</h3>
-
-							<ul class="list">
-								<li><a href="contact.html" class="hover-style-link" title="Help & Contact Us">Help & Contact Us</a></li>
-								<li><a href="#" class="hover-style-link" title="Returns & Refunds">Returns & Refunds</a></li>
-								<li><a href="shop.html" class="hover-style-link" title="Online Stores">Online Stores</a></li>
-								<li><a href="#" class="hover-style-link" title="Terms & Conditions">Terms & Conditions</a></li>
+							<ul class="list list--inline">
+								<li><a href="#" title="Term & Condition">Term & Condition</a></li>
+								<li><a href="#" title="Policy">Policy</a></li>
+								<li><a href="#" title="Map">Map</a></li>
 							</ul>
 						</div>
 
-						<div class="col-2 col-md-3 col-sm-6 col-xs-12">
-							<h3>About Us</h3>
+						<div class="col-3 col-md-6 col-sm-6 col-xs-12">
+							<h3>Help & Information</h3>
 
 							<ul class="list">
+								<li><a href="contact.html" title="Help & Contact Us">Help & Contact Us</a></li>
+								<li><a href="#" title="Returns & Refunds">Returns & Refunds</a></li>
+								<li><a href="shop.html" title="Online Stores">Online Stores</a></li>
+								<li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
 								<li><a href="about-us.html" title="About Us">About Us</a></li>
-								<li><a href="#" title="What We Do">What We Do</a></li>
 								<li><a href="#" title="FAQ Page">FAQ Page</a></li>
 								<li><a href="contact.html" title="Contact Us">Contact Us</a></li>
 							</ul>
 						</div>
 
-						<div class="col-3 col-md-5 col-sm-6 col-xs-12">
+						<div class="col-4 col-md-6 col-sm-6 col-xs-12">
 							<h3>Newsletter</h3>
 
 							<form action="#" class="newsletter">
 								<input class="input--fluid" type="email" placeholder="Your email address" required />
 								<button class="button button--inverted"><i class="icon-arrow-right"></i></button>
 							</form>
+
+							<div class="social-widget mt-2 justify-content-start">
+								<h4 class="title">Follow Us On Social</h4>
+
+								<ul class="list social-list">
+									<li>
+										<a href="https://twitter.com" target="_blank" title="Twitter" data-toggle="tooltip" data-placement="top"><img src="images/social/twitter.svg" class="image--fluid" /></a>
+									</li>
+
+									<li>
+										<a href="https://facebook.com" target="_blank" title="Facebook" data-toggle="tooltip" data-placement="top"><img src="images/social/facebook.svg" class="image--fluid" /></a>
+									</li>
+
+									<li>
+										<a href="https://instagram.com" target="_blank" title="Instagram" data-toggle="tooltip" data-placement="top"><img src="images/social/instagram.svg" class="image--fluid" /></a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="footer-bottom">
-					<div class="row">
-						<div class="col-4 col-md-5 col-sm-12 footer-quick">
-							<ul class="list list--inline">
-								<li><a href="#" title="Term & Condition">Term &amp; Condition</a></li>
-								<li><a href="#" title="Policy">Policy</a></li>
-								<li><a href="#" title="Map">Map</a></li>
-							</ul>
-						</div>
-
-						<div class="col-4 col-md-2 col-sm-12 footer-logo">
-							<a href="#"><img src="images/logo.svg" alt="Logo images" /></a>
-						</div>
-
-						<div class="col-4 col-md-5 col-sm-12 social-widget">
-							<h4 class="title">Follow Us On Social</h4>
-
-							<ul class="list social-list">
-								<li>
-									<a href="https://twitter.com" target="_blank" title="Twitter" data-toggle="tooltip" data-placement="top"><img src="images/social/twitter.svg" class="image--fluid" /></a>
-								</li>
-
-								<li>
-									<a href="https://facebook.com" target="_blank" title="Facebook" data-toggle="tooltip" data-placement="top"><img src="images/social/facebook.svg" class="image--fluid" /></a>
-								</li>
-
-								<li>
-									<a href="https://instagram.com" target="_blank" title="Instagram" data-toggle="tooltip" data-placement="top"><img src="images/social/instagram.svg" class="image--fluid" /></a>
-								</li>
-							</ul>
-						</div>
+					<div class="footer-logo">
+						<a href="#"><img src="images/logo.svg" alt="Logo images" /></a>
 					</div>
 
-					<p class="footer-copyright">
-						<i class="icon-copyright"></i> 2020 Helendo. All Rights Reserved.<br />
-						powered by <a href="#" title="ShopFactory" class="link link--underline">ShopFactory</a>
-					</p>
+					<p class="footer-copyright"><i class="icon-copyright"></i> 2020 Helendo. All Rights Reserved. Powered by <a href="#" title="ShopFactory" class="link link--underline">ShopFactory</a></p>
 				</div>
 			</div>
 		</footer>

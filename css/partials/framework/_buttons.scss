@@ -99,13 +99,9 @@
 	}
 
 	&-group {
-		.button {
-			margin-top: 0.8rem;
-
-			// &:last-child {
-			// 	margin-bottom: 0;
-			// }
-		}
+		display: flex;
+		flex-flow: row wrap;
+		grid-gap: 1rem;
 	}
 }
 

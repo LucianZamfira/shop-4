@@ -73,6 +73,7 @@
 
 	&-wrapper {
 		background-color: $white;
+		padding: 1rem;
 		position: relative;
 	}
 
@@ -109,13 +110,13 @@
 	}
 
 	&-text {
-		padding: 0.8rem 1rem;
+		padding: 0.8rem 0;
 	}
 
 	&-divider {
 		border-top: 1px solid $input-border-color;
 		height: 0;
-		margin: 0;
+		margin: 0 -1rem 0 -1rem;
 		overflow: hidden;
 	}
 }

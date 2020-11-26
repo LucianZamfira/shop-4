@@ -167,15 +167,87 @@ blockquote {
 	font-size: 1.3em;
 }
 
-// .text {
-// 	&--primary {
-// 		color: $primary-text-color;
-// 	}
+.text {
+	&-group {
+		font-size: 1.1em;
+		display: flex;
+		flex-flow: row wrap;
+		grid-gap: 1rem;
+	}
 
-// 	&--secondary {
-// 		color: $secondary-text-color;
-// 	}
-// }
+	&--primary {
+		color: $primary-color;
+	}
+
+	&--secondary {
+		color: $secondary-color;
+	}
+
+	&--gray {
+		color: $black34;
+	}
+
+	&--sky {
+		color: $sky;
+	}
+
+	&--twitter {
+		color: $twitter-color;
+	}
+
+	&--facebook {
+		color: $facebook-color;
+	}
+
+	&--linkedin {
+		color: $linkedin-color;
+	}
+
+	&--green {
+		color: $leaf;
+	}
+
+	&--black80 {
+		color: $black80;
+	}
+
+	&--black34 {
+		color: $black34;
+	}
+
+	&--alert {
+		color: $alert-color;
+	}
+
+	&--inform {
+		color: $inform-color;
+	}
+
+	&--success {
+		color: $success-color;
+	}
+
+	&--error {
+		color: $error-color;
+	}
+
+	&--strong {
+		font-weight: 600;
+	}
+
+	&--thin {
+		font-weight: 400;
+	}
+
+	&--emphasis {
+		font-size: 3em;
+		font-weight: 500;
+	}
+
+	&-group {
+		margin: 25px 0;
+	}
+}
 
 // Mobiles
 @media (max-width: 659px) {
