@@ -375,6 +375,16 @@ $(document).ready(function () {
 		event.stopPropagation();
 	});
 
+	// Init product carousel actions
+	$('.carousel-product a').on('click', function (event) {
+		event.preventDefault();
+		event.stopPropagation();
+
+		var newImageSrc = $(this).attr('href');
+		$('.product-preview a').attr('href', newImageSrc);
+		$('.product-preview img').attr('src', newImageSrc);
+	});
+
 	// Init custom-select
 	/* if ($('.custom-select').length > 0) {
 		$('.custom-select').select2();

@@ -276,10 +276,6 @@
 
 							<div class="carousel-product owl--carousel carousel" data-options='{"dots": false, "loop": false, "autoHeight": true, "nav": true, "autoplay": false, "margin": 15, "responsive": {"0": {"items": 2}, "800": {"items": 3}, "1170": {"items": 4}}}'>
 								<div class="item">
-									<a href="images/products/1_1-300x300.jpg" title="image 1"><img src="images/products/1_1-300x300.jpg" class="image--responsive" /></a>
-								</div>
-
-								<div class="item">
 									<a href="images/products/1_2-300x300.jpg" title="image 2"><img src="images/products/1_2-300x300.jpg" class="image--responsive" /></a>
 								</div>
 
@@ -298,6 +294,10 @@
 								<div class="item">
 									<a href="images/products/1_6-300x300.jpg" title="image 4"><img src="images/products/1_6-300x300.jpg" class="image--responsive" /></a>
 								</div>
+
+								<div class="item">
+									<a href="images/products/1_1-300x300.jpg" title="image 1"><img src="images/products/1_1-300x300.jpg" class="image--responsive" /></a>
+								</div>
 							</div>
 						</aside>
 
@@ -305,29 +305,37 @@
 							<h2>Teapot with black tea</h2>
 
 							<div class="rating-widget">
-								<div class="rating">
-									<input type="radio" name="rating-review-total" id="rating-05" class="rating__radio" />
-									<label for="rating-05" class="rating__label"></label>
+								<div class="rating not-editable">
+									<input type="radio" name="rating-product-total" id="rating-product-05" class="rating__radio" />
+									<label for="rating-product-05" class="rating__label"></label>
 
-									<input type="radio" name="rating-review-total" id="rating-04" class="rating__radio" checked />
-									<label for="rating-04" class="rating__label"></label>
+									<input type="radio" name="rating-product-total" id="rating-product-04" class="rating__radio" checked />
+									<label for="rating-product-04" class="rating__label"></label>
 
-									<input type="radio" name="rating-review-total" id="rating-03" class="rating__radio" />
-									<label for="rating-03" class="rating__label"></label>
+									<input type="radio" name="rating-product-total" id="rating-product-03" class="rating__radio" />
+									<label for="rating-product-03" class="rating__label"></label>
 
-									<input type="radio" name="rating-review-total" id="rating-02" class="rating__radio" />
-									<label for="rating-02" class="rating__label"></label>
+									<input type="radio" name="rating-product-total" id="rating-product-02" class="rating__radio" />
+									<label for="rating-product-02" class="rating__label"></label>
 
-									<input type="radio" name="rating-review-total" id="rating-01" class="rating__radio" />
-									<label for="rating-01" class="rating__label"></label>
+									<input type="radio" name="rating-product-total" id="rating-product-01" class="rating__radio" />
+									<label for="rating-product-01" class="rating__label"></label>
 								</div>
 
 								<span class="ml-1">(4.67 - 172 reviews)</span>
 							</div>
 
-							<div class="product-price">
-								<h5>54<sup>87</sup>Lei</h5>
-								<span class="old">295 <sup>12</sup> Lei</span> <span>(-81%)</span>
+							<div class="price-widget">
+								<h5 class="price">
+									<span class="amount">54 <sup>87</sup></span>
+									<span class="currency">Lei</span>
+								</h5>
+
+								<h6 class="old">
+									<span class="amount">295 <sup>12</sup></span>
+									<span class="currency">Lei</span>
+									<span class="discount">(-81%)</span>
+								</h6>
 							</div>
 
 							<p class="stock-widget my-2">Available: <span class="badge badge-success">In stock</span></p>
