@@ -1,18 +1,57 @@
 header {
 	background-color: rgba($white, 0.96);
-	// border-bottom: 2px solid $black15;
 	color: $black00;
-	// left: 0;
-	// padding: 0;
-	// position: fixed;
-	// right: 0;
-	// top: 0;
 	z-index: 10;
 
 	ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
+	}
+
+	.link {
+		background-color: transparent;
+		border: none;
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+		position: relative;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.badge {
+		border-radius: 50%;
+		bottom: -6px;
+		font-size: 0.8em;
+		height: 20px;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		right: -12px;
+		text-align: center;
+		width: 20px;
+	}
+
+	.dropdown-menu {
+		min-width: 320px;
+		z-index: 10;
+
+		&:before {
+			background-color: $white;
+			border: 1px solid $input-border-color;
+			bottom: 100%;
+			content: " ";
+			height: 12px;
+			position: absolute;
+			right: 8px;
+			transform: translateY(50%) rotate(45deg);
+			width: 12px;
+			z-index: -1;
+		}
 	}
 
 	.form {
@@ -46,7 +85,7 @@ header {
 		padding: 1rem 0;
 
 		i {
-			font-size: 1.4em;
+			font-size: 1.35em;
 		}
 	}
 
@@ -54,55 +93,7 @@ header {
 		display: flex;
 
 		> li {
-			// margin-bottom: 1rem;
-			margin-left: 1.6rem;
-			// margin-top: 1rem;
-		}
-
-		.link {
-			background-color: transparent;
-			border: none;
-			font-size: 1em;
-			margin: 0;
-			padding: 0;
-			position: relative;
-
-			&:after {
-				display: none;
-			}
-		}
-
-		.badge {
-			border-radius: 50%;
-			bottom: -6px;
-			font-size: 0.8em;
-			height: 20px;
-			line-height: 20px;
-			margin: 0;
-			padding: 0;
-			position: absolute;
-			right: -12px;
-			text-align: center;
-			width: 20px;
-		}
-
-		.dropdown-menu {
-			margin-top: 0.5rem;
-			min-width: 320px;
-			z-index: 10;
-
-			&:before {
-				background-color: $white;
-				border: 1px solid $input-border-color;
-				bottom: 100%;
-				content: " ";
-				height: 12px;
-				position: absolute;
-				right: 8px;
-				transform: translateY(50%) rotate(45deg);
-				width: 12px;
-				z-index: -1;
-			}
+			margin-left: 1.8rem;
 		}
 	}
 }
@@ -419,4 +410,14 @@ header {
 
 // Mobiles
 @media (max-width: 575px) {
+	header {
+		.dropdown-menu {
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+			width: 98vw;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
 }
