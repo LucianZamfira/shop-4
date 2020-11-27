@@ -221,11 +221,13 @@
 
 // Mobiles
 @media (max-width: 567px) {
-	// .modal {
-	// 	&-open {
-	// 		padding-right: 0 !important;
-	// 	}
-	// }
+	.modal {
+		&-body {
+			.social-widget {
+				display: none;
+			}
+		}
+	}
 }
 
 // Tablets
