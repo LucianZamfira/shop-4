@@ -22,7 +22,7 @@
 
 	<body>
 		<!-- Header start -->
-		<header>
+		<header id="header">
 			<div class="container">
 				<div class="header-top">
 					<form action="POST" class="form-search">
@@ -264,7 +264,7 @@
 			<!-- Site content end -->
 
 			<!-- Site content start -->
-			<section class="pt-3">
+			<section>
 				<div class="container">
 					<div class="row">
 						<aside class="col-6 col-md-5 col-sm-12 gallery-image">
@@ -325,7 +325,7 @@
 								<span class="ml-1">(4.67 - 172 reviews)</span>
 							</div>
 
-							<div class="price-widget">
+							<div class="price-widget price--fluid">
 								<h5 class="price">
 									<span class="amount">54 <sup>87</sup></span>
 									<span class="currency">Lei</span>
@@ -349,7 +349,7 @@
 									<button class="quantity-increase"><i class="icon-plus"></i></button>
 								</div>
 
-								<a href="product-details.html" class="button" title="Add to cart">Add to cart</a>
+								<a href="product-details.html" class="button add-cart" title="Add to cart">Add to cart</a>
 								<a href="#" class="button--icon" data-toggle="tooltip" data-placement="top" title="Add to wishlist"><i class="icon-heart"></i></a>
 							</div>
 
@@ -536,9 +536,17 @@
 									<a href="product-details.html">Teapot with black tea</a>
 								</h3>
 
-								<div class="product-price">
-									<h5>85 <sup>00</sup> Lei</h5>
-									<span class="old">153 <sup>00</sup> Lei</span> <span>(-44%)</span>
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
+
+									<h6 class="old">
+										<span class="amount">295 <sup>12</sup></span>
+										<span class="currency">Lei</span>
+										<span class="discount">(-81%)</span>
+									</h6>
 								</div>
 							</div>
 						</div>
@@ -574,8 +582,11 @@
 									<a href="product-details.html">Teapot with black tea</a>
 								</h3>
 
-								<div class="product-price">
-									<h5>99 <sup>00</sup> Lei</h5>
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
 								</div>
 							</div>
 						</div>
@@ -611,8 +622,11 @@
 									<a href="product-details.html">Teapot with black tea</a>
 								</h3>
 
-								<div class="product-price">
-									<h5>79 <sup>99</sup> Lei</h5>
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
 								</div>
 							</div>
 						</div>
@@ -648,9 +662,17 @@
 									<a href="product-details.html">Teapot with black tea</a>
 								</h3>
 
-								<div class="product-price">
-									<h5>54 <sup>87</sup> Lei</h5>
-									<span class="old">295 <sup>12</sup> Lei</span> <span>(-81%)</span>
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
+
+									<h6 class="old">
+										<span class="amount">295 <sup>12</sup></span>
+										<span class="currency">Lei</span>
+										<span class="discount">(-81%)</span>
+									</h6>
 								</div>
 							</div>
 						</div>
@@ -686,8 +708,11 @@
 									<a href="product-details.html">Teapot with black tea</a>
 								</h3>
 
-								<div class="product-price">
-									<h5>24 <sup>00</sup> Lei</h5>
+								<div class="price-widget">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
 								</div>
 							</div>
 						</div>
@@ -821,6 +846,12 @@
 		</footer>
 		<!-- Footer end -->
 
+		<!-- Toast start -->
+		<div id="productToast" class="toast" role="alert" aria-live="polite" aria-atomic="true" data-delay="2000">
+			<div role="alert" aria-live="assertive" aria-atomic="true">Product was added to cart!</div>
+		</div>
+		<!-- Toast end -->
+
 		<!-- Modal Vertically centered scrollable start -->
 		<div class="product-modal modal fade" id="productModal" tabindex="-1" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
@@ -861,9 +892,17 @@
 									<span class="ml-1">(4.67 - 172 reviews)</span>
 								</div>
 
-								<div class="product-price">
-									<h5>54<sup>87</sup>Lei</h5>
-									<span class="old">295 <sup>12</sup> Lei</span> <span>(-81%)</span>
+								<div class="price-widget price--fluid">
+									<h5 class="price">
+										<span class="amount">54 <sup>87</sup></span>
+										<span class="currency">Lei</span>
+									</h5>
+
+									<h6 class="old">
+										<span class="amount">295 <sup>12</sup></span>
+										<span class="currency">Lei</span>
+										<span class="discount">(-81%)</span>
+									</h6>
 								</div>
 
 								<p class="stock-widget my-2">Available: <span class="badge badge-success">In stock</span></p>
@@ -922,6 +961,8 @@
 			</div>
 		</div>
 		<!-- Modal end -->
+
+		<a href="#header" class="scroll-top scroll-to" title="Scroll top"><i class="icon-chevron-up"></i></a>
 
 		<!-- External js -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>

@@ -1,0 +1,35 @@
+.toast {
+	background-color: rgba($success-color, 0.9);
+	color: $white;
+	min-width: 200px;
+	opacity: 0;
+	padding: 1rem;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	transform: translateY(-20px);
+	transition: all 0.2s ease-in-out;
+	visibility: hidden;
+	z-index: 10;
+
+	&.show {
+		opacity: 1;
+		transform: translateY(0);
+		visibility: visible;
+	}
+
+	&.hide {
+		opacity: 0;
+		transform: translateY(-20px);
+		visibility: hidden;
+	}
+}
+
+// Tablets
+@media (max-width: 767px) {
+}
+
+// Mobiles
+@media (max-width: 567px) {
+}

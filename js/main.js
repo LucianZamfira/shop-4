@@ -389,4 +389,39 @@ $(document).ready(function () {
 	/* if ($('.custom-select').length > 0) {
 		$('.custom-select').select2();
 	} */
+
+	// Init custom scroll
+	$('.scroll-to').on('click', function (event) {
+		event.preventDefault();
+
+		let t = $(this).attr('href').replace(/\#/, '');
+		if (t == '') {
+			return false;
+		}
+		// @link https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+		document.getElementById(t).scrollIntoView({
+			block: 'nearest',
+			behavior: 'smooth',
+		});
+	});
+
+	$(window).on('scroll', function () {
+		var scroll = $(window).scrollTop();
+		if (scroll < 100) {
+			$('.scroll-top').removeClass('show');
+		} else {
+			$('.scroll-top').addClass('show');
+		}
+	});
+
+	// Init toast
+	$('.add-cart').on('click', function (event) {
+		event.preventDefault();
+
+		$('#productToast').toast('show');
+	});
+
+	$('#productToast').on('hidden.bs.toast', function () {
+		console.log('myToast: hidden.bs.toast');
+	});
 });
