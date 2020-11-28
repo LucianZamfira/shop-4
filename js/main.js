@@ -11,6 +11,7 @@ function nodeExists(element) {
 
 $(document).ready(function () {
 	var selectOpen = false;
+	var timeOut = false;
 
 	// Trick for deselecting the select tag
 	$('select').on('click', function (event) {
@@ -405,59 +406,25 @@ $(document).ready(function () {
 		});
 	});
 
-	$(window).on('scroll', function () {
-		var scroll = $(window).scrollTop();
-		// var headerHeight = $('header').outerHeight();
-		// console.log('Init SCROLL', scroll);
+	// Sticky menu
+	window.onscroll = function () {
+		var scroll = window.pageYOffset;
+		var headerHeight = $('header').outerHeight();
+
+		if (window.innerWidth >= 320) {
+			if (scroll < headerHeight + 200) {
+				$('body').css('padding-top', 0);
+				$('header').removeClass('sticky');
+			} else {
+				$('body').css('padding-top', headerHeight);
+				$('header').addClass('sticky');
+			}
+		}
 
 		if (scroll < 100) {
 			$('.scroll-top').removeClass('show');
 		} else {
 			$('.scroll-top').addClass('show');
-		}
-
-		// && $('header').hasClass('sticky')
-		// setTimeout(() => {
-		// 	$('header').addClass('fade-effect');
-		// }, 100);
-
-		// console.log('Ajung si aici');
-
-		// if (scroll > 250) {
-		// 	$('header').addClass('sticky').addClass('fade-in');
-		// 	$('body').css('padding-top', headerHeight);
-		// } else {
-		// 	$('header').addClass('fade-out').removeClass('sticky').removeClass('fade-in');
-		// 	$('body').css('padding-top', 0);
-		// }
-	});
-
-	// Sticky menu
-	window.onscroll = function (event) {
-		var headerHeight = $('header').outerHeight();
-
-		// console.log('window.onscroll', event, window.pageYOffset);
-		// called when the window is scrolled.
-		if (window.pageYOffset < 250) {
-			$('header').addClass('fade-out');
-
-			setTimeout(() => {
-				console.log('stsdsad');
-				$('header').removeAttr('class');
-				$('body').css('padding-top', 0);
-			}, 200);
-		} else {
-			$('header').addClass('sticky');
-			$('body').css('padding-top', headerHeight);
-			// $('header').addClass('sticky');
-
-			// setTimeout(() => {
-			// 	$('body').css('padding-top', headerHeight);
-			// }, 100);
-
-			setTimeout(() => {
-				$('header').addClass('fade-in');
-			}, 400);
 		}
 	};
 

@@ -152,23 +152,26 @@
 	}
 }
 
-.scroll-top {
-	background-color: $primary-color;
-	bottom: 0;
-	color: $white;
-	cursor: pointer;
-	line-height: 3;
-	position: fixed;
-	right: 20px;
-	text-align: center;
-	transform: translateY(20px);
-	transition: all 0.2s ease-in;
-	visibility: hidden;
-	width: 60px;
+.scroll {
+	&-top {
+		background-color: $primary-color;
+		bottom: 0;
+		color: $white;
+		cursor: pointer;
+		line-height: 3;
+		position: fixed;
+		right: 20px;
+		text-align: center;
+		transform: translateY(20px);
+		transition: all 0.2s ease-in;
+		visibility: hidden;
+		width: 60px;
+		z-index: 20;
 
-	&.show {
-		visibility: visible;
-		transform: translateY(0);
+		&.show {
+			visibility: visible;
+			transform: translateY(0);
+		}
 	}
 }
 
