@@ -87,7 +87,7 @@
 							</div>
 						</li>
 
-						<li class="dropdown">
+						<li>
 							<button id="cartDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 16" type="button">
 								<i class="icon-bag2"></i>
 								<span class="badge badge-primary">6</span>
@@ -197,51 +197,53 @@
 								</div>
 							</div>
 						</li>
+
+						<li class="menu-mobile">
+							<button class="link"><i class="icon-menu"></i></button>
+						</li>
 					</ul>
 				</div>
 
-				<nav>
-					<ul class="main-nav">
-						<li class="main-nav__item">
-							<button title="Categories" class="link">
-								<i class="icon-menu mr-1"></i>
-								<span class="link-text">Categories</span>
-							</button>
+				<nav class="menu-main">
+					<a title="Categories" class="menu-level" data-toggle="collapse" role="button" aria-expanded="false" href="#collapseSubmenu" aria-controls="collapseSubmenu">
+						<i class="icon-menu mr-2"></i>
+						<span class="link-text">Categories</span>
+					</a>
 
-							<ul class="submenu">
-								<li class="submenu__item"><a href="#" title="Category 1" class="link">Category 1</a></li>
-								<li class="submenu__item"><a href="#" title="Category 2" class="link">Category 2</a></li>
-								<li class="submenu__item"><a href="#" title="Category 3" class="link">Category 3</a></li>
-								<li class="submenu__item"><a href="#" title="Category 4" class="link">Category 4</a></li>
-							</ul>
-						</li>
+					<div class="categories">
+						<div class="collapse" id="collapseSubmenu">
+							<div class="row">
+								<div class="col-4 col-sm-12">
+									<ul class="list list--airy">
+										<li><a href="#" title="Category 1" class="link">Category 1</a></li>
+										<li><a href="#" title="Category 2" class="link">Category 2</a></li>
+										<li><a href="#" title="Category 3" class="link">Category 3</a></li>
+										<li><a href="#" title="Category 4" class="link">Category 4</a></li>
+									</ul>
+								</div>
 
-						<li class="main-nav__item">
-							<a href="about-us.html" title="About us" class="link">
-								<span class="link-text">About us</span>
-							</a>
-						</li>
+								<div class="col-8 col-sm-12">
+									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-						<li class="main-nav__item">
-							<a href="shop.html" title="Shop" class="link">
-								<span class="link-text">Shop</span>
-							</a>
-						</li>
+					<a href="about-us.html" title="About us" class="menu-level">
+						<span class="link-text">About us</span>
+					</a>
 
-						<li class="main-nav__item">
-							<a href="blog.html" title="Blog" class="link">
-								<span class="link-text">Blog</span>
-							</a>
-						</li>
+					<a href="shop.html" title="Shop" class="menu-level">
+						<span class="link-text">Shop</span>
+					</a>
 
-						<li class="main-nav__item">
-							<a href="contact.html" title="Contact" class="link">
-								<span class="link-text">Contact</span>
-							</a>
-						</li>
-					</ul>
+					<a href="blog.html" title="Blog" class="menu-level">
+						<span class="link-text">Blog</span>
+					</a>
 
-					<span class="burger-menu"></span>
+					<a href="contact.html" title="Contact" class="menu-level">
+						<span class="link-text">Contact</span>
+					</a>
 				</nav>
 			</div>
 		</header>
