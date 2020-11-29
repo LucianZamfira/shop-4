@@ -435,6 +435,12 @@ $(document).ready(function () {
 		$('#productToast').toast('show');
 	});
 
+	// Hide all collapsed
+	$('.menu-level').on('click', function () {
+		console.log('test');
+		$('.collapse').collapse('hide');
+	});
+
 	$('#productToast').on('hidden.bs.toast', function () {
 		console.log('myToast: hidden.bs.toast');
 	});

@@ -1,5 +1,9 @@
-.button {
+a,
+button {
 	-webkit-font-smoothing: antialiased;
+}
+
+.button {
 	align-items: center;
 	background-color: $primary-color;
 	border: 1px solid $primary-color;
