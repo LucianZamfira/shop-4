@@ -205,7 +205,7 @@
 				</div>
 
 				<nav class="menu-main">
-					<a title="Categories" class="menu-level" data-toggle="collapse" role="button" aria-expanded="false" href="#collapseSubmenu" aria-controls="collapseSubmenu">
+					<a title="Categories" class="menu-level" data-toggle="collapse" role="button" data-offset="0, 1" aria-expanded="false" href="#collapseSubmenu" aria-controls="collapseSubmenu">
 						<i class="icon-menu mr-2"></i>
 						<span class="link-text">Categories</span>
 					</a>
@@ -214,41 +214,97 @@
 						<div class="collapse" id="collapseSubmenu">
 							<div class="row">
 								<div class="menu-level-two col-sm-12">
-									<ul class="list">
-										<li><a href="#" title="Category 1" class="toggle active">Category 1</a></li>
-										<li><a href="#" title="Category 2" class="toggle">Category 2</a></li>
-										<li><a href="#" title="Category 3" class="toggle">Category 3</a></li>
-										<li><a href="#" title="Category 4" class="toggle">Category 4</a></li>
+									<ul class="nav flex-column nav-pills" id="categories-tabs" role="tablist" aria-orientation="vertical">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="category-1-tab" data-toggle="tab" href="#category-1" role="tab" aria-selected="true">Category 1</a>
+										</li>
+
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="category-2-tab" data-toggle="tab" href="#category-2" role="tab" aria-selected="false">Category 2</a>
+										</li>
+
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="category-3-tab" data-toggle="tab" href="#category-3" role="tab" aria-selected="false">Category 3</a>
+										</li>
 									</ul>
 								</div>
 
 								<div class="menu-level-three col-sm-12">
-									<h3>Submenu title</h3>
-									<p class="content--medium">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+									<div class="tab-content" id="categories-tabsContent">
+										<div class="tab-pane fade show active" id="category-1" role="tabpanel">
+											<h3>Category 1 submenu</h3>
 
-									<ul class="list list--airy">
-										<li>
-											<a href="about-us.html" title="About us">About us</a>
-										</li>
+											<p class="content--medium">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
 
-										<li>
-											<a href="#" title="Partners">Partners</a>
-										</li>
+											<ul class="list list--airy">
+												<li>
+													<a href="about-us.html" title="About us">About us</a>
+												</li>
 
-										<li>
-											<a href="contact-us.html" title="Contact Us">Contact Us</a>
-										</li>
-									</ul>
+												<li>
+													<a href="#" title="Partners">Partners</a>
+												</li>
+
+												<li>
+													<a href="contact-us.html" title="Contact Us">Contact Us</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tab-pane fade" id="category-2" role="tabpanel">
+											<h3>Category 2 submenu</h3>
+
+											<ul class="list list--airy">
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tab-pane fade" id="category-3" role="tabpanel">
+											<h3>Category 3 submenu</h3>
+
+											<ul class="list list--airy">
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<!-- <a href="about-us.html" title="About us" class="menu-level">
-						<span class="link-text">About us</span>
-					</a> -->
-
-					<button id="aboutDropdown" class="menu-level dropdown-toggle" title="About us" role="button" data-toggle="dropdown" data-offset="0, 0" type="button">About us</button>
+					<button id="aboutDropdown" class="menu-level dropdown-toggle" title="About us" role="button" data-toggle="dropdown" data-offset="0, 1" type="button">About us</button>
 
 					<div class="dropdown-menu dropdown-menu-left" aria-labelledby="aboutDropdown">
 						<div class="dropdown-wrapper">
