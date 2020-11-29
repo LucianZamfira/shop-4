@@ -133,6 +133,10 @@ section {
 	&--medium {
 		max-width: $content-medium;
 	}
+
+	&--regular {
+		max-width: $content-regular;
+	}
 }
 
 // Large screens
