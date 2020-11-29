@@ -441,6 +441,15 @@ $(document).ready(function () {
 		$('.collapse').collapse('hide');
 	});
 
+	// Init burger menu action
+	$('.menu-mobile button').on('click', function () {
+		$('body').toggleClass('show-menu');
+	});
+
+	$('.close-menu').on('click', function () {
+		$('body').toggleClass('show-menu');
+	});
+
 	$('#productToast').on('hidden.bs.toast', function () {
 		console.log('myToast: hidden.bs.toast');
 	});
