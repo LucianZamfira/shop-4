@@ -18,7 +18,12 @@ select {
 
 	&:focus {
 		border-color: $input-focus-border-color;
-		// color: $primary-text-color;
+	}
+
+	&.disabled {
+		opacity: 0.4;
+		pointer-events: none;
+		user-select: none;
 	}
 }
 
