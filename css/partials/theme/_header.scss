@@ -72,24 +72,6 @@ header {
 		width: 20px;
 	}
 
-	.dropdown-menu {
-		min-width: 320px;
-		z-index: 10;
-
-		&:before {
-			background-color: $white;
-			border: 1px solid $input-border-color;
-			bottom: 100%;
-			content: " ";
-			height: 12px;
-			position: absolute;
-			right: 8px;
-			transform: translateY(50%) rotate(45deg);
-			width: 12px;
-			z-index: -1;
-		}
-	}
-
 	.form {
 		&-search {
 			.input {
@@ -129,31 +111,29 @@ header {
 			right: 0;
 			top: 100%;
 
-			&:before,
-			&:after {
+			&:before {
 				background-color: $white;
+				border-bottom: 1px solid $border-color;
 				bottom: 0;
+				box-shadow: 0 4px 3px rgba(0, 0, 0, 0.04);
 				content: " ";
 				position: absolute;
+				right: -50%;
 				top: 0;
-				width: 100vw;
-			}
-
-			&:before {
-				right: 100%;
-			}
-
-			&:after {
-				left: 100%;
+				width: 200vw;
+				z-index: 1;
 			}
 
 			.row {
-				padding: 1rem 0;
+				padding: 1rem 0 1.5rem 0;
+				position: relative;
+				z-index: 10;
 			}
 		}
 
 		i {
 			line-height: 1;
+			font-size: 17px;
 		}
 
 		.link {
@@ -173,15 +153,65 @@ header {
 
 	&-level {
 		align-items: center;
+		background-color: transparent;
 		border: medium none;
 		display: inline-flex;
 		font-size: 1em;
+		outline: none;
 		padding: 1rem;
 		text-decoration: none;
 		text-transform: uppercase;
 
+		&[data-toggle="collapse"][aria-expanded="true"] {
+			color: $secondary-color;
+		}
+
 		&:first-child {
 			padding-left: 0;
+		}
+
+		&-two {
+			border-right: 1px solid $input-border-color;
+			flex: 0;
+			min-width: 200px;
+			padding-right: 0;
+			text-transform: uppercase;
+
+			li {
+				border-bottom: 1px solid $input-border-color;
+
+				&:last-child {
+					border: none;
+				}
+			}
+
+			.toggle {
+				display: block;
+				line-height: 1.6;
+				padding-right: 1.5rem;
+				padding: 0.5rem 1.5rem 0.5rem 0;
+				position: relative;
+				text-decoration: none;
+
+				&.active {
+					color: $secondary-color;
+				}
+
+				&:after {
+					content: "\e93c";
+					font-family: "Linearicons";
+					font-size: 0.7em;
+					position: absolute;
+					right: 8px;
+					top: 12px;
+				}
+			}
+		}
+
+		&-three {
+			flex: 1;
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
 		}
 	}
 }
@@ -217,6 +247,24 @@ header {
 
 		i {
 			font-size: 1.4em;
+		}
+
+		.dropdown-menu {
+			min-width: 320px;
+			z-index: 10;
+
+			&:before {
+				background-color: $white;
+				border: 1px solid $input-border-color;
+				bottom: 100%;
+				content: " ";
+				height: 12px;
+				position: absolute;
+				right: 8px;
+				transform: translateY(50%) rotate(45deg);
+				width: 12px;
+				z-index: -1;
+			}
 		}
 	}
 

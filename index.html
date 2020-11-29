@@ -213,25 +213,60 @@
 					<div class="categories">
 						<div class="collapse" id="collapseSubmenu">
 							<div class="row">
-								<div class="col-4 col-sm-12">
-									<ul class="list list--airy">
-										<li><a href="#" title="Category 1" class="link">Category 1</a></li>
-										<li><a href="#" title="Category 2" class="link">Category 2</a></li>
-										<li><a href="#" title="Category 3" class="link">Category 3</a></li>
-										<li><a href="#" title="Category 4" class="link">Category 4</a></li>
+								<div class="menu-level-two col-sm-12">
+									<ul class="list">
+										<li><a href="#" title="Category 1" class="toggle active">Category 1</a></li>
+										<li><a href="#" title="Category 2" class="toggle">Category 2</a></li>
+										<li><a href="#" title="Category 3" class="toggle">Category 3</a></li>
+										<li><a href="#" title="Category 4" class="toggle">Category 4</a></li>
 									</ul>
 								</div>
 
-								<div class="col-8 col-sm-12">
+								<div class="menu-level-three col-sm-12">
+									<h3>Submenu title</h3>
 									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+
+									<ul class="list list--airy">
+										<li>
+											<a href="about-us.html" title="About us">About us</a>
+										</li>
+
+										<li>
+											<a href="#" title="Partners">Partners</a>
+										</li>
+
+										<li>
+											<a href="contact-us.html" title="Contact Us">Contact Us</a>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<a href="about-us.html" title="About us" class="menu-level">
+					<!-- <a href="about-us.html" title="About us" class="menu-level">
 						<span class="link-text">About us</span>
-					</a>
+					</a> -->
+
+					<button id="aboutDropdown" class="menu-level dropdown-toggle" title="About us" role="button" data-toggle="dropdown" data-offset="0, 0" type="button">About us</button>
+
+					<div class="dropdown-menu dropdown-menu-left" aria-labelledby="aboutDropdown">
+						<div class="dropdown-wrapper">
+							<ul class="list list--airy">
+								<li>
+									<a href="about-us.html" title="About us">About us</a>
+								</li>
+
+								<li>
+									<a href="#" title="Partners">Partners</a>
+								</li>
+
+								<li>
+									<a href="contact-us.html" title="Contact Us">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 
 					<a href="shop.html" title="Shop" class="menu-level">
 						<span class="link-text">Shop</span>
