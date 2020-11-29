@@ -56,7 +56,9 @@ body {
 }
 
 main {
+	background-color: $white;
 	flex: 1;
+	z-index: 1;
 }
 
 section {

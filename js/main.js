@@ -415,9 +415,11 @@ $(document).ready(function () {
 			if (scroll < headerHeight + 200) {
 				$('body').css('padding-top', 0);
 				$('header').removeClass('sticky');
+				$('.menu-main').show();
 			} else {
 				$('body').css('padding-top', headerHeight);
 				$('header').addClass('sticky');
+				$('.menu-main').hide();
 			}
 		}
 
@@ -443,6 +445,7 @@ $(document).ready(function () {
 
 	// Init burger menu action
 	$('.menu-mobile button').on('click', function () {
+		$('.menu-main').show();
 		$('body').toggleClass('show-menu');
 	});
 
