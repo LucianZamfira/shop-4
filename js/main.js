@@ -459,4 +459,15 @@ $(document).ready(function () {
 	$('#productToast').on('hidden.bs.toast', function () {
 		console.log('myToast: hidden.bs.toast');
 	});
+
+	// Add animations for dropdowns
+	if (window.innerWidth > 766) {
+		$('.dropdown-toggle').on('mouseenter', function (event) {
+			$(this).click();
+		});
+
+		$('.dropdown-toggle').on('mouseleave', function (event) {
+			$(this).click();
+		});
+	}
 });

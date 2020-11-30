@@ -153,3 +153,15 @@ li {
 		}
 	}
 }
+
+.cols {
+	&-two {
+		columns: auto 2;
+		grid-gap: 1.5rem;
+	}
+
+	&-three {
+		columns: auto 3;
+		grid-gap: 1.5rem;
+	}
+}
