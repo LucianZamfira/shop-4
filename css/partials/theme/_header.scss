@@ -41,11 +41,12 @@ header {
 		position: fixed;
 		right: 0;
 		top: 0;
-		transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+		transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 	}
 
 	&.fade-out {
-		animation: 0.2s ease-out 0s normal none 1 running fadeOutAnimation;
+		// animation: 0.2s ease-out 0s normal none 1 fadeOutAnimation;
+		animation: fadeOutAnimation 0.2s linear 1 normal forwards;
 	}
 
 	ul {
@@ -282,17 +283,17 @@ header {
 	}
 }
 
-.sticky {
-	header {
-		left: 0;
-		position: fixed;
-		right: 0;
-		top: 0;
-		transform: translateY(-100%);
-		transition-delay: 1s;
-		transition: transform 0.46s cubic-bezier(0.645, 0.045, 0.355, 1);
-	}
-}
+// .sticky {
+// 	header {
+// 		left: 0;
+// 		position: fixed;
+// 		right: 0;
+// 		top: 0;
+// 		transform: translateY(-100%);
+// 		transition-delay: 1s;
+// 		transition: transform 0.46s cubic-bezier(0.645, 0.045, 0.355, 1);
+// 	}
+// }
 
 // Tablets and Desktops
 @media (min-width: 768px) {
@@ -353,6 +354,14 @@ header {
 				padding-left: 0;
 				padding-right: 0;
 			}
+		}
+	}
+
+	.show-menu {
+		padding-right: 6px;
+
+		header {
+			padding-right: 6px;
 		}
 	}
 }
