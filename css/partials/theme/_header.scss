@@ -358,6 +358,8 @@ header {
 }
 
 .show-menu {
+	overflow: hidden;
+
 	.menu {
 		&-main {
 			transform: translateX(0);
