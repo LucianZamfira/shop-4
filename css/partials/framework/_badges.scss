@@ -8,6 +8,10 @@
 	padding: 4px 15px;
 	text-decoration: none;
 
+	&:hover {
+		text-decoration: none;
+	}
+
 	&-primary {
 		background-color: $badge-primary-color;
 	}
