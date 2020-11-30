@@ -56,24 +56,6 @@ p {
 	margin-bottom: $paragraphs-margin-bottom;
 }
 
-a,
-button {
-	color: inherit;
-	cursor: pointer;
-	// display: inline-block;
-	line-height: inherit;
-	text-decoration: none;
-	transition: color 0.2s ease-in-out;
-}
-
-a {
-	text-decoration: underline;
-
-	&:hover {
-		color: $secondary-color;
-	}
-}
-
 hr {
 	border: medium none;
 	height: 1px;

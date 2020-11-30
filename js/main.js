@@ -437,9 +437,8 @@ $(document).ready(function () {
 		$('#productToast').toast('show');
 	});
 
-	// Hide all collapsed
-	$('.menu-level').on('click', function () {
-		console.log('test');
+	// Hide all collapsed start
+	$('main, .menu-level').on('click', function () {
 		$('.collapse').collapse('hide');
 	});
 
