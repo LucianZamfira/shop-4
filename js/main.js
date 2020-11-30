@@ -460,9 +460,9 @@ $(document).ready(function () {
 	});
 
 	// Add animations for dropdowns
-	if (window.innerWidth > 766) {
-		$('.dropdown-toggle').on('mouseenter mouseleave', function () {
-			$(this).click();
-		});
-	}
+	// if (window.innerWidth > 766) {
+	// 	$('.dropdown-toggle').on('mouseenter', function () {
+	// 		$(this).click();
+	// 	});
+	// }
 });
