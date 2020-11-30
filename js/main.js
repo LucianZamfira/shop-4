@@ -10,20 +10,21 @@ function nodeExists(element) {
 }
 
 $(document).ready(function () {
-
 	// Trick for deselecting the select tag
-	$('select').on('click', function (event) {
-		let open_state = $(this).attr('data-open') !== undefined;
-		if (!open_state) {
-			$(this).attr('data-open', 1);
-		} else {
+	$('select')
+		.on('click', function () {
+			let open_state = $(this).attr('data-open') || false;
+
+			if (!open_state) {
+				$(this).attr('data-open', 1);
+			} else {
+				$(this).removeAttr('data-open');
+				$('select').blur();
+			}
+		})
+		.on('blur', function () {
 			$(this).removeAttr('data-open');
-			$('select').blur();
-		}
-	})
-	.on('blur', function (event) {
-		$(this).removeAttr('data-open');
-	});
+		});
 
 	/**
 	 * Defaults for Owl carousel
@@ -460,7 +461,7 @@ $(document).ready(function () {
 
 	// Add animations for dropdowns
 	if (window.innerWidth > 766) {
-		$('.dropdown-toggle').on('mouseenter mouseleave', function (event) {
+		$('.dropdown-toggle').on('mouseenter mouseleave', function () {
 			$(this).click();
 		});
 	}
