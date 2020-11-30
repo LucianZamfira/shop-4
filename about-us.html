@@ -36,7 +36,7 @@
 
 					<ul class="header-list">
 						<li>
-							<button id="userDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 16" type="button">
+							<button id="userDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 15" type="button">
 								<i class="icon-user"></i>
 							</button>
 
@@ -75,7 +75,7 @@
 						</li>
 
 						<li>
-							<button id="wishDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 16" type="button">
+							<button id="wishDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 15" type="button">
 								<i class="icon-heart"></i>
 								<span class="badge badge-primary">0</span>
 							</button>
@@ -88,7 +88,7 @@
 						</li>
 
 						<li>
-							<button id="cartDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 16" type="button">
+							<button id="cartDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 15" type="button">
 								<i class="icon-bag2"></i>
 								<span class="badge badge-primary">6</span>
 							</button>
@@ -205,33 +205,124 @@
 				</div>
 
 				<nav class="menu-main">
-					<a title="Categories" class="menu-level" data-toggle="collapse" role="button" aria-expanded="false" href="#collapseSubmenu" aria-controls="collapseSubmenu">
+					<button title="Categories" class="menu-level" data-toggle="collapse" role="button" data-offset="0, 1" aria-expanded="false" data-target="#collapseSubmenu" aria-controls="collapseSubmenu">
 						<i class="icon-menu mr-2"></i>
 						<span class="link-text">Categories</span>
-					</a>
+					</button>
 
 					<div class="categories">
 						<div class="collapse" id="collapseSubmenu">
 							<div class="row">
-								<div class="col-4 col-sm-12">
-									<ul class="list list--airy">
-										<li><a href="#" title="Category 1" class="link">Category 1</a></li>
-										<li><a href="#" title="Category 2" class="link">Category 2</a></li>
-										<li><a href="#" title="Category 3" class="link">Category 3</a></li>
-										<li><a href="#" title="Category 4" class="link">Category 4</a></li>
+								<div class="menu-level-two col-sm-12">
+									<ul class="nav flex-column nav-pills" id="categories-tabs" role="tablist" aria-orientation="vertical">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="category-1-tab" data-toggle="tab" href="#category-1" role="tab" aria-selected="true">Category 1</a>
+										</li>
+
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="category-2-tab" data-toggle="tab" href="#category-2" role="tab" aria-selected="false">Category 2</a>
+										</li>
+
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="category-3-tab" data-toggle="tab" href="#category-3" role="tab" aria-selected="false">Category 3</a>
+										</li>
 									</ul>
 								</div>
 
-								<div class="col-8 col-sm-12">
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+								<div class="menu-level-three col-sm-12">
+									<div class="tab-content" id="categories-tabsContent">
+										<div class="tab-pane fade show active" id="category-1" role="tabpanel">
+											<h3>Category 1 submenu</h3>
+
+											<p class="content--medium">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+
+											<ul class="list list--airy">
+												<li>
+													<a href="about-us.html" title="About us">About us</a>
+												</li>
+
+												<li>
+													<a href="#" title="Partners">Partners</a>
+												</li>
+
+												<li>
+													<a href="contact-us.html" title="Contact Us">Contact Us</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tab-pane fade" id="category-2" role="tabpanel">
+											<h3>Category 2 submenu</h3>
+
+											<ul class="list list--airy">
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tab-pane fade" id="category-3" role="tabpanel">
+											<h3>Category 3 submenu</h3>
+
+											<ul class="list list--airy">
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+
+												<li>
+													<a href="#" title="Level 3">Level 3</a>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<a href="about-us.html" title="About us" class="menu-level">
-						<span class="link-text">About us</span>
-					</a>
+					<button id="aboutDropdown" class="menu-level dropdown-toggle" title="About us" role="button" data-toggle="dropdown" data-offset="0, 1" type="button">About us</button>
+
+					<div class="dropdown-menu dropdown-menu-left" aria-labelledby="aboutDropdown">
+						<div class="dropdown-wrapper">
+							<ul class="list list--airy">
+								<li>
+									<a href="about-us.html" title="About us">About us</a>
+								</li>
+
+								<li>
+									<a href="#" title="Partners">Partners</a>
+								</li>
+
+								<li>
+									<a href="contact-us.html" title="Contact Us">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
 
 					<a href="shop.html" title="Shop" class="menu-level">
 						<span class="link-text">Shop</span>
@@ -244,6 +335,8 @@
 					<a href="contact.html" title="Contact" class="menu-level">
 						<span class="link-text">Contact</span>
 					</a>
+
+					<i class="close-menu icon-cross2"></i>
 				</nav>
 			</div>
 		</header>
