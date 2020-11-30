@@ -10,21 +10,19 @@ function nodeExists(element) {
 }
 
 $(document).ready(function () {
-	var selectOpen = false;
-	var timeOut = false;
 
 	// Trick for deselecting the select tag
 	$('select').on('click', function (event) {
-		if (selectOpen === false) {
-			selectOpen = true;
+		let open_state = $(this).attr('data-open') !== undefined;
+		if (!open_state) {
+			$(this).attr('data-open', 1);
 		} else {
-			selectOpen = false;
+			$(this).removeAttr('data-open');
 			$('select').blur();
 		}
-	});
-
-	$('select').on('blur', function (event) {
-		selectOpen = false;
+	})
+	.on('blur', function (event) {
+		$(this).removeAttr('data-open');
 	});
 
 	/**
@@ -462,11 +460,7 @@ $(document).ready(function () {
 
 	// Add animations for dropdowns
 	if (window.innerWidth > 766) {
-		$('.dropdown-toggle').on('mouseenter', function (event) {
-			$(this).click();
-		});
-
-		$('.dropdown-toggle').on('mouseleave', function (event) {
+		$('.dropdown-toggle').on('mouseenter mouseleave', function (event) {
 			$(this).click();
 		});
 	}
