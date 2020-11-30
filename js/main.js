@@ -413,13 +413,17 @@ $(document).ready(function () {
 
 		if (window.innerWidth >= 320) {
 			if (scroll < headerHeight + 200) {
+				// if ($('body').hasClass('sticky')) {
 				$('body').css('padding-top', 0);
 				$('header').removeClass('sticky');
 				$('.menu-main').show();
+				// }
 			} else {
+				// if (!$('body').hasClass('sticky')) {
 				$('body').css('padding-top', headerHeight);
 				$('header').addClass('sticky');
 				$('.menu-main').hide();
+				// }
 			}
 		}
 
