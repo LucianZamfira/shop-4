@@ -349,11 +349,38 @@ header {
 						color: $secondary-color;
 					}
 				}
+
+				.categories-collapse {
+					left: auto;
+					position: relative;
+					top: auto;
+
+					&:before {
+						display: none;
+					}
+				}
 			}
 
 			&-level {
 				padding-left: 0;
 				padding-right: 0;
+
+				&-two {
+					max-width: unset;
+					min-height: unset;
+					padding: 0;
+				}
+
+				&-three {
+					display: block;
+					padding: 0;
+
+					.cols {
+						&-three {
+							columns: auto;
+						}
+					}
+				}
 			}
 		}
 	}
