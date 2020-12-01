@@ -360,6 +360,7 @@ header {
 					.categories {
 						border-right: 1px solid $border-color;
 						max-width: 260px;
+						transition: all 0.2s $transition-effect;
 
 						> li {
 							border-bottom: 1px solid $border-color;
@@ -477,17 +478,16 @@ header {
 							}
 
 							&-three {
-								background-color: $white;
 								color: initial;
 								left: 1rem;
 								margin-left: 260px;
 								opacity: 0;
 								padding: 1.2rem;
 								position: absolute;
-								right: 1rem;
+								right: 0;
 								text-transform: none;
 								top: 0;
-								transition: opacity 0.15s ease-in-out;
+								transition: opacity 0.25s ease-in-out;
 
 								a,
 								button {
