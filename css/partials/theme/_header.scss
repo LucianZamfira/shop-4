@@ -187,7 +187,7 @@ header {
 	}
 
 	&-shell {
-		position: relative;
+		padding: 1.2rem 1.4rem;
 	}
 
 	&-show {
@@ -360,7 +360,7 @@ header {
 					.categories {
 						border-right: 1px solid $border-color;
 						max-width: 260px;
-						transition: all 0.2s $transition-effect;
+						transition: all 0.4s $transition-effect;
 
 						> li {
 							border-bottom: 1px solid $border-color;
@@ -467,7 +467,7 @@ header {
 								text-transform: uppercase;
 								top: 100%;
 								transform: translateY(-40px);
-								transition: all 0.2s $transition-effect;
+								transition: all 0.35s $transition-effect;
 								visibility: hidden;
 								z-index: -1;
 
@@ -478,11 +478,12 @@ header {
 							}
 
 							&-three {
+								bottom: 0;
 								color: initial;
-								left: 1rem;
+								left: 0;
 								margin-left: 260px;
 								opacity: 0;
-								padding: 1.2rem;
+								overflow: hidden;
 								position: absolute;
 								right: 0;
 								text-transform: none;
@@ -641,81 +642,6 @@ header {
 			}
 		}
 	}
-
-	/* .menu {
-		&-mobile {
-			display: inline-block;
-		}
-
-		&-main {
-			li {
-				[class^="menu-level-"] {
-					display: none;
-				}
-
-				&.show {
-					> [class^="menu-level-"] {
-						display: block;
-					}
-				}
-			}
-
-			& > li {
-				border-bottom: 1px solid $border-color;
-
-				&:first-child {
-					> .toggle {
-						display: none;
-					}
-
-					.toggle {
-						padding: 0.6rem 1rem;
-					}
-
-					.menu-level-two {
-						display: block;
-						padding: 0;
-					}
-				}
-
-				&:last-child {
-					border: none;
-				}
-			}
-
-			.close-menu {
-				display: block;
-				left: 1rem;
-				position: absolute;
-				top: 1rem;
-			}
-		}
-
-		&-level {
-			&-two {
-				padding: 0 1rem 0.2rem 1rem;
-			}
-
-			&-three {
-				padding-left: 1.5rem;
-				line-height: 1.5;
-			}
-		}
-
-		&-show {
-			overflow: hidden;
-
-			header {
-				&:before {
-					background-color: rgba(0, 0, 0, 0.4);
-				}
-			}
-
-			nav {
-				transform: translateX(0);
-			}
-		}
-	} */
 }
 
 // Mobiles/Tablets

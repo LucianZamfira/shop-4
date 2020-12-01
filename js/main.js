@@ -469,12 +469,12 @@ $(document).ready(function () {
 
 	$('.sticky-no .categories .toggle').on('click', function () {
 		// If has submenu (level 3)
-		var levelHeight = $(this).next().outerHeight();
+		var levelHeight = $(this).parent().find('.menu-shell').outerHeight();
 		$(this).parents('.categories').css('min-height', levelHeight);
 	});
 
 	// On load set height
-	var levelHeight = $('.categories .show').find('.menu-level-three').outerHeight();
+	var levelHeight = $('.categories .show').find('.menu-shell').outerHeight();
 	$('.categories').css('min-height', levelHeight);
 	// TODO: clean this shit end!
 
