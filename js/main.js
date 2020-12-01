@@ -405,6 +405,18 @@ $(document).ready(function () {
 		});
 	});
 
+	// Init toast
+	$('.add-cart').on('click', function (event) {
+		event.preventDefault();
+
+		$('#productToast').toast('show');
+	});
+
+	// Hide all collapsed start
+	// $('main, .menu-level').on('click', function () {
+	// 	$('.collapse').collapse('hide');
+	// });
+
 	// Sticky menu
 	window.onscroll = function () {
 		var scroll = window.pageYOffset;
@@ -412,17 +424,13 @@ $(document).ready(function () {
 
 		if (window.innerWidth >= 320) {
 			if (scroll < headerHeight + 200) {
-				// if ($('body').hasClass('sticky')) {
 				$('body').css('padding-top', 0);
-				$('header').removeClass('sticky');
-				$('.menu-main').show();
-				// }
+				$('header').attr('class', 'sticky-no');
+				$('nav').removeAttr('style');
 			} else {
-				// if (!$('body').hasClass('sticky')) {
 				$('body').css('padding-top', headerHeight);
-				$('header').addClass('sticky');
-				$('.menu-main').hide();
-				// }
+				$('header').attr('class', 'sticky-yes');
+				$('nav').hide();
 			}
 		}
 
@@ -433,36 +441,48 @@ $(document).ready(function () {
 		}
 	};
 
-	// Init toast
-	$('.add-cart').on('click', function (event) {
-		event.preventDefault();
-
-		$('#productToast').toast('show');
-	});
-
-	// Hide all collapsed start
-	$('main, .menu-level').on('click', function () {
-		$('.collapse').collapse('hide');
-	});
-
 	// Init burger menu action
 	$('.menu-mobile button').on('click', function () {
-		$('.menu-main').show();
-		$('body').toggleClass('show-menu');
+		$('nav').show();
+		$('body').toggleClass('menu-show');
 	});
 
 	$('.close-menu').on('click', function () {
-		$('body').toggleClass('show-menu');
+		$('body').toggleClass('menu-show');
+	});
+
+	// TODO: clean this shit start!
+	$('.toggle').on('click', function () {
+		if ($('body').hasClass('menu-show')) {
+			if ($(this).parent().hasClass('show')) {
+				$(this).parent().toggleClass('show');
+				return false;
+			}
+
+			$('nav .show').removeClass('show');
+		} else {
+			$(this).closest('ul').find('.show').removeClass('show');
+		}
+
+		$(this).parent().toggleClass('show');
+	});
+
+	$('.sticky-no .categories .toggle').on('click', function () {
+		// If has submenu (level 3)
+		var levelHeight = $(this).next().outerHeight();
+		$(this).parents('.categories').css('min-height', levelHeight);
+	});
+
+	// On load set height
+	var levelHeight = $('.categories .show').find('.menu-level-three').outerHeight();
+	$('.categories').css('min-height', levelHeight);
+	// TODO: clean this shit end!
+
+	$('.menu-dropdown').on('click', function (event) {
+		event.stopPropagation();
 	});
 
 	$('#productToast').on('hidden.bs.toast', function () {
 		console.log('myToast: hidden.bs.toast');
 	});
-
-	// Add animations for dropdowns
-	// if (window.innerWidth > 766) {
-	// 	$('.dropdown-toggle').on('mouseenter', function () {
-	// 		$(this).click();
-	// 	});
-	// }
 });

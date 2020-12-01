@@ -22,7 +22,7 @@
 
 	<body>
 		<!-- Header start -->
-		<header id="header">
+		<header id="header" class="sticky-no">
 			<div class="container">
 				<div class="header-top">
 					<form action="POST" class="form-search">
@@ -204,35 +204,18 @@
 					</ul>
 				</div>
 
-				<nav class="menu-main">
-					<button title="Categories" class="menu-level" data-toggle="collapse" role="button" data-offset="0, 1" aria-expanded="false" data-target="#collapseSubmenu" aria-controls="collapseSubmenu">
-						<i class="icon-menu mr-2"></i>
-						<span class="link-text">Categories</span>
-					</button>
+				<nav>
+					<ul class="menu-main">
+						<li>
+							<button class="toggle"><i class="icon-menu mr-1"></i>Categories</button>
 
-					<div class="categories-collapse">
-						<div class="collapse" id="collapseSubmenu">
-							<div class="row">
-								<div class="menu-level-two col-sm-12">
-									<ul class="nav flex-column nav-pills" id="categories-tabs" role="tablist" aria-orientation="vertical">
-										<li class="nav-item" role="presentation">
-											<a class="nav-link active" id="category-1-tab" data-toggle="tab" href="#category-1" role="tab" aria-selected="true">Perfumes</a>
-										</li>
+							<div class="menu-level-two">
+								<ul class="categories">
+									<li class="show">
+										<button class="toggle">Perfumes</button>
 
-										<li class="nav-item" role="presentation">
-											<a class="nav-link" id="category-2-tab" data-toggle="tab" href="#category-2" role="tab" aria-selected="false"><span class="nav-link-text">Brands</span></a>
-										</li>
-
-										<li class="nav-item" role="presentation">
-											<a class="nav-link" id="category-3-tab" data-toggle="tab" href="#category-3" role="tab" aria-selected="false">Home Scents</a>
-										</li>
-									</ul>
-								</div>
-
-								<div class="menu-level-three col-sm-12">
-									<div class="tab-content" id="categories-tabsContent">
-										<div class="tab-pane fade show active" id="category-1" role="tabpanel">
-											<ul class="list list--airy cols-three">
+										<div class="menu-level-three">
+											<ul>
 												<li>
 													<a href="#" title="Parle Moi de Parfum">Parle Moi de Parfum</a>
 												</li>
@@ -270,7 +253,7 @@
 												</li>
 
 												<li>
-													<a href="#" title="Goldfield & Banks">Goldfield & Banks</a>
+													<a href="#" title="Goldfield &amp; Banks">Goldfield &amp; Banks</a>
 												</li>
 
 												<li>
@@ -278,29 +261,22 @@
 												</li>
 											</ul>
 										</div>
+									</li>
 
-										<div class="tab-pane fade" id="category-2" role="tabpanel">
-											<h3>Category 1 submenu</h3>
+									<li>
+										<button class="toggle">Partners</button>
 
-											<p class="content--medium">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
-
-											<ul class="list list--airy">
-												<li>
-													<a href="about-us.html" title="About us">About us</a>
-												</li>
-
-												<li>
-													<a href="#" title="Partners">Partners</a>
-												</li>
-
-												<li>
-													<a href="contact-us.html" title="Contact Us">Contact Us</a>
-												</li>
-											</ul>
+										<div class="menu-level-three">
+											<h3>Our Partners</h3>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi alias, magni labore ipsam voluptatibus minus fuga voluptates iure eaque autem molestiae dicta? Consectetur harum consequuntur ullam repudiandae. Voluptatum, ad.</p>
 										</div>
+									</li>
 
-										<div class="tab-pane fade" id="category-3" role="tabpanel">
-											<ul class="list list--airy">
+									<li>
+										<button class="toggle">Contact us</button>
+
+										<div class="menu-level-three">
+											<ul>
 												<li>
 													<a href="#" title="Rose et Marius">Rose et Marius</a>
 												</li>
@@ -310,49 +286,51 @@
 												</li>
 											</ul>
 										</div>
-									</div>
-								</div>
+									</li>
+								</ul>
 							</div>
-						</div>
-					</div>
+						</li>
 
-					<button id="aboutDropdown" class="menu-level dropdown-toggle" title="About us" role="button" data-toggle="dropdown" data-offset="0, 1" type="button">About us</button>
+						<li>
+							<button class="toggle">About us</button>
 
-					<div class="dropdown-menu dropdown-menu-left" aria-labelledby="aboutDropdown">
-						<div class="dropdown-wrapper">
-							<ul class="list list--airy">
-								<li>
-									<a href="about-us.html" title="About us">About us</a>
-								</li>
+							<div class="menu-level-two">
+								<ul>
+									<li>
+										<a href="about-us.html" title="About us">About us</a>
+									</li>
 
-								<li>
-									<a href="#" title="Partners">Partners</a>
-								</li>
+									<li>
+										<a href="#" title="Partners">Partners</a>
+									</li>
 
-								<li>
-									<a href="contact-us.html" title="Contact Us">Contact Us</a>
-								</li>
-							</ul>
-						</div>
-					</div>
+									<li>
+										<a href="contact-us.html" title="Contact us">Contact us</a>
+									</li>
+								</ul>
+							</div>
+						</li>
 
-					<a href="shop.html" title="Shop" class="menu-level">
-						<span class="link-text">Shop</span>
-					</a>
+						<li>
+							<a href="shop.html" title="Shop">Shop</a>
+						</li>
 
-					<a href="#" title="Concept" class="menu-level">
-						<span class="link-text">Concept</span>
-					</a>
+						<li>
+							<a href="#" title="Concept">Concept</a>
+						</li>
 
-					<a href="blog.html" title="Blog" class="menu-level">
-						<span class="link-text">Blog</span>
-					</a>
+						<li>
+							<a href="blog.html" title="Blog">Blog</a>
+						</li>
 
-					<a href="contact.html" title="Contact" class="menu-level">
-						<span class="link-text">Contact</span>
-					</a>
+						<li>
+							<a href="contact.html" title="Contact">Contact</a>
+						</li>
 
-					<i class="close-menu icon-cross2"></i>
+						<li class="close-menu">
+							<i class="icon-cross2"></i>
+						</li>
+					</ul>
 				</nav>
 			</div>
 		</header>
