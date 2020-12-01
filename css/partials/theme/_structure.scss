@@ -175,6 +175,18 @@
 	}
 }
 
+.columns {
+	&-two {
+		columns: auto 2;
+		column-gap: 3rem;
+	}
+
+	&-three {
+		columns: auto 3;
+		column-gap: 3rem;
+	}
+}
+
 // Large screens
 @media (min-width: 1600px) {
 }
