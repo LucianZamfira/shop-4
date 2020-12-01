@@ -250,31 +250,31 @@ header {
 				transition: transform 0.4s $transition-effect;
 				width: 460px;
 				z-index: 10;
+			}
 
-				.categories {
-					min-height: auto !important;
+			.categories {
+				min-height: auto !important;
 
-					> li {
-						border-top: 1px solid $border-color;
+				> li {
+					border-top: 1px solid $border-color;
 
-						&:first-child {
-							border: none;
-						}
+					&:first-child {
+						border: none;
 					}
 				}
+			}
 
-				.toggle {
-					justify-content: space-between;
-					padding: 0.6rem 1.5rem;
+			.toggle {
+				justify-content: space-between;
+				padding: 0.6rem 1.5rem;
 
-					&:hover {
-						text-decoration: none;
-					}
+				&:hover {
+					text-decoration: none;
+				}
 
-					&:after {
-						content: "\e93a";
-						font-family: "Linearicons";
-					}
+				&:after {
+					content: "\e93a";
+					font-family: "Linearicons";
 				}
 			}
 
@@ -351,54 +351,52 @@ header {
 		}
 
 		&-no {
-			nav {
-				.categories {
-					border-right: 1px solid $border-color;
-					max-width: 260px;
-					transition: all 0.4s $transition-effect;
+			.categories {
+				border-right: 1px solid $border-color;
+				max-width: 260px;
+				transition: all 0.4s $transition-effect;
 
-					> li {
-						border-bottom: 1px solid $border-color;
-
-						.toggle {
-							padding-top: 0.8rem;
-							padding-bottom: 0.8rem;
-						}
-
-						&:last-child {
-							border: none;
-						}
-					}
-
-					.show {
-						color: $secondary-color;
-
-						.toggle {
-							&:after {
-								height: 100%;
-							}
-						}
-					}
+				> li {
+					border-bottom: 1px solid $border-color;
 
 					.toggle {
-						position: relative;
+						padding-top: 0.7rem;
+						padding-bottom: 0.7rem;
+					}
 
+					&:last-child {
+						border: none;
+					}
+				}
+
+				.show {
+					color: $secondary-color;
+
+					.toggle {
 						&:after {
-							background-color: $secondary-color;
-							bottom: 0;
-							content: " ";
-							height: 0;
-							position: absolute;
-							right: -1px;
-							top: 50%;
-							transform: translateY(-50%);
-							transition: height 0.2s $transition-effect;
-							width: 4px;
+							height: 100%;
 						}
+					}
+				}
 
-						&:hover {
-							text-decoration: none;
-						}
+				.toggle {
+					position: relative;
+
+					&:after {
+						background-color: $secondary-color;
+						bottom: 0;
+						content: " ";
+						height: 0;
+						position: absolute;
+						right: -1px;
+						top: 50%;
+						transform: translateY(-50%);
+						transition: height 0.2s $transition-effect;
+						width: 4px;
+					}
+
+					&:hover {
+						text-decoration: none;
 					}
 				}
 			}
@@ -420,6 +418,10 @@ header {
 							&:hover {
 								text-decoration: none;
 							}
+						}
+
+						> .toggle {
+							pointer-events: none;
 						}
 
 						&:first-child {
