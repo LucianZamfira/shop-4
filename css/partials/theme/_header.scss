@@ -351,59 +351,63 @@ header {
 		}
 
 		&-no {
+			nav {
+				.categories {
+					border-right: 1px solid $border-color;
+					max-width: 260px;
+					transition: all 0.4s $transition-effect;
+
+					> li {
+						border-bottom: 1px solid $border-color;
+
+						.toggle {
+							padding-top: 0.8rem;
+							padding-bottom: 0.8rem;
+						}
+
+						&:last-child {
+							border: none;
+						}
+					}
+
+					.show {
+						color: $secondary-color;
+
+						.toggle {
+							&:after {
+								height: 100%;
+							}
+						}
+					}
+
+					.toggle {
+						position: relative;
+
+						&:after {
+							background-color: $secondary-color;
+							bottom: 0;
+							content: " ";
+							height: 0;
+							position: absolute;
+							right: -1px;
+							top: 50%;
+							transform: translateY(-50%);
+							transition: height 0.2s $transition-effect;
+							width: 4px;
+						}
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+
 			.menu {
 				&-main {
 					background-color: $white;
 					display: flex;
 					position: relative;
-
-					.categories {
-						border-right: 1px solid $border-color;
-						max-width: 260px;
-						transition: all 0.4s $transition-effect;
-
-						> li {
-							border-bottom: 1px solid $border-color;
-
-							.toggle {
-								padding-top: 0.8rem;
-								padding-bottom: 0.8rem;
-							}
-
-							&:last-child {
-								border: none;
-							}
-						}
-
-						.show {
-							color: $secondary-color;
-
-							.toggle {
-								&:after {
-									width: 4px;
-								}
-							}
-						}
-
-						.toggle {
-							position: relative;
-
-							&:after {
-								background-color: $secondary-color;
-								bottom: 0;
-								content: " ";
-								position: absolute;
-								right: -1px;
-								top: 0;
-								transition: width 0.2s ease-in;
-								width: 0;
-							}
-
-							&:hover {
-								text-decoration: none;
-							}
-						}
-					}
 
 					> li {
 						position: relative;
@@ -435,7 +439,7 @@ header {
 									background-color: $white;
 									bottom: 0;
 									content: " ";
-									left: -50%;
+									left: -100%;
 									position: absolute;
 									top: 0;
 									width: 200vw;
@@ -446,10 +450,10 @@ header {
 
 						&:hover {
 							.menu-level-two {
-								visibility: visible;
-								pointer-events: unset;
-								transform: translateY(0);
+								margin-top: 0;
 								opacity: 1;
+								pointer-events: unset;
+								visibility: visible;
 							}
 						}
 					}
@@ -459,6 +463,7 @@ header {
 							&-two {
 								background-color: $white;
 								left: 0;
+								margin-top: -30px;
 								min-width: 180px;
 								opacity: 0;
 								padding: 1rem;
@@ -466,8 +471,7 @@ header {
 								position: absolute;
 								text-transform: uppercase;
 								top: 100%;
-								transform: translateY(-40px);
-								transition: all 0.35s $transition-effect;
+								transition: all 0.3s $transition-effect;
 								visibility: hidden;
 								z-index: -1;
 
