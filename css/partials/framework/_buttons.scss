@@ -1,6 +1,13 @@
 a,
 button {
 	-webkit-font-smoothing: antialiased;
+
+	&[disabled="disabled"],
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.4;
+		user-select: none;
+	}
 }
 
 .button {
@@ -82,6 +89,7 @@ button {
 	}
 
 	&--disabled {
+		cursor: not-allowed;
 		opacity: 0.4;
 		pointer-events: none;
 		user-select: none;

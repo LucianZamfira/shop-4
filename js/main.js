@@ -405,6 +405,15 @@ $(document).ready(function () {
 		});
 	});
 
+	$('.scroll-top').on('click', function (event) {
+		event.preventDefault();
+
+		console.log('dss');
+
+		// @link https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
+		document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
+	});
+
 	// Init toast
 	$('.add-cart').on('click', function (event) {
 		event.preventDefault();
