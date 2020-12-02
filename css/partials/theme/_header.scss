@@ -648,6 +648,10 @@ header {
 			}
 		}
 
+		&-shell {
+			padding: 0;
+		}
+
 		&-show {
 			padding: 0;
 
@@ -686,6 +690,6 @@ header {
 	}
 
 	nav {
-		width: 300px;
+		overflow-x: auto;
 	}
 }

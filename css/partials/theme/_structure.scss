@@ -250,4 +250,15 @@
 
 // Mobiles
 @media (max-width: 575px) {
+	.columns {
+		&-two {
+			columns: auto 1;
+			column-gap: normal;
+		}
+
+		&-three {
+			columns: auto 1;
+			column-gap: normal;
+		}
+	}
 }
