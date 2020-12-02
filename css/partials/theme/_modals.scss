@@ -25,6 +25,23 @@
 		pointer-events: auto;
 		position: relative;
 		width: 100%;
+
+		&:before {
+			color: $secondary-color;
+			content: " ";
+			font-family: "Linearicons";
+			font-size: 3em;
+			height: 60px;
+			left: 0;
+			left: 50%;
+			line-height: 60px;
+			margin: -30px 0 0 -30px;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 50%;
+			width: 60px;
+		}
 	}
 
 	&-backdrop {
@@ -119,6 +136,28 @@
 				transform: none;
 			}
 		}
+	}
+}
+
+.loading {
+	position: relative;
+
+	.modal-body {
+		opacity: 0;
+	}
+
+	&:before {
+		content: "\e8d0";
+		animation: rotation 1s infinite linear;
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
 	}
 }
 
