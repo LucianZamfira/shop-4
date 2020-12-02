@@ -442,9 +442,13 @@ header {
 								padding-top: 0;
 								padding-bottom: 0;
 								padding-left: 0;
+								border-bottom: none;
+								box-shadow: none;
 
 								&:after {
 									background-color: $white;
+									border-bottom: 1px solid $border-color;
+									box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 									bottom: 0;
 									content: " ";
 									left: -100%;
@@ -475,6 +479,8 @@ header {
 						&-level {
 							&-two {
 								background-color: $white;
+								border-bottom: 1px solid $border-color;
+								box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 								cursor: initial;
 								left: 0;
 								margin-top: -30px;
