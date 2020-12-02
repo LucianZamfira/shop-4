@@ -1,0 +1,43 @@
+.alert {
+	background-color: lighten($badge-primary-color, 25%);
+	padding: 1rem 1.2rem;
+
+	&-primary {
+		background-color: lighten($badge-primary-color, 25%);
+	}
+
+	&-secondary {
+		background-color: lighten($badge-secondary-color, 25%);
+	}
+
+	&-danger {
+		background-color: lighten($badge-danger-color, 25%);
+	}
+
+	&-success {
+		background-color: lighten($badge-success-color, 25%);
+	}
+
+	&-warning {
+		background-color: lighten($badge-warning-color, 25%);
+	}
+
+	&-info {
+		background-color: lighten($badge-info-color, 25%);
+	}
+
+	&-light {
+		background-color: lighten($badge-light-color, 25%);
+		color: $primary-color;
+	}
+
+	&-dark {
+		background-color: lighten($badge-dark-color, 40%);
+		color: $white;
+	}
+
+	&-gray {
+		background-color: $badge-gray-color;
+		color: $primary-color;
+	}
+}
