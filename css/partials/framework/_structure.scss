@@ -155,6 +155,12 @@ section {
 	}
 
 	&-placeholder {
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+
 		&:before {
 			color: $white;
 			content: "\e6f7";
@@ -174,12 +180,6 @@ section {
 				opacity: 0.85;
 			}
 		}
-
-		height: 100%;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
 	}
 }
 
