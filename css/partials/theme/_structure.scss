@@ -196,36 +196,44 @@
 
 	.selected {
 		display: inline-block;
-		line-height: 30px;
-		margin-left: 0.6rem;
-		padding: 0 0.6rem;
 		text-align: center;
 	}
 
 	ul {
+		box-shadow: 0 2px 4px rgba(black00, 0.1);
 		display: inline-flex;
 		flex-direction: column;
+		left: 50%;
 		list-style: none;
 		margin: 0;
 		max-height: 0px;
 		overflow: hidden;
 		padding: 0;
 		position: absolute;
-		right: 0;
 		top: 100%;
-		transition: max-height 0.15s ease-in-out;
+		transform: translateX(-50%);
+		transition: all 0.15s ease-in-out;
+		visibility: hidden;
 
 		&.show {
+			margin-top: 8px;
+			visibility: visible;
 			z-index: 20;
 		}
 	}
 
 	li {
-		background-color: #fff;
+		background-color: $white;
+		border-bottom: 1px solid $border-color;
 		cursor: pointer;
-		line-height: 30px;
+		line-height: 2.2;
 		order: 2;
-		padding: 0 0.6rem;
+		padding: 0 0.8rem;
+		transition: all 0.15s ease-in-out;
+
+		&:hover {
+			background-color: lighten($cream, 6%);
+		}
 
 		&.active {
 			display: none;

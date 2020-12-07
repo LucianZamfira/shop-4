@@ -498,7 +498,7 @@ $(document).ready(function () {
 	// Init lc-widget
 	$('.lc-widget .selected').on('click', function () {
 		let items = $(this).next().find('li').length;
-		let newHeight = $(this).outerHeight() * items;
+		let newHeight = $(this).next().find('li').outerHeight() * items;
 
 		if ($(this).next().hasClass('show')) {
 			$(this).next().removeClass('show');
