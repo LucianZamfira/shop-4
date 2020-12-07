@@ -494,4 +494,28 @@ $(document).ready(function () {
 	$('#productToast').on('hidden.bs.toast', function () {
 		console.log('myToast: hidden.bs.toast');
 	});
+
+	// Init lc-widget
+	$('.lc-widget .selected').on('click', function () {
+		let items = $(this).next().find('li').length;
+		let newHeight = $(this).outerHeight() * items;
+
+		if ($(this).next().hasClass('show')) {
+			$(this).next().removeClass('show');
+			$(this).next().removeAttr('style');
+		} else {
+			$(this).next().addClass('show');
+			$(this).next().css('max-height', newHeight);
+		}
+	});
+
+	$('.lc-widget li').on('click', function () {
+		let newValue = $(this).text();
+
+		$(this).parent().find('.active').removeClass('active');
+		$(this).addClass('active');
+		$(this).parents('.group').find('.selected').text(newValue);
+		$(this).parent().removeClass('show');
+		$(this).parent().removeAttr('style');
+	});
 });
