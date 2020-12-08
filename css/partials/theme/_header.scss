@@ -69,6 +69,15 @@ header {
 		padding: 0;
 	}
 
+	.logo {
+		height: 90px;
+
+		.image {
+			height: 100%;
+			width: auto;
+		}
+	}
+
 	.link {
 		background-color: transparent;
 		border: none;
@@ -98,6 +107,8 @@ header {
 
 	.form {
 		&-search {
+			margin: 0;
+
 			input {
 				border-left: none;
 				border-right: none;
@@ -250,6 +261,10 @@ header {
 				transition: transform 0.4s $transition-effect;
 				width: 460px;
 				z-index: 10;
+			}
+
+			.portrait {
+				display: none;
 			}
 
 			.categories {
@@ -410,6 +425,7 @@ header {
 					background-color: $white;
 					display: flex;
 					line-height: 1;
+					padding-top: 1rem;
 					position: relative;
 
 					> li {
@@ -497,7 +513,7 @@ header {
 
 								a,
 								button {
-									padding: 0.6rem 0;
+									padding: 0.8rem 0;
 								}
 							}
 

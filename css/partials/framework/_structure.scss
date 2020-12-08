@@ -84,7 +84,13 @@ section {
 
 .toolbar {
 	background-color: $cream;
-	padding: 1rem;
+	padding: 0.6rem 0;
+
+	&-actions {
+		align-items: center;
+		column-gap: 0.8rem;
+		display: flex;
+	}
 
 	p,
 	h1,

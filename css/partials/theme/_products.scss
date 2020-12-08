@@ -151,9 +151,12 @@
 		}
 
 		a {
-			background-color: $primary-color;
+			// background-color: $primary-color;
+			// background-color: lighten($secondary-color, 6%);
+			background-color: $cream;
 			border-radius: 50%;
-			color: $white;
+			// color: $white;
+			color: $primary-color;
 			display: inline-block;
 			font-size: 1.1em;
 			height: 45px;

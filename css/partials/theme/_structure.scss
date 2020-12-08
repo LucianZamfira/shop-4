@@ -188,35 +188,47 @@
 }
 
 .lc-widget {
-	column-gap: 1rem;
+	align-items: center;
+	display: inline-flex;
+	flex-flow: row wrap;
 
 	.group {
+		margin-left: 0.4rem;
 		position: relative;
 	}
 
 	.selected {
+		cursor: pointer;
 		display: inline-block;
+		line-height: 1.8;
+		min-width: 45px;
 		text-align: center;
+		text-decoration: underline;
+
+		&:hover {
+			// background-color: rgba($black00, 0.03);
+			color: $secondary-color;
+		}
 	}
 
 	ul {
-		box-shadow: 0 2px 4px rgba(black00, 0.1);
+		box-shadow: 0 2px 4px rgba($black00, 0.1);
 		display: inline-flex;
 		flex-direction: column;
 		left: 50%;
 		list-style: none;
-		margin: 0;
+		margin: -6px 0 0 0;
 		max-height: 0px;
 		overflow: hidden;
 		padding: 0;
 		position: absolute;
 		top: 100%;
 		transform: translateX(-50%);
-		transition: all 0.15s ease-in-out;
+		transition: all 0.15s ease-in;
 		visibility: hidden;
 
 		&.show {
-			margin-top: 8px;
+			margin-top: 0;
 			visibility: visible;
 			z-index: 20;
 		}
@@ -233,6 +245,7 @@
 
 		&:hover {
 			background-color: lighten($cream, 6%);
+			color: $secondary-color;
 		}
 
 		&.active {
