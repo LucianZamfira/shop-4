@@ -63,7 +63,7 @@
 		}
 	}
 
-	&--featuted-product {
+	&--featured-product {
 		.row {
 			align-items: center;
 			margin-bottom: 5rem;
@@ -274,7 +274,7 @@
 // Tablets
 @media (max-width: 767px) {
 	.section {
-		&--featuted-product {
+		&--featured-product {
 			.row {
 				display: block;
 				margin-bottom: 3rem;
