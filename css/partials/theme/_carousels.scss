@@ -9,10 +9,12 @@
 
 		.content--short {
 			align-items: flex-start;
+			filter: drop-shadow(0 0 60px white) drop-shadow(-60px -20px 50px white) drop-shadow(60px 20px 50px white) drop-shadow(0 0 60px white);
 			display: flex;
 			flex-direction: column;
 			padding-bottom: 4rem;
 			padding-top: 4rem;
+			position: relative;
 		}
 
 		* {

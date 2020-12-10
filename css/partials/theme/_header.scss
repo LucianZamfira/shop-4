@@ -26,17 +26,6 @@ header {
 	position: relative;
 	z-index: 10;
 
-	&:after {
-		border-bottom: 1px solid $border-color;
-		bottom: 0;
-		content: " ";
-		left: 0;
-		pointer-events: none;
-		position: absolute;
-		right: 0;
-		z-index: 0;
-	}
-
 	&:before {
 		background-color: transparent;
 		bottom: 0;
@@ -156,7 +145,11 @@ header {
 	}
 
 	&-list {
+		column-gap: 1.6rem;
 		display: flex;
+		flex: 1;
+		justify-content: flex-end;
+		max-width: 320px;
 
 		> li {
 			margin-left: 1.8rem;
@@ -189,6 +182,8 @@ header {
 			padding: 0;
 			text-transform: inherit;
 			width: 100%;
+			font-family: "Poppins", sans-serif;
+			font-weight: 300;
 
 			&:hover {
 				color: $secondary-color;
@@ -248,6 +243,9 @@ header {
 @media (min-width: 768px) {
 	.sticky {
 		&-yes {
+			background-color: rgba($white, 0.95);
+			box-shadow: 0 2px 4px rgba($primary-color, 0.15);
+
 			nav {
 				background-color: $white;
 				border-left: 1px solid $border-color;
@@ -375,19 +373,6 @@ header {
 				max-width: 260px;
 				transition: all 0.4s $transition-effect;
 
-				> li {
-					border-bottom: 1px solid $border-color;
-
-					.toggle {
-						padding-top: 0.7rem;
-						padding-bottom: 0.7rem;
-					}
-
-					&:last-child {
-						border: none;
-					}
-				}
-
 				.show {
 					color: $secondary-color;
 
@@ -413,17 +398,15 @@ header {
 						transition: height 0.2s $transition-effect;
 						width: 4px;
 					}
-
-					&:hover {
-						text-decoration: none;
-					}
 				}
 			}
 
 			.menu {
 				&-main {
+					align-items: center;
 					background-color: $white;
 					display: flex;
+					justify-content: center;
 					line-height: 1;
 					padding-top: 1rem;
 					position: relative;
@@ -435,6 +418,7 @@ header {
 
 						> a,
 						> button {
+							line-height: 1.2;
 							padding: 0.8rem 1rem;
 
 							&:hover {
@@ -449,30 +433,11 @@ header {
 						&:first-child {
 							position: static;
 
-							> .toggle {
-								padding-left: 0;
-							}
-
 							.menu-level-two {
+								left: 0;
 								right: 0;
-								padding-top: 0;
-								padding-bottom: 0;
-								padding-left: 0;
-								border-bottom: none;
-								box-shadow: none;
-
-								&:after {
-									background-color: $white;
-									border-bottom: 1px solid $border-color;
-									box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-									bottom: 0;
-									content: " ";
-									left: -100%;
-									position: absolute;
-									top: 0;
-									width: 200vw;
-									z-index: -1;
-								}
+								text-align: initial;
+								transform: none;
 							}
 						}
 
@@ -490,56 +455,56 @@ header {
 							}
 						}
 					}
+				}
 
-					.menu {
-						&-level {
-							&-two {
-								background-color: $white;
-								border-bottom: 1px solid $border-color;
-								box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-								cursor: initial;
-								left: 0;
-								margin-top: -30px;
-								min-width: 180px;
-								opacity: 0;
-								padding: 1rem;
-								pointer-events: none;
-								position: absolute;
-								text-transform: uppercase;
-								top: 100%;
-								transition: all 0.18s $transition-effect;
-								visibility: hidden;
-								z-index: -1;
+				&-level {
+					&-two {
+						background-color: $white;
+						border: 1px solid $primary-color;
+						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+						cursor: initial;
+						left: 50%;
+						margin-top: 20px;
+						min-width: 180px;
+						opacity: 0;
+						padding: 1rem;
+						pointer-events: none;
+						position: absolute;
+						text-align: center;
+						text-transform: uppercase;
+						top: 100%;
+						transform: translateX(-50%);
+						transition: all 0.2s $transition-effect;
+						visibility: hidden;
+						z-index: -1;
 
-								a,
-								button {
-									padding: 0.8rem 0;
-								}
-							}
+						a,
+						button {
+							padding: 0.25rem 0;
+						}
+					}
 
-							&-three {
-								bottom: 0;
-								color: initial;
-								left: 0;
-								margin-left: 260px;
-								opacity: 0;
-								overflow: hidden;
-								position: absolute;
-								right: 0;
-								text-transform: none;
-								top: 0;
-								transition: opacity 0.18s $transition-effect;
+					&-three {
+						bottom: 0;
+						color: initial;
+						left: 1rem;
+						margin-left: 260px;
+						opacity: 0;
+						overflow: hidden;
+						position: absolute;
+						right: 0;
+						text-transform: none;
+						top: 0;
+						transition: opacity 0.18s $transition-effect;
 
-								a,
-								button {
-									padding: 0;
-								}
+						a,
+						button {
+							padding: 0;
+						}
 
-								ul {
-									display: inline-block;
-									line-height: 1.8;
-								}
-							}
+						ul {
+							display: inline-block;
+							line-height: 1.8;
 						}
 					}
 				}

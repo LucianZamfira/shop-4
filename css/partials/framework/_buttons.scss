@@ -1,6 +1,14 @@
-a,
 button {
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: transparent;
+	border: medium none;
+	color: inherit;
+	cursor: pointer;
+	font-weight: normal;
+	line-height: inherit;
+	text-decoration: none;
+	transition: color 0.2s ease-in-out;
 
 	&[disabled="disabled"],
 	&:disabled {
@@ -18,7 +26,8 @@ button {
 	cursor: pointer;
 	display: inline-flex;
 	font-size: 1em;
-	font-weight: 400;
+	// font-weight: 400;
+	// font-weight: inherit;
 	justify-content: center;
 	line-height: normal;
 	padding: $button-padding;

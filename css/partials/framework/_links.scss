@@ -1,13 +1,13 @@
-a,
-button {
+a {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	color: inherit;
 	cursor: pointer;
+	font-weight: normal;
 	line-height: inherit;
 	text-decoration: none;
 	transition: color 0.2s ease-in-out;
-}
 
-a {
 	&:hover {
 		text-decoration: underline;
 		color: $secondary-color;
