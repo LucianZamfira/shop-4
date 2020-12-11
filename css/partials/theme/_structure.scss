@@ -206,9 +206,13 @@
 		text-decoration: underline;
 
 		&:hover {
-			// background-color: rgba($black00, 0.03);
 			color: $secondary-color;
 		}
+	}
+
+	> span {
+		align-items: center;
+		display: flex;
 	}
 
 	ul {

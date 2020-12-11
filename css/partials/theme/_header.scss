@@ -58,6 +58,10 @@ header {
 		padding: 0;
 	}
 
+	.logo {
+		margin-left: -22px;
+	}
+
 	.portrait {
 		height: 90px;
 
@@ -98,12 +102,27 @@ header {
 		&-search {
 			margin: 0;
 
+			.input-wrapper {
+				transition: width 0.4s $transition-effect;
+				width: 40px;
+
+				&:hover {
+					width: 100%;
+
+					input {
+						opacity: 1;
+					}
+				}
+			}
+
 			input {
 				border-left: none;
 				border-right: none;
 				border-top: none;
+				opacity: 0;
 				padding-left: 0;
 				padding-right: 2.5rem;
+				transition: opacity 0.2s ease-in-out;
 			}
 
 			button {
@@ -262,7 +281,8 @@ header {
 			}
 
 			.portrait {
-				display: none;
+				// display: none;
+				height: 42px;
 			}
 
 			.categories {

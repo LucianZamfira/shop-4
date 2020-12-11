@@ -527,4 +527,7 @@ $(document).ready(function () {
 		$(this).parent().removeClass('show');
 		$(this).parent().removeAttr('style');
 	});
+
+	// Custom classname for safari
+	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) document.body.className += ' safari';
 });
