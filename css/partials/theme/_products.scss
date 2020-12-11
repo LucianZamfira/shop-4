@@ -16,8 +16,6 @@
 			li {
 				transform: translateY(0);
 				opacity: 1;
-				// -webkit-perspective: 1000;
-				// -webkit-backface-visibility: hidden;
 			}
 
 			.image--hover {
@@ -248,10 +246,12 @@
 			}
 
 			a {
-				width: 35px;
-				height: 35px;
-				line-height: 2;
+				background-color: $primary-color;
+				color: $white;
 				font-size: 0.9em;
+				height: 35px;
+				line-height: 33px;
+				width: 35px;
 			}
 		}
 	}

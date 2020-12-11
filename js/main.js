@@ -509,7 +509,16 @@ $(document).ready(function () {
 		}
 	});
 
-	$('.lc-widget li').on('click', function () {
+	$('body').on('click', function () {
+		$('.lc-widget ul').removeClass('show');
+	});
+
+	$('.lc-widget .selected').on('click', function (event) {
+		event.stopPropagation();
+	});
+
+	$('.lc-widget li').on('click', function (event) {
+		event.stopPropagation();
 		let newValue = $(this).text();
 
 		$(this).parent().find('.active').removeClass('active');
