@@ -126,6 +126,7 @@ header {
 				transition: opacity 0.2s ease-in-out;
 
 				&:focus {
+					border-color: $input-focus-border-color;
 					box-shadow: none;
 				}
 			}
@@ -174,10 +175,6 @@ header {
 		flex: 1;
 		justify-content: flex-end;
 		max-width: 320px;
-
-		// > li {
-		// 	margin-left: 1.8rem;
-		// }
 	}
 }
 

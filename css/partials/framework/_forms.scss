@@ -39,9 +39,9 @@ select {
 		font-style: normal;
 	}
 
-	&:focus {
-		border-color: $input-focus-border-color;
-	}
+	// &:focus {
+	// 	border-color: $input-focus-border-color;
+	// }
 
 	&.disabled {
 		opacity: 0.4;
