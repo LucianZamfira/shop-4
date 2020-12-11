@@ -106,6 +106,7 @@ header {
 				transition: width 0.4s $transition-effect;
 				width: 40px;
 
+				&:focus-within,
 				&:hover {
 					width: 100%;
 
