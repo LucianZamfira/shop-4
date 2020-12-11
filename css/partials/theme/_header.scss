@@ -124,6 +124,10 @@ header {
 				padding-left: 0;
 				padding-right: 2.5rem;
 				transition: opacity 0.2s ease-in-out;
+
+				&:focus {
+					filter: none;
+				}
 			}
 
 			button {

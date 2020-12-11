@@ -8,6 +8,10 @@ a {
 	text-decoration: none;
 	transition: color 0.2s ease-in-out;
 
+	&:focus {
+		outline: medium none;
+	}
+
 	&:hover {
 		text-decoration: underline;
 		color: $secondary-color;
@@ -27,7 +31,7 @@ a {
 	}
 
 	&:focus {
-		outline: none;
+		outline: medium none;
 	}
 
 	i {

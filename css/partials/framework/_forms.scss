@@ -1,3 +1,26 @@
+form {
+	* {
+		&:focus {
+			outline: medium none;
+		}
+	}
+
+	button {
+		&:focus {
+			filter: drop-shadow(1px 1px 2px darken($sky, 25%));
+		}
+	}
+
+	input,
+	textarea,
+	select {
+		&:focus {
+			border-color: $sky;
+			box-shadow: 0 0 4px 2px $sky;
+		}
+	}
+}
+
 input,
 textarea,
 select {
