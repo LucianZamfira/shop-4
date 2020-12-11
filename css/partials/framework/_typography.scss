@@ -20,6 +20,7 @@ h6 {
 	margin-bottom: $headings-margin-bottom;
 	margin-top: 0;
 	font-weight: 500;
+	font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -79,20 +80,21 @@ samp {
 	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono";
 }
 
-sub, sup {
-    font-size: 65%;
-    line-height: 0;
-    position: relative;
-    margin-left: .1em;
+sub,
+sup {
+	font-size: 65%;
+	line-height: 0;
+	position: relative;
+	margin-left: 0.1em;
 	vertical-align: baseline;
 }
 
 sup {
-	top: -.4em;
+	top: -0.4em;
 }
 
 sub {
-    bottom: -.25em
+	bottom: -0.25em;
 }
 
 blockquote {
