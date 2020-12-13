@@ -97,6 +97,20 @@ sub {
 	bottom: -0.25em;
 }
 
+.small, small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+b, strong {
+    font-weight: bolder;
+}
+
+.mark, mark {
+	padding: .2em;
+	background-color: #
+}
+
 blockquote {
 	color: $primary-text-color;
 	font-size: 1.1em;
