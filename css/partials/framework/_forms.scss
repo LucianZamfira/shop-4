@@ -53,7 +53,7 @@ select {
 select {
 	appearance: none;
 	background-color: $white;
-	background-image: url("../images/chevron-thin-down.svg");
+	background-image: url("https://cdn.shop-factory.eu/helendo/1.0/chevron-thin-down.svg");
 	background-repeat: no-repeat;
 	background-position: right 0.7em top 52%;
 	background-size: 1em auto;
@@ -61,7 +61,7 @@ select {
 	min-width: 200px;
 
 	&:focus {
-		background-image: url("../images/chevron-thin-up.svg");
+		background-image: url("https://cdn.shop-factory.eu/helendo/1.0/chevron-thin-up.svg");
 	}
 }
 
@@ -148,12 +148,13 @@ label {
 
 .label {
 	font-size: 1em;
+}
 
-	&.important {
-		&:after {
-			content: "*";
-			color: $error-color;
-		}
+label, .label {
+	&.required::after,
+	&.important::after {
+		content: "*";
+		color: $error-color;
 	}
 }
 
