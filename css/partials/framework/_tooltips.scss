@@ -30,6 +30,7 @@
 			border-color: transparent;
 			border-style: solid;
 			content: " ";
+			opacity: 0.94;
 			position: absolute;
 		}
 	}
@@ -51,71 +52,63 @@
 .bs-tooltip-top,
 .bs-tooltip-auto[x-placement^="top"] {
 	padding: 0.4rem 0;
-}
 
-.bs-tooltip-top .arrow,
-.bs-tooltip-auto[x-placement^="top"] .arrow {
-	bottom: 0;
-}
+	.arrow {
+		bottom: 0;
 
-.bs-tooltip-top .arrow::before,
-.bs-tooltip-auto[x-placement^="top"] .arrow::before {
-	top: 0;
-	border-width: 0.4rem 0.4rem 0;
-	border-top-color: #000;
+		&:before {
+			border-top-color: $black80;
+			border-width: 0.4rem 0.4rem 0;
+			top: -1px;
+		}
+	}
 }
 
 .bs-tooltip-right,
 .bs-tooltip-auto[x-placement^="right"] {
 	padding: 0 0.4rem;
-}
 
-.bs-tooltip-right .arrow,
-.bs-tooltip-auto[x-placement^="right"] .arrow {
-	left: 0;
-	width: 0.4rem;
-	height: 0.8rem;
-}
+	.arrow {
+		left: 0;
+		width: 0.4rem;
+		height: 0.8rem;
 
-.bs-tooltip-right .arrow::before,
-.bs-tooltip-auto[x-placement^="right"] .arrow::before {
-	right: 0;
-	border-width: 0.4rem 0.4rem 0.4rem 0;
-	border-right-color: #000;
+		&:before {
+			border-right-color: $black80;
+			border-width: 0.4rem 0.4rem 0.4rem 0;
+			right: 0;
+		}
+	}
 }
 
 .bs-tooltip-bottom,
 .bs-tooltip-auto[x-placement^="bottom"] {
 	padding: 0.4rem 0;
-}
 
-.bs-tooltip-bottom .arrow,
-.bs-tooltip-auto[x-placement^="bottom"] .arrow {
-	top: 0;
-}
+	.arrow {
+		top: 0;
 
-.bs-tooltip-bottom .arrow::before,
-.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
-	bottom: 0;
-	border-width: 0 0.4rem 0.4rem;
-	border-bottom-color: #000;
+		&:before {
+			border-bottom-color: $black80;
+			border-width: 0 0.4rem 0.4rem;
+			bottom: 0;
+		}
+	}
 }
 
 .bs-tooltip-left,
 .bs-tooltip-auto[x-placement^="left"] {
 	padding: 0 0.4rem;
-}
 
-.bs-tooltip-left .arrow,
-.bs-tooltip-auto[x-placement^="left"] .arrow {
-	right: 0;
-	width: 0.4rem;
-	height: 0.8rem;
-}
+	.arrow {
+		height: 0.8rem;
+		right: 0;
+		width: 0.4rem;
 
-.bs-tooltip-left .arrow::before,
-.bs-tooltip-auto[x-placement^="left"] .arrow::before {
-	left: 0;
-	border-width: 0.4rem 0 0.4rem 0.4rem;
-	border-left-color: #000;
+		&:before {
+			border-left-color: $black80;
+			border-width: 0.4rem 0 0.4rem 0.4rem;
+			left: 0;
+		}
+	}
 }

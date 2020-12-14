@@ -15,6 +15,32 @@
 		margin-bottom: 1rem;
 	}
 
+	&-block {
+		border-top: 1px solid $border-color;
+		display: flex;
+		padding: 2rem 0;
+
+		&:first-child {
+			border: none;
+			padding-top: 0;
+		}
+
+		.avatar {
+			flex-basis: 110px;
+		}
+
+		.review {
+			flex: 1;
+			padding: 0 0 0 2.5rem;
+		}
+
+		p {
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
 	&.not-editable {
 		pointer-events: none;
 	}

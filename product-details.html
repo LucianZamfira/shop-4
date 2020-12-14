@@ -21,6 +21,32 @@
 	</head>
 
 	<body>
+		<!-- Quick actions toolbar start -->
+		<div class="toolbar">
+			<div class="container">
+				<div>
+					<i class="icon-telephone mr-1"></i>
+					<a href="tel:+40 738 660 355" title="Call +40 738 660 355">+40 738 660 355</a>
+				</div>
+
+				<div class="toolbar-actions">
+					<div class="lc-widget">
+						<span><i class="icon-earth mr-1"></i> Language:</span>
+
+						<div class="group">
+							<span class="selected">Română</span>
+
+							<ul>
+								<li class="active">Română</li>
+								<li>English</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Quick actions toolbar end -->
+
 		<!-- Header start -->
 		<header id="header" class="sticky-no">
 			<div class="container">
@@ -32,7 +58,7 @@
 						</div>
 					</form>
 
-					<a href="index.html" title="Home"><img src="images/logo.svg" alt="Helendo Logo" class="image" /></a>
+					<a href="index.html" title="Home" class="logo portrait"><img src="images/logo-rosamundi.png" alt="Rosamundi Logo" class="image" /></a>
 
 					<ul class="header-list">
 						<li>
@@ -216,7 +242,7 @@
 
 										<div class="menu-level-three">
 											<div class="menu-shell">
-												<ul>
+												<ul class="columns-two">
 													<li>
 														<a href="#" title="Parle Moi de Parfum">Parle Moi de Parfum</a>
 													</li>
@@ -538,6 +564,78 @@
 						</div>
 
 						<div class="tab-pane fade" id="reviews" role="tabpanel">
+							<div class="rating-block">
+								<div class="avatar">
+									<img src="https://api.webmanage.eu/placeholder/110/DDD/FFF?text=RU1" alt="Random User 1" class="image--full rounded-circle" />
+								</div>
+
+								<div class="review">
+									<div class="d-flex text--black34 mb-2">
+										<span>Random User 2 on 28.10.2020 12:14</span>
+
+										<span class="mx-2">|</span>
+
+										<div class="rating not-editable">
+											<input type="radio" name="your-rating-review" id="your-rating-05" class="rating__radio" />
+											<label for="your-rating-05" class="rating__label"></label>
+
+											<input type="radio" name="your-rating-review" id="your-rating-04" class="rating__radio" checked />
+											<label for="your-rating-04" class="rating__label"></label>
+
+											<input type="radio" name="your-rating-review" id="your-rating-03" class="rating__radio" />
+											<label for="your-rating-03" class="rating__label"></label>
+
+											<input type="radio" name="your-rating-review" id="your-rating-02" class="rating__radio" />
+											<label for="your-rating-02" class="rating__label"></label>
+
+											<input type="radio" name="your-rating-review" id="your-rating-01" class="rating__radio" />
+											<label for="your-rating-01" class="rating__label"></label>
+										</div>
+									</div>
+
+									<p>Am cumparat si eu acest produs pe care l-am returnat dupa 2 zile.</p>
+
+									<p>Contra: - semnal slab dupa 1 perete de beton, dupa 2 pereti foarte slab iar dupa 3 pereti semnal lipsa. Vechiul meu router Tenda de acum 15 ani care a costat 100 lei functioneaza mult mai bine. -setarile sunt ciudate......</p>
+
+									<p>Pro: are o tehnologie de protectie a parolei si a datelor sensibile foarte buna. Baietii de cartier nu au nici o sansa in a sparge acest router, indiferent ce software folosesc.</p>
+
+									<p>Concluziile le trageti singuri.</p>
+								</div>
+							</div>
+
+							<div class="rating-block">
+								<div class="avatar">
+									<img src="https://api.webmanage.eu/placeholder/110/DDD/FFF?text=BR" alt="Random User 2" class="image--full rounded-circle" />
+								</div>
+
+								<div class="review">
+									<div class="d-flex text--black34 mb-2">
+										<span>Random User 2 on 28.10.2020 12:14</span>
+
+										<span class="mx-2">|</span>
+
+										<div class="rating not-editable">
+											<input type="radio" name="your-rating-review" id="your-rating-05" class="rating__radio" />
+											<label for="your-rating-05" class="rating__label"></label>
+
+											<input type="radio" name="your-rating-review" id="your-rating-04" class="rating__radio" checked />
+											<label for="your-rating-04" class="rating__label"></label>
+
+											<input type="radio" name="your-rating-review" id="your-rating-03" class="rating__radio" />
+											<label for="your-rating-03" class="rating__label"></label>
+
+											<input type="radio" name="your-rating-review" id="your-rating-02" class="rating__radio" />
+											<label for="your-rating-02" class="rating__label"></label>
+
+											<input type="radio" name="your-rating-review" id="your-rating-01" class="rating__radio" />
+											<label for="your-rating-01" class="rating__label"></label>
+										</div>
+									</div>
+
+									<p>Curabitur ut cursus sapien. Donec risus ipsum, luctus quis sodales nec, vestibulum eu ipsum. Nulla facilisi. Proin feugiat ut quam eu mollis. Sed pellentesque purus sollicitudin dui efficitur, ultrices dignissim turpis fermentum. Nullam id tellus vel dolor faucibus aliquam in vel ex. Pellentesque habitant morbi tristique senectus.</p>
+								</div>
+							</div>
+
 							<h3>Be the first to review “Teapot with black tea”</h3>
 
 							<h6 class="mb-1">Your rating</h6>
@@ -1045,7 +1143,7 @@
 										</li>
 
 										<li>
-											<a href="https://instagram.com" target="_blank" title="Instagram" data-toggle="tooltip" data-placement="top"><img src="images/social/instagram.svg" class="image--fluid" /></a>
+											<a id="test" href="https://instagram.com" target="_blank" title="Instagram" data-toggle="tooltip" data-placement="top"><img src="images/social/instagram.svg" class="image--fluid" /></a>
 										</li>
 									</ul>
 								</div>

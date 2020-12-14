@@ -58,10 +58,6 @@ header {
 		padding: 0;
 	}
 
-	.logo {
-		margin-left: -22px;
-	}
-
 	.portrait {
 		height: 90px;
 
@@ -102,25 +98,10 @@ header {
 		&-search {
 			margin: 0;
 
-			.input-wrapper {
-				transition: width 0.4s $transition-effect;
-				width: 40px;
-
-				&:focus-within,
-				&:hover {
-					width: 100%;
-
-					input {
-						opacity: 1;
-					}
-				}
-			}
-
 			input {
 				border-left: none;
 				border-right: none;
 				border-top: none;
-				opacity: 0;
 				padding-left: 0;
 				padding-right: 2.5rem;
 				transition: opacity 0.2s ease-in-out;
@@ -151,7 +132,7 @@ header {
 		}
 
 		.dropdown-menu {
-			min-width: 320px;
+			width: 320px;
 			z-index: 10;
 
 			&:before {
@@ -170,11 +151,14 @@ header {
 	}
 
 	&-list {
-		column-gap: 1.6rem;
 		display: flex;
 		flex: 1;
 		justify-content: flex-end;
 		max-width: 320px;
+
+		li {
+			margin-left: 1.5rem;
+		}
 	}
 }
 
@@ -536,7 +520,18 @@ header {
 }
 
 // Tablets
+// @media (max-width: 767px) {
+
+// }
+
+// Mobiles/Tablets
 @media (max-width: 767px) {
+	.header {
+		&-list {
+			max-width: initial;
+		}
+	}
+
 	header {
 		.form-search {
 			max-width: unset;
@@ -548,6 +543,10 @@ header {
 				border: 1px solid $input-border-color;
 				padding-left: 0.8rem;
 			}
+		}
+
+		.portrait {
+			height: 60px;
 		}
 	}
 
@@ -675,17 +674,35 @@ header {
 	}
 }
 
-// Mobiles/Tablets
-@media (max-width: 767px) {
-	.header {
-		&-list {
-			max-width: initial;
-		}
-	}
-
+// Tablets
+@media (min-width: 576px) {
 	header {
-		.portrait {
-			height: 65px;
+		.form {
+			&-search {
+				.input-wrapper {
+					transition: width 0.4s $transition-effect;
+					width: 40px;
+
+					&:focus-within,
+					&:hover {
+						width: 100%;
+
+						input {
+							opacity: 1;
+						}
+					}
+				}
+
+				input {
+					opacity: 0;
+					transition: opacity 0.2s ease-in-out;
+
+					&:focus {
+						border-color: $input-focus-border-color;
+						box-shadow: none;
+					}
+				}
+			}
 		}
 	}
 }
