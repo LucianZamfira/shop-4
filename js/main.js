@@ -530,4 +530,11 @@ $(document).ready(function () {
 
 	// Custom classname for safari
 	if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) document.body.className += ' safari';
+
+	// Fix owl accessibility
+	if (nodeExists('.owl-dot')) {
+		$('.owl-dot').each(function (index) {
+			$(this).attr('aria-label', 'slid-' + index);
+		});
+	}
 });
