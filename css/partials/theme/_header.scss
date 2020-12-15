@@ -39,15 +39,6 @@ header {
 		z-index: 1;
 	}
 
-	&.sticky-yes {
-		animation: 0.5s ease-in-out 0s normal none 1 running fadeInAnimation;
-		left: 0;
-		position: fixed;
-		right: 0;
-		top: 0;
-		transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-	}
-
 	&.fade-out {
 		animation: fadeOutAnimation 0.2s linear 1 normal forwards;
 	}
@@ -58,7 +49,7 @@ header {
 		padding: 0;
 	}
 
-	.portrait {
+	.logo {
 		height: 90px;
 
 		.image {
@@ -115,6 +106,25 @@ header {
 			button {
 				right: 0;
 			}
+		}
+	}
+}
+
+.sticky {
+	&-yes {
+		background-color: rgba($white, 0.95);
+		box-shadow: 0 2px 4px rgba($primary-color, 0.15);
+		animation: 0.5s ease-in-out 0s normal none 1 running fadeInAnimation;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		transition: transform 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+		.logo {
+			height: 45px;
+			margin: 0;
+			order: unset;
 		}
 	}
 }
@@ -248,9 +258,6 @@ header {
 @media (min-width: 768px) {
 	.sticky {
 		&-yes {
-			background-color: rgba($white, 0.95);
-			box-shadow: 0 2px 4px rgba($primary-color, 0.15);
-
 			nav {
 				background-color: $white;
 				border-left: 1px solid $border-color;
@@ -264,11 +271,6 @@ header {
 				transition: transform 0.4s $transition-effect;
 				width: 460px;
 				z-index: 10;
-			}
-
-			.portrait {
-				// display: none;
-				height: 42px;
 			}
 
 			.categories {
@@ -545,7 +547,7 @@ header {
 			}
 		}
 
-		.portrait {
+		.logo {
 			height: 60px;
 		}
 	}
@@ -719,7 +721,15 @@ header {
 			}
 		}
 
-		&.sticky-yes {
+		.logo {
+			height: 90px;
+			margin: 2rem auto 0;
+			order: 2;
+		}
+	}
+
+	.sticky {
+		&-yes {
 			.form-search {
 				display: none;
 			}

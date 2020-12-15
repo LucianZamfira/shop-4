@@ -495,8 +495,8 @@ $(document).ready(function () {
 		console.log('myToast: hidden.bs.toast');
 	});
 
-	// Init lc-widget
-	$('.lc-widget .selected').on('click', function () {
+	// Init toolbar-actions
+	$('.toolbar-actions .selected').on('click', function () {
 		let items = $(this).next().find('li').length;
 		let newHeight = $(this).next().find('li').outerHeight() * items;
 
@@ -510,14 +510,14 @@ $(document).ready(function () {
 	});
 
 	$('body').on('click', function () {
-		$('.lc-widget ul').removeClass('show');
+		$('.toolbar-actions ul').removeClass('show');
 	});
 
-	$('.lc-widget .selected').on('click', function (event) {
+	$('.toolbar-actions .selected').on('click', function (event) {
 		event.stopPropagation();
 	});
 
-	$('.lc-widget li').on('click', function (event) {
+	$('.toolbar-actions li').on('click', function (event) {
 		event.stopPropagation();
 		let newValue = $(this).text();
 

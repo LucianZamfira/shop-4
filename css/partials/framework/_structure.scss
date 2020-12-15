@@ -86,10 +86,77 @@ section {
 	background-color: $cream;
 	padding: 0.6rem 0;
 
+	&-contact,
+	&-actions {
+		line-height: 1;
+	}
+
 	&-actions {
 		align-items: center;
-		column-gap: 0.8rem;
-		display: flex;
+		display: inline-flex;
+		flex-flow: row wrap;
+
+		.group {
+			position: relative;
+			margin-left: 0.2rem;
+		}
+
+		.selected {
+			cursor: pointer;
+			display: inline-block;
+			min-width: 45px;
+			text-align: center;
+			text-decoration: underline;
+
+			&:hover {
+				color: $secondary-color;
+			}
+		}
+
+		ul {
+			box-shadow: 0 2px 4px rgba($black00, 0.1);
+			display: inline-flex;
+			flex-direction: column;
+			left: 50%;
+			list-style: none;
+			margin: -6px 0 0 0;
+			max-height: 0px;
+			opacity: 0;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			top: 100%;
+			transform: translateX(-50%);
+			transition: all 0.15s ease-in;
+			visibility: hidden;
+
+			&.show {
+				margin-top: 0.5rem;
+				opacity: 1;
+				visibility: visible;
+				z-index: 20;
+			}
+		}
+
+		li {
+			background-color: $white;
+			border-bottom: 1px solid $border-color;
+			cursor: pointer;
+			line-height: 2.2;
+			order: 2;
+			padding: 0 0.8rem;
+			transition: all 0.15s ease-in-out;
+
+			&:hover {
+				background-color: lighten($cream, 6%);
+				color: $secondary-color;
+			}
+
+			&.active {
+				display: none;
+				order: 1;
+			}
+		}
 	}
 
 	p,
@@ -98,6 +165,16 @@ section {
 	h3,
 	h4 {
 		margin: 0;
+	}
+
+	i {
+		line-height: normal;
+		margin-right: 0.5rem;
+	}
+
+	a {
+		display: inline-block;
+		vertical-align: middle;
 	}
 
 	.container {

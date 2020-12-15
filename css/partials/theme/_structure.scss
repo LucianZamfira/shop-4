@@ -191,83 +191,74 @@
 	}
 }
 
-.lc-widget {
-	align-items: center;
-	display: inline-flex;
-	flex-flow: row wrap;
+// .lc-widget {
+// 	align-items: center;
+// 	display: inline-flex;
+// 	flex-flow: row wrap;
 
-	.group {
-		margin-left: 0.4rem;
-		position: relative;
-	}
+// 	.group {
+// 		line-height: 1.2;
+// 		margin-left: 0.4rem;
+// 		position: relative;
+// 	}
 
-	.selected {
-		cursor: pointer;
-		display: inline-block;
-		line-height: 1.8;
-		min-width: 45px;
-		text-align: center;
-		text-decoration: underline;
+// 	.selected {
+// 		cursor: pointer;
+// 		display: inline-block;
+// 		min-width: 45px;
+// 		text-align: center;
+// 		text-decoration: underline;
 
-		&:hover {
-			color: $secondary-color;
-		}
-	}
+// 		&:hover {
+// 			color: $secondary-color;
+// 		}
+// 	}
 
-	// > span {
-	// 	align-items: center;
-	// 	display: flex;
-	// }
+// 	ul {
+// 		box-shadow: 0 2px 4px rgba($black00, 0.1);
+// 		display: inline-flex;
+// 		flex-direction: column;
+// 		left: 50%;
+// 		list-style: none;
+// 		margin: -6px 0 0 0;
+// 		max-height: 0px;
+// 		opacity: 0;
+// 		overflow: hidden;
+// 		padding: 0;
+// 		position: absolute;
+// 		top: 100%;
+// 		transform: translateX(-50%);
+// 		transition: all 0.15s ease-in;
+// 		visibility: hidden;
 
-	i {
-		line-height: 1;
-	}
+// 		&.show {
+// 			margin-top: 0;
+// 			opacity: 1;
+// 			visibility: visible;
+// 			z-index: 20;
+// 		}
+// 	}
 
-	ul {
-		box-shadow: 0 2px 4px rgba($black00, 0.1);
-		display: inline-flex;
-		flex-direction: column;
-		left: 50%;
-		list-style: none;
-		margin: -6px 0 0 0;
-		max-height: 0px;
-		opacity: 0;
-		overflow: hidden;
-		padding: 0;
-		position: absolute;
-		top: 100%;
-		transform: translateX(-50%);
-		transition: all 0.15s ease-in;
-		visibility: hidden;
+// 	li {
+// 		background-color: $white;
+// 		border-bottom: 1px solid $border-color;
+// 		cursor: pointer;
+// 		line-height: 2.2;
+// 		order: 2;
+// 		padding: 0 0.8rem;
+// 		transition: all 0.15s ease-in-out;
 
-		&.show {
-			margin-top: 0;
-			opacity: 1;
-			visibility: visible;
-			z-index: 20;
-		}
-	}
+// 		&:hover {
+// 			background-color: lighten($cream, 6%);
+// 			color: $secondary-color;
+// 		}
 
-	li {
-		background-color: $white;
-		border-bottom: 1px solid $border-color;
-		cursor: pointer;
-		line-height: 2.2;
-		order: 2;
-		padding: 0 0.8rem;
-		transition: all 0.15s ease-in-out;
-
-		&:hover {
-			background-color: lighten($cream, 6%);
-			color: $secondary-color;
-		}
-
-		&.active {
-			display: none;
-			order: 1;
-		}
-	}
-}
+// 		&.active {
+// 			display: none;
+// 			order: 1;
+// 		}
+// 	}
+// }
 
 // Large screens
 @media (min-width: 1600px) {
