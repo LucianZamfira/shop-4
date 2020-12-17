@@ -19,8 +19,7 @@ h6 {
 	line-height: 1.2;
 	margin-bottom: $headings-margin-bottom;
 	margin-top: 0;
-	font-weight: 500;
-	font-family: "Poppins", sans-serif;
+	font-weight: 300;
 }
 
 h1 {
@@ -29,10 +28,6 @@ h1 {
 
 h2 {
 	font-size: 1.8em;
-
-	// &.headline--design {
-	// 	font-size: 1.857em;
-	// }
 }
 
 h3 {
@@ -53,8 +48,9 @@ h6 {
   Similarly, the top margin on <p>s get reset. However, we also reset the
   bottom margin to use rem units instead of em. */
 p {
-	margin-top: 0;
+	font-size: 1.2em;
 	margin-bottom: $paragraphs-margin-bottom;
+	margin-top: 0;
 }
 
 hr {

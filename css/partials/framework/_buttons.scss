@@ -1,18 +1,7 @@
 button {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	background-color: transparent;
 	border: medium none;
 	color: inherit;
-	cursor: pointer;
-	font-weight: normal;
-	line-height: inherit;
-	text-decoration: none;
-	transition: color 0.2s ease-in-out;
-
-	&:focus {
-		outline: medium none;
-	}
 
 	&[disabled="disabled"],
 	&:disabled {
@@ -22,21 +11,22 @@ button {
 	}
 }
 
+button,
 .button {
 	align-items: center;
 	background-color: $primary-color;
 	border: 1px solid $primary-color;
-	color: $white;
+	color: inherit;
 	cursor: pointer;
 	display: inline-flex;
+	font-family: $site-font-family;
 	font-size: 1em;
-	justify-content: center;
-	line-height: normal;
+	font-weight: inherit;
+	line-height: inherit;
 	padding: $button-padding;
 	position: relative;
-	text-align: center;
 	text-decoration: none;
-	transition: all 0.18s ease-in-out;
+	transition: all 0.12s ease-in-out;
 
 	&:focus {
 		outline: medium none;
@@ -45,7 +35,6 @@ button {
 	&:hover {
 		background-color: $secondary-color;
 		border-color: $secondary-color;
-		color: $primary-color;
 		text-decoration: none;
 	}
 
@@ -61,6 +50,22 @@ button {
 		display: inline-block;
 		height: 1.2em;
 		width: auto;
+	}
+}
+
+.button {
+	color: $white;
+	justify-content: center;
+	text-align: center;
+
+	&:hover {
+		color: $white;
+	}
+
+	&--medium {
+		font-size: 0.95em;
+		line-height: normal;
+		padding: 0.7rem 1rem;
 	}
 
 	&--small {
@@ -126,8 +131,4 @@ button {
 		flex-flow: row wrap;
 		grid-gap: 1rem;
 	}
-}
-
-button {
-	background-color: $secondary-site-background;
 }

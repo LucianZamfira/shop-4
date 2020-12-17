@@ -30,6 +30,7 @@ select {
 	display: block;
 	font-family: $site-font-family;
 	font-size: 1em;
+	font-weight: 300;
 	line-height: normal;
 	outline: none;
 	padding: $input-paddings;
@@ -150,7 +151,8 @@ label {
 	font-size: 1em;
 }
 
-label, .label {
+label,
+.label {
 	&.required::after,
 	&.important::after {
 		content: "*";

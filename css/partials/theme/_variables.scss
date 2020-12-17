@@ -1,13 +1,13 @@
 // VARIALBLES
 $primary-color: #000000;
-$secondary-color: #dcb14a;
+$secondary-color: #18717e;
 
 // Text colors
 $primary-text-color: #1d1d1d;
-$secondary-text-color: #dcb14a;
+$secondary-text-color: #18717e;
 
 // Structure colors
-$selection-color: #e9c162;
+$selection-color: lighten($secondary-color, 50%);
 $border-color: #cecece;
 // $border-color: #f4f5f7;
 $transition-effect: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -16,9 +16,9 @@ $transition-effect: cubic-bezier(0.645, 0.045, 0.355, 1);
 $headings-margin-bottom: 1.1rem;
 $paragraphs-margin-bottom: 1rem;
 $lists-margin-bottom: 1.2rem;
-$site-font-family: "Roboto", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$site-font-size: 16px;
-$site-font-weight: 400;
+$site-font-family: "Josefin Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$site-font-size: 17px;
+$site-font-weight: 300;
 $site-line-height: 1.4;
 
 // Structure
@@ -67,8 +67,8 @@ $success-color: #269c36;
 $inform-color: #7680cc;
 
 // Badges colors
-$badge-primary-color: #dcb14a;
-$badge-secondary-color: #c9ba97;
+$badge-primary-color: #18717e;
+$badge-secondary-color: #49a2af;
 $badge-danger-color: #c51c1c;
 $badge-success-color: #269c36;
 $badge-warning-color: #ffc107;
@@ -83,7 +83,7 @@ $input-paddings: 0.7rem;
 $input-border-color: #d9d9d9;
 $label-color: #666666;
 // $input-focus-border-color: #79bdf1;
-$input-focus-border-color: #dcb14a;
+$input-focus-border-color: #18717e;
 $separator-color: #ededed;
 
 // General colors

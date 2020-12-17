@@ -39,6 +39,16 @@
 		}
 	}
 
+	&--boutique {
+		&:after {
+			background: url("https://skin.noseparis.com/frontend/nose/v2/img/boutique-nose.jpg") center center / cover no-repeat fixed;
+			content: " ";
+			display: block;
+			height: 50vh;
+			margin-top: 2rem;
+		}
+	}
+
 	&--blog {
 		.section-title {
 			text-align: center;
@@ -190,75 +200,6 @@
 		column-gap: 3rem;
 	}
 }
-
-// .lc-widget {
-// 	align-items: center;
-// 	display: inline-flex;
-// 	flex-flow: row wrap;
-
-// 	.group {
-// 		line-height: 1.2;
-// 		margin-left: 0.4rem;
-// 		position: relative;
-// 	}
-
-// 	.selected {
-// 		cursor: pointer;
-// 		display: inline-block;
-// 		min-width: 45px;
-// 		text-align: center;
-// 		text-decoration: underline;
-
-// 		&:hover {
-// 			color: $secondary-color;
-// 		}
-// 	}
-
-// 	ul {
-// 		box-shadow: 0 2px 4px rgba($black00, 0.1);
-// 		display: inline-flex;
-// 		flex-direction: column;
-// 		left: 50%;
-// 		list-style: none;
-// 		margin: -6px 0 0 0;
-// 		max-height: 0px;
-// 		opacity: 0;
-// 		overflow: hidden;
-// 		padding: 0;
-// 		position: absolute;
-// 		top: 100%;
-// 		transform: translateX(-50%);
-// 		transition: all 0.15s ease-in;
-// 		visibility: hidden;
-
-// 		&.show {
-// 			margin-top: 0;
-// 			opacity: 1;
-// 			visibility: visible;
-// 			z-index: 20;
-// 		}
-// 	}
-
-// 	li {
-// 		background-color: $white;
-// 		border-bottom: 1px solid $border-color;
-// 		cursor: pointer;
-// 		line-height: 2.2;
-// 		order: 2;
-// 		padding: 0 0.8rem;
-// 		transition: all 0.15s ease-in-out;
-
-// 		&:hover {
-// 			background-color: lighten($cream, 6%);
-// 			color: $secondary-color;
-// 		}
-
-// 		&.active {
-// 			display: none;
-// 			order: 1;
-// 		}
-// 	}
-// }
 
 // Large screens
 @media (min-width: 1600px) {
