@@ -5,10 +5,10 @@
 
 		a {
 			display: inline-block;
+			max-width: 35px;
 			text-decoration: none;
-			vertical-align: middle;
-			width: 25px;
 			transition: opacity 0.2s ease-in-out;
+			vertical-align: middle;
 
 			&:hover {
 				opacity: 0.8;
@@ -47,10 +47,10 @@
 
 		a {
 			display: inline-block;
+			max-width: 30px;
 			text-decoration: none;
-			vertical-align: middle;
-			width: 25px;
 			transition: opacity 0.2s ease-in-out;
+			vertical-align: middle;
 
 			&:hover {
 				opacity: 0.8;
