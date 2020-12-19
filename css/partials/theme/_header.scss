@@ -74,7 +74,7 @@ header {
 	.badge {
 		border-radius: 50%;
 		bottom: -6px;
-		font-size: 0.8em;
+		font-size: 0.7em;
 		font-weight: 300;
 		height: 20px;
 		line-height: 22px;
@@ -140,7 +140,7 @@ header {
 
 		i {
 			// font-size: 1.4em;
-			font-size: 22px;
+			font-size: 24px;
 		}
 
 		.dropdown-menu {
@@ -168,7 +168,7 @@ header {
 		justify-content: flex-end;
 		max-width: 320px;
 
-		li {
+		> li {
 			margin-left: 1.5rem;
 		}
 	}
@@ -181,7 +181,7 @@ header {
 
 	&-main {
 		i {
-			font-size: 14px;
+			font-size: 16px;
 			line-height: normal;
 			transform: translateY(-2px);
 		}
@@ -204,7 +204,7 @@ header {
 			font-weight: 300;
 
 			&:hover {
-				color: $secondary-color;
+				color: $primary-color;
 				text-decoration: underline;
 			}
 		}
@@ -241,7 +241,7 @@ header {
 	top: 1.2rem;
 
 	&:hover {
-		color: $secondary-color;
+		color: $primary-color;
 	}
 }
 
@@ -253,7 +253,7 @@ header {
 	}
 
 	> .toggle {
-		color: $secondary-color;
+		color: $primary-color;
 	}
 }
 
@@ -297,8 +297,8 @@ header {
 				}
 
 				&:after {
-					content: "\e93a";
-					font-family: "Linearicons";
+					content: "\e905";
+					font-family: "icons";
 				}
 			}
 
@@ -385,7 +385,7 @@ header {
 				transition: all 0.4s $transition-effect;
 
 				.show {
-					color: $secondary-color;
+					color: $primary-color;
 
 					.toggle {
 						&:after {
@@ -398,7 +398,7 @@ header {
 					position: relative;
 
 					&:after {
-						background-color: $secondary-color;
+						background-color: $primary-color;
 						bottom: 0;
 						content: " ";
 						height: 0;
@@ -454,7 +454,7 @@ header {
 
 						&:hover {
 							> .toggle {
-								color: $secondary-color;
+								color: $primary-color;
 								cursor: pointer;
 							}
 
@@ -591,7 +591,7 @@ header {
 
 			&:after {
 				content: "\e93a";
-				font-family: "Linearicons";
+				font-family: "icons";
 			}
 		}
 	}

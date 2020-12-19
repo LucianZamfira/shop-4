@@ -14,13 +14,13 @@ button {
 button,
 .button {
 	align-items: center;
-	background-color: $primary-color;
+	background-color: transparent;
 	border: 1px solid $primary-color;
 	color: inherit;
 	cursor: pointer;
 	display: inline-flex;
 	font-family: $site-font-family;
-	font-size: 1em;
+	font-size: 1.1em;
 	font-weight: inherit;
 	line-height: inherit;
 	padding: $button-padding;
@@ -33,13 +33,13 @@ button,
 	}
 
 	&:hover {
-		background-color: $secondary-color;
-		border-color: $secondary-color;
+		background-color: $primary-color;
+		border-color: $primary-color;
 		text-decoration: none;
 	}
 
 	i {
-		font-size: 0.8em;
+		// font-size: 0.8em;
 
 		&.icon-arrow-right {
 			margin-left: 8px;
@@ -54,11 +54,14 @@ button,
 }
 
 .button {
-	color: $white;
+	border-color: $secondary-color;
+	color: $secondary-color;
 	justify-content: center;
 	text-align: center;
 
 	&:hover {
+		background-color: $primary-color;
+		border-color: $primary-color;
 		color: $white;
 	}
 
@@ -81,7 +84,6 @@ button,
 
 	&--gray {
 		background-color: $cream;
-		color: $primary-text-color;
 
 		&:hover {
 			background-color: darken($cream, 8%);
@@ -90,13 +92,13 @@ button,
 	}
 
 	&--secondary {
-		background-color: $white;
-		color: $primary-text-color;
+		background-color: $primary-color;
+		border-color: $primary-color;
+		color: $white;
 
 		&:hover {
-			background-color: $primary-color;
-			border-color: $primary-color;
-			color: $white;
+			background-color: darken($primary-color, 5%);
+			border-color: darken($primary-color, 5%);
 		}
 	}
 

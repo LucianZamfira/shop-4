@@ -41,7 +41,7 @@
 
 	&--boutique {
 		&:after {
-			background: url("https://skin.noseparis.com/frontend/nose/v2/img/boutique-nose.jpg") center center / cover no-repeat fixed;
+			background: url("../images/boutique-nose.jpg") center center / cover no-repeat fixed;
 			content: " ";
 			display: block;
 			height: 50vh;
@@ -66,7 +66,7 @@
 		position: relative;
 
 		&:after {
-			background-color: $secondary-color;
+			background-color: $primary-color;
 			bottom: -12px;
 			content: " ";
 			height: 4px;

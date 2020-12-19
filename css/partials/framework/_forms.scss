@@ -7,7 +7,8 @@ form {
 
 	button {
 		&:focus {
-			filter: drop-shadow(1px 1px 2px darken($sky, 25%));
+			// filter: drop-shadow(1px 1px 2px darken($sky, 25%));
+			border-color: $primary-color;
 		}
 	}
 
@@ -15,8 +16,9 @@ form {
 	textarea,
 	select {
 		&:focus {
-			border-color: $sky;
-			box-shadow: 0 0 4px 2px $sky;
+			// border-color: $sky;
+			// box-shadow: 0 0 4px 2px $sky;
+			border-color: $primary-color;
 		}
 	}
 }

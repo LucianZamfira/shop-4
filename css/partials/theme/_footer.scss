@@ -64,6 +64,16 @@ footer {
 
 	&-logo {
 		text-align: center;
+
+		a {
+			display: inline-block;
+		}
+
+		img {
+			display: block;
+			height: 60px;
+			width: auto;
+		}
 	}
 
 	&-copyright {

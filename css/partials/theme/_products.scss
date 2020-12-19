@@ -24,6 +24,7 @@
 		}
 
 		.image--hover {
+			height: auto;
 			left: 0;
 			opacity: 0;
 			position: absolute;
@@ -160,7 +161,7 @@
 			display: inline-block;
 			font-size: 1.1em;
 			height: 46px;
-			line-height: 43px;
+			line-height: 46px;
 			margin: 0 0.35rem;
 			outline: none;
 			text-align: center;
@@ -253,7 +254,7 @@
 				color: $white;
 				font-size: 0.9em;
 				height: 35px;
-				line-height: 33px;
+				line-height: 35px;
 				width: 35px;
 			}
 		}

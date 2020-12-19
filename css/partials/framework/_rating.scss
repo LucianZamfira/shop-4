@@ -55,7 +55,7 @@
 		display: none;
 
 		&:checked ~ label {
-			color: $secondary-color;
+			color: $yellow;
 		}
 	}
 
@@ -71,15 +71,15 @@
 		}
 
 		&:before {
-			content: "\e68d";
+			content: "\f005";
 			display: block;
-			font-family: "Linearicons";
+			font-family: "icons";
 			line-height: 1;
 		}
 
 		&:hover,
 		&:hover ~ label {
-			color: $secondary-color !important;
+			color: $yellow !important;
 		}
 	}
 }
