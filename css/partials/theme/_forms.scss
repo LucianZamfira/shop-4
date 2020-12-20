@@ -69,12 +69,13 @@
 		border: 1px solid $input-border-color;
 
 		input {
-			border: medium none;
+			border-color: transparent;
 		}
 
 		button {
 			align-items: center;
 			background-color: transparent;
+			color: $primary-text-color;
 			border: none;
 			display: flex;
 			padding: 0 0.6rem;
