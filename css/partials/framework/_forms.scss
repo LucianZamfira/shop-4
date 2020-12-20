@@ -220,7 +220,7 @@ label,
 
 		&:checked + .checkmark {
 			&:after {
-				background-color: $secondary-color;
+				background-color: $primary-color;
 			}
 		}
 	}
@@ -237,7 +237,7 @@ label,
 
 		&:checked + .checkmark {
 			&:after {
-				background-color: $secondary-color;
+				background-color: $primary-color;
 			}
 		}
 	}

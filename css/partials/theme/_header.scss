@@ -590,7 +590,7 @@ header {
 			}
 
 			&:after {
-				content: "\e93a";
+				content: "\e905";
 				font-family: "icons";
 			}
 		}
@@ -742,5 +742,6 @@ header {
 
 	nav {
 		overflow-x: auto;
+		width: 100%;
 	}
 }
