@@ -20,9 +20,9 @@ button,
 	cursor: pointer;
 	display: inline-flex;
 	font-family: $site-font-family;
-	font-size: 1.1em;
+	font-size: inherit;
 	font-weight: inherit;
-	line-height: 1.2;
+	line-height: inherit;
 	padding: $button-padding;
 	position: relative;
 	text-decoration: none;
@@ -60,8 +60,9 @@ button,
 	justify-content: center;
 	text-align: center;
 	// Small font improvements
-	font-family: "Poppins", sans-serif;
+	font-family: $site-second-font-family;
 	font-size: 0.96em;
+	line-height: 1.2;
 
 	&:hover {
 		background-color: $primary-color;

@@ -33,14 +33,15 @@ select {
 	// font-family: $site-font-family;
 	// font-size: 1em;
 	// font-weight: 300;
-	line-height: 1.2;
+	// line-height: normal;
 	margin: 0;
 	outline: none;
 	padding: $input-paddings;
 
 	// Small font improvements
-	font-family: "Poppins", sans-serif;
+	font-family: $site-second-font-family;
 	font-size: 0.96em;
+	line-height: 1.2;
 
 	&::placeholder {
 		color: $black34;
