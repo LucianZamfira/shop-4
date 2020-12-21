@@ -276,8 +276,6 @@ label,
 
 .safari {
 	.inputs-group {
-		grid-template-columns: repeat(auto-fit, minmax(40px, auto));
-
 		> * {
 			margin-right: 1rem;
 		}
