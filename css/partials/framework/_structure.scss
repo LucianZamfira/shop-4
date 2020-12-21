@@ -39,7 +39,8 @@ body {
 	* {
 		&::selection {
 			background-color: $selection-color;
-			color: $black00;
+			// color: $black00;
+			color: $white;
 		}
 	}
 

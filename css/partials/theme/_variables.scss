@@ -7,7 +7,8 @@ $primary-text-color: #1d1d1d;
 $secondary-text-color: #18717e;
 
 // Structure colors
-$selection-color: lighten($secondary-color, 50%);
+// $selection-color: lighten($primary-color, 50%);
+$selection-color: rgba($primary-color, 0.6);
 $border-color: #cecece;
 // $border-color: #f4f5f7;
 $transition-effect: cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -48,7 +49,8 @@ $grid-gaps: 15px;
 
 // Buttons
 // $button-padding: 0.7rem 1rem 0.6rem 1rem;
-$button-padding: 9px 1rem 8px 1rem;
+// $button-padding: 9px 1rem 8px 1rem;
+$button-padding: 12px 1rem;
 
 // Background colors
 $primary-site-background: #ffffff;
