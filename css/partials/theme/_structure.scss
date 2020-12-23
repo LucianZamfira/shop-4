@@ -31,6 +31,10 @@
 			display: flex;
 			justify-content: space-between;
 		}
+
+		h1 {
+			max-width: 65%;
+		}
 	}
 
 	&--map {
@@ -246,6 +250,7 @@
 				font-size: 1.8em;
 				margin-top: 1.2rem;
 				order: 2;
+				max-width: 100%;
 			}
 
 			.container {
