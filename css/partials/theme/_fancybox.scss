@@ -255,6 +255,7 @@ button {
 	&:hover,
 	&:focus {
 		opacity: 1;
+		background: transparent;
 	}
 
 	&:active {
