@@ -238,6 +238,12 @@
 	&-italic {
 		font-style: italic;
 	}
+
+	&-truncate {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
 }
 
 .float {
