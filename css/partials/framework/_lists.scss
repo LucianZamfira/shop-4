@@ -32,16 +32,18 @@ li {
 	}
 
 	&--airy {
-		li {
+		> li {
 			margin-bottom: 0.4rem;
-
-			.badge {
-				margin-bottom: 0.4rem;
-				margin-right: 0.4rem;
-			}
 
 			&:last-child {
 				margin-bottom: 0;
+			}
+		}
+
+		li {
+			.badge {
+				margin-bottom: 0.4rem;
+				margin-right: 0.4rem;
 			}
 		}
 	}
@@ -50,17 +52,35 @@ li {
 		list-style: none;
 	}
 
-	&--inline {
-		display: block;
+	&--inline,
+	&--comma {
+		display: flex;
 		padding-left: 0;
 
 		li {
 			display: inline-block;
 			line-height: normal;
-			// margin-right: 0.6rem;
 
 			&:last-child {
 				margin-right: 0;
+			}
+		}
+	}
+
+	&--comma {
+		margin: 0;
+
+		li {
+			margin-right: 0.5rem;
+
+			&:after {
+				content: ",";
+			}
+
+			&:last-child {
+				&:after {
+					content: " ";
+				}
 			}
 		}
 	}
