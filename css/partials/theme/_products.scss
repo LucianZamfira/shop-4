@@ -128,12 +128,13 @@
 	}
 
 	&-actions {
+		justify-content: center;
 		left: 0;
 		position: absolute;
 		right: 0;
 		top: 40%;
-		z-index: -1;
 		transition: all 0.4s ease-in-out;
+		z-index: -1;
 
 		li {
 			transform: translateY(20px);
