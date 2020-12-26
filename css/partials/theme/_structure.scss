@@ -68,10 +68,11 @@
 		line-height: $section-title-lineheight;
 		margin-bottom: $section-title-margin;
 		position: relative;
+		text-transform: uppercase;
 
 		&:after {
 			background-color: $primary-color;
-			bottom: -12px;
+			bottom: -6px;
 			content: " ";
 			height: 4px;
 			left: 50%;

@@ -46,12 +46,12 @@
 		}
 
 		&:hover {
-			color: $secondary-color;
+			color: $primary-color;
 		}
 	}
 
 	.active {
-		background-color: $secondary-color;
+		background-color: $primary-color;
 
 		&:hover {
 			color: $primary-color;
