@@ -21,6 +21,30 @@
 	</head>
 
 	<body>
+		<!-- Quick actions toolbar start -->
+		<div class="toolbar">
+			<div class="container">
+				<div class="toolbar-contact">
+					<i class="icon-telephone"></i>
+					<a href="tel:+40 738 660 355" title="Call +40 738 660 355">+40 738 660 355</a>
+				</div>
+
+				<div class="toolbar-actions">
+					<i class="icon-earth"></i>
+
+					<div class="group">
+						<span class="selected">Română</span>
+
+						<ul>
+							<li class="active">Română</li>
+							<li>English</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Quick actions toolbar end -->
+
 		<!-- Header start -->
 		<header id="header" class="sticky-no">
 			<div class="container">
@@ -32,7 +56,9 @@
 						</div>
 					</form>
 
-					<a href="index.html" title="Home"><img src="images/logo.svg" alt="Helendo Logo" class="image" /></a>
+					<a href="index.html" title="Home" class="logo portrait">
+						<img src="images/logo-rosamundi.svg" alt="Rosamundi Logo" class="image" width="240" height="90" />
+					</a>
 
 					<ul class="header-list">
 						<li>
@@ -46,11 +72,11 @@
 										<h5>Quick Login</h5>
 
 										<div class="input-row">
-											<input type="text" placeholder="Username" autocomplete="off" />
+											<input type="text" placeholder="Username" aria-label="Username" autocomplete="off" />
 										</div>
 
 										<div class="input-row">
-											<input type="password" placeholder="Password" autocomplete="off" />
+											<input type="password" placeholder="Password" aria-label="Password" autocomplete="off" />
 										</div>
 
 										<div class="input-row">
@@ -61,8 +87,8 @@
 											</label>
 										</div>
 
-										<button type="submit" class="button button--fluid">Log in</button>
-										<a href="login.html" title="More login options" class="button button--secondary button--fluid mt-2">More login options</a>
+										<button type="submit" class="button button--fluid button--primary">Log in</button>
+										<a href="login.html" title="More login options" class="button button--fluid mt-2">More login options</a>
 									</form>
 
 									<div class="dropdown-divider mt-1"></div>
@@ -82,7 +108,7 @@
 
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="wishDropdown">
 								<div class="dropdown-wrapper">
-									<p class="text-center m-0 text--error small">Your <a href="wish-list.html" title="wish-list">wish-list</a> is empty</p>
+									<p class="text-center m-0 text--error">Your <a href="wish-list.html" title="wish-list" class="text--underline">wish-list</a> is empty</p>
 								</div>
 							</div>
 						</li>
@@ -98,7 +124,7 @@
 									<ul class="product-list">
 										<li>
 											<a href="product-details.html" class="product-image" title="Plant pots">
-												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
 											</a>
 
 											<div class="product-content">
@@ -107,12 +133,12 @@
 												<label class="product-quantity">Price: <strong>$20.00</strong></label>
 											</div>
 
-											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
 											<a href="product-details.html" class="product-image" title="Plant pots">
-												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
 											</a>
 
 											<div class="product-content">
@@ -121,12 +147,12 @@
 												<label class="product-quantity">Price: <strong>$20.00</strong></label>
 											</div>
 
-											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
 											<a href="product-details.html" class="product-image" title="Plant pots">
-												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
 											</a>
 
 											<div class="product-content">
@@ -135,12 +161,12 @@
 												<label class="product-quantity">Price: <strong>$20.00</strong></label>
 											</div>
 
-											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
 											<a href="product-details.html" class="product-image" title="Plant pots">
-												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
 											</a>
 
 											<div class="product-content">
@@ -149,12 +175,12 @@
 												<label class="product-quantity">Price: <strong>$20.00</strong></label>
 											</div>
 
-											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
 											<a href="product-details.html" class="product-image" title="Plant pots">
-												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
 											</a>
 
 											<div class="product-content">
@@ -163,12 +189,12 @@
 												<label class="product-quantity">Price: <strong>$20.00</strong></label>
 											</div>
 
-											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
 											<a href="product-details.html" class="product-image" title="Plant pots">
-												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" />
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
 											</a>
 
 											<div class="product-content">
@@ -177,7 +203,7 @@
 												<label class="product-quantity">Price: <strong>$20.00</strong></label>
 											</div>
 
-											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" title="Remove item from cart"></i></button>
+											<button class="button--icon"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 									</ul>
 
@@ -190,8 +216,8 @@
 										</div>
 
 										<div class="button-group mt-2">
-											<a href="cart.html" class="button button--secondary button--fluid" title="View cart"><i class="fa fa-shopping-cart"></i> View cart</a>
-											<a href="checkout.html" class="button button--fluid" title="Checkout"><i class="fa fa-sign-in"></i> Checkout</a>
+											<a href="cart.html" class="button button--fluid" title="View cart"><i class="fa fa-shopping-cart"></i> View cart</a>
+											<a href="checkout.html" class="button button--fluid button--primary" title="Checkout"><i class="fa fa-sign-in"></i> Checkout</a>
 										</div>
 									</div>
 								</div>
@@ -216,7 +242,7 @@
 
 										<div class="menu-level-three">
 											<div class="menu-shell">
-												<ul>
+												<ul class="columns-two">
 													<li>
 														<a href="#" title="Parle Moi de Parfum">Parle Moi de Parfum</a>
 													</li>
