@@ -20,10 +20,11 @@
 	&:after {
 		display: block;
 		font-family: "icons";
-		font-style: normal;
 		font-size: inherit;
+		font-style: normal;
 		font-variant: normal;
 		font-weight: normal;
+		line-height: normal;
 		text-transform: none;
 
 		/* Better Font Rendering =========== */
@@ -46,35 +47,53 @@
 	}
 }
 
-.icon-spinner:before {
-	content: "\e951";
+.icon-facebook:before {
+	content: "\e953";
 }
-.icon-loading:before {
-	content: "\e951";
+.icon-groupme:before {
+	content: "\e954";
 }
-.icon-loading-wheel:before {
-	content: "\e951";
+.icon-instagram:before {
+	content: "\e955";
 }
-.icon-busy:before {
-	content: "\e951";
+.icon-itunes:before {
+	content: "\e956";
 }
-.icon-wait:before {
-	content: "\e951";
+.icon-kik:before {
+	content: "\e957";
 }
-.icon-spinner1:before {
-	content: "\e952";
+.icon-linkedin:before {
+	content: "\e958";
 }
-.icon-loading1:before {
-	content: "\e952";
+.icon-messenger:before {
+	content: "\e959";
 }
-.icon-loading-wheel1:before {
-	content: "\e952";
+.icon-periscope:before {
+	content: "\e95a";
 }
-.icon-busy1:before {
-	content: "\e952";
+.icon-reddit:before {
+	content: "\e95b";
 }
-.icon-wait1:before {
-	content: "\e952";
+.icon-skype:before {
+	content: "\e95c";
+}
+.icon-snapchat:before {
+	content: "\e95d";
+}
+.icon-tiktok:before {
+	content: "\e95e";
+}
+.icon-twitter1:before {
+	content: "\e95f";
+}
+.icon-twitter:before {
+	content: "\e960";
+}
+.icon-whatsapp:before {
+	content: "\e961";
+}
+.icon-youtube:before {
+	content: "\e962";
 }
 .icon-loading2:before {
 	content: "\e92d";
@@ -283,6 +302,36 @@
 .icon-users:before {
 	content: "\e920";
 }
+.icon-spinner:before {
+	content: "\e951";
+}
+.icon-loading:before {
+	content: "\e951";
+}
+.icon-loading-wheel:before {
+	content: "\e951";
+}
+.icon-busy:before {
+	content: "\e951";
+}
+.icon-wait:before {
+	content: "\e951";
+}
+.icon-spinner1:before {
+	content: "\e952";
+}
+.icon-loading1:before {
+	content: "\e952";
+}
+.icon-loading-wheel1:before {
+	content: "\e952";
+}
+.icon-busy1:before {
+	content: "\e952";
+}
+.icon-wait1:before {
+	content: "\e952";
+}
 .icon-heart-full:before {
 	content: "\f004";
 }
@@ -298,33 +347,33 @@
 .icon-info-with-circle:before {
 	content: "\e94f";
 }
-.icon-skype:before {
+.icon-skype-small:before {
 	content: "\e942";
 }
-.icon-facebook:before {
+.icon-facebook-small:before {
 	content: "\e945";
 }
-.icon-google:before {
+.icon-google-small:before {
 	content: "\e946";
 }
-.icon-instagram:before {
+.icon-instagram-small:before {
 	content: "\e947";
 }
-.icon-linkedin:before {
+.icon-linkedin-small:before {
 	content: "\e948";
 }
-.icon-pinterest:before {
+.icon-pinterest-small:before {
 	content: "\e949";
 }
-.icon-tumblr:before {
+.icon-tumblr-small:before {
 	content: "\e94a";
 }
-.icon-twitter:before {
+.icon-twitter-small:before {
 	content: "\e94b";
 }
-.icon-vimeo:before {
+.icon-vimeo-small:before {
 	content: "\e94c";
 }
-.icon-youtube:before {
+.icon-youtube-small:before {
 	content: "\e94d";
 }
