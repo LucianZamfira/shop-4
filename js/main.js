@@ -9,6 +9,181 @@ function nodeExists(element) {
 	return document.body.contains(document.querySelector(element));
 }
 
+jQuery.fn.exists = function () {
+	return this.length > 0;
+};
+
+jQuery.fn.hasAttr = function (name) {
+	return this.attr(name) !== undefined;
+};
+
+const ResponsiveEmbed = {
+	youtube: /youtube\.com|youtu\.be/i,
+	vimeo: /vimeo\.com/i,
+	video: {},
+	create: function (o) {
+		this.iframe = $(o);
+		this.setAttributes();
+		if (this.isYouTube()) {
+			this.addYouTubeJsApiSupport();
+		} else if (this.isVimeo()) {
+			this.addVimeoJsApiSupport();
+		} else {
+			this.makeItResponsive();
+		}
+	},
+	setAttributes: function () {
+		this.video = {
+			width: this.iframe.width(),
+			height: this.iframe.height(),
+			ratio: this.iframe.width() / this.iframe.height(),
+			src: this.iframe.attr('src'),
+			random_id: this.getRandomId(),
+			vendor_id: null,
+			cover: 'https://api.webmanage.eu/placeholder/900x506?text=' + document.querySelector('meta[property="og:site_name"]').content.replace('&', '-'),
+		};
+		if (this.isVimeo() || this.isYouTube()) {
+			this.video.vendor_id = this.isVimeo() ? this.getVimeoId() : this.getYoutubeId();
+		}
+		if (this.isYouTube()) {
+			this.video.cover = this.getYouTubeCover();
+		}
+		if (this.isVimeo()) {
+			this.getVimeoCover();
+		}
+		this.video.bs4_class = this.getBs4RatioClass();
+	},
+	getBs4RatioClass: function () {
+		if (this.video.ratio <= 1) {
+			return '1by1';
+		}
+		if (this.video.ratio > 1 && this.video.ratio <= 4 / 3) {
+			return '4by3';
+		}
+		if (this.video.ratio > 4 / 3 && this.video.ratio < 1.8) {
+			return '16by9';
+		}
+		if (this.video.ratio >= 1.8) {
+			return '21by9';
+		}
+	},
+	getRandomId: function () {
+		return (
+			Math.random()
+				.toString(36)
+				.replace(/[^a-z]+/g, '')
+				.substr(2, 10) +
+			'-' +
+			Date.now()
+		);
+	},
+	getYoutubeId: function () {
+		let url = this.video.src.split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
+		return url[2] !== undefined ? url[2].split(/[^0-9a-z_\-]/i)[0] : url[0];
+	},
+	getVimeoId: function () {
+		return this.video.src.split(/\//).slice(-1)[0];
+	},
+	getYouTubeCover: function () {
+		if (this.video.width > 640) {
+			return 'https://i.ytimg.com/vi_webp/' + this.video.vendor_id + '/maxresdefault.webp';
+		}
+		if (this.video.width > 480) {
+			return 'https://i.ytimg.com/vi_webp/' + this.video.vendor_id + '/sddefault.webp';
+		}
+		return 'https://i.ytimg.com/vi_webp/' + this.video.vendor_id + '/hqdefault.webp';
+	},
+	getVimeoCover: async function () {
+		const response = await axios.get('https://vimeo.com/api/oembed.json?url=https://vimeo.com/' + this.video.vendor_id);
+		this.video.cover = response.data.thumbnail_url.replace(/\d+\x\d+/, '900x506');
+		document.querySelector('.video-' + this.video.random_id).style = 'background-image: url(' + this.video.cover + ')';
+	},
+	isYouTube: function () {
+		return this.youtube.test(this.video.src) === !0;
+	},
+	isVimeo: function () {
+		return this.vimeo.test(this.video.src) === !0;
+	},
+	makeItResponsive: function () {
+		this.iframe
+			.removeAttr('height')
+			.removeAttr('width')
+			.wrap('<div class="embed-responsive embed-responsive-' + this.video.bs4_class + ' video-' + this.video.random_id + '">');
+	},
+	addYouTubeJsApiSupport: function () {
+		if (window.YT_IFRAME_API === undefined) {
+			var s = document.createElement('script');
+			s.setAttribute('src', 'https://www.youtube.com/iframe_api');
+			document.body.appendChild(s);
+			window.YT_IFRAME_API = !0;
+		}
+		this.iframe.replaceWith('<div class="embed-responsive embed-responsive-' + this.video.bs4_class + ' video-' + this.video.random_id + '" style="background: url(' + this.video.cover + ') no-repeat center center; background-size: cover"><div class="embed-responsive-placeholder" id="' + this.video.random_id + '">');
+		$('#' + this.video.random_id)
+			.attr('data-youtubeid', this.video.vendor_id)
+			.on('click', function () {
+				if (!$(this).hasAttr('data-youtubeid')) {
+					return;
+				}
+				let yt = new YT.Player($(this).attr('id'), {
+					videoId: $(this).data('youtubeid'),
+					playerVars: {
+						autoplay: 0,
+						autohide: 0,
+						disablekb: 1,
+						controls: 1,
+						showinfo: 0,
+						modestbranding: 1,
+						loop: 0,
+						fs: 0,
+						autohide: 0,
+						rel: 0,
+						enablejsapi: 1,
+					},
+					events: {
+						onReady: function (e) {
+							e.target.playVideo();
+						},
+					},
+				});
+				$(this).removeAttr('data-youtubeid');
+			});
+	},
+	addVimeoJsApiSupport: function () {
+		if (window.VIMEO_IFRAME_API === undefined) {
+			var s = document.createElement('script');
+			s.setAttribute('src', 'https://player.vimeo.com/api/player.js');
+			document.body.appendChild(s);
+			window.VIMEO_IFRAME_API = !0;
+		}
+		this.iframe.replaceWith('<div class="embed-responsive embed-responsive-' + this.video.bs4_class + ' video-' + this.video.random_id + '" style="background-image: url(\'' + this.video.cover + '\'); background-repeat: no-repeat; background-position: center center; background-size: cover"><div data-vimeoid="' + this.video.vendor_id + '" class="embed-responsive-placeholder" id="' + this.video.random_id + '">');
+		$('#' + this.video.random_id).on('click', function () {
+			if (!$(this).hasAttr('data-vimeoid')) {
+				return;
+			}
+			let vm = new Vimeo.Player($(this).attr('id'), {
+				id: $(this).data('vimeoid'),
+				width: 640,
+				title: 0,
+				byline: 0,
+				responsive: 0,
+				transparent: 0,
+			});
+			vm.ready().then(function () {
+				vm.play();
+			});
+			$(this).removeClass('embed-responsive-placeholder').removeAttr('data-vimeoid');
+		});
+	},
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+	if ($('iframe').exists()) {
+		$('iframe').each(function () {
+			ResponsiveEmbed.create(this);
+		});
+	}
+});
+
 $(document).ready(function () {
 	// Trick for deselecting the select tag
 	$('select')
@@ -376,10 +551,12 @@ $(document).ready(function () {
 	});
 
 	// Init product carousel actions
-	$('.carousel-product a').on('click', function (event) {
+	$('.carousel-product .owl-item').on('click', function (event) {
 		event.preventDefault();
 		event.stopPropagation();
+	});
 
+	$('.carousel-product a').on('mouseenter', function () {
 		var newImageSrc = $(this).attr('href');
 		$('.product-preview a').attr('href', newImageSrc);
 		$('.product-preview img').attr('src', newImageSrc);

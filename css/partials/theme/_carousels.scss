@@ -94,9 +94,15 @@
 
 	&-product {
 		a {
+			border: 1px solid $cream;
 			display: block;
+			margin: 1px 0;
 			outline: none;
 		}
+
+		// img {
+		// 	display: block;
+		// }
 	}
 
 	&-preview {

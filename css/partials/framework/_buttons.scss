@@ -135,6 +135,10 @@ button,
 		outline: none;
 		font-size: 32px;
 
+		&:hover {
+			text-decoration: none;
+		}
+
 		i {
 			display: block;
 			font-size: inherit !important;

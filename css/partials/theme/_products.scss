@@ -47,6 +47,17 @@
 	&-preview {
 		margin-bottom: 1rem;
 		position: relative;
+		border: 1px solid $cream;
+
+		&:after {
+			bottom: 1.3rem;
+			content: "\e945";
+			font-family: "icons";
+			font-size: 28px;
+			pointer-events: none;
+			position: absolute;
+			right: 1.3rem;
+		}
 
 		> a {
 			display: block;

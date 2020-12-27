@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
 
+// Prod
 @font-face {
 	font-family: "icons";
 	src: url("https://cdn.shop-factory.eu/helendo/1.0/fonts/icons.ttf?d9df87d4749aa434ad268a253e73d82a") format("truetype"), url("https://cdn.shop-factory.eu/helendo/1.0/fonts/icons.woff?c6647c2496ca9c0a4ac5dfc2652ef504") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+// Local
+@font-face {
+	font-family: "icons";
+	src: url("/css/fonts/icons.ttf") format("truetype"), url("/css/fonts/icons.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -85,6 +95,9 @@
 }
 .icon-youtube:before {
 	content: "\e962";
+}
+.icon-expand:before {
+	content: "\e945";
 }
 .icon-heart-active:before {
 	content: "\e942";
