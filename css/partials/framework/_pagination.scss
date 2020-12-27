@@ -12,6 +12,7 @@
 		display: inline-flex;
 		align-items: center;
 		font-size: 0.9em;
+		font-family: $site-second-font-family;
 		line-height: 2.4;
 		min-width: 35px;
 		text-align: center;
@@ -27,15 +28,16 @@
 		}
 	}
 
-	i {
-		line-height: 1;
-		font-size: 0.75em;
-	}
+	// i {
+	// 	line-height: 1;
+	// 	font-size: 0.75em;
+	// }
 
 	li {
 		background-color: $black8;
-		position: relative;
 		margin: 0.4rem;
+		position: relative;
+		transition: background-color 0.15s ease-in-out;
 
 		&:first-child {
 			margin-left: 0;
@@ -46,16 +48,15 @@
 		}
 
 		&:hover {
-			color: $primary-color;
+			background-color: $primary-color;
+			color: $white;
 		}
 	}
 
 	.active {
 		background-color: $primary-color;
-
-		&:hover {
-			color: $primary-color;
-		}
+		color: $white;
+		pointer-events: none;
 	}
 
 	button {

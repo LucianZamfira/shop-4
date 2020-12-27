@@ -54,8 +54,8 @@ li {
 
 	&--inline,
 	&--comma {
-		display: flex;
-		padding-left: 0;
+		margin: 0;
+		padding: 0;
 
 		li {
 			display: inline-block;
@@ -68,7 +68,7 @@ li {
 	}
 
 	&--comma {
-		margin: 0;
+		display: flex;
 
 		li {
 			margin-right: 0.5rem;
