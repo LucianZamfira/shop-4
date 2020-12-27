@@ -9,35 +9,34 @@
 
 	a,
 	span {
-		display: inline-flex;
 		align-items: center;
-		font-size: 0.9em;
+		background-color: $secondary-button-color;
+		border: 1px solid $secondary-button-border-color;
+		color: $black80;
+		display: inline-flex;
 		font-family: $site-second-font-family;
+		font-size: 0.9em;
 		line-height: 2.4;
 		min-width: 35px;
-		text-align: center;
 		padding: 0 0.8rem;
+		text-align: center;
 	}
 
 	a {
 		text-decoration: none;
 
 		&:hover {
-			color: inherit;
+			background-color: $secondary-button-color-hover;
+			border-color: $secondary-button-border-color-hover;
+			color: $white;
 			text-decoration: none;
+			transition: background-color 0.15s ease-in-out;
 		}
 	}
 
-	// i {
-	// 	line-height: 1;
-	// 	font-size: 0.75em;
-	// }
-
 	li {
-		background-color: $black8;
 		margin: 0.4rem;
 		position: relative;
-		transition: background-color 0.15s ease-in-out;
 
 		&:first-child {
 			margin-left: 0;
@@ -46,17 +45,17 @@
 		&:last-child {
 			margin-right: 0;
 		}
-
-		&:hover {
-			background-color: $primary-color;
-			color: $white;
-		}
 	}
 
 	.active {
-		background-color: $primary-color;
-		color: $white;
 		pointer-events: none;
+
+		a,
+		span {
+			background-color: $secondary-button-color-hover;
+			border-color: $secondary-button-border-color-hover;
+			color: $white;
+		}
 	}
 
 	button {
