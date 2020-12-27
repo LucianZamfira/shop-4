@@ -125,7 +125,17 @@
 			}
 
 			.headline {
-				font-size: 2.5em;
+				font-size: 2em;
+				line-height: 1.3;
+				margin: 1.2rem 0;
+			}
+
+			p {
+				display: none;
+			}
+
+			.button {
+				margin-bottom: 1.2rem;
 			}
 
 			.container > div {
@@ -135,6 +145,16 @@
 
 			.owl-dots {
 				bottom: 10px !important;
+			}
+
+			.content--short {
+				&:after {
+					bottom: -40px;
+					left: -40px;
+					opacity: 0.8;
+					right: -40px;
+					top: -40px;
+				}
 			}
 		}
 

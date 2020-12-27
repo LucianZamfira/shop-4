@@ -125,17 +125,20 @@
 	}
 
 	.owl-dot {
-		background-color: $border-color;
-		border-radius: 50%;
+		// background-color: $border-color;
+		// background-color: rgba($primary-color, 0.4);
+		background-color: rgba(#7aa3a9, 0.8);
+		// background-color: $primary-color;
+		// border-radius: 50%;
 		border: none;
 		color: inherit;
 		font: inherit;
-		height: 15px;
+		height: 10px;
 		margin: 0.6rem;
 		padding: 0;
 		outline: none;
 		pointer-events: all;
-		width: 15px;
+		width: 40px;
 
 		&.active {
 			background-color: $primary-color;
