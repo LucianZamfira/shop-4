@@ -53,7 +53,7 @@ $container-medium: 880px;
 $container-larger: 1220px;
 
 $section-paddings: 5rem;
-$section-title-size: 2.15em;
+$section-title-size: 2em;
 $section-title-margin: 4rem;
 $section-title-lineheight: 1.4;
 $footer-paddings: 4.2rem;
@@ -119,3 +119,13 @@ $input-border-color: #d9d9d9;
 $label-color: #666666;
 $input-focus-border-color: $primary-color;
 $separator-color: #ededed;
+
+// Animations
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}

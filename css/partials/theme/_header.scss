@@ -114,7 +114,7 @@ header {
 .sticky {
 	&-yes {
 		background-color: rgba($white, 0.95);
-		box-shadow: 0 2px 4px rgba($primary-color, 0.15);
+		box-shadow: 0 2px 4px rgba($black80, 0.15);
 		animation: 0.5s ease-in-out 0s normal none 1 running fadeInAnimation;
 		left: 0;
 		position: fixed;

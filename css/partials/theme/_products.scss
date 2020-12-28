@@ -182,6 +182,50 @@
 	}
 }
 
+.shop {
+	&-list {
+		position: relative;
+
+		&:before,
+		&:after {
+			content: " ";
+			opacity: 0;
+			pointer-events: none;
+			position: absolute;
+		}
+
+		&:before {
+			background-color: rgba(255, 255, 255, 0.8);
+			bottom: 0;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+
+		&:after {
+			animation: rotation 1.4s infinite linear;
+			color: $primary-color;
+			// content: "\e92d";
+			content: "\e951";
+			// content: "\f110";
+			font-family: "icons";
+			font-size: 50px;
+			left: 50%;
+			line-height: 1;
+			margin-left: -25px;
+			top: 25vh;
+		}
+
+		&.loading {
+			&:before,
+			&:after {
+				opacity: 1;
+				z-index: 10;
+			}
+		}
+	}
+}
+
 .price {
 	&-widget {
 		-webkit-font-smoothing: antialiased;
@@ -251,6 +295,7 @@
 
 		&-actions {
 			left: auto;
+			margin-top: 1rem;
 			position: relative;
 			right: auto;
 			top: auto;

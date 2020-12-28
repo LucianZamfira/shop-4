@@ -44,8 +44,15 @@
 	}
 
 	&--boutique {
+		// background-image: attr(data-image url);
 		&:after {
-			background: url("../images/boutique-nose.jpg") center center / cover no-repeat fixed;
+			// background: url("../images/boutique-nose.jpg") center center / cover no-repeat fixed;
+			// background: attr(data-image url) center center / cover no-repeat fixed;
+			// background-image: attr(data-image-src url);
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 			content: " ";
 			display: block;
 			height: 50vh;

@@ -15,6 +15,7 @@
 @import "partials/framework/badges";
 @import "partials/framework/alerts";
 @import "partials/framework/pagination";
+@import "partials/framework/lists";
 
 // Import theme partials
 @import "partials/theme/structure";
@@ -33,6 +34,5 @@
 @import "partials/theme/review";
 
 // Import helpers last
-@import "partials/framework/lists";
 @import "partials/framework/helpers";
 @import "partials/framework/spacing";

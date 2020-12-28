@@ -70,16 +70,22 @@ button,
 		color: $white;
 	}
 
-	&--medium {
-		font-size: 0.95em;
-		line-height: normal;
-		padding: 0.7rem 1rem;
-	}
+	// &--medium {
+	// 	font-size: 0.95em;
+	// 	line-height: normal;
+	// 	padding: 0.7rem 1rem;
+	// }
 
 	&--small {
-		font-size: 0.9em;
-		line-height: normal;
-		padding: 0.5rem 1rem;
+		font-size: 14px;
+		line-height: 1.2;
+		// padding: 0.5rem 1rem;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		i {
+			font-size: 16px;
+		}
 	}
 
 	&--full,
@@ -104,6 +110,7 @@ button,
 		&:hover {
 			background-color: $primary-button-color-hover;
 			border-color: $primary-button-border-color-hover;
+			color: $white;
 		}
 	}
 

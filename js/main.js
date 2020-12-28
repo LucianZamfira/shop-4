@@ -585,7 +585,7 @@ $(document).ready(function () {
 	$('.scroll-top').on('click', function (event) {
 		event.preventDefault();
 
-		console.log('dss');
+		// console.log('dss');
 
 		// @link https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
 		document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
@@ -597,6 +597,12 @@ $(document).ready(function () {
 
 		$('#productToast').toast('show');
 	});
+
+	// Init background image pseudo element
+	if (nodeExists('.section--boutique')) {
+		var backgroundSrc = document.querySelector('.section--boutique').dataset.image;
+		document.styleSheets[0].addRule('.section--boutique:after', `background-image: url("${backgroundSrc}");`);
+	}
 
 	// Hide all collapsed start
 	// $('main, .menu-level').on('click', function () {

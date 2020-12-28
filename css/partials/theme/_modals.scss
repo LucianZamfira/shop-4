@@ -42,6 +42,21 @@
 			top: 50%;
 			width: 60px;
 		}
+
+		&.loading {
+			position: relative;
+
+			.modal-body {
+				opacity: 0;
+			}
+
+			&:before {
+				animation: rotation 1.4s infinite linear;
+				// content: "\e92d";
+				content: "\e951";
+				// content: "\f110";
+			}
+		}
 	}
 
 	&-backdrop {
@@ -137,28 +152,6 @@
 				transform: none;
 			}
 		}
-	}
-}
-
-.loading {
-	position: relative;
-
-	.modal-body {
-		opacity: 0;
-	}
-
-	&:before {
-		animation: rotation 1s infinite linear;
-		content: "\e92d";
-	}
-}
-
-@keyframes rotation {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(359deg);
 	}
 }
 
