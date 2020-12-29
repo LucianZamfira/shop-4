@@ -203,10 +203,10 @@
 		}
 
 		&:after {
-			animation: rotation 1.4s infinite linear;
+			animation: rotation 0.8s infinite linear;
 			color: $primary-color;
-			// content: "\e92d";
-			content: "\e951";
+			content: "\e92d";
+			// content: "\e951";
 			// content: "\f110";
 			font-family: "icons";
 			font-size: 50px;
@@ -220,6 +220,7 @@
 			&:before,
 			&:after {
 				opacity: 1;
+				pointer-events: initial;
 				z-index: 10;
 			}
 		}
