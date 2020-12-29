@@ -227,6 +227,10 @@
 		text-align: right;
 	}
 
+	&-justify {
+		text-align: justify;
+	}
+
 	&-underline {
 		text-decoration: underline;
 	}
@@ -302,6 +306,10 @@
 		content: " ";
 		display: block;
 	}
+}
+
+.nl2br {
+	white-space: pre-line !important;
 }
 
 // Mobiles/Tablets
