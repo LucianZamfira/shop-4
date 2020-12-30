@@ -45,54 +45,65 @@
 			border-bottom: 1px solid $input-border-color;
 			display: flex;
 			flex-flow: row wrap;
-			grid-gap: 1.5rem;
-			padding: 15px;
+			padding: 1rem;
 
 			&:last-child {
 				border: none;
 			}
+		}
 
-			.product {
-				&-name {
-					color: $primary-color;
-					display: inline-block;
-					font-size: 1.3em;
-					margin: 0.3rem 0.6rem 0.3rem 0;
-					text-decoration: none;
-					vertical-align: middle;
-				}
-
-				&-description {
-					margin-top: 0.5rem;
-				}
+		.product {
+			&-name {
+				display: inline-block;
+				font-size: 1.05em;
+				font-weight: 400;
+				margin: 0.3rem 0.6rem 0.3rem 0;
+				text-decoration: none;
+				text-transform: uppercase;
+				vertical-align: middle;
 			}
 
-			.price-widget {
-				display: flex;
-				justify-content: space-between;
-
-				.price {
-					order: 2;
-				}
+			&-description {
+				margin-top: 0.5rem;
 			}
+		}
 
-			.badge {
-				font-size: 0.8em;
-			}
+		.badge {
+			font-size: 0.8em;
+		}
 
-			.remove-product {
-				padding: 0;
-			}
+		.list {
+			margin-top: 0.8rem;
+			margin-bottom: 0.8rem;
+		}
 
-			.quantity-widget {
-				max-width: 140px;
+		.button--icon {
+			font-size: 24px;
+		}
+
+		.quantity-widget {
+			max-width: 160px;
+		}
+
+		[class^="shopping-"] {
+			margin-left: 1rem;
+			margin-right: 1rem;
+
+			&:first-child,
+			&:last-child {
+				margin: 0;
 			}
+		}
+
+		.shopping-total {
+			margin-left: 2rem;
+			margin-right: 2rem;
 		}
 	}
 
 	&-product {
-		flex: 1;
 		flex-basis: 380px;
+		flex: 1;
 	}
 
 	&-actions {
@@ -103,7 +114,7 @@
 	}
 
 	&-image {
-		width: 140px;
+		width: 150px;
 
 		img {
 			display: block;

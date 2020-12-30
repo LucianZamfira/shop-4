@@ -229,7 +229,6 @@
 
 .price {
 	&-widget {
-		-webkit-font-smoothing: antialiased;
 		color: $primary-color;
 		font-size: 1.16em;
 
@@ -249,6 +248,20 @@
 
 			.amount {
 				text-decoration: line-through;
+			}
+		}
+
+		&.justify {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+
+			.price {
+				order: 2;
+			}
+
+			.old {
+				margin: 0;
 			}
 		}
 	}

@@ -57,6 +57,12 @@
 	}
 }
 
+.icon {
+	&-before {
+		margin-right: 0.5rem;
+	}
+}
+
 .icon-facebook:before {
 	content: "\e953";
 }

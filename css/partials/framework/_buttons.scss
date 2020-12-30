@@ -140,15 +140,17 @@ button,
 		background-color: transparent;
 		border: none;
 		outline: none;
-		font-size: 32px;
+		padding: 6px;
 
 		&:hover {
+			background-color: transparent;
+			color: $primary-color;
 			text-decoration: none;
 		}
 
 		i {
 			display: block;
-			font-size: inherit !important;
+			font-size: inherit;
 		}
 	}
 

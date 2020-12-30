@@ -296,6 +296,11 @@ label,
 			padding-top: 11px;
 			padding-bottom: 11px;
 		}
+
+		&.disabled {
+			opacity: 0.3;
+			pointer-events: none;
+		}
 	}
 }
 
