@@ -4,20 +4,20 @@
 // Prod
 @font-face {
 	font-family: "icons";
-	src: url("https://cdn.shop-factory.eu/helendo/1.0/fonts/icons.ttf?082b3f71e6be356fcbd7ea158a7928db") format("truetype"), url("https://cdn.shop-factory.eu/helendo/1.0/fonts/icons.woff?d422baa7ce2a55535ef054429a24035e") format("woff");
+	src: url("https://cdn.shop-factory.eu/helendo/1.0/fonts/icons.ttf?98a7fd02b9ce066e8a2d03e002cc330a") format("truetype"), url("https://cdn.shop-factory.eu/helendo/1.0/fonts/icons.woff?15ce7045ad3efaa0f57753b073e01fd5") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
 }
 
 // Local
-@font-face {
+/*@font-face {
 	font-family: "icons";
 	src: url("/css/fonts/icons.ttf") format("truetype"), url("/css/fonts/icons.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
-}
+}*/
 
 [class^="icon-"],
 [class*=" icon-"],
@@ -60,6 +60,10 @@
 .icon {
 	&-before {
 		margin-right: 0.5rem;
+	}
+
+	&-after {
+		margin-left: 0.5rem;
 	}
 }
 
