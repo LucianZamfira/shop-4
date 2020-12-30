@@ -129,3 +129,25 @@ $separator-color: #ededed;
 		transform: rotate(359deg);
 	}
 }
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeOutAnimation {
+	0% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+	to {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+}

@@ -1,25 +1,3 @@
-@keyframes fadeInAnimation {
-	0% {
-		opacity: 0;
-		transform: translate3d(0, -100%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-@keyframes fadeOutAnimation {
-	0% {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-	to {
-		opacity: 0;
-		transform: translate3d(0, -100%, 0);
-	}
-}
-
 header {
 	background-color: rgba($white, 0.98);
 	color: $black00;
@@ -91,7 +69,7 @@ header {
 	}
 
 	.logo {
-		height: 90px;
+		height: 80px;
 
 		.image {
 			height: 100%;
@@ -586,9 +564,9 @@ header {
 			}
 		}
 
-		.logo {
-			height: 60px;
-		}
+		// .logo {
+		// 	height: 60px;
+		// }
 	}
 
 	nav {
@@ -761,15 +739,8 @@ header {
 		}
 
 		.logo {
-			height: 90px;
 			margin: 2rem auto 0;
 			order: 2;
-		}
-	}
-
-	.header {
-		&-list {
-			flex-basis: 100%;
 		}
 	}
 
@@ -779,10 +750,47 @@ header {
 				display: none;
 			}
 		}
+
+		&-no {
+			.header-list {
+				flex-basis: 100%;
+			}
+		}
 	}
 
 	nav {
 		overflow-x: auto;
 		width: 100%;
+	}
+}
+
+// Mobiles small
+@media (max-width: 380px) {
+	.sticky {
+		&-yes {
+			.form-search {
+				display: none;
+			}
+
+			.logo {
+				height: 40px;
+			}
+		}
+
+		&-no {
+			.header-list {
+				flex-basis: 100%;
+			}
+		}
+	}
+
+	.header {
+		&-list > li {
+			margin-left: 1rem;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
 	}
 }
