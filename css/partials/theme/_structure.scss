@@ -44,11 +44,7 @@
 	}
 
 	&--boutique {
-		// background-image: attr(data-image url);
 		&:after {
-			// background: url("../images/boutique-nose.jpg") center center / cover no-repeat fixed;
-			// background: attr(data-image url) center center / cover no-repeat fixed;
-			// background-image: attr(data-image-src url);
 			background-position: center center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -264,6 +260,12 @@
 			.container {
 				align-items: start;
 				flex-direction: column;
+			}
+		}
+
+		&--boutique {
+			&:after {
+				display: none;
 			}
 		}
 
