@@ -11,13 +11,13 @@
 }
 
 // Local
-/*@font-face {
+/* @font-face {
 	font-family: "icons";
 	src: url("/css/fonts/icons.ttf") format("truetype"), url("/css/fonts/icons.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
-}*/
+} */
 
 [class^="icon-"],
 [class*=" icon-"],
@@ -106,6 +106,12 @@
 .icon-youtube:before {
 	content: "\e962";
 }
+.icon-picture:before {
+	content: "\e946";
+}
+.icon-loading:before {
+	content: "\e92d";
+}
 .icon-expand:before {
 	content: "\e945";
 }
@@ -114,9 +120,6 @@
 }
 .icon-heart:before {
 	content: "\e90d";
-}
-.icon-loading:before {
-	content: "\e92d";
 }
 .icon-video-circle:before {
 	content: "\e950";

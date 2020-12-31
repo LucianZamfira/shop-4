@@ -6,6 +6,19 @@
 		> a {
 			display: block;
 			outline: none;
+			position: relative;
+
+			&:before {
+				content: "\e946";
+				font-family: "icons";
+				font-size: 52px;
+				left: 50%;
+				margin-left: -26px;
+				margin-top: -26px;
+				position: absolute;
+				top: 50%;
+				z-index: -1;
+			}
 		}
 
 		&:hover {
