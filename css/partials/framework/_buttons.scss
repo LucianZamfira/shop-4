@@ -160,12 +160,33 @@ button,
 		padding: 0.6rem;
 	}
 
+	&--facebook,
+	&--google,
+	&--linkedin {
+		justify-content: left;
+		text-align: left;
+		&:hover {
+			border-color: $border-color;
+			color: $white;
+		}
+	}
+
 	&--facebook {
-		background-color: $facebook-color;
+		&:hover {
+			background-color: $facebook-color;
+		}
 	}
 
 	&--google {
-		background-color: $google-color;
+		&:hover {
+			background-color: $google-color;
+		}
+	}
+
+	&--linkedin {
+		&:hover {
+			background-color: $linkedin-color;
+		}
 	}
 
 	&-group {
