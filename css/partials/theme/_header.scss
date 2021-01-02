@@ -137,6 +137,13 @@ header {
 			font-size: 24px;
 		}
 
+		.dropdown-toggle {
+			&.disabled {
+				opacity: .4;
+				pointer-events: none;
+			}
+		}
+
 		.dropdown-menu {
 			width: 320px;
 			z-index: 10;
