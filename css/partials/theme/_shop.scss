@@ -219,6 +219,12 @@
 
 			.shopping-total {
 				margin-left: 0;
+				margin-right: 1rem;
+			}
+
+			.shopping-total,
+			.shopping-actions {
+				flex-basis: unset;
 			}
 		}
 
