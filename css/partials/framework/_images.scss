@@ -49,6 +49,23 @@ img {
 		max-width: 100%;
 	}
 
+	&--lazy {
+		position: relative;
+
+		&:before {
+			color: $black54;
+			content: "\e946";
+			font-family: "icons";
+			font-size: 52px;
+			left: 50%;
+			margin-left: -26px;
+			margin-top: -26px;
+			position: absolute;
+			top: 50%;
+			z-index: -1;
+		}
+	}
+
 	&s-mosaic {
 		display: flex;
 		margin-top: 3rem;

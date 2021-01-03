@@ -45,7 +45,8 @@
 			border-bottom: 1px solid $input-border-color;
 			display: flex;
 			flex-flow: row wrap;
-			padding: 1rem;
+			padding: 1rem 1rem 1rem 50px;
+			position: relative;
 
 			&:last-child {
 				border: none;
@@ -99,11 +100,19 @@
 			margin-left: 2rem;
 			margin-right: 2rem;
 		}
+
+		.remove-product {
+			left: 10px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
 	}
 
 	&-product {
 		flex-basis: 380px;
 		flex: 1;
+		min-width: 280px;
 	}
 
 	&-actions {
@@ -113,8 +122,13 @@
 		grid-gap: 1rem;
 	}
 
+	&-quantity {
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+	}
+
 	&-image {
-		width: 150px;
+		max-width: 160px;
 
 		img {
 			display: block;
@@ -180,6 +194,38 @@
 		&-filters {
 			flex-direction: column;
 			justify-content: space-between;
+		}
+	}
+}
+
+// Mobiles
+@media (max-width: 467px) {
+	.shopping {
+		&-list {
+			> li {
+				padding-left: 60px;
+			}
+
+			[class^="shopping-"] {
+				margin-left: 0;
+				margin-right: 0;
+				flex-basis: 100%;
+
+				&:first-child,
+				&:last-child {
+					margin: 0;
+				}
+			}
+
+			.shopping-total {
+				margin-left: 0;
+			}
+		}
+
+		&-product {
+			flex-basis: unset;
+			margin-top: 1rem;
+			min-width: auto;
 		}
 	}
 }

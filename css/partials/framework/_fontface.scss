@@ -67,26 +67,20 @@
 	}
 }
 
+.icon-google:before {
+	content: "\e947";
+}
 .icon-facebook:before {
 	content: "\e953";
 }
-.icon-groupme:before {
-	content: "\e954";
-}
 .icon-instagram:before {
 	content: "\e955";
-}
-.icon-itunes:before {
-	content: "\e956";
 }
 .icon-linkedin:before {
 	content: "\e958";
 }
 .icon-messenger:before {
 	content: "\e959";
-}
-.icon-periscope:before {
-	content: "\e95a";
 }
 .icon-skype:before {
 	content: "\e95c";
@@ -322,17 +316,8 @@
 .icon-users:before {
 	content: "\e920";
 }
-.icon-loading-circle:before {
-	content: "\e951";
-}
-.icon-heart-full:before {
-	content: "\f004";
-}
 .icon-star-full:before {
 	content: "\f005";
-}
-.icon-spinner:before {
-	content: "\f110";
 }
 .icon-help-with-circle:before {
 	content: "\e94e";
