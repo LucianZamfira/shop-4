@@ -21,47 +21,6 @@ header {
 		animation: fadeOutAnimation 0.2s linear 1 normal forwards;
 	}
 
-	&-top {
-		align-items: center;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: space-between;
-		padding: 1rem 0;
-
-		i {
-			font-size: 24px;
-		}
-
-		.dropdown-menu {
-			width: 320px;
-			z-index: 10;
-
-			&:before {
-				background-color: $white;
-				border: 1px solid $input-border-color;
-				bottom: 100%;
-				content: " ";
-				height: 12px;
-				position: absolute;
-				right: 8px;
-				transform: translateY(50%) rotate(45deg);
-				width: 12px;
-				z-index: -1;
-			}
-		}
-	}
-
-	&-list {
-		display: flex;
-		flex: 1;
-		justify-content: flex-end;
-		max-width: 320px;
-
-		> li {
-			margin-left: 1.2rem;
-		}
-	}
-
 	ul {
 		list-style: none;
 		margin: 0;
@@ -74,6 +33,31 @@ header {
 		.image {
 			height: 100%;
 			width: auto;
+		}
+	}
+
+	.dropdown-toggle {
+		&.disabled {
+			opacity: 0.4;
+			pointer-events: none;
+		}
+	}
+
+	.dropdown-menu {
+		width: 350px;
+		z-index: 10;
+
+		&:before {
+			background-color: $white;
+			border: 1px solid $input-border-color;
+			bottom: 100%;
+			content: " ";
+			height: 12px;
+			position: absolute;
+			right: 8px;
+			transform: translateY(50%) rotate(45deg);
+			width: 12px;
+			z-index: -1;
 		}
 	}
 
@@ -136,31 +120,6 @@ header {
 		i {
 			font-size: 24px;
 		}
-
-		.dropdown-toggle {
-			&.disabled {
-				opacity: .4;
-				pointer-events: none;
-			}
-		}
-
-		.dropdown-menu {
-			width: 320px;
-			z-index: 10;
-
-			&:before {
-				background-color: $white;
-				border: 1px solid $input-border-color;
-				bottom: 100%;
-				content: " ";
-				height: 12px;
-				position: absolute;
-				right: 8px;
-				transform: translateY(50%) rotate(45deg);
-				width: 12px;
-				z-index: -1;
-			}
-		}
 	}
 
 	&-list {
@@ -220,7 +179,6 @@ header {
 			padding: 0;
 			text-transform: inherit;
 			width: 100%;
-			// font-family: "Poppins", sans-serif;
 			font-weight: 300;
 
 			&:hover {
@@ -570,10 +528,6 @@ header {
 				padding-left: 0.8rem;
 			}
 		}
-
-		// .logo {
-		// 	height: 60px;
-		// }
 	}
 
 	nav {
@@ -738,7 +692,7 @@ header {
 	header {
 		.dropdown-menu {
 			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-			width: 98vw;
+			width: 96vw;
 
 			&:before {
 				display: none;

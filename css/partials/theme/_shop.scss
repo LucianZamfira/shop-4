@@ -99,7 +99,6 @@
 		.shopping-total {
 			margin-left: 2rem;
 			margin-right: 2rem;
-			transform: translateY(2px);
 		}
 
 		.remove-product {
@@ -107,6 +106,17 @@
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
+		}
+	}
+
+	&-total {
+		text-transform: uppercase;
+		transform: translateY(2px);
+
+		.amount {
+			display: inline-block;
+			min-width: 58px;
+			text-align: right;
 		}
 	}
 

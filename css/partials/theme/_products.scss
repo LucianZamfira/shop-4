@@ -56,6 +56,17 @@
 		label {
 			margin: 0;
 		}
+
+		a {
+			font-size: 1.2em;
+			text-decoration: none;
+		}
+	}
+
+	&-price {
+		font-size: 1em;
+		line-height: 1.4;
+		margin: 0.5rem 0;
 	}
 
 	&-preview {
@@ -129,12 +140,6 @@
 			line-height: 1;
 			margin: 0;
 			padding: 2px;
-		}
-	}
-
-	&-content {
-		a {
-			text-decoration: none;
 		}
 	}
 
@@ -244,7 +249,7 @@
 .price {
 	&-widget {
 		color: $primary-color;
-		font-size: 1.16em;
+		// font-size: 1.16em;
 
 		* {
 			margin-bottom: 0;
