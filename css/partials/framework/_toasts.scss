@@ -1,17 +1,13 @@
 .toast {
 	background-color: rgba($success-color, 0.9);
 	color: $white;
-	min-width: 200px;
 	opacity: 0;
 	padding: 1rem;
-	position: fixed;
-	right: 0;
+	width: 250px;
 	text-align: center;
-	top: 0;
 	transform: translateY(-20px);
 	transition: all 0.2s ease-in-out;
 	visibility: hidden;
-	z-index: 1100;
 
 	&-danger {
 		background-color: rgba($error-color, 0.9);
@@ -27,6 +23,28 @@
 		opacity: 0;
 		transform: translateY(-20px);
 		visibility: hidden;
+	}
+}
+
+.toast-wrap {
+	position: fixed;
+	z-index: 1100;
+
+	&--top-right {
+		right: 0;
+		top: 0;
+
+		& .toast {
+			margin-bottom: 0.5rem;
+		}
+	}
+	&--bottom-right {
+		right: 0;
+		bottom: 0;
+
+		& .toast {
+			margin-top: 0.5rem;
+		}
 	}
 }
 
