@@ -64,6 +64,12 @@
 		.row {
 			justify-content: center;
 		}
+
+		.blog-thumbnail {
+			&:hover {
+				text-decoration-thickness: 1.5px;
+			}
+		}
 	}
 
 	&-title {
@@ -183,6 +189,11 @@
 		columns: auto 3;
 		column-gap: 3rem;
 	}
+}
+
+.pagination {
+	// Small font improvements fot this theme
+	font-family: $site-secondary-font-family;
 }
 
 // Large screens

@@ -7,7 +7,6 @@ form {
 
 	button {
 		&:focus {
-			// filter: drop-shadow(1px 1px 2px darken($sky, 25%));
 			border-color: $primary-color;
 		}
 	}
@@ -16,8 +15,6 @@ form {
 	textarea,
 	select {
 		&:focus {
-			// border-color: $sky;
-			// box-shadow: 0 0 4px 2px $sky;
 			border-color: $primary-color;
 		}
 	}
@@ -28,29 +25,17 @@ textarea,
 select {
 	background-color: transparent;
 	border: 1px solid $input-border-color;
+	border-radius: $input-border-radius;
 	color: $primary-text-color;
 	display: block;
-	// font-family: $site-font-family;
-	// font-size: 1em;
-	// font-weight: 300;
-	// line-height: normal;
 	margin: 0;
 	outline: none;
 	padding: $input-paddings;
-
-	// Small font improvements
-	font-family: $site-second-font-family;
-	font-size: 0.96em;
-	line-height: 1.2;
 
 	&::placeholder {
 		color: $black34;
 		font-style: normal;
 	}
-
-	// &:focus {
-	// 	border-color: $input-focus-border-color;
-	// }
 
 	&.disabled {
 		opacity: 0.4;
@@ -115,7 +100,6 @@ select {
 	&-wrapper {
 		flex: 1;
 		position: relative;
-		// width: 100%;
 
 		> i {
 			font-size: 20px;
@@ -189,7 +173,6 @@ label,
 		height: 18px;
 		margin-right: 0.5rem;
 		position: relative;
-		// transform: translateY(4px);
 		width: 18px;
 
 		&:after {
@@ -211,7 +194,6 @@ label,
 	&__label {
 		color: $primary-color;
 		cursor: pointer;
-		// transform: translateY(-1px);
 	}
 
 	[type="radio"] {
@@ -295,6 +277,7 @@ label,
 		align-items: center;
 		display: flex;
 		flex: 0;
+		margin: 0;
 
 		&.smaller {
 			align-self: flex-start;
@@ -315,8 +298,7 @@ label,
 		input {
 			min-width: 60px;
 			text-align: center;
-			padding-top: 11px;
-			padding-bottom: 11px;
+			border: medium none;
 		}
 
 		button {
@@ -334,17 +316,6 @@ label,
 
 .choose {
 	&-widget {
-		display: flex;
-		margin-bottom: 1rem;
-
-		.label {
-			font-size: 1.1em;
-			font-weight: 400;
-			line-height: 1.6;
-			margin-bottom: 0;
-			margin-right: 0.5rem;
-		}
-
 		.value {
 			border: 2px solid transparent;
 			cursor: pointer;

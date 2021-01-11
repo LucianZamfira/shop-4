@@ -61,6 +61,11 @@
 			font-size: 1.2em;
 			text-decoration: none;
 		}
+
+		* {
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 
 	&-price {
@@ -145,7 +150,7 @@
 
 	&-title {
 		font-size: 1.05em;
-		font-weight: 400;
+		// font-weight: 400;
 		margin-bottom: 0.5rem;
 		text-transform: uppercase;
 	}

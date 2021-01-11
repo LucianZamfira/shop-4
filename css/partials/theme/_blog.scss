@@ -1,8 +1,9 @@
 .blog {
 	&-thumbnail {
 		display: block;
-		text-decoration: none;
 		overflow: hidden;
+		text-decoration: none;
+		transition: all 0.05s ease-in-out;
 
 		img {
 			margin-bottom: 1.4rem;
@@ -32,6 +33,10 @@
 		}
 
 		&:hover {
+			text-decoration-color: $primary-color;
+			text-decoration-thickness: 2px;
+			text-underline-offset: 2px;
+
 			.button {
 				opacity: 1;
 				transform: translateX(0);
@@ -97,7 +102,7 @@
 	}
 
 	&-widget {
-		margin-bottom: 1.5rem;
+		flex-direction: column;
 
 		.title {
 			border-bottom: 1px solid $border-color;

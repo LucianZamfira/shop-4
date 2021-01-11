@@ -1,8 +1,4 @@
 button {
-	background-color: transparent;
-	border: medium none;
-	color: inherit;
-
 	&[disabled="disabled"],
 	&:disabled {
 		cursor: not-allowed;
@@ -15,22 +11,20 @@ button,
 .button {
 	align-items: center;
 	background-color: transparent;
-	border: 1px solid $primary-color;
+	border-radius: $button-border-radius;
+	border: 1px solid $secondary-color;
+	color: $secondary-color;
 	color: inherit;
 	cursor: pointer;
 	display: inline-flex;
-	font-family: $site-font-family;
 	font-size: inherit;
-	font-weight: inherit;
-	line-height: inherit;
+	font-weight: $button-font-weight;
+	line-height: $button-line-height;
 	padding: $button-padding;
 	position: relative;
 	text-decoration: none;
+	text-transform: inherit;
 	transition: all 0.12s ease-in-out;
-
-	&:focus {
-		outline: medium none;
-	}
 
 	&:hover {
 		background-color: $primary-color;
@@ -39,67 +33,35 @@ button,
 		text-decoration: none;
 	}
 
-	i {
-		// font-size: 0.8em;
-
-		&.icon-arrow-right {
-			margin-left: 8px;
-		}
-	}
-
-	img {
-		display: inline-block;
-		height: 1.2em;
-		width: auto;
+	&:focus {
+		outline: medium none;
 	}
 }
 
 .button {
-	border-color: $secondary-color;
-	color: $secondary-color;
-	justify-content: center;
-	text-align: center;
-	// Small font improvements
-	font-family: $site-second-font-family;
-	font-size: 0.96em;
-	line-height: 1.2;
-
-	&:hover {
-		background-color: $primary-color;
-		border-color: $primary-color;
-		color: $white;
-	}
-
-	// &--medium {
-	// 	font-size: 0.95em;
-	// 	line-height: normal;
-	// 	padding: 0.7rem 1rem;
-	// }
-
-	&--small {
-		font-size: 14px;
-		line-height: 1.2;
-		// padding: 0.5rem 1rem;
+	&--medium {
+		font-size: 0.95em;
 		padding-top: 10px;
 		padding-bottom: 10px;
 
 		i {
-			font-size: 16px;
+			font-size: 1.45em;
+		}
+	}
+
+	&--small {
+		font-size: 0.88em;
+		padding-top: 8px;
+		padding-bottom: 8px;
+
+		i {
+			font-size: 1.45em;
 		}
 	}
 
 	&--full,
 	&--fluid {
 		width: 100%;
-	}
-
-	&--gray {
-		background-color: $cream;
-
-		&:hover {
-			background-color: darken($cream, 8%);
-			color: $black80;
-		}
 	}
 
 	&--primary {
@@ -122,6 +84,15 @@ button,
 		&:hover {
 			background-color: $secondary-button-color-hover;
 			border-color: $secondary-button-border-color-hover;
+		}
+	}
+
+	&--gray {
+		background-color: $cream;
+
+		&:hover {
+			background-color: darken($cream, 8%);
+			color: $black80;
 		}
 	}
 
@@ -160,30 +131,31 @@ button,
 		padding: 0.6rem;
 	}
 
-	&--facebook,
-	&--google,
-	&--linkedin {
-		justify-content: left;
-		text-align: left;
-		&:hover {
-			border-color: $border-color;
-			color: $white;
-		}
-	}
-
 	&--facebook {
+		background-color: $facebook-color;
+		border-color: $facebook-color;
+		color: $white;
+
 		&:hover {
-			background-color: $facebook-color;
+			background-color: darken($facebook-color, 5%);
 		}
 	}
 
 	&--google {
+		background-color: $google-color;
+		border-color: $google-color;
+		color: $white;
+
 		&:hover {
 			background-color: $google-color;
 		}
 	}
 
 	&--linkedin {
+		background-color: $linkedin-color;
+		border-color: $linkedin-color;
+		color: $white;
+
 		&:hover {
 			background-color: $linkedin-color;
 		}

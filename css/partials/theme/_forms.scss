@@ -1,3 +1,20 @@
+input,
+textarea,
+select,
+small {
+	// Small font improvements fot this theme
+	font-family: $site-secondary-font-family;
+	line-height: 1.2;
+}
+
+input,
+textarea,
+select {
+	// Small font improvements fot this theme
+	font-weight: 300;
+	font-size: 0.9375em;
+}
+
 .form {
 	&-search {
 		display: inline-block;

@@ -39,7 +39,6 @@ body {
 	* {
 		&::selection {
 			background-color: $selection-color;
-			// color: $black00;
 			color: $white;
 		}
 	}
@@ -69,7 +68,6 @@ section {
 	padding: $section-paddings 0;
 	position: relative;
 
-	// & + section:not([class]) {
 	& + section:not([class="section--gray"]) {
 		padding-top: 0;
 	}
@@ -281,6 +279,20 @@ section {
 				opacity: 0.85;
 			}
 		}
+	}
+}
+
+[class*="-widget"] {
+	display: flex;
+	margin-bottom: 1rem;
+
+	.label {
+		font-size: 1.1em;
+		font-weight: 400;
+		line-height: 1.6;
+		margin-bottom: 0;
+		margin-right: 0.5rem;
+		min-width: 60px;
 	}
 }
 

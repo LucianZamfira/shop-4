@@ -2,7 +2,6 @@
 @import "partials/theme/variables";
 
 // Import framework partials
-@import "partials/framework/buttons";
 @import "partials/framework/structure";
 @import "partials/framework/links";
 @import "partials/framework/forms";
@@ -19,6 +18,7 @@
 @import "partials/framework/tables";
 
 // Import theme partials
+@import "partials/theme/buttons";
 @import "partials/theme/structure";
 @import "partials/theme/countdown";
 @import "partials/theme/products";
@@ -35,5 +35,6 @@
 @import "partials/theme/review";
 
 // Import helpers last
+@import "partials/framework/buttons";
 @import "partials/framework/helpers";
 @import "partials/framework/spacing";

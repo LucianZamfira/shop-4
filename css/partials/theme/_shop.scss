@@ -1,5 +1,6 @@
 .shop {
 	&-widget {
+		flex-direction: column;
 		margin-bottom: 1.5rem;
 
 		.title {
@@ -149,6 +150,7 @@
 }
 
 .filters-widget {
+	flex-direction: column;
 	margin-top: -1.2rem;
 
 	.title {
@@ -165,7 +167,7 @@
 		margin-left: 0.2rem;
 
 		&:hover {
-			color: $secondary-color;
+			color: $primary-color;
 		}
 	}
 
