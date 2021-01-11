@@ -281,6 +281,7 @@ label,
 
 		&.smaller {
 			align-self: flex-start;
+			flex-direction: row;
 
 			input {
 				font-size: 0.9em;

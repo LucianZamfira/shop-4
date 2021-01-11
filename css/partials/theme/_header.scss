@@ -68,6 +68,10 @@ header {
 		padding: 6px;
 		position: relative;
 
+		&:hover {
+			background-color: transparent;
+		}
+
 		&:after {
 			display: none;
 		}

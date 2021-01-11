@@ -13,12 +13,12 @@ button,
 	background-color: transparent;
 	border-radius: $button-border-radius;
 	border: 1px solid $secondary-color;
-	color: $secondary-color;
 	color: inherit;
 	cursor: pointer;
 	display: inline-flex;
 	font-size: inherit;
 	font-weight: $button-font-weight;
+	justify-content: center;
 	line-height: $button-line-height;
 	padding: $button-padding;
 	position: relative;
