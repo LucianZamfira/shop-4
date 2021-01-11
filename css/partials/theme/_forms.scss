@@ -39,6 +39,11 @@ select {
 			right: 5px;
 			top: 50%;
 			transform: translateY(-50%);
+
+			&:hover {
+				background-color: transparent;
+				color: $primary-color;
+			}
 		}
 	}
 
