@@ -2,6 +2,7 @@
 	align-items: center;
 	display: flex;
 	flex-flow: row wrap;
+	font-weight: $pagination-font-weight;
 	justify-content: center;
 	list-style: none;
 	margin: 2rem auto 1rem;
@@ -11,11 +12,12 @@
 	span {
 		align-items: center;
 		background-color: $secondary-button-color;
+		border-radius: $pagination-border-radius;
 		border: 1px solid $secondary-button-border-color;
 		color: $black80;
 		display: inline-flex;
-		font-size: 0.9em;
-		line-height: 2.4;
+		font-size: $pagination-font-size;
+		line-height: $pagination-line-height;
 		min-width: 35px;
 		padding: 0 0.8rem;
 		text-align: center;

@@ -1,15 +1,12 @@
 .badge {
-	-webkit-font-smoothing: antialiased;
 	background-color: $badge-primary-color;
+	border-radius: $badge-border-radius;
 	color: $white;
 	display: inline-block;
-	// font-weight: 400;
+	font-size: 0.875em;
 	line-height: 1.4;
 	padding: 4px 15px;
 	text-decoration: none;
-	// Small font improvements
-	font-family: "Poppins", sans-serif;
-	font-size: 0.86em;
 
 	&:hover {
 		text-decoration: none;

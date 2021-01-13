@@ -24,10 +24,11 @@ input,
 textarea,
 select {
 	background-color: transparent;
-	border: 1px solid $input-border-color;
 	border-radius: $input-border-radius;
+	border: 1px solid $input-border-color;
 	color: $primary-text-color;
 	display: block;
+	font-size: inherit;
 	margin: 0;
 	outline: none;
 	padding: $input-paddings;
@@ -192,7 +193,7 @@ label,
 
 	.checkmark,
 	&__label {
-		color: $primary-color;
+		color: $primary-text-color;
 		cursor: pointer;
 	}
 

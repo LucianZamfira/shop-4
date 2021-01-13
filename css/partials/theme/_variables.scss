@@ -1,5 +1,4 @@
 // VARIALBLES
-// $primary-color: #18717e;
 $primary-color: #f2784b;
 $secondary-color: #000000;
 
@@ -29,14 +28,17 @@ $black00: #000000;
 // Text colors
 $primary-text-color: $black80;
 $secondary-text-color: $primary-color;
+$price-color: $primary-color;
 
 // Structure colors
 $selection-color: rgba($primary-color, 0.6);
 $border-color: #cecece;
+$border-color-inverted: #404040;
 $transition-effect: cubic-bezier(0.645, 0.045, 0.355, 1);
 
 // Typography margins
 $headings-margin-bottom: 1.1rem;
+$headings-font-weight: 300;
 $paragraphs-margin-bottom: 1rem;
 $lists-margin-bottom: 1.2rem;
 $site-primary-font-family: "Josefin Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -58,6 +60,7 @@ $section-title-size: 2em;
 $section-title-margin: 4rem;
 $section-title-lineheight: 1.4;
 $footer-paddings: 4.2rem;
+$footer-background-color: transparent;
 
 $content-small: 420px;
 $content-short: 520px;
@@ -105,6 +108,12 @@ $error-color: #c51c1c;
 $success-color: #269c36;
 $inform-color: #7680cc;
 
+// Pagination
+$pagination-border-radius: 0;
+$pagination-font-size: 0.9375em;
+$pagination-font-weight: 300;
+$pagination-line-height: 2.4;
+
 // Badges colors
 $badge-primary-color: $primary-color;
 $badge-secondary-color: #49a2af;
@@ -115,6 +124,7 @@ $badge-info-color: #0d7dc0;
 $badge-light-color: #f5f5f5;
 $badge-dark-color: #1b1b1b;
 $badge-gray-color: #e6e6e6;
+$badge-border-radius: 0;
 
 // Forms
 $input-paddings: 12px;
