@@ -1,6 +1,6 @@
 .product {
 	&-thumbnail {
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 		position: relative;
 
 		> a {
@@ -63,7 +63,6 @@
 		}
 
 		* {
-			flex-direction: column;
 			justify-content: center;
 		}
 	}
@@ -167,7 +166,7 @@
 		left: 0;
 		position: absolute;
 		right: 0;
-		top: 40%;
+		top: 45%;
 		transition: all 0.4s ease-in-out;
 		z-index: -1;
 
@@ -254,6 +253,7 @@
 .price {
 	&-widget {
 		color: $primary-color;
+		flex-direction: column;
 		// font-size: 1.16em;
 
 		* {
