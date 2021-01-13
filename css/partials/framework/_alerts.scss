@@ -1,43 +1,42 @@
 .alert {
-	background-color: lighten($badge-primary-color, 25%);
-	padding: 1rem 1.2rem;
+	background-color: $alert-primary-color;
+	border-radius: $alert-border-radius;
+	padding: $alert-paddings;
+	color: $white;
 
 	&-primary {
-		background-color: lighten($badge-primary-color, 25%);
+		background-color: $alert-primary-color;
 	}
 
 	&-secondary {
-		background-color: lighten($badge-secondary-color, 25%);
+		background-color: $alert-secondary-color;
 	}
 
 	&-danger {
-		background-color: lighten($badge-danger-color, 25%);
+		background-color: $alert-danger-color;
 	}
 
 	&-success {
-		background-color: lighten($badge-success-color, 25%);
+		background-color: $alert-success-color;
 	}
 
 	&-warning {
-		background-color: lighten($badge-warning-color, 25%);
+		background-color: $alert-warning-color;
 	}
 
 	&-info {
-		background-color: lighten($badge-info-color, 25%);
+		background-color: $alert-info-color;
 	}
 
 	&-light {
-		background-color: lighten($badge-light-color, 25%);
-		color: $primary-color;
+		background-color: $alert-light-color;
 	}
 
 	&-dark {
-		background-color: lighten($badge-dark-color, 40%);
-		color: $white;
+		background-color: $alert-dark-color;
 	}
 
 	&-gray {
-		background-color: $badge-gray-color;
-		color: $primary-color;
+		background-color: $alert-gray-color;
 	}
 }

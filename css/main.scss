@@ -16,8 +16,10 @@
 @import "partials/framework/pagination";
 @import "partials/framework/lists";
 @import "partials/framework/tables";
+@import "partials/framework/loading";
 
 // Import theme partials
+@import "partials/theme/alerts";
 @import "partials/theme/buttons";
 @import "partials/theme/structure";
 @import "partials/theme/countdown";

@@ -126,6 +126,19 @@ $badge-dark-color: #1b1b1b;
 $badge-gray-color: #e6e6e6;
 $badge-border-radius: 0;
 
+// Alerts colors
+$alert-primary-color: rgba($primary-color, 0.7);
+$alert-secondary-color: rgba(#49a2af, 0.7);
+$alert-danger-color: rgba(#c51c1c, 0.7);
+$alert-success-color: rgba(#269c36, 0.7);
+$alert-warning-color: rgba(#ffc107, 0.7);
+$alert-info-color: rgba(#0d7dc0, 0.7);
+$alert-light-color: rgba(#f5f5f5, 0.7);
+$alert-dark-color: rgba(#1b1b1b, 0.7);
+$alert-gray-color: rgba(#e6e6e6, 0.7);
+$alert-paddings: 1rem 1.2rem;
+$alert-border-radius: 0;
+
 // Forms
 $input-paddings: 12px;
 $input-border-color: #d9d9d9;

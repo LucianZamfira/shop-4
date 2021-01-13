@@ -1,0 +1,37 @@
+.alert {
+	&-primary {
+		color: $primary-text-color;
+	}
+
+	&-secondary {
+		color: $primary-text-color;
+	}
+
+	&-danger {
+		color: $primary-text-color;
+	}
+
+	&-success {
+		color: $primary-text-color;
+	}
+
+	&-warning {
+		color: $primary-text-color;
+	}
+
+	&-info {
+		color: $primary-text-color;
+	}
+
+	&-light {
+		color: $primary-text-color;
+	}
+
+	&-dark {
+		color: $white;
+	}
+
+	&-gray {
+		color: $primary-text-color;
+	}
+}
