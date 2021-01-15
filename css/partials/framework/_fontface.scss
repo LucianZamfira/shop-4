@@ -1,10 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap");
-
-// Prod
 @font-face {
 	font-family: "icons";
-	src: url("https://cdn.shop-factory.eu/helendo/1.0/fonts/icons.ttf?9cc44f988f7cd1bb311c91713e5e81bc") format("truetype"), url("https://cdn.shop-factory.eu/helendo/1.0/fonts/icons.woff?fc8709ec805d4fe2a17cb160840f7ba0") format("woff");
+	src: url("https://cdn.shop-factory.eu/fonts/icons.ttf?9cc44f988f7cd1bb311c91713e5e81bc") format("truetype"), url("https://cdn.shop-factory.eu/fonts/icons.woff?fc8709ec805d4fe2a17cb160840f7ba0") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
