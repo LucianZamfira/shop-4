@@ -296,6 +296,37 @@ section {
 	}
 }
 
+.maxheight {
+	&--small {
+		max-height: 200px;
+	}
+
+	&--medium {
+		max-height: 320px;
+	}
+
+	&--regular {
+		max-height: 380px;
+	}
+}
+
+[class*="maxheight"] {
+	overflow-y: auto;
+
+	&::-webkit-scrollbar {
+		width: 4px;
+
+		&-track {
+			background-color: $border-color;
+		}
+
+		&-thumb {
+			background-color: $primary-color;
+			border-radius: 8px;
+		}
+	}
+}
+
 // Large screens
 @media (min-width: 1600px) {
 }
