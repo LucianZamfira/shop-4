@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Helendo shop powered by ShopFactory" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta property="og:image" content="/images/facebooklogo.png" />
+		<meta property="og:description" content="Helendo shop powered by ShopFactory" />
+		<meta property="og:locale" content="en_EN" />
+		<meta property="og:type" content="page" />
+		<meta property="og:title" content="Helendo" />
+		<meta property="og:url" content="www.shop-factory.ro" />
+		<meta property="og:site_name" content="Helendo" />
+
+		<title>Helendo - Homepage</title>
+
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+		<link rel="stylesheet" href="css/main.min.css" />
+		<link rel="stylesheet" href="css/fontface.min.css" rel="preload" />
+		<link rel="stylesheet" href="css/plugins.min.css" />
+	</head>
+
+	<body>
+		<!-- Quick actions toolbar start -->
+		<div class="toolbar">
+			<div class="container">
+				<div class="toolbar-contact">
+					<i class="icon-telephone"></i>
+					<a href="tel:+40 738 660 355" title="Call +40 738 660 355">Customer Support: +40 738 660 355</a>
+				</div>
+
+				<ul class="list social-list">
+					<li>
+						<a href="https://facebook.com" target="_blank" title="Find us on Facebook" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-facebook"></i></a>
+					</li>
+
+					<li>
+						<a href="https://youtube.com" target="_blank" title="Find us on Youtube" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-youtube"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Quick actions toolbar end -->
+
+		<!-- Header start -->
+		<header class="sticky-no">
+			<div class="container">
+				<div class="header-top">
+					<form action="POST" class="form-search">
+						<div class="input-wrapper">
+							<input type="text" placeholder="Search..." class="input input--small" aria-label="Search site input" />
+							<button type="submit" class="search-button" aria-label="Search site"><i class="icon-magnifier"></i></button>
+						</div>
+					</form>
+
+					<a href="index.html" title="Home" class="logo portrait">
+						<img src="images/logo-bioco.svg" alt="Logo Bio&co" class="image" width="220" height="80" />
+					</a>
+
+					<ul class="header-list">
+						<li>
+							<button id="userDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 15" type="button">
+								<i class="icon-user"></i>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+								<div class="dropdown-wrapper">
+									<form action="#" class="dropdown-text">
+										<h5>Quick Login</h5>
+
+										<div class="input-row">
+											<input type="text" placeholder="Username" aria-label="Username" autocomplete="off" />
+										</div>
+
+										<div class="input-row">
+											<input type="password" placeholder="Password" aria-label="Password" autocomplete="off" />
+										</div>
+
+										<div class="input-row">
+											<label class="custom-type">
+												<input name="rememberme" type="checkbox" value="forever" id="rememberme" />
+												<span class="checkmark"></span>
+												<span class="custom-type__label">Remember me</span>
+											</label>
+										</div>
+
+										<button type="submit" class="button button--fluid button--primary">Log in</button>
+										<a href="login.html" title="More login options" class="button button--fluid mt-2">More login options</a>
+									</form>
+
+									<div class="dropdown-divider mt-1"></div>
+
+									<div class="dropdown-text">
+										<a href="#" title="Lost your password?">Lost your password?</a>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<button id="wishDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 15" type="button">
+								<i class="icon-heart"></i>
+								<span class="badge badge-primary">0</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="wishDropdown">
+								<div class="dropdown-wrapper">
+									<p class="text-center m-0 text--error">Your <a href="wish-list.html" title="wish-list" class="text--underline">wish-list</a> is empty</p>
+								</div>
+							</div>
+						</li>
+
+						<li>
+							<button id="cartDropdown" class="link dropdown-toggle" title="Cart" role="button" data-toggle="dropdown" data-offset="0, 15" type="button">
+								<i class="icon-bag2"></i>
+								<span class="badge badge-primary">6</span>
+							</button>
+
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="cartDropdown">
+								<div class="dropdown-wrapper">
+									<ul class="product-list">
+										<li>
+											<a href="product-details.html" class="product-image" title="Eve goes eden">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Eve goes eden" class="product-name">Eve goes eden</a>
+
+												<h5 class="product-price">
+													<span>1 x <strong>$20.00</strong></span>
+													<br />
+													<span>Total : <strong>$20.00</strong></span>
+												</h5>
+
+												<div class="quantity-widget smaller">
+													<button class="quantity-decrease"><i class="icon-minus"></i></button>
+													<input type="text" name="quantity-input" value="1" data-max="12" />
+													<button class="quantity-increase"><i class="icon-plus"></i></button>
+												</div>
+											</div>
+
+											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Mile high / 38 100ml">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Mile high / 38 100ml" class="product-name">Mile high / 38 100ml</a>
+
+												<h5 class="product-price">
+													<span>1 x <strong>$20.00</strong></span>
+													<br />
+													<span>Total : <strong>$20.00</strong></span>
+												</h5>
+
+												<div class="quantity-widget smaller">
+													<button class="quantity-decrease"><i class="icon-minus"></i></button>
+													<input type="text" name="quantity-input" value="1" data-max="12" />
+													<button class="quantity-increase"><i class="icon-plus"></i></button>
+												</div>
+											</div>
+
+											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="EDP Berlin Gallivant">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="EDP Berlin Gallivant" class="product-name">EDP Berlin Gallivant</a>
+
+												<h5 class="product-price">
+													<span>2 x <strong>$20.00</strong></span>
+													<br />
+													<span>Total : <strong>$40.00</strong></span>
+												</h5>
+
+												<div class="quantity-widget smaller">
+													<button class="quantity-decrease"><i class="icon-minus"></i></button>
+													<input type="text" name="quantity-input" value="2" data-max="12" />
+													<button class="quantity-increase"><i class="icon-plus"></i></button>
+												</div>
+											</div>
+
+											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+										</li>
+									</ul>
+
+									<div class="dropdown-divider"></div>
+
+									<div class="dropdown-text">
+										<h5 class="d-flex justify-content-between font-bold mt-1">
+											<span>TOTAL:</span>
+											<span class="price">140 LEI</span>
+										</h5>
+
+										<div class="button-group mt-2">
+											<a href="cart.html" class="button button--fluid" title="View cart"><i class="fa fa-shopping-cart"></i> View cart</a>
+											<a href="checkout.html" class="button button--fluid button--primary" title="Checkout"><i class="fa fa-sign-in"></i> Checkout</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="menu-mobile">
+							<button class="link"><i class="icon-menu"></i></button>
+						</li>
+					</ul>
+				</div>
+
+				<nav>
+					<ul class="menu-main">
+						<li>
+							<button class="toggle"><i class="icon-menu"></i>Categories</button>
+
+							<div class="menu-level-two">
+								<ul class="categories">
+									<li class="show">
+										<button class="toggle">Coșurile Bio&Co</button>
+
+										<div class="menu-level-three">
+											<div class="menu-shell">
+												<ul>
+													<li>
+														<a href="#" title="Un coș Familial">Un coș Familial</a>
+													</li>
+
+													<li>
+														<a href="#" title="Un coș Single-Duo">Un coș Single-Duo</a>
+													</li>
+
+													<li>
+														<a href="#" title="Abonament Familial">Abonament Familial</a>
+													</li>
+
+													<li>
+														<a href="#" title="Abonament Single-Duo">Abonament Single-Duo</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<button class="toggle">Miere și produse apicole</button>
+
+										<div class="menu-level-three">
+											<div class="menu-shell">
+												<ul>
+													<li>
+														<a href="#" title="Fagure miere polifloră">Fagure miere polifloră</a>
+													</li>
+
+													<li>
+														<a href="#" title="Miere de albine tei">Miere de albine tei</a>
+													</li>
+
+													<li>
+														<a href="#" title="Miere de albine polifloră">Miere de albine polifloră</a>
+													</li>
+
+													<li>
+														<a href="#" title="Miere de albine rapiță">Miere de albine rapiță</a>
+													</li>
+
+													<li>
+														<a href="#" title="Miere de albine floarea soarelui">Miere de albine floarea soarelui</a>
+													</li>
+
+													<li>
+														<a href="#" title="Căpăceală">Căpăceală</a>
+													</li>
+
+													<li>
+														<a href="#" title="Tinctură de propolis în alcool de 96*">Tinctură de propolis în alcool de 96*</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<button class="toggle">Pâine cu maia și patiserie</button>
+
+										<div class="menu-level-three">
+											<div class="menu-shell">
+												<p>Prin făina 100% integrala din care este dospită, această pâine aduce numeroase beneficii sănătății: reglează tranzitul intestinal datorită cantității ridicate de fibre, are indice glicemic scăzut, fiind astfel potrivită și pentru diabetici, conține o multitudine de vitamine, precum B1, B2, B3, B5 și oferă senzația de satietate pe termen lung. Merge de minune cu o pastă de ciuperci, iar împreună sunt o comoară de vitamine, minerale, fibre, carbohidrați și grăsimi bune, combinația ideală pentru a susține alergătura unei zile întregi de muncă.</p>
+												<a href="#" title="Pâine cu maia și patiserie" class="text--underline">Pâine cu maia și patiserie</a>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<a href="#" title="Legume proaspete" class="trigger">Legume proaspete</a>
+									</li>
+
+									<li>
+										<a href="#" title="Contact us" class="trigger">Contact us</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<button class="toggle">About us</button>
+
+							<div class="menu-level-two">
+								<ul>
+									<li>
+										<a href="about-us.html" title="About us">About us</a>
+									</li>
+
+									<li>
+										<a href="#" title="Partners">Partners</a>
+									</li>
+
+									<li>
+										<a href="contact-us.html" title="Contact us">Contact us</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<a href="shop.html" title="Shop">Shop</a>
+						</li>
+
+						<li>
+							<a href="#" title="Concept">Concept</a>
+						</li>
+
+						<li>
+							<a href="blog.html" title="Blog">Blog</a>
+						</li>
+
+						<li>
+							<a href="contact.html" title="Contact">Contact</a>
+						</li>
+
+						<li class="close-menu">
+							<i class="icon-cross2"></i>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Header end -->
+
+		<!-- Main start -->
+		<main>
+			<!-- Site content start -->
+			<section>
+				<div class="container">
+					<h2>Video embed example</h2>
+					<div class="row mb-4">
+						<div class="col-4">
+							<div class="embed-responsive">
+								<iframe src="https://player.vimeo.com/video/219484675?color=dcdcdc&title=0&byline=0&portrait=0&dnt=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen aria-hidden="true"></iframe>
+							</div>
+						</div>
+
+						<div class="col-8">
+							<div class="embed-responsive">
+								<div class="embed-responsive-placeholder">
+									<iframe src="https://player.vimeo.com/video/219484675?color=dcdcdc&title=0&byline=0&portrait=0&dnt=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen aria-hidden="true"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h2>Product card example</h2>
+					<div class="row mb-4">
+						<div class="col-3">
+							<!-- Product start -->
+							<div class="product-item text-center">
+								<div class="product-thumbnail">
+									<a href="product-details.html" title="Teapot with black tea">
+										<img src="images/products/1_3-300x300.jpg" class="image--responsive" alt="Product Images" />
+									</a>
+
+									<span class="badge product-badge badge-success">In stock</span>
+
+									<ul class="list--inline product-actions">
+										<li>
+											<a href="#" data-toggle="modal" data-target="#productModal"><i class="icon-eye" data-toggle="tooltip" data-placement="top" title="Quick View"></i></a>
+										</li>
+
+										<li>
+											<a href="product-details.html"><i class="icon-bag2" data-toggle="tooltip" data-placement="top" title="Add to cart"></i></a>
+										</li>
+
+										<li>
+											<a href="wishlist.html"><i class="icon-heart" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"></i></a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="product-content">
+									<h3 class="product-title">
+										<a href="product-details.html">Teapot with black tea</a>
+									</h3>
+
+									<div class="rating-widget small">
+										<div class="rating not-editable">
+											<input type="radio" name="rating-product-total" id="rating-product-05" class="rating__radio" />
+											<label for="rating-product-05" class="rating__label"></label>
+
+											<input type="radio" name="rating-product-total" id="rating-product-04" class="rating__radio" />
+											<label for="rating-product-04" class="rating__label"></label>
+
+											<input type="radio" name="rating-product-total" id="rating-product-03" class="rating__radio" checked />
+											<label for="rating-product-03" class="rating__label"></label>
+
+											<input type="radio" name="rating-product-total" id="rating-product-02" class="rating__radio" />
+											<label for="rating-product-02" class="rating__label"></label>
+
+											<input type="radio" name="rating-product-total" id="rating-product-01" class="rating__radio" />
+											<label for="rating-product-01" class="rating__label"></label>
+										</div>
+									</div>
+
+									<div class="price-widget">
+										<h5 class="price">
+											<span class="amount">54 <sup>87</sup></span>
+											<span class="currency">Lei</span>
+										</h5>
+
+										<h6 class="old">
+											<span class="amount">295 <sup>12</sup></span>
+											<span class="currency">Lei</span>
+											<span class="discount">(-81%)</span>
+										</h6>
+									</div>
+								</div>
+							</div>
+							<!-- Product end -->
+						</div>
+					</div>
+
+					<h2>List of alerts</h2>
+					<ul class="list list--airy my-3">
+						<li><div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div></li>
+						<li><div class="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div></li>
+						<li><div class="alert alert-success" role="alert">A simple success alert—check it out!</div></li>
+						<li><div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div></li>
+						<li><div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div></li>
+						<li><div class="alert alert-info" role="alert">A simple info alert—check it out!</div></li>
+						<li><div class="alert alert-light" role="alert">A simple light alert—check it out!</div></li>
+						<li><div class="alert alert-dark" role="alert">A simple dark alert—check it out!</div></li>
+					</ul>
+
+					<h2>List of badges</h2>
+					<ul class="list list--airy my-3">
+						<li><div class="badge badge-primary" role="badge">A simple primary badge—check it out!</div></li>
+						<li><div class="badge badge-secondary" role="badge">A simple secondary badge—check it out!</div></li>
+						<li><div class="badge badge-success" role="badge">A simple success badge—check it out!</div></li>
+						<li><div class="badge badge-danger" role="badge">A simple danger badge—check it out!</div></li>
+						<li><div class="badge badge-warning" role="badge">A simple warning badge—check it out!</div></li>
+						<li><div class="badge badge-info" role="badge">A simple info badge—check it out!</div></li>
+						<li><div class="badge badge-light" role="badge">A simple light badge—check it out!</div></li>
+						<li><div class="badge badge-dark" role="badge">A simple dark badge—check it out!</div></li>
+					</ul>
+
+					<div class="icons-wrapper loading">
+						<i class="icon-copyright">copyright</i>
+
+						<i class="icon-google">icon-google</i>
+
+						<i class="icon-facebook">icon-facebook</i>
+
+						<i class="icon-instagram">icon-instagram</i>
+
+						<i class="icon-linkedin">icon-linkedin</i>
+
+						<i class="icon-messenger">icon-messenger</i>
+
+						<i class="icon-skype">icon-skype</i>
+
+						<i class="icon-snapchat">icon-snapchat</i>
+
+						<i class="icon-tiktok">icon-tiktok</i>
+
+						<i class="icon-twitter">icon-twitter</i>
+
+						<i class="icon-whatsapp">icon-whatsapp</i>
+
+						<i class="icon-youtube">icon-youtube</i>
+
+						<i class="icon-picture">icon-picture</i>
+
+						<i class="icon-loading">icon-loading</i>
+
+						<i class="icon-expand">icon-expand</i>
+
+						<i class="icon-heart-active">icon-heart-active</i>
+
+						<i class="icon-heart">icon-heart</i>
+
+						<i class="icon-video-circle">icon-video-circle</i>
+
+						<i class="icon-user">icon-user</i>
+
+						<i class="icon-menu">icon-menu</i>
+
+						<i class="icon-at-sign">icon-at-sign</i>
+
+						<i class="icon-copyright">icon-copyright</i>
+
+						<i class="icon-notification-circle">icon-notification-circle</i>
+
+						<i class="icon-question-circle">icon-question-circle</i>
+
+						<i class="icon-alarm-ringing">icon-alarm-ringing</i>
+
+						<i class="icon-cross2">icon-cross2</i>
+
+						<i class="icon-check">icon-check</i>
+
+						<i class="icon-plane">icon-plane</i>
+
+						<i class="icon-bus">icon-bus</i>
+
+						<i class="icon-ship">icon-ship</i>
+
+						<i class="icon-train">icon-train</i>
+
+						<i class="icon-car">icon-car</i>
+
+						<i class="icon-clock3">icon-clock3</i>
+
+						<i class="icon-happy">icon-happy</i>
+
+						<i class="icon-shield-cross">icon-shield-cross</i>
+
+						<i class="icon-shield-alert">icon-shield-alert</i>
+
+						<i class="icon-shield">icon-shield</i>
+
+						<i class="icon-shield-check">icon-shield-check</i>
+
+						<i class="icon-cash-dollar">icon-cash-dollar</i>
+
+						<i class="icon-cash-euro">icon-cash-euro</i>
+
+						<i class="icon-cash-pound">icon-cash-pound</i>
+
+						<i class="icon-cash-yen">icon-cash-yen</i>
+
+						<i class="icon-truck">icon-truck</i>
+
+						<i class="icon-site-map">icon-site-map</i>
+
+						<i class="icon-gift">icon-gift</i>
+
+						<i class="icon-thumbs-down">icon-thumbs-down</i>
+
+						<i class="icon-thumbs-up">icon-thumbs-up</i>
+
+						<i class="icon-cart-full">icon-cart-full</i>
+
+						<i class="icon-paper-plane">icon-paper-plane</i>
+
+						<i class="icon-envelope-open">icon-envelope-open</i>
+
+						<i class="icon-zipped">icon-zipped</i>
+
+						<i class="icon-minus">icon-minus</i>
+
+						<i class="icon-plus">icon-plus</i>
+
+						<i class="icon-bag2">icon-bag2</i>
+
+						<i class="icon-alarm">icon-alarm</i>
+
+						<i class="icon-arrow-left">icon-arrow-left</i>
+
+						<i class="icon-arrow-right">icon-arrow-right</i>
+
+						<i class="icon-calendar-full">icon-calendar-full</i>
+
+						<i class="icon-cart">icon-cart</i>
+
+						<i class="icon-chevron-down">icon-chevron-down</i>
+
+						<i class="icon-chevron-left">icon-chevron-left</i>
+
+						<i class="icon-chevron-right">icon-chevron-right</i>
+
+						<i class="icon-chevron-up">icon-chevron-up</i>
+
+						<i class="icon-cross">icon-cross</i>
+
+						<i class="icon-earth">icon-earth</i>
+
+						<i class="icon-envelope">icon-envelope</i>
+
+						<i class="icon-eye">icon-eye</i>
+
+						<i class="icon-history">icon-history</i>
+
+						<i class="icon-home">icon-home</i>
+
+						<i class="icon-lock">icon-lock</i>
+
+						<i class="icon-magnifier">icon-magnifier</i>
+
+						<i class="icon-map">icon-map</i>
+
+						<i class="icon-map-marker">icon-map-marker</i>
+
+						<i class="icon-neutral">icon-neutral</i>
+
+						<i class="icon-paperclip">icon-paperclip</i>
+
+						<i class="icon-phone">icon-phone</i>
+
+						<i class="icon-telephone">icon-telephone</i>
+
+						<i class="icon-pushpin">icon-pushpin</i>
+
+						<i class="icon-sad">icon-sad</i>
+
+						<i class="icon-smile">icon-smile</i>
+
+						<i class="icon-star">icon-star</i>
+
+						<i class="icon-store">icon-store</i>
+
+						<i class="icon-trash">icon-trash</i>
+
+						<i class="icon-users">icon-users</i>
+
+						<i class="icon-star-full">icon-star-full</i>
+
+						<i class="icon-help-with-circle">icon-help-with-circle</i>
+
+						<i class="icon-info-with-circle">icon-info-with-circle</i>
+					</div>
+				</div>
+			</section>
+			<!-- Site content end -->
+
+			<!-- Site content start -->
+			<section>
+				<div class="container">
+					<h1 class="section-title text--center">Typography</h1>
+
+					<ul class="list list--airy my-3">
+						<li></li>
+						<li><h1>Heading 1</h1></li>
+						<li><h2>Heading 2</h2></li>
+						<li><h3>Heading 3</h3></li>
+						<li><h4>Heading 4</h4></li>
+						<li><h5>Heading 5</h5></li>
+						<li><h6>Heading 6</h6></li>
+					</ul>
+
+					<p class="text--primary">Text color: text--primary</p>
+					<p class="text--secondary">Text color: text--secondary</p>
+					<p class="text--gray">Text color: text--gray</p>
+					<p class="text--sky">Text color: text--sky</p>
+					<p class="text--twitter">Text color: text--twitter</p>
+					<p class="text--facebook">Text color: text--facebook</p>
+					<p class="text--linkedin">Text color: text--linkedin</p>
+					<p class="text--green">Text color: text--green</p>
+					<p class="text--black80">Text color: text--black80</p>
+					<p class="text--black34">Text color: text--black34</p>
+					<p class="text--alert">Text color: text--alert</p>
+					<p class="text--inform">Text color: text--inform</p>
+					<p class="text--success">Text color: text--success</p>
+					<p class="text--error">Text color: text--error</p>
+				</div>
+			</section>
+			<!-- Site content end -->
+		</main>
+		<!-- Main end -->
+
+		<!-- Footer start -->
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-5 col-md-6 col-sm-6 col-xs-12">
+							<h3>Address</h3>
+
+							<p>Mouse giant law division cut child engineer energy stand shinning step evening planning lips major thrown somehow next wall chart however met aloud difficulty.</p>
+
+							<ul class="list">
+								<li><i class="icon-map-marker mr-2"></i> Helendo, Chicago, USA 2018</li>
+								<li><i class="icon-telephone mr-2"></i><a href="tel:846677028028" class="hover-style-link">+846677028028</a></li>
+							</ul>
+
+							<ul class="list list--inline">
+								<li><a href="#" title="Term & Condition">Term & Condition</a></li>
+								<li><a href="#" title="Policy">Policy</a></li>
+								<li><a href="#" title="Map">Map</a></li>
+							</ul>
+						</div>
+
+						<div class="col-3 col-md-6 col-sm-6 col-xs-12">
+							<h3>Help & Information</h3>
+
+							<ul class="list">
+								<li><a href="contact.html" title="Help & Contact Us">Help & Contact Us</a></li>
+								<li><a href="#" title="Returns & Refunds">Returns & Refunds</a></li>
+								<li><a href="shop.html" title="Online Stores">Online Stores</a></li>
+								<li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+								<li><a href="about-us.html" title="About Us">About Us</a></li>
+								<li><a href="#" title="FAQ Page">FAQ Page</a></li>
+								<li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+							</ul>
+						</div>
+
+						<div class="col-4 col-md-6 col-sm-6 col-xs-12">
+							<h3>Newsletter</h3>
+
+							<form action="#" class="newsletter">
+								<input class="input--fluid" type="email" placeholder="Your email address" aria-label="Your email address" required />
+								<button class="button button--inverted" aria-label="Subscribe to newsletter"><i class="icon-arrow-right"></i></button>
+							</form>
+
+							<div class="social-widget mt-2 justify-content-start">
+								<h4 class="title">Follow Us On Social</h4>
+
+								<ul class="list social-list">
+									<li>
+										<a href="https://twitter.com" target="_blank" title="Find us on Twitter" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-twitter"></i></a>
+									</li>
+
+									<li>
+										<a href="https://facebook.com" target="_blank" title="Find us on Facebook" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-facebook"></i></a>
+									</li>
+
+									<li>
+										<a href="https://instagram.com" target="_blank" title="Find us on Instagram" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-instagram"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="footer-logo">
+						<a href="#"><img src="images/logo-bioco-inverted.svg" alt="Logo Bio&co" width="162" height="60" /></a>
+					</div>
+
+					<p class="footer-copyright"><i class="icon-copyright"></i> 2021 Bio & Co. All Rights Reserved. Powered by <a href="#" title="Shopoteca" class="link link--underline">Shopoteca</a></p>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer end -->
+
+		<!-- External js -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+		<!-- Main js -->
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
