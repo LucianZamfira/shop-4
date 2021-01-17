@@ -391,7 +391,10 @@ label,
 	}
 
 	&-item {
-		margin: 4px;
+		align-items: center;
+		display: inline-flex;
+		margin: 0 4px 4px 4px;
+		min-height: 30px;
 
 		&:last-child {
 			margin-right: 0;

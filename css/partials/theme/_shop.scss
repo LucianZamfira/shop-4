@@ -15,6 +15,12 @@
 		> [class^="col-"] {
 			margin-top: 1rem;
 		}
+
+		&.loading {
+			&:after {
+				top: 25vh;
+			}
+		}
 	}
 
 	&-tags {
