@@ -276,6 +276,7 @@ label,
 .quantity {
 	&-widget {
 		align-items: center;
+		border-radius: $input-border-radius;
 		display: flex;
 		flex: 0;
 		margin: 0;
