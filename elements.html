@@ -27,24 +27,27 @@
 			<div class="container">
 				<div class="toolbar-contact">
 					<i class="icon-telephone"></i>
-					<a href="tel:+40 738 660 355" title="Call +40 738 660 355">Customer Support: +40 738 660 355</a>
+					<a href="tel:+40 738 660 355" title="Call +40 738 660 355">+40 738 660 355</a>
 				</div>
 
-				<ul class="list social-list">
-					<li>
-						<a href="https://facebook.com" target="_blank" title="Find us on Facebook" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-facebook"></i></a>
-					</li>
+				<div class="toolbar-actions">
+					<i class="icon-earth"></i>
 
-					<li>
-						<a href="https://youtube.com" target="_blank" title="Find us on Youtube" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-youtube"></i></a>
-					</li>
-				</ul>
+					<div class="group">
+						<span class="selected">Română</span>
+
+						<ul>
+							<li class="active">Română</li>
+							<li>English</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- Quick actions toolbar end -->
 
 		<!-- Header start -->
-		<header class="sticky-no">
+		<header id="header" class="sticky-no">
 			<div class="container">
 				<div class="header-top">
 					<form action="POST" class="form-search">
@@ -55,7 +58,7 @@
 					</form>
 
 					<a href="index.html" title="Home" class="logo portrait">
-						<img src="images/logo-bioco.svg" alt="Logo Bio&co" class="image" width="220" height="80" />
+						<img src="images/logo-rosamundi.svg" alt="Rosamundi Logo" class="image" width="220" height="80" />
 					</a>
 
 					<ul class="header-list">
@@ -130,8 +133,6 @@
 
 												<h5 class="product-price">
 													<span>1 x <strong>$20.00</strong></span>
-													<br />
-													<span>Total : <strong>$20.00</strong></span>
 												</h5>
 
 												<div class="quantity-widget smaller">
@@ -141,7 +142,7 @@
 												</div>
 											</div>
 
-											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+											<button class="button--icon remove-item"><i class="icon-bin" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
@@ -154,8 +155,6 @@
 
 												<h5 class="product-price">
 													<span>1 x <strong>$20.00</strong></span>
-													<br />
-													<span>Total : <strong>$20.00</strong></span>
 												</h5>
 
 												<div class="quantity-widget smaller">
@@ -165,7 +164,7 @@
 												</div>
 											</div>
 
-											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+											<button class="button--icon remove-item"><i class="icon-bin" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
@@ -178,6 +177,7 @@
 
 												<h5 class="product-price">
 													<span>2 x <strong>$20.00</strong></span>
+													<!-- Use this just in case product count is > 1 -->
 													<br />
 													<span>Total : <strong>$40.00</strong></span>
 												</h5>
@@ -189,7 +189,29 @@
 												</div>
 											</div>
 
-											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+											<button class="button--icon remove-item"><i class="icon-bin" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Mile high / 38 100ml">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Mile high / 38 100ml" class="product-name">Mile high / 38 100ml</a>
+
+												<h5 class="product-price">
+													<span>1 x <strong>$20.00</strong></span>
+												</h5>
+
+												<div class="quantity-widget smaller">
+													<button class="quantity-decrease"><i class="icon-minus"></i></button>
+													<input type="text" name="quantity-input" value="1" data-max="12" />
+													<button class="quantity-increase"><i class="icon-plus"></i></button>
+												</div>
+											</div>
+
+											<button class="button--icon remove-item"><i class="icon-bin" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 									</ul>
 
@@ -219,30 +241,58 @@
 				<nav>
 					<ul class="menu-main">
 						<li>
-							<button class="toggle"><i class="icon-menu"></i>Categories</button>
+							<button class="toggle"><i class="icon-menu mr-1"></i>Categories</button>
 
 							<div class="menu-level-two">
 								<ul class="categories">
 									<li class="show">
-										<button class="toggle">Coșurile Bio&Co</button>
+										<button class="toggle">Perfumes</button>
 
 										<div class="menu-level-three">
 											<div class="menu-shell">
-												<ul>
+												<ul class="columns-two">
 													<li>
-														<a href="#" title="Un coș Familial">Un coș Familial</a>
+														<a href="#" title="Parle Moi de Parfum">Parle Moi de Parfum</a>
 													</li>
 
 													<li>
-														<a href="#" title="Un coș Single-Duo">Un coș Single-Duo</a>
+														<a href="#" title="Philly and Phill">Philly and Phill</a>
 													</li>
 
 													<li>
-														<a href="#" title="Abonament Familial">Abonament Familial</a>
+														<a href="#" title="Rose Et Marius">Rose Et Marius</a>
 													</li>
 
 													<li>
-														<a href="#" title="Abonament Single-Duo">Abonament Single-Duo</a>
+														<a href="#" title="Jardin de France">Jardin de France</a>
+													</li>
+
+													<li>
+														<a href="#" title="Gallivant">Gallivant</a>
+													</li>
+
+													<li>
+														<a href="#" title="Francesca Dell'Oro">Francesca Dell'Oro</a>
+													</li>
+
+													<li>
+														<a href="#" title="Institut Très Bien">Institut Très Bien</a>
+													</li>
+
+													<li>
+														<a href="#" title="Profumi Del Forte">Profumi Del Forte</a>
+													</li>
+
+													<li>
+														<a href="#" title="Angela Ciampagna">Angela Ciampagna</a>
+													</li>
+
+													<li>
+														<a href="#" title="Goldfield &amp; Banks">Goldfield &amp; Banks</a>
+													</li>
+
+													<li>
+														<a href="#" title="Gravel">Gravel</a>
 													</li>
 												</ul>
 											</div>
@@ -250,60 +300,32 @@
 									</li>
 
 									<li>
-										<button class="toggle">Miere și produse apicole</button>
+										<button class="toggle">Partners</button>
+
+										<div class="menu-level-three">
+											<div class="menu-shell">
+												<h3>Our Partners</h3>
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quasi alias, magni labore ipsam voluptatibus minus fuga voluptates iure eaque autem molestiae dicta? Consectetur harum consequuntur ullam repudiandae. Voluptatum, ad.</p>
+											</div>
+										</div>
+									</li>
+
+									<li>
+										<button class="toggle">Contact us</button>
 
 										<div class="menu-level-three">
 											<div class="menu-shell">
 												<ul>
 													<li>
-														<a href="#" title="Fagure miere polifloră">Fagure miere polifloră</a>
+														<a href="#" title="Rose et Marius">Rose et Marius</a>
 													</li>
 
 													<li>
-														<a href="#" title="Miere de albine tei">Miere de albine tei</a>
-													</li>
-
-													<li>
-														<a href="#" title="Miere de albine polifloră">Miere de albine polifloră</a>
-													</li>
-
-													<li>
-														<a href="#" title="Miere de albine rapiță">Miere de albine rapiță</a>
-													</li>
-
-													<li>
-														<a href="#" title="Miere de albine floarea soarelui">Miere de albine floarea soarelui</a>
-													</li>
-
-													<li>
-														<a href="#" title="Căpăceală">Căpăceală</a>
-													</li>
-
-													<li>
-														<a href="#" title="Tinctură de propolis în alcool de 96*">Tinctură de propolis în alcool de 96*</a>
+														<a href="#" title="Institut Très Bien">Institut Très Bien</a>
 													</li>
 												</ul>
 											</div>
 										</div>
-									</li>
-
-									<li>
-										<button class="toggle">Pâine cu maia și patiserie</button>
-
-										<div class="menu-level-three">
-											<div class="menu-shell">
-												<p>Prin făina 100% integrala din care este dospită, această pâine aduce numeroase beneficii sănătății: reglează tranzitul intestinal datorită cantității ridicate de fibre, are indice glicemic scăzut, fiind astfel potrivită și pentru diabetici, conține o multitudine de vitamine, precum B1, B2, B3, B5 și oferă senzația de satietate pe termen lung. Merge de minune cu o pastă de ciuperci, iar împreună sunt o comoară de vitamine, minerale, fibre, carbohidrați și grăsimi bune, combinația ideală pentru a susține alergătura unei zile întregi de muncă.</p>
-												<a href="#" title="Pâine cu maia și patiserie" class="text--underline">Pâine cu maia și patiserie</a>
-											</div>
-										</div>
-									</li>
-
-									<li>
-										<a href="#" title="Legume proaspete" class="trigger">Legume proaspete</a>
-									</li>
-
-									<li>
-										<a href="#" title="Contact us" class="trigger">Contact us</a>
 									</li>
 								</ul>
 							</div>
@@ -346,7 +368,7 @@
 						</li>
 
 						<li class="close-menu">
-							<i class="icon-cross2"></i>
+							<i class="icon-bin2"></i>
 						</li>
 					</ul>
 				</nav>
@@ -469,181 +491,183 @@
 						<li><div class="badge badge-dark" role="badge">A simple dark badge—check it out!</div></li>
 					</ul>
 
-					<div class="icons-wrapper loading">
-						<i class="icon-copyright">copyright</i>
-
-						<i class="icon-google">icon-google</i>
-
-						<i class="icon-facebook">icon-facebook</i>
-
-						<i class="icon-instagram">icon-instagram</i>
-
-						<i class="icon-linkedin">icon-linkedin</i>
-
-						<i class="icon-messenger">icon-messenger</i>
-
-						<i class="icon-skype">icon-skype</i>
-
-						<i class="icon-snapchat">icon-snapchat</i>
-
-						<i class="icon-tiktok">icon-tiktok</i>
-
-						<i class="icon-twitter">icon-twitter</i>
-
-						<i class="icon-whatsapp">icon-whatsapp</i>
-
-						<i class="icon-youtube">icon-youtube</i>
-
-						<i class="icon-picture">icon-picture</i>
-
-						<i class="icon-loading">icon-loading</i>
-
-						<i class="icon-expand">icon-expand</i>
-
-						<i class="icon-heart-active">icon-heart-active</i>
-
-						<i class="icon-heart">icon-heart</i>
-
-						<i class="icon-video-circle">icon-video-circle</i>
-
-						<i class="icon-user">icon-user</i>
-
-						<i class="icon-menu">icon-menu</i>
-
-						<i class="icon-at-sign">icon-at-sign</i>
-
-						<i class="icon-copyright">icon-copyright</i>
-
-						<i class="icon-notification-circle">icon-notification-circle</i>
-
-						<i class="icon-question-circle">icon-question-circle</i>
-
-						<i class="icon-alarm-ringing">icon-alarm-ringing</i>
-
-						<i class="icon-cross2">icon-cross2</i>
-
-						<i class="icon-check">icon-check</i>
-
-						<i class="icon-plane">icon-plane</i>
-
-						<i class="icon-bus">icon-bus</i>
-
-						<i class="icon-ship">icon-ship</i>
-
-						<i class="icon-train">icon-train</i>
-
-						<i class="icon-car">icon-car</i>
-
-						<i class="icon-clock3">icon-clock3</i>
-
-						<i class="icon-happy">icon-happy</i>
-
-						<i class="icon-shield-cross">icon-shield-cross</i>
-
-						<i class="icon-shield-alert">icon-shield-alert</i>
-
-						<i class="icon-shield">icon-shield</i>
-
-						<i class="icon-shield-check">icon-shield-check</i>
-
-						<i class="icon-cash-dollar">icon-cash-dollar</i>
-
-						<i class="icon-cash-euro">icon-cash-euro</i>
-
-						<i class="icon-cash-pound">icon-cash-pound</i>
-
-						<i class="icon-cash-yen">icon-cash-yen</i>
-
-						<i class="icon-truck">icon-truck</i>
-
-						<i class="icon-site-map">icon-site-map</i>
-
-						<i class="icon-gift">icon-gift</i>
-
-						<i class="icon-thumbs-down">icon-thumbs-down</i>
-
-						<i class="icon-thumbs-up">icon-thumbs-up</i>
-
-						<i class="icon-cart-full">icon-cart-full</i>
-
-						<i class="icon-paper-plane">icon-paper-plane</i>
-
-						<i class="icon-envelope-open">icon-envelope-open</i>
-
-						<i class="icon-zipped">icon-zipped</i>
-
-						<i class="icon-minus">icon-minus</i>
-
-						<i class="icon-plus">icon-plus</i>
-
-						<i class="icon-bag2">icon-bag2</i>
-
-						<i class="icon-alarm">icon-alarm</i>
-
-						<i class="icon-arrow-left">icon-arrow-left</i>
-
-						<i class="icon-arrow-right">icon-arrow-right</i>
-
-						<i class="icon-calendar-full">icon-calendar-full</i>
-
-						<i class="icon-cart">icon-cart</i>
-
-						<i class="icon-chevron-down">icon-chevron-down</i>
-
-						<i class="icon-chevron-left">icon-chevron-left</i>
-
-						<i class="icon-chevron-right">icon-chevron-right</i>
-
-						<i class="icon-chevron-up">icon-chevron-up</i>
-
-						<i class="icon-cross">icon-cross</i>
-
-						<i class="icon-earth">icon-earth</i>
-
-						<i class="icon-envelope">icon-envelope</i>
-
-						<i class="icon-eye">icon-eye</i>
-
-						<i class="icon-history">icon-history</i>
-
-						<i class="icon-home">icon-home</i>
-
-						<i class="icon-lock">icon-lock</i>
-
-						<i class="icon-magnifier">icon-magnifier</i>
-
-						<i class="icon-map">icon-map</i>
-
-						<i class="icon-map-marker">icon-map-marker</i>
-
-						<i class="icon-neutral">icon-neutral</i>
-
-						<i class="icon-paperclip">icon-paperclip</i>
-
-						<i class="icon-phone">icon-phone</i>
-
-						<i class="icon-telephone">icon-telephone</i>
-
-						<i class="icon-pushpin">icon-pushpin</i>
-
-						<i class="icon-sad">icon-sad</i>
-
-						<i class="icon-smile">icon-smile</i>
-
-						<i class="icon-star">icon-star</i>
-
-						<i class="icon-store">icon-store</i>
-
-						<i class="icon-trash">icon-trash</i>
-
-						<i class="icon-users">icon-users</i>
-
-						<i class="icon-star-full">icon-star-full</i>
-
-						<i class="icon-help-with-circle">icon-help-with-circle</i>
-
-						<i class="icon-info-with-circle">icon-info-with-circle</i>
+					<h2>Loading effect</h2>
+					<div class="loading">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fugit, impedit expedita rem animi maxime aliquam quasi cumque odit quis accusantium dicta, laborum consequuntur? Obcaecati delectus aspernatur repellat doloremque eius?</p>
 					</div>
+
+					<h2>Rating widget</h2>
+
+					<h5>Not editable:</h5>
+					<div class="rating-widget">
+						<div class="rating not-editable">
+							<input type="radio" name="rating-product-total" id="rating-product-05" class="rating__radio" />
+							<label for="rating-product-05" class="rating__label"></label>
+
+							<input type="radio" name="rating-product-total" id="rating-product-04" class="rating__radio" checked />
+							<label for="rating-product-04" class="rating__label"></label>
+
+							<input type="radio" name="rating-product-total" id="rating-product-03" class="rating__radio" />
+							<label for="rating-product-03" class="rating__label"></label>
+
+							<input type="radio" name="rating-product-total" id="rating-product-02" class="rating__radio" />
+							<label for="rating-product-02" class="rating__label"></label>
+
+							<input type="radio" name="rating-product-total" id="rating-product-01" class="rating__radio" />
+							<label for="rating-product-01" class="rating__label"></label>
+						</div>
+
+						<span class="ml-1">(4.67 - 172 reviews)</span>
+					</div>
+
+					<h5>Editable:</h5>
+					<div class="rating-widget">
+						<div class="rating">
+							<input type="radio" name="rating-product-total" id="rating-product-05" class="rating__radio" />
+							<label for="rating-product-05" class="rating__label"></label>
+
+							<input type="radio" name="rating-product-total" id="rating-product-04" class="rating__radio" />
+							<label for="rating-product-04" class="rating__label"></label>
+
+							<input type="radio" name="rating-product-total" id="rating-product-03" class="rating__radio" />
+							<label for="rating-product-03" class="rating__label"></label>
+
+							<input type="radio" name="rating-product-total" id="rating-product-02" class="rating__radio" />
+							<label for="rating-product-02" class="rating__label"></label>
+
+							<input type="radio" name="rating-product-total" id="rating-product-01" class="rating__radio" />
+							<label for="rating-product-01" class="rating__label"></label>
+						</div>
+					</div>
+
+					<h2>Choose widgets</h2>
+					<!-- Choose Widget start -->
+					<div class="choose-widget">
+						<h4 class="label">Size:</h4>
+
+						<ul class="choose-list">
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="grey" name="group[3]" value="10" checked />
+									<span class="value">100ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">140ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">200ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">220ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="grey" name="group[3]" value="10" checked />
+									<span class="value">100ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">140ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">200ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">220ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="grey" name="group[3]" value="10" checked />
+									<span class="value">100ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">140ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">200ml</span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[3]" value="11" />
+									<span class="value">220ml</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<!-- Choose Widget end -->
+
+					<!-- Choose Widget start -->
+					<div class="choose-widget">
+						<h4 class="label">Colors:</h4>
+
+						<ul class="choose-list">
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="orange" name="group[1]" value="12" />
+									<span class="value" style="background-color: #f39c11"></span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="blue" name="group[1]" value="11" />
+									<span class="value" style="background-color: #5d9cec"></span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="grey" name="group[1]" value="10" checked />
+									<span class="value" style="background-color: #aab2bd"></span>
+								</label>
+							</li>
+
+							<li class="choose-item">
+								<label>
+									<input type="radio" data-product-attribute="green" name="group[1]" value="13" />
+									<span class="value" style="background-color: #48cfad"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<!-- Choose Widget end -->
 				</div>
 			</section>
 			<!-- Site content end -->
@@ -732,15 +756,15 @@
 
 								<ul class="list social-list">
 									<li>
-										<a href="https://twitter.com" target="_blank" title="Find us on Twitter" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-twitter"></i></a>
+										<a href="https://twitter.com" target="_blank" title="Find us on Twitter" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-twitter-square"></i></a>
 									</li>
 
 									<li>
-										<a href="https://facebook.com" target="_blank" title="Find us on Facebook" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-facebook"></i></a>
+										<a href="https://facebook.com" target="_blank" title="Find us on Facebook" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-facebook-square"></i></a>
 									</li>
 
 									<li>
-										<a href="https://instagram.com" target="_blank" title="Find us on Instagram" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-instagram"></i></a>
+										<a href="https://instagram.com" target="_blank" title="Find us on Instagram" data-toggle="tooltip" data-placement="top" rel="noopener"><i class="icon-instagram-square"></i></a>
 									</li>
 								</ul>
 							</div>
@@ -750,21 +774,20 @@
 
 				<div class="footer-bottom">
 					<div class="footer-logo">
-						<a href="#"><img src="images/logo-bioco-inverted.svg" alt="Logo Bio&co" width="162" height="60" /></a>
+						<a href="#"><img src="images/logo-rosamundi.svg" alt="Logo Rosamundi" width="162" height="60" /></a>
 					</div>
 
-					<p class="footer-copyright"><i class="icon-copyright"></i> 2021 Bio & Co. All Rights Reserved. Powered by <a href="#" title="Shopoteca" class="link link--underline">Shopoteca</a></p>
+					<p class="footer-copyright"><i class="icon-copyright"></i> 2020 Helendo. All Rights Reserved. Powered by <a href="#" title="ShopFactory" class="link link--underline">ShopFactory</a></p>
 				</div>
 			</div>
 		</footer>
 		<!-- Footer end -->
 
 		<!-- External js -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="https://cdn.shop-factory.eu/js/vendors.min.js"></script>
+		<script type="text/javascript" src="https://cdn.shop-factory.eu/js/lib.min.js"></script>
 
 		<!-- Main js -->
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/theme.js"></script>
 	</body>
 </html>
