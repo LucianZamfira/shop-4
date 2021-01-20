@@ -13,8 +13,8 @@ a {
 	}
 
 	&:hover {
-		text-decoration: underline;
 		color: $primary-color;
+		text-decoration: underline;
 	}
 }
 
@@ -80,7 +80,12 @@ a {
 	}
 
 	&--underline {
-		text-decoration: underline;
+		color: $primary-color;
+
+		&:hover {
+			color: darken($primary-color, 5%);
+			text-decoration: underline;
+		}
 	}
 
 	&--regular {

@@ -1,9 +1,8 @@
-input,
+/* input,
 textarea,
 select,
 small {
 	// Small font improvements fot this theme
-	font-family: $site-secondary-font-family;
 	line-height: 1.2;
 }
 
@@ -14,7 +13,7 @@ select {
 	font-weight: 300;
 	font-size: 0.9375em;
 }
-
+ */
 .form {
 	&-search {
 		display: inline-block;
@@ -25,7 +24,7 @@ select {
 		width: 100%;
 
 		.input {
-			padding-right: 2.5rem;
+			padding-right: 2.2 rem;
 		}
 
 		button {
@@ -66,10 +65,7 @@ select {
 
 		input {
 			width: 100%;
-		}
-
-		button {
-			font-size: 1em;
+			// margin-right: 1rem;
 		}
 	}
 }
@@ -84,31 +80,13 @@ select {
 	}
 }
 
-/* .quantity {
-	&-widget {
-		align-items: stretch;
-		background-color: $white;
-		border: 1px solid $input-border-color;
-
-		input {
-			border-color: transparent;
-		}
-
-		button {
-			align-items: center;
-			background-color: transparent;
-			color: $primary-text-color;
-			border: none;
-			display: flex;
-			padding: 0 0.6rem;
-
-			&:hover {
-				background-color: transparent;
-				color: $primary-color;
-			}
-		}
-	}
-} */
+// .quantity {
+// 	&-widget {
+// 		&.smaller {
+// 			border-radius: 5px;
+// 		}
+// 	}
+// }
 
 // Mobiles/Tablets
 @media (max-width: 867px) {

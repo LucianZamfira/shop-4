@@ -29,12 +29,11 @@
 .social {
 	&-widget {
 		align-items: center;
-		display: flex;
 		justify-content: flex-end;
 
 		.title {
 			font-size: 1em;
-			// font-weight: 500;
+			font-weight: normal;
 			margin-bottom: 1rem;
 			margin-right: 1rem;
 			margin-top: 1rem;
@@ -46,8 +45,8 @@
 		line-height: 1;
 
 		a {
-			display: inline-block;
-			font-size: 1.7em;
+			display: inline-flex;
+			font-size: 1.75em;
 			text-decoration: none;
 			transition: opacity 0.2s ease-in-out;
 			vertical-align: middle;

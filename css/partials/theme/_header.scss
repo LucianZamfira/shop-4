@@ -97,10 +97,6 @@ header {
 			margin: 0;
 
 			input {
-				border-left: none;
-				border-right: none;
-				border-top: none;
-				padding-left: 0;
 				padding-right: 2.5rem;
 				transition: opacity 0.2s ease-in-out;
 
@@ -151,8 +147,27 @@ header {
 
 		.logo {
 			height: 45px;
-			margin: 0;
-			order: unset;
+			margin: 0 auto 0 0;
+			order: -1;
+		}
+
+		.header {
+			&-top {
+				justify-content: flex-start;
+			}
+
+			&-list {
+				flex: 0;
+			}
+		}
+
+		.form-search {
+			display: flex;
+			justify-content: flex-end;
+
+			.input-wrapper {
+				flex: 0;
+			}
 		}
 	}
 }
@@ -164,15 +179,18 @@ header {
 
 	&-main {
 		i {
-			font-size: 16px;
+			font-size: 20px;
 			line-height: normal;
-			transform: translateY(-2px);
+			// transform: translateY(1px);
+			margin-right: 0.5rem;
 		}
 
 		a,
 		button {
 			border: medium none;
 			display: flex;
+			font-family: $site-primary-font-family;
+			font-weight: 400;
 			width: 100%;
 
 			&:hover {
@@ -293,7 +311,8 @@ header {
 							}
 						}
 
-						.toggle {
+						.toggle,
+						.trigger {
 							padding: 0.8rem 1.5rem;
 							text-transform: uppercase;
 						}
@@ -372,7 +391,7 @@ header {
 						> button {
 							font-size: 1.125em;
 							line-height: 1.2;
-							padding: 0.8rem 1rem;
+							padding: 0.8rem 1.8rem;
 
 							&:hover {
 								text-decoration: none;
@@ -381,12 +400,18 @@ header {
 
 						> .toggle {
 							pointer-events: none;
+							user-select: none;
 						}
 
 						&:first-child {
 							position: static;
 
+							// > button {
+							// 	padding: 0.8rem;
+							// }
+
 							.menu-level-two {
+								color: initial;
 								left: 0;
 								right: 0;
 								text-align: initial;
@@ -395,12 +420,14 @@ header {
 						}
 
 						&:hover {
+							color: $primary-color;
+
 							> .toggle {
-								color: $primary-color;
 								cursor: pointer;
 							}
 
 							.menu-level-two {
+								color: initial;
 								margin-top: 0;
 								opacity: 1;
 								pointer-events: unset;
@@ -431,8 +458,9 @@ header {
 						pointer-events: none;
 						position: absolute;
 						text-align: center;
-						text-transform: uppercase;
+						text-transform: none;
 						top: 100%;
+						text-transform: uppercase;
 						transform: translateX(-50%);
 						transition: all 0.2s $transition-effect;
 						visibility: hidden;
@@ -448,7 +476,7 @@ header {
 						bottom: 0;
 						color: initial;
 						left: 1rem;
-						margin-left: 260px;
+						margin-left: 320px;
 						opacity: 0;
 						overflow: hidden;
 						position: absolute;
@@ -472,7 +500,7 @@ header {
 
 			.categories {
 				border-right: 1px solid $border-color;
-				max-width: 260px;
+				max-width: 320px;
 				transition: all 0.4s $transition-effect;
 
 				.show {
@@ -487,18 +515,22 @@ header {
 
 				.toggle {
 					position: relative;
+					padding-right: 26px;
 
 					&:after {
-						background-color: $primary-color;
-						bottom: 0;
-						content: " ";
-						height: 0;
+						content: "\e907";
+						font-family: "icons";
+						font-size: 14px;
 						position: absolute;
-						right: -1px;
-						top: 50%;
-						transform: translateY(-50%);
-						transition: height 0.2s $transition-effect;
-						width: 4px;
+						right: 6px;
+						top: 8px;
+						transition: right 0.18s ease-in-out;
+					}
+
+					&:hover {
+						&:after {
+							right: 4px;
+						}
 					}
 				}
 
@@ -509,18 +541,60 @@ header {
 			}
 		}
 	}
+
+	header {
+		.form {
+			&-search {
+				.input-wrapper {
+					transition: all 0.4s $transition-effect;
+					width: 40px;
+
+					button {
+						pointer-events: none;
+					}
+
+					&:focus-within {
+						button {
+							pointer-events: unset;
+						}
+					}
+
+					&:focus-within,
+					&:hover {
+						flex: 1;
+						width: 100%;
+
+						input {
+							opacity: 1;
+						}
+					}
+				}
+
+				input {
+					opacity: 0;
+					transition: opacity 0.2s ease-in-out;
+
+					&:focus {
+						border-color: $input-focus-border-color;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
 }
-
-// Tablets
-// @media (max-width: 767px) {
-
-// }
 
 // Mobiles/Tablets
 @media (max-width: 767px) {
-	.header {
-		&-list {
-			max-width: initial;
+	.sticky {
+		&-yes {
+			.form-search {
+				display: none;
+			}
+
+			.logo {
+				height: 40px;
+			}
 		}
 	}
 
@@ -528,13 +602,21 @@ header {
 		.form-search {
 			max-width: unset;
 			order: 3;
-			margin-top: 2rem;
+			margin-top: 1.5rem;
 			margin-bottom: 0;
+
+			.input-wrapper {
+				flex: 1;
+			}
 
 			input {
 				border: 1px solid $input-border-color;
 				padding-left: 0.8rem;
 			}
+		}
+
+		.logo {
+			height: 60px;
 		}
 	}
 
@@ -595,7 +677,8 @@ header {
 					}
 				}
 
-				.toggle {
+				.toggle,
+				.trigger {
 					padding: 0.8rem 1.5rem;
 					text-transform: uppercase;
 				}
@@ -662,39 +745,6 @@ header {
 	}
 }
 
-// Tablets
-@media (min-width: 576px) {
-	header {
-		.form {
-			&-search {
-				.input-wrapper {
-					transition: width 0.4s $transition-effect;
-					width: 40px;
-
-					&:focus-within,
-					&:hover {
-						width: 100%;
-
-						input {
-							opacity: 1;
-						}
-					}
-				}
-
-				input {
-					opacity: 0;
-					transition: opacity 0.2s ease-in-out;
-
-					&:focus {
-						border-color: $input-focus-border-color;
-						box-shadow: none;
-					}
-				}
-			}
-		}
-	}
-}
-
 // Mobiles
 @media (max-width: 575px) {
 	header {
@@ -706,23 +756,12 @@ header {
 				display: none;
 			}
 		}
-
-		.logo {
-			margin: 2rem auto 0;
-			order: 2;
-		}
 	}
 
 	.sticky {
 		&-yes {
 			.form-search {
 				display: none;
-			}
-		}
-
-		&-no {
-			.header-list {
-				flex-basis: 100%;
 			}
 		}
 	}
@@ -743,22 +782,6 @@ header {
 
 			.logo {
 				height: 40px;
-			}
-		}
-
-		&-no {
-			.header-list {
-				flex-basis: 100%;
-			}
-		}
-	}
-
-	.header {
-		&-list > li {
-			margin-left: 1rem;
-
-			&:first-child {
-				margin-left: 0;
 			}
 		}
 	}

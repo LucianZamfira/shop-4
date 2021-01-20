@@ -47,6 +47,10 @@
 		margin: 0 0 20px 0;
 		padding: 0;
 
+		[class*="-widget"] {
+			margin: 0;
+		}
+
 		> li {
 			align-items: center;
 			border-bottom: 1px solid $input-border-color;
@@ -63,11 +67,10 @@
 		.product {
 			&-name {
 				display: inline-block;
-				font-size: 1.05em;
+				font-size: 1.125em;
 				font-weight: 400;
 				margin: 0.3rem 0.6rem 0.3rem 0;
 				text-decoration: none;
-				text-transform: uppercase;
 				vertical-align: middle;
 			}
 
@@ -117,9 +120,6 @@
 	}
 
 	&-total {
-		text-transform: uppercase;
-		transform: translateY(2px);
-
 		.amount {
 			display: inline-block;
 			min-width: 58px;
@@ -189,21 +189,26 @@
 	}
 }
 
-.total-widget {
-	.list {
-		margin-bottom: 1rem;
+.total {
+	&-widget {
+		flex-direction: column;
 
-		li {
-			display: flex;
-			justify-content: space-between;
-			border-bottom: 1px solid $border-color;
-			padding: 0.4rem;
+		.list {
+			font-size: 1.125em;
+			margin-bottom: 1rem;
+
+			li {
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid $border-color;
+				padding: 0.4rem;
+			}
 		}
-	}
 
-	.button {
-		flex: 1;
-		white-space: nowrap;
+		.button {
+			flex: 1;
+			white-space: nowrap;
+		}
 	}
 }
 

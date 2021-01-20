@@ -9,36 +9,80 @@
 	text-decoration: none;
 
 	&:hover {
+		background-color: darken($badge-primary-color, 10%);
+		color: $white;
 		text-decoration: none;
 	}
 
 	&-primary {
 		background-color: $badge-primary-color;
 	}
+
 	&-secondary {
 		background-color: $badge-secondary-color;
+
+		&:hover {
+			background-color: darken($badge-secondary-color, 10%);
+		}
 	}
+
 	&-danger {
 		background-color: $badge-danger-color;
+
+		&:hover {
+			background-color: darken($badge-danger-color, 10%);
+		}
 	}
+
 	&-success {
 		background-color: $badge-success-color;
+
+		&:hover {
+			background-color: darken($badge-success-color, 10%);
+		}
 	}
+
 	&-warning {
 		background-color: $badge-warning-color;
+
+		&:hover {
+			background-color: darken($badge-warning-color, 10%);
+		}
 	}
+
 	&-info {
 		background-color: $badge-info-color;
+
+		&:hover {
+			background-color: darken($badge-info-color, 10%);
+		}
 	}
+
 	&-light {
 		background-color: $badge-light-color;
 		color: $primary-text-color;
+
+		&:hover {
+			background-color: darken($badge-light-color, 10%);
+			color: $primary-text-color;
+		}
 	}
+
 	&-dark {
 		background-color: $badge-dark-color;
+
+		&:hover {
+			background-color: darken($badge-dark-color, 10%);
+		}
 	}
+
 	&-gray {
 		background-color: $badge-gray-color;
 		color: $primary-color;
+
+		&:hover {
+			background-color: darken($badge-gray-color, 10%);
+			color: $primary-color;
+		}
 	}
 }

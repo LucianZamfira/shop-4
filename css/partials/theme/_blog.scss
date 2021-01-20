@@ -6,7 +6,7 @@
 		transition: all 0.05s ease-in-out;
 
 		img {
-			margin-bottom: 1.4rem;
+			margin-bottom: 1rem;
 		}
 
 		figure {
@@ -16,12 +16,12 @@
 		.button {
 			background-color: $primary-color;
 			border: none;
-			bottom: 0;
+			bottom: 12px;
 			color: $white;
 			opacity: 0;
 			padding: 8px 14px;
 			position: absolute;
-			right: 0;
+			right: 12px;
 			transform: translateX(100%);
 			transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 

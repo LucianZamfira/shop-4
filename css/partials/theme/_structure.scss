@@ -7,6 +7,20 @@
 		background-color: $secondary-site-background;
 	}
 
+	&--background {
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		.container {
+			padding-top: 5rem;
+		}
+
+		&.fixed {
+			background-attachment: fixed;
+		}
+	}
+
 	&--hero {
 		padding: 0;
 		position: relative;
@@ -29,10 +43,11 @@
 		.container {
 			align-items: center;
 			display: flex;
-			justify-content: space-between;
+			flex-direction: column;
 		}
 
 		h1 {
+			line-height: 2;
 			max-width: 65%;
 		}
 	}
@@ -40,19 +55,6 @@
 	&--map {
 		#googleMap {
 			min-height: 600px;
-		}
-	}
-
-	&--boutique {
-		&:after {
-			background-position: center center;
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			content: " ";
-			display: block;
-			height: 50vh;
-			margin-top: 2rem;
 		}
 	}
 
@@ -74,6 +76,7 @@
 
 	&-title {
 		font-size: $section-title-size;
+		font-weight: 200;
 		line-height: $section-title-lineheight;
 		margin-bottom: $section-title-margin;
 		position: relative;
@@ -191,9 +194,15 @@
 	}
 }
 
-.pagination {
-	// Small font improvements fot this theme
-	font-family: $site-secondary-font-family;
+.toolbar {
+	.social-list {
+		color: $black54;
+		font-size: 0.9em;
+
+		i {
+			margin: 0;
+		}
+	}
 }
 
 // Large screens
@@ -250,12 +259,6 @@
 			}
 		}
 
-		&--boutique {
-			&:after {
-				display: none;
-			}
-		}
-
 		&--map {
 			#googleMap {
 				min-height: 450px;
@@ -275,6 +278,13 @@
 		&-three {
 			columns: auto 1;
 			column-gap: normal;
+		}
+	}
+
+	.toolbar {
+		.social-list {
+			margin-top: 12px;
+			margin-bottom: 8px;
 		}
 	}
 }

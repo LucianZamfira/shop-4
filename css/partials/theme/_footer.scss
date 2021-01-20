@@ -1,18 +1,13 @@
 footer {
-	border-top: 1px solid $border-color;
+	background-color: $footer-background-color;
 
 	input {
-		border-left: none;
-		border-right: none;
-		border-top: none;
-		padding-left: 0;
-		padding-right: 0;
-		padding-top: 0;
-		padding-bottom: 0.3rem;
+		color: $white;
 	}
 
 	h3 {
 		font-weight: 400;
+		padding-bottom: 0.5em;
 	}
 
 	.newsletter {
@@ -21,17 +16,17 @@ footer {
 		button {
 			background-color: transparent;
 			border: medium none;
-			color: $primary-text-color;
 			font-size: 1.3em;
-			line-height: 1;
+			line-height: normal;
 			padding: 0;
 			position: absolute;
-			right: 0;
-			top: 0;
+			right: 12px;
+			top: 50%;
+			transform: translateY(-50%);
 
 			&:hover {
 				background-color: transparent;
-				color: $primary-text-color;
+				color: $primary-color;
 			}
 		}
 	}

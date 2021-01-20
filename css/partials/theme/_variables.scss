@@ -28,7 +28,7 @@ $black00: #000000;
 // Text colors
 $primary-text-color: $black80; //@at-root
 $secondary-text-color: $primary-color; //@at-root
-$price-color: #cf1f1f; //@at-root
+$price-color: $primary-color; //@at-root
 
 // Structure colors
 $border-color: #ededed; //@at-root
@@ -46,8 +46,7 @@ $headings-margin-bottom: 1.1rem; //@at-root
 $headings-font-weight: 300; //@at-root
 $paragraphs-margin-bottom: 1rem; //@at-root
 $lists-margin-bottom: 1.2rem; //@at-root
-$site-primary-font-family: "Josefin Sans", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; //@at-root
-$site-secondary-font-family: "Poppins", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; //@at-root
+$site-primary-font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; //@at-root
 $site-font-size: 16px; //@at-root
 $site-font-weight: 300; //@at-root
 $site-line-height: 1.3; //@at-root
@@ -65,7 +64,7 @@ $container-larger: 1220px; //@at-root
 $section-paddings: 5rem; //@at-root
 $section-title-size: 2em; //@at-root
 $section-title-margin: 4rem; //@at-root
-$section-title-lineheight: 1.4; //@at-root
+$section-title-lineheight: 1.6; //@at-root
 
 // Footer
 $footer-paddings: 4.2rem; //@at-root

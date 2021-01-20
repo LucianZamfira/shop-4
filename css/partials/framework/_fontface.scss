@@ -1,19 +1,19 @@
 @font-face {
 	font-family: "icons";
-	src: url("https://cdn.shop-factory.eu/fonts/icons.ttf?9cc44f988f7cd1bb311c91713e5e81bc") format("truetype"), url("https://cdn.shop-factory.eu/fonts/icons.woff?fc8709ec805d4fe2a17cb160840f7ba0") format("woff");
+	src: url("https://cdn.shop-factory.eu/fonts/icons.ttf?9cc44f988f7cd1bb311c91713e5e81bce") format("truetype"), url("https://cdn.shop-factory.eu/fonts/icons.woff?fc8709ec805d4fe2a17cb160840f7ba0c") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
 }
 
 // Local
-/* @font-face {
+@font-face {
 	font-family: "icons";
 	src: url("/css/fonts/icons.ttf") format("truetype"), url("/css/fonts/icons.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
-} */
+}
 
 [class^="icon-"],
 [class*=" icon-"],
@@ -63,6 +63,9 @@
 	}
 }
 
+.icon-youtube:before {
+	content: "\e95d";
+}
 .icon-linkedin:before {
 	content: "\e947";
 }
@@ -86,9 +89,6 @@
 }
 .icon-google:before {
 	content: "\e95c";
-}
-.icon-youtube:before {
-	content: "\e95d";
 }
 .icon-vimeo:before {
 	content: "\e95e";
@@ -179,6 +179,9 @@
 }
 .icon-facebook-square:before {
 	content: "\e95b";
+}
+.icon-bin:before {
+	content: "\e971";
 }
 .icon-picture:before {
 	content: "\e946";

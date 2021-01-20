@@ -1,6 +1,13 @@
 .product {
+	&-item {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		overflow: hidden;
+	}
+
 	&-thumbnail {
-		margin-bottom: 1rem;
+		margin-bottom: 1.2rem;
 		position: relative;
 
 		> a {
@@ -58,8 +65,8 @@
 		}
 
 		a {
-			font-size: 1.2em;
-			text-decoration: none;
+			font-size: 1.0625em;
+			font-weight: 400;
 		}
 
 		* {
@@ -70,7 +77,11 @@
 	&-price {
 		font-size: 1em;
 		line-height: 1.4;
-		margin: 0.5rem 0;
+		margin: 0.3rem 0;
+
+		strong {
+			font-weight: 600;
+		}
 	}
 
 	&-preview {
@@ -115,7 +126,8 @@
 		}
 
 		> li {
-			align-items: flex-start;
+			// align-items: flex-start;
+			align-items: center;
 			border-bottom: 1px solid $input-border-color;
 			display: flex;
 			grid-gap: 1rem;
@@ -149,7 +161,6 @@
 
 	&-title {
 		font-size: 1.05em;
-		// font-weight: 400;
 		margin-bottom: 0.5rem;
 		text-transform: uppercase;
 	}
@@ -157,7 +168,8 @@
 	&-badge {
 		pointer-events: none;
 		position: absolute;
-		right: 15px;
+		font-weight: normal;
+		left: 15px;
 		top: 15px;
 	}
 
@@ -207,7 +219,6 @@
 
 .price {
 	&-widget {
-		color: $primary-color;
 		flex-direction: column;
 
 		* {
@@ -215,13 +226,15 @@
 		}
 
 		.price {
-			color: $primary-color;
+			color: $price-color;
+			font-size: 1.25em;
+			font-weight: 400;
 		}
 
 		.old {
 			color: $label-color;
 			display: inline-block;
-			font-size: 0.8em;
+			font-size: 0.9em;
 			margin-top: 0.2rem;
 
 			.amount {
@@ -232,6 +245,7 @@
 		&.justify {
 			align-items: center;
 			display: flex;
+			flex-direction: row;
 			justify-content: space-between;
 
 			.price {
@@ -290,11 +304,25 @@
 
 			a {
 				background-color: $primary-color;
+				box-shadow: none;
 				color: $white;
-				font-size: 0.9em;
+				font-size: 0.9375em;
 				height: 35px;
 				line-height: 35px;
 				width: 35px;
+			}
+		}
+	}
+}
+
+// Mobiles/Tablets
+@media (max-width: 467px) {
+	.product {
+		&-actions {
+			a {
+				height: 32px;
+				line-height: 30px;
+				width: 32px;
 			}
 		}
 	}
