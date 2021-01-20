@@ -246,7 +246,7 @@ $(document).ready(function () {
 	});
 
 	// On load set height
-	var levelHeight = $('.categories .show').find('.menu-shell').outerHeight();
+	var levelHeight = document.querySelector('.show .menu-shell').offsetHeight;
 	$('.categories').css('min-height', levelHeight);
 	// TODO: clean this shit end!
 
