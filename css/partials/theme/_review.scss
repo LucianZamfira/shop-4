@@ -1,5 +1,6 @@
 .review {
 	padding-top: 30px;
+	font-size: 0.9375em;
 
 	&-suggestions {
 		display: block;
@@ -19,5 +20,13 @@
 				color: $secondary-color;
 			}
 		}
+	}
+
+	> .d-flex {
+		align-items: center;
+	}
+
+	.rating {
+		margin: 0.5rem 0;
 	}
 }
