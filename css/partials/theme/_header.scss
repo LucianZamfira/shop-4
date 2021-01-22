@@ -191,7 +191,7 @@ header {
 			border: medium none;
 			display: flex;
 			font-family: $site-primary-font-family;
-			font-weight: 400;
+			font-weight: 300;
 			width: 100%;
 
 			&:hover {
@@ -803,7 +803,25 @@ header {
 }
 
 // Mobiles small
-@media (max-width: 380px) {
+@media (max-width: 480px) {
+	header {
+		.logo {
+			margin-bottom: 0.5rem;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1.8rem;
+			order: 2;
+		}
+	}
+
+	.header {
+		&-list {
+			flex-basis: 100%;
+			max-width: unset;
+			order: 1;
+		}
+	}
+
 	.sticky {
 		&-yes {
 			.form-search {
