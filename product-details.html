@@ -47,7 +47,7 @@
 		<!-- Quick actions toolbar end -->
 
 		<!-- Header start -->
-		<header class="sticky-no">
+		<header id="header" class="sticky-no">
 			<div class="container">
 				<div class="header-top">
 					<form action="POST" class="form-search">
@@ -133,8 +133,6 @@
 
 												<h5 class="product-price">
 													<span>1 x <strong>$20.00</strong></span>
-													<br />
-													<span>Total : <strong>$20.00</strong></span>
 												</h5>
 
 												<div class="quantity-widget smaller">
@@ -144,7 +142,7 @@
 												</div>
 											</div>
 
-											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+											<button class="button--icon remove-item"><i class="icon-bin" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
@@ -157,8 +155,6 @@
 
 												<h5 class="product-price">
 													<span>1 x <strong>$20.00</strong></span>
-													<br />
-													<span>Total : <strong>$20.00</strong></span>
 												</h5>
 
 												<div class="quantity-widget smaller">
@@ -168,7 +164,7 @@
 												</div>
 											</div>
 
-											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+											<button class="button--icon remove-item"><i class="icon-bin" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 
 										<li>
@@ -181,6 +177,7 @@
 
 												<h5 class="product-price">
 													<span>2 x <strong>$20.00</strong></span>
+													<!-- Use this just in case product count is > 1 -->
 													<br />
 													<span>Total : <strong>$40.00</strong></span>
 												</h5>
@@ -192,14 +189,36 @@
 												</div>
 											</div>
 
-											<button class="button--icon remove-item"><i class="icon-cross" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+											<button class="button--icon remove-item"><i class="icon-bin" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
+										</li>
+
+										<li>
+											<a href="product-details.html" class="product-image" title="Mile high / 38 100ml">
+												<img class="image--fluid" src="images/products/1_1-300x300.jpg" alt="Product Image" width="80" height="80" />
+											</a>
+
+											<div class="product-content">
+												<a href="product-details.html" title="Mile high / 38 100ml" class="product-name">Mile high / 38 100ml</a>
+
+												<h5 class="product-price">
+													<span>1 x <strong>$20.00</strong></span>
+												</h5>
+
+												<div class="quantity-widget smaller">
+													<button class="quantity-decrease"><i class="icon-minus"></i></button>
+													<input type="text" name="quantity-input" value="1" data-max="12" />
+													<button class="quantity-increase"><i class="icon-plus"></i></button>
+												</div>
+											</div>
+
+											<button class="button--icon remove-item"><i class="icon-bin" data-toggle="tooltip" data-placement="top" data-offset="0, 4" title="Remove item from cart"></i></button>
 										</li>
 									</ul>
 
 									<div class="dropdown-divider"></div>
 
 									<div class="dropdown-text">
-										<h5 class="d-flex justify-content-between font-bold">
+										<h5 class="d-flex justify-content-between font-bold mt-1">
 											<span>TOTAL:</span>
 											<span class="price">140 LEI</span>
 										</h5>
@@ -349,7 +368,7 @@
 						</li>
 
 						<li class="close-menu">
-							<i class="icon-cross2"></i>
+							<i class="icon-cross"></i>
 						</li>
 					</ul>
 				</nav>

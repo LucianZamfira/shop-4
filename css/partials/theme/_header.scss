@@ -804,24 +804,6 @@ header {
 
 // Mobiles small
 @media (max-width: 480px) {
-	header {
-		.logo {
-			margin-bottom: 0.5rem;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 1.8rem;
-			order: 2;
-		}
-	}
-
-	.header {
-		&-list {
-			flex-basis: 100%;
-			max-width: unset;
-			order: 1;
-		}
-	}
-
 	.sticky {
 		&-yes {
 			.form-search {
@@ -830,6 +812,32 @@ header {
 
 			.logo {
 				height: 40px;
+			}
+
+			.header {
+				&-list {
+					& > li {
+						margin-left: 1rem;
+					}
+				}
+			}
+		}
+
+		&-no {
+			.logo {
+				margin-bottom: 0.5rem;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 1.8rem;
+				order: 2;
+			}
+
+			.header {
+				&-list {
+					flex-basis: 100%;
+					max-width: unset;
+					order: 1;
+				}
 			}
 		}
 	}
