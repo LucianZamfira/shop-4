@@ -257,6 +257,10 @@ blockquote {
 		text-decoration: underline;
 	}
 
+	&--uppercase {
+		text-transform: uppercase;
+	}
+
 	&--center {
 		text-align: center;
 	}
