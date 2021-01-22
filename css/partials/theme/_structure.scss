@@ -182,6 +182,12 @@
 	}
 }
 
+.category {
+	display: inline-block;
+	margin-bottom: 0.6em;
+	text-transform: uppercase;
+}
+
 .columns {
 	&-two {
 		columns: auto 2;
