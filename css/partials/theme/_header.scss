@@ -120,6 +120,12 @@ header {
 		i {
 			font-size: 24px;
 		}
+
+		.dropdown-menu {
+			i {
+				font-size: inherit;
+			}
+		}
 	}
 
 	&-list {
