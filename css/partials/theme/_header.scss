@@ -397,8 +397,8 @@ header {
 						> a,
 						> button {
 							font-size: 1.0625em;
-							line-height: 1.2;
-							padding: 0.8rem 1rem;
+							line-height: 1;
+							padding: 0.8rem;
 
 							&:hover {
 								text-decoration: none;
@@ -601,7 +601,7 @@ header {
 						> a,
 						> button {
 							font-size: 1.125em;
-							padding: 0.8rem 1.8rem;
+							padding: 0.8rem 1.2rem;
 						}
 					}
 				}
@@ -726,7 +726,7 @@ header {
 
 				> a,
 				> button {
-					padding: 0.8rem 1.5rem;
+					padding: 0.8rem;
 					text-transform: uppercase;
 				}
 
