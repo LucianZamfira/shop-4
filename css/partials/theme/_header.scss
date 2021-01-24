@@ -381,7 +381,7 @@ header {
 		&-no {
 			.menu {
 				&-main {
-					align-items: center;
+					align-items: flex-end;
 					background-color: $white;
 					display: flex;
 					justify-content: center;
@@ -396,9 +396,11 @@ header {
 
 						> a,
 						> button {
+							align-self: center;
 							font-size: 1.0625em;
 							line-height: 1;
 							padding: 0.8rem;
+							text-align: center;
 
 							&:hover {
 								text-decoration: none;
