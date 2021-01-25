@@ -11,6 +11,7 @@
 		position: relative;
 
 		> a {
+			border: 1px solid $cream;
 			display: block;
 			outline: none;
 			position: relative;
@@ -27,21 +28,12 @@
 				top: 50%;
 				z-index: -1;
 			}
-		}
 
-		&:hover {
-			.product-actions {
-				z-index: 10;
-			}
-
-			li {
-				transform: translateY(0);
-				opacity: 1;
-			}
-
-			.image--hover {
-				opacity: 1;
-			}
+			// &:hover {
+			// 	.image--hover {
+			// 		opacity: 1;
+			// 	}
+			// }
 		}
 
 		.image--hover {
@@ -273,6 +265,28 @@
 .stock {
 	&-widget {
 		align-items: center;
+	}
+}
+
+// Tablets/desktops
+@media (min-width: 768px) {
+	.product {
+		&-thumbnail {
+			&:hover {
+				.product-actions {
+					z-index: 10;
+				}
+
+				li {
+					transform: translateY(0);
+					opacity: 1;
+				}
+
+				.image--hover {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
 

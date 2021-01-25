@@ -7,6 +7,19 @@
 		background-color: $secondary-site-background;
 	}
 
+	&--boutique {
+		&:after {
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			content: " ";
+			display: block;
+			height: 50vh;
+			margin-top: 2rem;
+		}
+	}
+
 	&--background {
 		background-position: center center;
 		background-size: cover;

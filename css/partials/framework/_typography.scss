@@ -48,7 +48,7 @@ h6 {
   Similarly, the top margin on <p>s get reset. However, we also reset the
   bottom margin to use rem units instead of em. */
 p {
-	font-size: 1.2em;
+	font-size: $paragraphs-font-size;
 	margin-bottom: $paragraphs-margin-bottom;
 	margin-top: 0;
 }

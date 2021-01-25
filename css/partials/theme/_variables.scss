@@ -25,6 +25,13 @@ $black54: #686868;
 $black80: #141414;
 $black00: #000000;
 
+// Cookiebar colors
+$cookiebar-background-color: rgba($black00, 0.6);
+$cookiebar-color: $white;
+$cookiebar-max-width: 1400px;
+$cookiebar-font-size: 14px;
+$cookiebar-paddings: 2rem 1rem;
+
 // Text colors
 $primary-text-color: $black80; //@at-root
 $secondary-text-color: $primary-color; //@at-root
@@ -45,6 +52,7 @@ $tertiary-site-background: #ececec; //@at-root
 $headings-margin-bottom: 1.1rem; //@at-root
 $headings-font-weight: 300; //@at-root
 $paragraphs-margin-bottom: 1rem; //@at-root
+$paragraphs-font-size: 1.125em; //@at-root
 $lists-margin-bottom: 1.2rem; //@at-root
 $site-primary-font-family: "Montserrat", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; //@at-root
 $site-font-size: 16px; //@at-root
