@@ -28,7 +28,7 @@ select {
 	border: 1px solid $input-border-color;
 	color: $primary-text-color;
 	display: block;
-	font-size: inherit;
+	font: inherit;
 	line-height: $input-line-height;
 	margin: 0;
 	outline: none;

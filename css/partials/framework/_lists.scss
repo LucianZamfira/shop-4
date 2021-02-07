@@ -127,6 +127,17 @@ li {
 			margin: 0 4px 8px 4px;
 		}
 	}
+
+	&--bullet {
+		display: inline-block;
+		list-style: disc;
+		padding-left: 20px;
+		text-align: initial;
+
+		li {
+			display: list-item;
+		}
+	}
 }
 
 .tabs {
