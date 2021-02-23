@@ -152,9 +152,8 @@ $(document).ready(function () {
 		event.preventDefault();
 
 		let t = $(this).attr('href').replace(/\#/, '');
-		if (t == '') {
-			return false;
-		}
+		if (t == '') return false;
+
 		// @link https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
 		document.getElementById(t).scrollIntoView({
 			block: 'nearest',
@@ -165,10 +164,15 @@ $(document).ready(function () {
 	$('.scroll-top').on('click', function (event) {
 		event.preventDefault();
 
-		// console.log('dss');
-
 		// @link https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView
-		document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
+		document.querySelector('body').scrollIntoView({ behavior: 'smooth', block: 'start' });
+	});
+
+	// Remove cookiebar
+	$('#cookiebar__close, #cookiebar__accept').on('click', function (event) {
+		event.preventDefault();
+
+		$(this).parents('.cookiebar').removeClass('active');
 	});
 
 	// Init toast

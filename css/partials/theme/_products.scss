@@ -193,17 +193,19 @@
 		}
 
 		a {
+			align-items: center;
 			background-color: lighten($cream, 6%);
 			box-shadow: 0 4px 6px rgba($black80, 0.2);
 			border-radius: 50%;
 			color: $primary-color;
-			display: inline-block;
-			font-size: 1.1em;
+			display: inline-flex;
+			font-size: 1.125em;
 			height: 46px;
-			line-height: 46px;
+			justify-content: center;
 			margin: 0 0.35rem;
 			outline: none;
 			text-align: center;
+			text-decoration: none;
 			width: 46px;
 		}
 	}
@@ -322,7 +324,6 @@
 				color: $white;
 				font-size: 0.9375em;
 				height: 35px;
-				line-height: 35px;
 				width: 35px;
 			}
 		}
@@ -334,9 +335,8 @@
 	.product {
 		&-actions {
 			a {
-				height: 28px;
-				line-height: 26px;
-				width: 28px;
+				height: 29px;
+				width: 29px;
 			}
 		}
 	}
